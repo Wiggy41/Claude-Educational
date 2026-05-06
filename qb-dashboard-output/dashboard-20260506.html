@@ -9,74 +9,129 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     background: #0f1419;
     color: #e6e8eb;
-    padding: 32px 40px;
+    padding: 28px 36px;
     line-height: 1.4;
   }
-  .header { margin-bottom: 32px; border-bottom: 1px solid #2a3038; padding-bottom: 20px; }
-  .header h1 { font-size: 28px; font-weight: 600; color: #fff; }
-  .header .meta { color: #8b95a3; font-size: 14px; margin-top: 6px; }
+  .header { margin-bottom: 28px; border-bottom: 1px solid #2a3038; padding-bottom: 16px; }
+  .header h1 { font-size: 26px; font-weight: 600; color: #fff; }
+  .header .meta { color: #8b95a3; font-size: 13px; margin-top: 6px; }
   .header .meta span { margin-right: 18px; }
 
+  .section-title { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #8b95a3; margin: 32px 0 14px 4px; font-weight: 600; }
+
+  /* ---------- KPI METERS ---------- */
   .meters {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin-bottom: 32px;
+    gap: 16px;
   }
   .meter {
     background: #161c24;
     border: 1px solid #2a3038;
     border-radius: 12px;
-    padding: 20px;
+    padding: 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .meter-label { color: #8b95a3; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
-  .meter-value { font-size: 26px; font-weight: 600; color: #fff; margin-top: 6px; }
-  .meter-sub { color: #8b95a3; font-size: 11px; margin-top: 4px; }
+  .meter-label { color: #8b95a3; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+  .meter-sub { color: #8b95a3; font-size: 11px; margin-top: 4px; text-align: center; }
   .pos { color: #4ade80; }
   .neg { color: #f87171; }
   .warn { color: #fbbf24; }
 
+  /* ---------- MONTH CARDS ---------- */
+  .month-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+  }
+  .month-card {
+    background: #161c24;
+    border: 1px solid #2a3038;
+    border-radius: 10px;
+    padding: 14px;
+  }
+  .month-card.forecast { border-color: #2d5a3a; background: linear-gradient(180deg, #161c24 0%, #15201a 100%); }
+  .month-card .month-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #2a3038;
+    padding-bottom: 6px;
+  }
+  .month-card .month-name { font-size: 14px; font-weight: 600; color: #fff; }
+  .month-card .month-tag { font-size: 9px; padding: 2px 6px; border-radius: 8px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .month-card .tag-actual { background: #2a3038; color: #8b95a3; }
+  .month-card .tag-forecast { background: #2d5a3a; color: #4ade80; }
+  .month-card .metric { margin-bottom: 8px; }
+  .month-card .metric-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: #8b95a3;
+    margin-bottom: 3px;
+  }
+  .month-card .metric-row .val { font-weight: 600; color: #c8cdd3; }
+  .bar-track {
+    background: #0f1419;
+    border-radius: 4px;
+    height: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+  .bar-track.diverging { background: linear-gradient(to right, #1a1015 0%, #1a1015 50%, #0f1410 50%, #0f1410 100%); }
+  .bar-track.diverging::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #2a3038;
+  }
+  .bar-fill { height: 100%; border-radius: 4px; transition: width 0.3s; }
+  .bar-fill.rev { background: linear-gradient(to right, #2563eb, #3b82f6); }
+  .bar-fill.exp { background: linear-gradient(to right, #b45309, #f59e0b); }
+  .bar-fill.net-pos { background: linear-gradient(to right, #15803d, #4ade80); position: absolute; left: 50%; }
+  .bar-fill.net-neg { background: linear-gradient(to left, #991b1b, #f87171); position: absolute; right: 50%; }
+  .bar-fill.cash-pos { background: linear-gradient(to right, #6d28d9, #a78bfa); position: absolute; left: 50%; }
+  .bar-fill.cash-neg { background: linear-gradient(to left, #991b1b, #f87171); position: absolute; right: 50%; }
+
+  /* ---------- TREND CHARTS ---------- */
+  .trend-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
   .panel {
     background: #161c24;
     border: 1px solid #2a3038;
     border-radius: 12px;
-    padding: 24px;
-    margin-bottom: 24px;
+    padding: 20px;
   }
-  .panel h2 { font-size: 16px; font-weight: 600; color: #fff; margin-bottom: 4px; }
-  .panel .panel-sub { color: #8b95a3; font-size: 12px; margin-bottom: 18px; }
+  .panel h2 { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 4px; }
+  .panel .panel-sub { color: #8b95a3; font-size: 11px; margin-bottom: 14px; }
 
-  .grid-2 { display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; }
-
-  table { width: 100%; border-collapse: collapse; font-size: 13px; }
-  th { text-align: right; color: #8b95a3; font-weight: 500; padding: 8px 10px; border-bottom: 1px solid #2a3038; }
+  /* ---------- TABLE ---------- */
+  table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  th { text-align: right; color: #8b95a3; font-weight: 500; padding: 7px 8px; border-bottom: 1px solid #2a3038; font-size: 11px; }
   th:first-child { text-align: left; }
-  td { padding: 8px 10px; border-bottom: 1px solid #1d242c; text-align: right; }
+  td { padding: 7px 8px; border-bottom: 1px solid #1d242c; text-align: right; }
   td:first-child { text-align: left; color: #c8cdd3; }
   tr.actual td:first-child::before { content: "● "; color: #6b7280; font-size: 9px; }
   tr.forecast td:first-child::before { content: "○ "; color: #4ade80; font-size: 9px; }
-  tr.total td { font-weight: 600; color: #fff; border-top: 1px solid #3a4048; border-bottom: none; padding-top: 12px; }
+  tr.total td { font-weight: 600; color: #fff; border-top: 1px solid #3a4048; padding-top: 10px; }
 
-  .scenario-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-  .scenario {
-    background: #1a2129;
-    border: 1px solid #2a3038;
-    border-radius: 10px;
-    padding: 18px;
-  }
-  .scenario h3 { font-size: 13px; color: #8b95a3; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 10px; }
+  .grid-2 { display: grid; grid-template-columns: 1.4fr 1fr; gap: 16px; }
+  .scenario-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .scenario { background: #1a2129; border: 1px solid #2a3038; border-radius: 10px; padding: 16px; }
+  .scenario h3 { font-size: 11px; color: #8b95a3; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 8px; }
   .scenario .big { font-size: 22px; font-weight: 600; margin-bottom: 4px; }
-  .scenario .sm { font-size: 12px; color: #8b95a3; }
+  .scenario .sm { font-size: 11px; color: #8b95a3; }
 
-  .legend { display: flex; gap: 18px; margin-bottom: 14px; font-size: 12px; color: #8b95a3; }
-  .legend-dot { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
-  .actual-color { background: #6b7280; }
-  .forecast-color { background: #4ade80; }
-
-  .watchlist li { padding: 10px 0; border-bottom: 1px solid #1d242c; font-size: 13px; color: #c8cdd3; }
+  .watchlist li { padding: 9px 0; border-bottom: 1px solid #1d242c; font-size: 12px; color: #c8cdd3; list-style: none; }
   .watchlist li:last-child { border-bottom: none; }
   .watchlist .trigger { color: #fbbf24; font-weight: 500; }
 
@@ -88,16 +143,16 @@
 <div class="header">
   <h1>Yarddogs Commercial Landscaping LLP</h1>
   <div class="meta">
-    <span>Cash basis · NAICS 561730 (Landscaping Services) · SC</span>
-    <span>YTD 2026 actuals + 6-month forecast (May–Oct 2026)</span>
+    <span>Cash basis · NAICS 561730 · SC</span>
+    <span>YTD 2026 + 6-month forecast (May–Oct 2026)</span>
     <span>Generated 2026-05-06</span>
   </div>
 </div>
 
-<!-- METERS -->
+<!-- ============ TOP KPI METERS ============ -->
+<div class="section-title">YTD Snapshot</div>
 <div class="meters">
 
-  <!-- Revenue meter -->
   <div class="meter">
     <div class="meter-label">YTD Revenue (Cash)</div>
     <svg width="140" height="90" viewBox="0 0 140 90">
@@ -108,9 +163,8 @@
     <div class="meter-sub">14% of $636K SC peer median</div>
   </div>
 
-  <!-- Margin meter -->
   <div class="meter">
-    <div class="meter-label">Net Margin (YTD Cash)</div>
+    <div class="meter-label">Net Margin (Cash)</div>
     <svg width="140" height="90" viewBox="0 0 140 90">
       <path d="M 20 80 A 50 50 0 0 1 120 80" stroke="#2a3038" stroke-width="10" fill="none" stroke-linecap="round"/>
       <path d="M 20 80 A 50 50 0 0 1 32 50" stroke="#f87171" stroke-width="10" fill="none" stroke-linecap="round"/>
@@ -119,7 +173,6 @@
     <div class="meter-sub">+18% w/ A/R earned (~break-even)</div>
   </div>
 
-  <!-- Expenses meter -->
   <div class="meter">
     <div class="meter-label">YTD Expenses</div>
     <svg width="140" height="90" viewBox="0 0 140 90">
@@ -127,10 +180,9 @@
       <path d="M 20 80 A 50 50 0 0 1 110 47" stroke="#fbbf24" stroke-width="10" fill="none" stroke-linecap="round"/>
       <text x="70" y="72" text-anchor="middle" fill="#fff" font-size="18" font-weight="600">$130.6K</text>
     </svg>
-    <div class="meter-sub">Payroll 39% · Supplies 28% · Vehicle 15%</div>
+    <div class="meter-sub">Payroll 42% · Supplies 28% · Vehicle 15%</div>
   </div>
 
-  <!-- Cash meter -->
   <div class="meter">
     <div class="meter-label">Cash Position</div>
     <svg width="140" height="90" viewBox="0 0 140 90">
@@ -138,240 +190,528 @@
       <path d="M 20 80 A 50 50 0 0 1 28 56" stroke="#f87171" stroke-width="10" fill="none" stroke-linecap="round"/>
       <text x="70" y="72" text-anchor="middle" fill="#f87171" font-size="18" font-weight="600">-$9.8K</text>
     </svg>
-    <div class="meter-sub">$48K A/R outstanding · est. +$8K end-May</div>
+    <div class="meter-sub">$48K A/R · est. +$8K end-May</div>
   </div>
 
 </div>
 
-<!-- MONTHLY TREND CHART -->
-<div class="panel">
-  <h2>Monthly Performance — Revenue / Expenses / Net Income</h2>
-  <div class="panel-sub">Filled bars = actuals · Outlined bars = forecast (incl. Laureate, no price hike) · Cash line = end-of-month balance</div>
-  <div class="legend">
-    <span><span class="legend-dot" style="background:#3b82f6;"></span>Revenue</span>
-    <span><span class="legend-dot" style="background:#f59e0b;"></span>Expenses</span>
-    <span><span class="legend-dot" style="background:#4ade80;"></span>Net Income (positive)</span>
-    <span><span class="legend-dot" style="background:#f87171;"></span>Net Income (negative)</span>
-    <span><span class="legend-dot" style="background:#a78bfa;"></span>Cash Position</span>
+<!-- ============ MONTH-BY-MONTH CARDS ============ -->
+<div class="section-title">Month-by-Month Performance · Each Metric</div>
+<div class="month-grid">
+
+  <!-- JAN -->
+  <div class="month-card">
+    <div class="month-head"><span class="month-name">Jan 2026</span><span class="month-tag tag-actual">Actual</span></div>
+    <div class="metric">
+      <div class="metric-row"><span>Revenue</span><span class="val">$12.9K</span></div>
+      <div class="bar-track"><div class="bar-fill rev" style="width:21.4%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Expenses</span><span class="val">$13.7K</span></div>
+      <div class="bar-track"><div class="bar-fill exp" style="width:22.9%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Net Profit</span><span class="val neg">-$0.9K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill net-neg" style="width:1.3%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>End Cash</span><span class="val neg">-$1.5K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill cash-neg" style="width:0.9%"></div></div>
+    </div>
   </div>
 
-  <svg width="100%" viewBox="0 0 1100 380" style="display:block;">
-    <!-- Y axis grid -->
-    <line x1="60" y1="50" x2="60" y2="300" stroke="#2a3038" stroke-width="1"/>
-    <line x1="60" y1="300" x2="1080" y2="300" stroke="#2a3038" stroke-width="1"/>
-    <!-- y axis labels: 0 to 70K -->
-    <text x="55" y="305" text-anchor="end" fill="#6b7280" font-size="10">$0</text>
-    <text x="55" y="240" text-anchor="end" fill="#6b7280" font-size="10">$15K</text>
-    <text x="55" y="180" text-anchor="end" fill="#6b7280" font-size="10">$30K</text>
-    <text x="55" y="120" text-anchor="end" fill="#6b7280" font-size="10">$45K</text>
-    <text x="55" y="60" text-anchor="end" fill="#6b7280" font-size="10">$60K</text>
-    <line x1="60" y1="240" x2="1080" y2="240" stroke="#1d242c" stroke-width="1"/>
-    <line x1="60" y1="180" x2="1080" y2="180" stroke="#1d242c" stroke-width="1"/>
-    <line x1="60" y1="120" x2="1080" y2="120" stroke="#1d242c" stroke-width="1"/>
-    <line x1="60" y1="60" x2="1080" y2="60" stroke="#1d242c" stroke-width="1"/>
+  <!-- FEB -->
+  <div class="month-card">
+    <div class="month-head"><span class="month-name">Feb 2026</span><span class="month-tag tag-actual">Actual</span></div>
+    <div class="metric">
+      <div class="metric-row"><span>Revenue</span><span class="val">$13.1K</span></div>
+      <div class="bar-track"><div class="bar-fill rev" style="width:21.8%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Expenses</span><span class="val">$35.2K</span></div>
+      <div class="bar-track"><div class="bar-fill exp" style="width:58.6%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Net Profit</span><span class="val neg">-$22.1K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill net-neg" style="width:31.6%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>End Cash</span><span class="val neg">-$23.5K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill cash-neg" style="width:14.7%"></div></div>
+    </div>
+  </div>
 
-    <!-- Per month: 10 months, x positions 100, 200, ... 1000 -->
-    <!-- scale: $1 = 0.004 px, max 60K shown -->
-    <!-- Revenue bar: blue, x-12, w 12 -->
-    <!-- Expenses bar: amber, x, w 12 -->
-    <!-- Net bar: behind, x+14, w 12 -->
+  <!-- MAR -->
+  <div class="month-card">
+    <div class="month-head"><span class="month-name">Mar 2026</span><span class="month-tag tag-actual">Actual</span></div>
+    <div class="metric">
+      <div class="metric-row"><span>Revenue</span><span class="val">$25.5K</span></div>
+      <div class="bar-track"><div class="bar-fill rev" style="width:42.5%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Expenses</span><span class="val">$57.6K</span></div>
+      <div class="bar-track"><div class="bar-fill exp" style="width:96.0%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Net Profit</span><span class="val neg">-$32.2K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill net-neg" style="width:46.0%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>End Cash</span><span class="val neg">-$55.7K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill cash-neg" style="width:34.8%"></div></div>
+    </div>
+  </div>
 
-    <!-- JAN: rev 12852, exp 13744, net -892 -->
-    <rect x="88" y="248.6" width="14" height="51.4" fill="#3b82f6" opacity="0.85"/>
-    <rect x="103" y="245.0" width="14" height="55.0" fill="#f59e0b" opacity="0.85"/>
-    <rect x="118" y="300" width="14" height="3.5" fill="#f87171"/>
-    <text x="110" y="320" text-anchor="middle" fill="#c8cdd3" font-size="11">Jan</text>
-    <text x="110" y="334" text-anchor="middle" fill="#6b7280" font-size="9">Actual</text>
+  <!-- APR -->
+  <div class="month-card">
+    <div class="month-head"><span class="month-name">Apr 2026</span><span class="month-tag tag-actual">Actual</span></div>
+    <div class="metric">
+      <div class="metric-row"><span>Revenue</span><span class="val">$35.7K</span></div>
+      <div class="bar-track"><div class="bar-fill rev" style="width:59.5%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Expenses</span><span class="val">$55.3K</span></div>
+      <div class="bar-track"><div class="bar-fill exp" style="width:92.2%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Net Profit</span><span class="val neg">-$19.6K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill net-neg" style="width:28.0%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>End Cash</span><span class="val neg">-$2.0K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill cash-neg" style="width:1.3%"></div></div>
+    </div>
+  </div>
 
-    <!-- FEB: rev 13079, exp 35179, net -22100 -->
-    <rect x="188" y="247.7" width="14" height="52.3" fill="#3b82f6" opacity="0.85"/>
-    <rect x="203" y="159.3" width="14" height="140.7" fill="#f59e0b" opacity="0.85"/>
-    <rect x="218" y="300" width="14" height="88.4" fill="#f87171" opacity="0.4"/>
-    <text x="210" y="320" text-anchor="middle" fill="#c8cdd3" font-size="11">Feb</text>
-    <text x="210" y="334" text-anchor="middle" fill="#6b7280" font-size="9">Actual</text>
+  <!-- MAY (FORECAST) -->
+  <div class="month-card forecast">
+    <div class="month-head"><span class="month-name">May 2026</span><span class="month-tag tag-forecast">Forecast</span></div>
+    <div class="metric">
+      <div class="metric-row"><span>Revenue</span><span class="val">$58.8K</span></div>
+      <div class="bar-track"><div class="bar-fill rev" style="width:97.9%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Expenses</span><span class="val">$40.8K</span></div>
+      <div class="bar-track"><div class="bar-fill exp" style="width:68.0%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Net Profit</span><span class="val pos">+$18.0K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill net-pos" style="width:25.7%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>End Cash</span><span class="val pos">+$8.2K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill cash-pos" style="width:5.1%"></div></div>
+    </div>
+  </div>
 
-    <!-- MAR: rev 25488, exp 57645, net -32171 -->
-    <rect x="288" y="198.0" width="14" height="102.0" fill="#3b82f6" opacity="0.85"/>
-    <rect x="303" y="69.4" width="14" height="230.6" fill="#f59e0b" opacity="0.85"/>
-    <rect x="318" y="300" width="14" height="60" fill="#f87171" opacity="0.4"/>
-    <text x="310" y="320" text-anchor="middle" fill="#c8cdd3" font-size="11">Mar</text>
-    <text x="310" y="334" text-anchor="middle" fill="#6b7280" font-size="9">Actual</text>
+  <!-- JUN (FORECAST) -->
+  <div class="month-card forecast">
+    <div class="month-head"><span class="month-name">Jun 2026</span><span class="month-tag tag-forecast">Forecast</span></div>
+    <div class="metric">
+      <div class="metric-row"><span>Revenue</span><span class="val">$54.0K</span></div>
+      <div class="bar-track"><div class="bar-fill rev" style="width:90.0%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Expenses</span><span class="val">$42.4K</span></div>
+      <div class="bar-track"><div class="bar-fill exp" style="width:70.6%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Net Profit</span><span class="val pos">+$11.6K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill net-pos" style="width:16.6%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>End Cash</span><span class="val pos">+$19.8K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill cash-pos" style="width:12.4%"></div></div>
+    </div>
+  </div>
 
-    <!-- APR: rev 35680, exp 55325, net -19630 -->
-    <rect x="388" y="157.3" width="14" height="142.7" fill="#3b82f6" opacity="0.85"/>
-    <rect x="403" y="78.7" width="14" height="221.3" fill="#f59e0b" opacity="0.85"/>
-    <rect x="418" y="300" width="14" height="78.5" fill="#f87171" opacity="0.4"/>
-    <text x="410" y="320" text-anchor="middle" fill="#c8cdd3" font-size="11">Apr</text>
-    <text x="410" y="334" text-anchor="middle" fill="#6b7280" font-size="9">Actual</text>
+  <!-- JUL (FORECAST) -->
+  <div class="month-card forecast">
+    <div class="month-head"><span class="month-name">Jul 2026</span><span class="month-tag tag-forecast">Forecast</span></div>
+    <div class="metric">
+      <div class="metric-row"><span>Revenue</span><span class="val">$46.5K</span></div>
+      <div class="bar-track"><div class="bar-fill rev" style="width:77.5%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Expenses</span><span class="val">$42.7K</span></div>
+      <div class="bar-track"><div class="bar-fill exp" style="width:71.1%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Net Profit</span><span class="val pos">+$3.8K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill net-pos" style="width:5.5%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>End Cash</span><span class="val pos">+$23.6K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill cash-pos" style="width:14.8%"></div></div>
+    </div>
+  </div>
 
-    <!-- MAY: rev 58750, exp 40773, net +17977 (FORECAST) -->
-    <rect x="488" y="65.0" width="14" height="235.0" fill="none" stroke="#3b82f6" stroke-width="2"/>
-    <rect x="503" y="136.9" width="14" height="163.1" fill="none" stroke="#f59e0b" stroke-width="2"/>
-    <rect x="518" y="228.1" width="14" height="71.9" fill="#4ade80"/>
-    <text x="510" y="320" text-anchor="middle" fill="#c8cdd3" font-size="11">May</text>
-    <text x="510" y="334" text-anchor="middle" fill="#4ade80" font-size="9">Forecast</text>
+  <!-- AUG (FORECAST) -->
+  <div class="month-card forecast">
+    <div class="month-head"><span class="month-name">Aug 2026</span><span class="month-tag tag-forecast">Forecast</span></div>
+    <div class="metric">
+      <div class="metric-row"><span>Revenue</span><span class="val">$42.5K</span></div>
+      <div class="bar-track"><div class="bar-fill rev" style="width:70.8%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Expenses</span><span class="val">$42.2K</span></div>
+      <div class="bar-track"><div class="bar-fill exp" style="width:70.3%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Net Profit</span><span class="val pos">+$0.3K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill net-pos" style="width:0.5%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>End Cash</span><span class="val pos">+$24.0K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill cash-pos" style="width:15.0%"></div></div>
+    </div>
+  </div>
 
-    <!-- JUN: rev 54014, exp 42373, net +11641 -->
-    <rect x="588" y="83.9" width="14" height="216.1" fill="none" stroke="#3b82f6" stroke-width="2"/>
-    <rect x="603" y="130.5" width="14" height="169.5" fill="none" stroke="#f59e0b" stroke-width="2"/>
-    <rect x="618" y="253.4" width="14" height="46.6" fill="#4ade80"/>
-    <text x="610" y="320" text-anchor="middle" fill="#c8cdd3" font-size="11">Jun</text>
-    <text x="610" y="334" text-anchor="middle" fill="#4ade80" font-size="9">Forecast</text>
+  <!-- SEP (FORECAST) -->
+  <div class="month-card forecast">
+    <div class="month-head"><span class="month-name">Sep 2026</span><span class="month-tag tag-forecast">Forecast</span></div>
+    <div class="metric">
+      <div class="metric-row"><span>Revenue</span><span class="val">$38.5K</span></div>
+      <div class="bar-track"><div class="bar-fill rev" style="width:64.2%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Expenses</span><span class="val">$39.2K</span></div>
+      <div class="bar-track"><div class="bar-fill exp" style="width:65.3%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Net Profit</span><span class="val neg">-$0.7K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill net-neg" style="width:1.0%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>End Cash</span><span class="val pos">+$23.3K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill cash-pos" style="width:14.6%"></div></div>
+    </div>
+  </div>
 
-    <!-- JUL: rev 46514, exp 42673, net +3841 -->
-    <rect x="688" y="113.9" width="14" height="186.1" fill="none" stroke="#3b82f6" stroke-width="2"/>
-    <rect x="703" y="129.3" width="14" height="170.7" fill="none" stroke="#f59e0b" stroke-width="2"/>
-    <rect x="718" y="284.6" width="14" height="15.4" fill="#4ade80"/>
-    <text x="710" y="320" text-anchor="middle" fill="#c8cdd3" font-size="11">Jul</text>
-    <text x="710" y="334" text-anchor="middle" fill="#4ade80" font-size="9">Forecast</text>
+  <!-- OCT (FORECAST) -->
+  <div class="month-card forecast">
+    <div class="month-head"><span class="month-name">Oct 2026</span><span class="month-tag tag-forecast">Forecast</span></div>
+    <div class="metric">
+      <div class="metric-row"><span>Revenue</span><span class="val">$27.5K</span></div>
+      <div class="bar-track"><div class="bar-fill rev" style="width:45.9%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Expenses</span><span class="val">$33.2K</span></div>
+      <div class="bar-track"><div class="bar-fill exp" style="width:55.3%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Net Profit</span><span class="val neg">-$5.7K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill net-neg" style="width:8.1%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>End Cash</span><span class="val pos">+$17.7K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill cash-pos" style="width:11.1%"></div></div>
+    </div>
+  </div>
 
-    <!-- AUG: rev 42514, exp 42173, net +341 -->
-    <rect x="788" y="129.9" width="14" height="170.1" fill="none" stroke="#3b82f6" stroke-width="2"/>
-    <rect x="803" y="131.3" width="14" height="168.7" fill="none" stroke="#f59e0b" stroke-width="2"/>
-    <rect x="818" y="298.6" width="14" height="1.4" fill="#4ade80"/>
-    <text x="810" y="320" text-anchor="middle" fill="#c8cdd3" font-size="11">Aug</text>
-    <text x="810" y="334" text-anchor="middle" fill="#4ade80" font-size="9">Forecast</text>
-
-    <!-- SEP: rev 38514, exp 39173, net -659 -->
-    <rect x="888" y="145.9" width="14" height="154.1" fill="none" stroke="#3b82f6" stroke-width="2"/>
-    <rect x="903" y="143.3" width="14" height="156.7" fill="none" stroke="#f59e0b" stroke-width="2"/>
-    <rect x="918" y="300" width="14" height="2.6" fill="#f87171"/>
-    <text x="910" y="320" text-anchor="middle" fill="#c8cdd3" font-size="11">Sep</text>
-    <text x="910" y="334" text-anchor="middle" fill="#4ade80" font-size="9">Forecast</text>
-
-    <!-- OCT: rev 27514, exp 33173, net -5659 -->
-    <rect x="988" y="189.9" width="14" height="110.1" fill="none" stroke="#3b82f6" stroke-width="2"/>
-    <rect x="1003" y="167.3" width="14" height="132.7" fill="none" stroke="#f59e0b" stroke-width="2"/>
-    <rect x="1018" y="300" width="14" height="22.6" fill="#f87171"/>
-    <text x="1010" y="320" text-anchor="middle" fill="#c8cdd3" font-size="11">Oct</text>
-    <text x="1010" y="334" text-anchor="middle" fill="#4ade80" font-size="9">Forecast</text>
-
-    <!-- Cash position line (purple), scaled separately -->
-    <!-- Cash trajectory: Jan -1K, Feb -23K, Mar -55K, Apr -75K (estimated cash drains compounding), but actual Apr 30 cash = roughly -8K based on cash flow report -->
-    <!-- Actually: end Apr cash ~ -2K based on report (cashAtEnd was -9833 as of May 6); for chart purposes use cash flow report data + projections -->
-    <!-- Simplified: end Apr -2K, end May +8K, end Jun +20K, end Jul +24K, end Aug +24K, end Sep +23K, end Oct +18K -->
-    <!-- Line scale: $0 = y 250, $1K = 1.5px up; range -10K (265) to +30K (205) -->
-    <polyline points="110,253 210,256 310,260 410,253 510,238 610,220 710,214 810,214 910,215 1010,223"
-              stroke="#a78bfa" stroke-width="2" fill="none" stroke-dasharray="0"/>
-    <circle cx="110" cy="253" r="3" fill="#a78bfa"/>
-    <circle cx="210" cy="256" r="3" fill="#a78bfa"/>
-    <circle cx="310" cy="260" r="3" fill="#a78bfa"/>
-    <circle cx="410" cy="253" r="3" fill="#a78bfa"/>
-    <circle cx="510" cy="238" r="3" fill="#a78bfa" stroke="#fff" stroke-width="1"/>
-    <circle cx="610" cy="220" r="3" fill="#a78bfa" stroke="#fff" stroke-width="1"/>
-    <circle cx="710" cy="214" r="3" fill="#a78bfa" stroke="#fff" stroke-width="1"/>
-    <circle cx="810" cy="214" r="3" fill="#a78bfa" stroke="#fff" stroke-width="1"/>
-    <circle cx="910" cy="215" r="3" fill="#a78bfa" stroke="#fff" stroke-width="1"/>
-    <circle cx="1010" cy="223" r="3" fill="#a78bfa" stroke="#fff" stroke-width="1"/>
-  </svg>
-
-  <div class="footnote">Forecast assumes: A/R collection of $48K phased May–Aug; Laureate contract +$3,514/mo from June; no price hike; no operational efficiency gains.</div>
 </div>
 
-<!-- TWO-COLUMN: forecast table + expense breakdown -->
+<!-- ============ TREND CHARTS — ONE PER METRIC ============ -->
+<div class="section-title">Trend Charts · One per Metric</div>
+<div class="trend-grid">
+
+  <!-- REVENUE TREND -->
+  <div class="panel">
+    <h2>Revenue · Monthly</h2>
+    <div class="panel-sub">Filled bars = actual · Outlined bars = forecast · Scale 0–$60K</div>
+    <svg width="100%" viewBox="0 0 540 220">
+      <line x1="40" y1="20" x2="40" y2="180" stroke="#2a3038"/>
+      <line x1="40" y1="180" x2="530" y2="180" stroke="#2a3038"/>
+      <text x="36" y="184" text-anchor="end" fill="#6b7280" font-size="9">$0</text>
+      <text x="36" y="140" text-anchor="end" fill="#6b7280" font-size="9">$15K</text>
+      <text x="36" y="100" text-anchor="end" fill="#6b7280" font-size="9">$30K</text>
+      <text x="36" y="60" text-anchor="end" fill="#6b7280" font-size="9">$45K</text>
+      <text x="36" y="24" text-anchor="end" fill="#6b7280" font-size="9">$60K</text>
+      <line x1="40" y1="140" x2="530" y2="140" stroke="#1d242c"/>
+      <line x1="40" y1="100" x2="530" y2="100" stroke="#1d242c"/>
+      <line x1="40" y1="60" x2="530" y2="60" stroke="#1d242c"/>
+      <line x1="40" y1="20" x2="530" y2="20" stroke="#1d242c"/>
+
+      <!-- Bars: 10 months @ x=60,108,156,...,492 (48px spacing, 30px wide) -->
+      <!-- scale: $60K = 160px, $1 = 0.00267px -->
+      <rect x="55" y="146" width="30" height="34" fill="#3b82f6" opacity="0.85"/>
+      <text x="70" y="200" text-anchor="middle" fill="#c8cdd3" font-size="10">Jan</text>
+      <rect x="103" y="145" width="30" height="35" fill="#3b82f6" opacity="0.85"/>
+      <text x="118" y="200" text-anchor="middle" fill="#c8cdd3" font-size="10">Feb</text>
+      <rect x="151" y="112" width="30" height="68" fill="#3b82f6" opacity="0.85"/>
+      <text x="166" y="200" text-anchor="middle" fill="#c8cdd3" font-size="10">Mar</text>
+      <rect x="199" y="85" width="30" height="95" fill="#3b82f6" opacity="0.85"/>
+      <text x="214" y="200" text-anchor="middle" fill="#c8cdd3" font-size="10">Apr</text>
+      <rect x="247" y="23" width="30" height="157" fill="none" stroke="#3b82f6" stroke-width="2"/>
+      <text x="262" y="200" text-anchor="middle" fill="#4ade80" font-size="10">May</text>
+      <rect x="295" y="36" width="30" height="144" fill="none" stroke="#3b82f6" stroke-width="2"/>
+      <text x="310" y="200" text-anchor="middle" fill="#4ade80" font-size="10">Jun</text>
+      <rect x="343" y="56" width="30" height="124" fill="none" stroke="#3b82f6" stroke-width="2"/>
+      <text x="358" y="200" text-anchor="middle" fill="#4ade80" font-size="10">Jul</text>
+      <rect x="391" y="67" width="30" height="113" fill="none" stroke="#3b82f6" stroke-width="2"/>
+      <text x="406" y="200" text-anchor="middle" fill="#4ade80" font-size="10">Aug</text>
+      <rect x="439" y="77" width="30" height="103" fill="none" stroke="#3b82f6" stroke-width="2"/>
+      <text x="454" y="200" text-anchor="middle" fill="#4ade80" font-size="10">Sep</text>
+      <rect x="487" y="107" width="30" height="73" fill="none" stroke="#3b82f6" stroke-width="2"/>
+      <text x="502" y="200" text-anchor="middle" fill="#4ade80" font-size="10">Oct</text>
+
+      <!-- May A/R indicator -->
+      <text x="262" y="215" text-anchor="middle" fill="#a78bfa" font-size="9">+A/R wave</text>
+    </svg>
+  </div>
+
+  <!-- EXPENSES TREND -->
+  <div class="panel">
+    <h2>Expenses · Monthly</h2>
+    <div class="panel-sub">Mar peak ($57.6K) was equipment + project material spike</div>
+    <svg width="100%" viewBox="0 0 540 220">
+      <line x1="40" y1="20" x2="40" y2="180" stroke="#2a3038"/>
+      <line x1="40" y1="180" x2="530" y2="180" stroke="#2a3038"/>
+      <text x="36" y="184" text-anchor="end" fill="#6b7280" font-size="9">$0</text>
+      <text x="36" y="140" text-anchor="end" fill="#6b7280" font-size="9">$15K</text>
+      <text x="36" y="100" text-anchor="end" fill="#6b7280" font-size="9">$30K</text>
+      <text x="36" y="60" text-anchor="end" fill="#6b7280" font-size="9">$45K</text>
+      <text x="36" y="24" text-anchor="end" fill="#6b7280" font-size="9">$60K</text>
+      <line x1="40" y1="140" x2="530" y2="140" stroke="#1d242c"/>
+      <line x1="40" y1="100" x2="530" y2="100" stroke="#1d242c"/>
+      <line x1="40" y1="60" x2="530" y2="60" stroke="#1d242c"/>
+      <line x1="40" y1="20" x2="530" y2="20" stroke="#1d242c"/>
+
+      <rect x="55" y="143" width="30" height="37" fill="#f59e0b" opacity="0.85"/>
+      <text x="70" y="200" text-anchor="middle" fill="#c8cdd3" font-size="10">Jan</text>
+      <rect x="103" y="86" width="30" height="94" fill="#f59e0b" opacity="0.85"/>
+      <text x="118" y="200" text-anchor="middle" fill="#c8cdd3" font-size="10">Feb</text>
+      <rect x="151" y="26" width="30" height="154" fill="#f59e0b" opacity="0.85"/>
+      <text x="166" y="200" text-anchor="middle" fill="#c8cdd3" font-size="10">Mar</text>
+      <rect x="199" y="33" width="30" height="147" fill="#f59e0b" opacity="0.85"/>
+      <text x="214" y="200" text-anchor="middle" fill="#c8cdd3" font-size="10">Apr</text>
+      <rect x="247" y="71" width="30" height="109" fill="none" stroke="#f59e0b" stroke-width="2"/>
+      <text x="262" y="200" text-anchor="middle" fill="#4ade80" font-size="10">May</text>
+      <rect x="295" y="67" width="30" height="113" fill="none" stroke="#f59e0b" stroke-width="2"/>
+      <text x="310" y="200" text-anchor="middle" fill="#4ade80" font-size="10">Jun</text>
+      <rect x="343" y="66" width="30" height="114" fill="none" stroke="#f59e0b" stroke-width="2"/>
+      <text x="358" y="200" text-anchor="middle" fill="#4ade80" font-size="10">Jul</text>
+      <rect x="391" y="68" width="30" height="112" fill="none" stroke="#f59e0b" stroke-width="2"/>
+      <text x="406" y="200" text-anchor="middle" fill="#4ade80" font-size="10">Aug</text>
+      <rect x="439" y="76" width="30" height="104" fill="none" stroke="#f59e0b" stroke-width="2"/>
+      <text x="454" y="200" text-anchor="middle" fill="#4ade80" font-size="10">Sep</text>
+      <rect x="487" y="92" width="30" height="88" fill="none" stroke="#f59e0b" stroke-width="2"/>
+      <text x="502" y="200" text-anchor="middle" fill="#4ade80" font-size="10">Oct</text>
+    </svg>
+  </div>
+
+  <!-- NET PROFIT TREND -->
+  <div class="panel">
+    <h2>Net Profit · Monthly</h2>
+    <div class="panel-sub">Inflection in May; small positive band Jun–Aug; back to losses in fall</div>
+    <svg width="100%" viewBox="0 0 540 220">
+      <line x1="40" y1="20" x2="40" y2="200" stroke="#2a3038"/>
+      <!-- Zero line at y=110 (middle), +20K at top, -35K at bottom -->
+      <line x1="40" y1="110" x2="530" y2="110" stroke="#3a4048" stroke-width="1.5"/>
+      <text x="36" y="24" text-anchor="end" fill="#6b7280" font-size="9">+$20K</text>
+      <text x="36" y="70" text-anchor="end" fill="#6b7280" font-size="9">+$10K</text>
+      <text x="36" y="114" text-anchor="end" fill="#6b7280" font-size="9">$0</text>
+      <text x="36" y="155" text-anchor="end" fill="#6b7280" font-size="9">-$15K</text>
+      <text x="36" y="195" text-anchor="end" fill="#6b7280" font-size="9">-$30K</text>
+      <line x1="40" y1="70" x2="530" y2="70" stroke="#1d242c"/>
+      <line x1="40" y1="155" x2="530" y2="155" stroke="#1d242c"/>
+      <line x1="40" y1="195" x2="530" y2="195" stroke="#1d242c"/>
+
+      <!-- Bars: scale +20K=90px above zero; -35K=85px below. So 1K = 4.5px above, 2.4px below -->
+      <!-- Jan -892 (small neg): h=2 -->
+      <rect x="55" y="110" width="30" height="2" fill="#f87171"/>
+      <text x="70" y="215" text-anchor="middle" fill="#c8cdd3" font-size="10">Jan</text>
+      <!-- Feb -22.1K -->
+      <rect x="103" y="110" width="30" height="61" fill="#f87171"/>
+      <text x="118" y="215" text-anchor="middle" fill="#c8cdd3" font-size="10">Feb</text>
+      <!-- Mar -32.2K (deepest) -->
+      <rect x="151" y="110" width="30" height="89" fill="#f87171"/>
+      <text x="166" y="215" text-anchor="middle" fill="#c8cdd3" font-size="10">Mar</text>
+      <!-- Apr -19.6K -->
+      <rect x="199" y="110" width="30" height="54" fill="#f87171"/>
+      <text x="214" y="215" text-anchor="middle" fill="#c8cdd3" font-size="10">Apr</text>
+      <!-- May +18K -->
+      <rect x="247" y="29" width="30" height="81" fill="#4ade80"/>
+      <text x="262" y="215" text-anchor="middle" fill="#4ade80" font-size="10">May</text>
+      <!-- Jun +11.6K -->
+      <rect x="295" y="58" width="30" height="52" fill="#4ade80"/>
+      <text x="310" y="215" text-anchor="middle" fill="#4ade80" font-size="10">Jun</text>
+      <!-- Jul +3.8K -->
+      <rect x="343" y="93" width="30" height="17" fill="#4ade80"/>
+      <text x="358" y="215" text-anchor="middle" fill="#4ade80" font-size="10">Jul</text>
+      <!-- Aug +0.3K -->
+      <rect x="391" y="108" width="30" height="2" fill="#4ade80"/>
+      <text x="406" y="215" text-anchor="middle" fill="#4ade80" font-size="10">Aug</text>
+      <!-- Sep -0.7K -->
+      <rect x="439" y="110" width="30" height="2" fill="#f87171"/>
+      <text x="454" y="215" text-anchor="middle" fill="#4ade80" font-size="10">Sep</text>
+      <!-- Oct -5.7K -->
+      <rect x="487" y="110" width="30" height="16" fill="#f87171"/>
+      <text x="502" y="215" text-anchor="middle" fill="#4ade80" font-size="10">Oct</text>
+
+      <!-- Inflection annotation -->
+      <line x1="232" y1="20" x2="232" y2="200" stroke="#4ade80" stroke-width="1" stroke-dasharray="2,3" opacity="0.4"/>
+      <text x="232" y="14" text-anchor="middle" fill="#4ade80" font-size="9">Inflection</text>
+    </svg>
+  </div>
+
+  <!-- CASH POSITION TREND -->
+  <div class="panel">
+    <h2>Cash on Hand · End of Month</h2>
+    <div class="panel-sub">Trough at end-March; recovery through summer; A/R-funded</div>
+    <svg width="100%" viewBox="0 0 540 220">
+      <line x1="40" y1="20" x2="40" y2="200" stroke="#2a3038"/>
+      <!-- Zero line; range -60K (y=200) to +30K (y=20). 1K = 2px -->
+      <line x1="40" y1="140" x2="530" y2="140" stroke="#3a4048" stroke-width="1.5"/>
+      <text x="36" y="24" text-anchor="end" fill="#6b7280" font-size="9">+$30K</text>
+      <text x="36" y="84" text-anchor="end" fill="#6b7280" font-size="9">+$0</text>
+      <text x="36" y="140" text-anchor="end" fill="#6b7280" font-size="9">-$30K</text>
+      <text x="36" y="195" text-anchor="end" fill="#6b7280" font-size="9">-$60K</text>
+      <line x1="40" y1="84" x2="530" y2="84" stroke="#a78bfa" stroke-width="1" stroke-dasharray="2,2" opacity="0.4"/>
+      <line x1="40" y1="200" x2="530" y2="200" stroke="#1d242c"/>
+
+      <!-- Cash positions: Jan -1.5, Feb -23.5, Mar -55.7, Apr -2, May +8.2, Jun +19.8, Jul +23.6, Aug +24, Sep +23.3, Oct +17.7 -->
+      <!-- y formula: y = 84 + (-cash * 2). So +30K = y 24, 0 = y 84, -30K = y 144, -60K = y 204 -->
+      <!-- Jan: -1.5 → 87 -->
+      <!-- Feb: -23.5 → 131 -->
+      <!-- Mar: -55.7 → 195 -->
+      <!-- Apr: -2 → 88 -->
+      <!-- May: +8.2 → 67.6 -->
+      <!-- Jun: +19.8 → 44.4 -->
+      <!-- Jul: +23.6 → 36.8 -->
+      <!-- Aug: +24 → 36 -->
+      <!-- Sep: +23.3 → 37.4 -->
+      <!-- Oct: +17.7 → 48.6 -->
+
+      <polyline points="70,87 118,131 166,195 214,88 262,68 310,44 358,37 406,36 454,37 502,49"
+                stroke="#a78bfa" stroke-width="2.5" fill="none"/>
+      <!-- Area fill below line -->
+      <polygon points="70,87 118,131 166,195 214,88 262,68 310,44 358,37 406,36 454,37 502,49 502,200 70,200"
+               fill="#a78bfa" opacity="0.08"/>
+      <!-- Dots -->
+      <circle cx="70" cy="87" r="3" fill="#a78bfa"/>
+      <circle cx="118" cy="131" r="3" fill="#a78bfa"/>
+      <circle cx="166" cy="195" r="4" fill="#f87171" stroke="#fff" stroke-width="1"/>
+      <circle cx="214" cy="88" r="3" fill="#a78bfa"/>
+      <circle cx="262" cy="68" r="4" fill="#4ade80" stroke="#fff" stroke-width="1"/>
+      <circle cx="310" cy="44" r="3" fill="#a78bfa"/>
+      <circle cx="358" cy="37" r="3" fill="#a78bfa"/>
+      <circle cx="406" cy="36" r="4" fill="#4ade80" stroke="#fff" stroke-width="1"/>
+      <circle cx="454" cy="37" r="3" fill="#a78bfa"/>
+      <circle cx="502" cy="49" r="3" fill="#a78bfa"/>
+
+      <text x="166" y="212" text-anchor="middle" fill="#f87171" font-size="9">Trough -$55.7K</text>
+      <text x="406" y="28" text-anchor="middle" fill="#4ade80" font-size="9">Peak +$24K</text>
+
+      <!-- Month labels -->
+      <text x="70" y="218" text-anchor="middle" fill="#c8cdd3" font-size="10">Jan</text>
+      <text x="118" y="218" text-anchor="middle" fill="#c8cdd3" font-size="10">Feb</text>
+      <text x="166" y="218" text-anchor="middle" fill="#c8cdd3" font-size="10">Mar</text>
+      <text x="214" y="218" text-anchor="middle" fill="#c8cdd3" font-size="10">Apr</text>
+      <text x="262" y="218" text-anchor="middle" fill="#4ade80" font-size="10">May</text>
+      <text x="310" y="218" text-anchor="middle" fill="#4ade80" font-size="10">Jun</text>
+      <text x="358" y="218" text-anchor="middle" fill="#4ade80" font-size="10">Jul</text>
+      <text x="406" y="218" text-anchor="middle" fill="#4ade80" font-size="10">Aug</text>
+      <text x="454" y="218" text-anchor="middle" fill="#4ade80" font-size="10">Sep</text>
+      <text x="502" y="218" text-anchor="middle" fill="#4ade80" font-size="10">Oct</text>
+    </svg>
+  </div>
+
+</div>
+
+<!-- ============ FORECAST TABLE + EXPENSE COMPOSITION ============ -->
+<div class="section-title">Detail Tables</div>
 <div class="grid-2">
 
   <div class="panel">
-    <h2>Month-by-Month Forecast</h2>
+    <h2>Month-by-Month Ledger</h2>
     <div class="panel-sub">Cash basis · Base scenario (with Laureate, current $75 minimum)</div>
     <table>
       <thead>
         <tr><th>Month</th><th>Revenue</th><th>Expenses</th><th>Net</th><th>End Cash</th></tr>
       </thead>
       <tbody>
-        <tr class="actual"><td>Jan 2026</td><td>$12,852</td><td>$13,744</td><td class="neg">-$892</td><td>-$1,500</td></tr>
-        <tr class="actual"><td>Feb 2026</td><td>$13,079</td><td>$35,179</td><td class="neg">-$22,100</td><td>-$23,500</td></tr>
-        <tr class="actual"><td>Mar 2026</td><td>$25,488</td><td>$57,645</td><td class="neg">-$32,171</td><td>-$55,700</td></tr>
-        <tr class="actual"><td>Apr 2026</td><td>$35,680</td><td>$55,325</td><td class="neg">-$19,630</td><td>-$2,000*</td></tr>
-        <tr class="forecast"><td>May 2026</td><td>$58,750</td><td>$40,773</td><td class="pos">+$17,977</td><td>+$8,150</td></tr>
-        <tr class="forecast"><td>Jun 2026</td><td>$54,014</td><td>$42,373</td><td class="pos">+$11,641</td><td>+$19,790</td></tr>
-        <tr class="forecast"><td>Jul 2026</td><td>$46,514</td><td>$42,673</td><td class="pos">+$3,841</td><td>+$23,630</td></tr>
-        <tr class="forecast"><td>Aug 2026</td><td>$42,514</td><td>$42,173</td><td class="pos">+$341</td><td>+$23,970</td></tr>
-        <tr class="forecast"><td>Sep 2026</td><td>$38,514</td><td>$39,173</td><td class="neg">-$659</td><td>+$23,310</td></tr>
-        <tr class="forecast"><td>Oct 2026</td><td>$27,514</td><td>$33,173</td><td class="neg">-$5,659</td><td>+$17,650</td></tr>
-        <tr class="total"><td>10-mo Total</td><td>$354,919</td><td>$402,232</td><td class="neg">-$47,311</td><td></td></tr>
+        <tr class="actual"><td>Jan 2026</td><td>$12,852</td><td>$13,744</td><td class="neg">-$892</td><td class="neg">-$1,500</td></tr>
+        <tr class="actual"><td>Feb 2026</td><td>$13,079</td><td>$35,179</td><td class="neg">-$22,100</td><td class="neg">-$23,500</td></tr>
+        <tr class="actual"><td>Mar 2026</td><td>$25,488</td><td>$57,645</td><td class="neg">-$32,171</td><td class="neg">-$55,700</td></tr>
+        <tr class="actual"><td>Apr 2026</td><td>$35,680</td><td>$55,325</td><td class="neg">-$19,630</td><td class="neg">-$2,000</td></tr>
+        <tr class="forecast"><td>May 2026</td><td>$58,750</td><td>$40,773</td><td class="pos">+$17,977</td><td class="pos">+$8,150</td></tr>
+        <tr class="forecast"><td>Jun 2026</td><td>$54,014</td><td>$42,373</td><td class="pos">+$11,641</td><td class="pos">+$19,790</td></tr>
+        <tr class="forecast"><td>Jul 2026</td><td>$46,514</td><td>$42,673</td><td class="pos">+$3,841</td><td class="pos">+$23,630</td></tr>
+        <tr class="forecast"><td>Aug 2026</td><td>$42,514</td><td>$42,173</td><td class="pos">+$341</td><td class="pos">+$23,970</td></tr>
+        <tr class="forecast"><td>Sep 2026</td><td>$38,514</td><td>$39,173</td><td class="neg">-$659</td><td class="pos">+$23,310</td></tr>
+        <tr class="forecast"><td>Oct 2026</td><td>$27,514</td><td>$33,173</td><td class="neg">-$5,659</td><td class="pos">+$17,650</td></tr>
+        <tr class="total"><td>10-mo Total</td><td>$354,919</td><td>$402,232</td><td class="neg">-$47,311</td><td>—</td></tr>
       </tbody>
     </table>
-    <div class="footnote">*Apr ending cash reconciled with the May-6 cash position of -$9,833 reported by QB after deposit timing. Cash trajectory is a forward estimate; actuals will vary with collection timing.</div>
   </div>
 
   <div class="panel">
     <h2>YTD Expense Composition</h2>
-    <div class="panel-sub">Top buckets across YTD 2026 actuals</div>
-
+    <div class="panel-sub">Where the $130.6K went · Jan–May 6, 2026 actuals</div>
     <svg width="100%" viewBox="0 0 420 280" style="display:block;">
-      <!-- Horizontal bars -->
-      <!-- Total expenses ~$130K reference. Scale: 1px = $300 -->
-      <text x="0" y="14" fill="#c8cdd3" font-size="12">Payroll &amp; taxes</text>
+      <text x="0" y="14" fill="#c8cdd3" font-size="11">Payroll &amp; taxes</text>
       <rect x="160" y="4" width="183" height="14" fill="#3b82f6" opacity="0.85"/>
-      <text x="350" y="14" fill="#c8cdd3" font-size="11">$54.8K (42%)</text>
+      <text x="350" y="14" fill="#c8cdd3" font-size="10">$54.8K · 42%</text>
 
-      <text x="0" y="44" fill="#c8cdd3" font-size="12">Supplies/materials</text>
+      <text x="0" y="44" fill="#c8cdd3" font-size="11">Supplies/materials</text>
       <rect x="160" y="34" width="122" height="14" fill="#10b981" opacity="0.85"/>
-      <text x="350" y="44" fill="#c8cdd3" font-size="11">$36.6K (28%)</text>
+      <text x="350" y="44" fill="#c8cdd3" font-size="10">$36.6K · 28%</text>
 
-      <text x="0" y="74" fill="#c8cdd3" font-size="12">Vehicle (gas + repairs)</text>
+      <text x="0" y="74" fill="#c8cdd3" font-size="11">Vehicle (gas + repairs)</text>
       <rect x="160" y="64" width="64" height="14" fill="#f59e0b" opacity="0.85"/>
-      <text x="350" y="74" fill="#c8cdd3" font-size="11">$19.3K (15%)</text>
+      <text x="350" y="74" fill="#c8cdd3" font-size="10">$19.3K · 15%</text>
 
-      <text x="0" y="104" fill="#c8cdd3" font-size="12">Advertising</text>
+      <text x="0" y="104" fill="#c8cdd3" font-size="11">Advertising</text>
       <rect x="160" y="94" width="24" height="14" fill="#a78bfa" opacity="0.85"/>
-      <text x="350" y="104" fill="#c8cdd3" font-size="11">$7.2K (6%)</text>
+      <text x="350" y="104" fill="#c8cdd3" font-size="10">$7.2K · 6%</text>
 
-      <text x="0" y="134" fill="#c8cdd3" font-size="12">Equipment rental</text>
+      <text x="0" y="134" fill="#c8cdd3" font-size="11">Equipment rental</text>
       <rect x="160" y="124" width="17" height="14" fill="#f87171" opacity="0.85"/>
-      <text x="350" y="134" fill="#c8cdd3" font-size="11">$5.0K (4%)</text>
+      <text x="350" y="134" fill="#c8cdd3" font-size="10">$5.0K · 4%</text>
 
-      <text x="0" y="164" fill="#c8cdd3" font-size="12">Repairs &amp; maintenance</text>
+      <text x="0" y="164" fill="#c8cdd3" font-size="11">Repairs &amp; maintenance</text>
       <rect x="160" y="154" width="8" height="14" fill="#fb923c" opacity="0.85"/>
-      <text x="350" y="164" fill="#c8cdd3" font-size="11">$2.4K (2%)</text>
+      <text x="350" y="164" fill="#c8cdd3" font-size="10">$2.4K · 2%</text>
 
-      <text x="0" y="194" fill="#c8cdd3" font-size="12">Other (purchases, fees, meals)</text>
+      <text x="0" y="194" fill="#c8cdd3" font-size="11">Other (purchases, fees, meals)</text>
       <rect x="160" y="184" width="17" height="14" fill="#6b7280" opacity="0.85"/>
-      <text x="350" y="194" fill="#c8cdd3" font-size="11">$5.4K (4%)</text>
+      <text x="350" y="194" fill="#c8cdd3" font-size="10">$5.4K · 4%</text>
 
       <line x1="160" y1="220" x2="343" y2="220" stroke="#2a3038"/>
-      <text x="160" y="240" fill="#fbbf24" font-size="12" font-weight="600">Labor + Vehicle = 57% of all spend</text>
-      <text x="160" y="258" fill="#8b95a3" font-size="11">Direct levers: minimum price, OT cap, route density</text>
+      <text x="160" y="240" fill="#fbbf24" font-size="11" font-weight="600">Labor + Vehicle = 57% of all spend</text>
+      <text x="160" y="258" fill="#8b95a3" font-size="10">Levers: minimum price, OT cap, route density</text>
     </svg>
   </div>
 
 </div>
 
-<!-- SCENARIO CARDS -->
-<div class="panel">
-  <h2>6-Month Forecast Scenarios (May–Oct 2026)</h2>
-  <div class="panel-sub">Net income across the next 6 months under three operating choices</div>
-  <div class="scenario-cards">
-
-    <div class="scenario">
-      <h3>Status Quo + Laureate</h3>
-      <div class="big pos">+$27,531</div>
-      <div class="sm">Keep $75 minimum · current OT · Laureate adds ~$28K/yr at steady state</div>
-      <div class="sm" style="margin-top:10px;color:#c8cdd3;">Ending cash: <strong>+$17,650</strong></div>
-    </div>
-
-    <div class="scenario">
-      <h3>Raise Min → $95 + Laureate</h3>
-      <div class="big pos">+$38,531</div>
-      <div class="sm">Effective Jun 1 · 5% churn assumed · Laureate steady-state</div>
-      <div class="sm" style="margin-top:10px;color:#c8cdd3;">Ending cash: <strong>+$28,650</strong></div>
-    </div>
-
-    <div class="scenario">
-      <h3>$95 + OT cap + Laureate</h3>
-      <div class="big pos">+$48,000</div>
-      <div class="sm">+ Cap OT at 5 hrs/wk avg · saves ~$1.5K/mo</div>
-      <div class="sm" style="margin-top:10px;color:#c8cdd3;">Ending cash: <strong>+$38,000</strong></div>
-    </div>
-
+<!-- ============ SCENARIOS ============ -->
+<div class="section-title">6-Month Outlook · Three Operating Choices</div>
+<div class="scenario-cards">
+  <div class="scenario">
+    <h3>Status Quo + Laureate</h3>
+    <div class="big pos">+$27,531</div>
+    <div class="sm">Keep $75 minimum · current OT · Laureate adds ~$28K/yr at steady state</div>
+    <div class="sm" style="margin-top:10px;color:#c8cdd3;">Ending cash: <strong>+$17,650</strong></div>
+  </div>
+  <div class="scenario">
+    <h3>Raise Min → $95 + Laureate</h3>
+    <div class="big pos">+$38,531</div>
+    <div class="sm">Effective Jun 1 · 5% churn assumed · Laureate steady-state</div>
+    <div class="sm" style="margin-top:10px;color:#c8cdd3;">Ending cash: <strong>+$28,650</strong></div>
+  </div>
+  <div class="scenario">
+    <h3>$95 + OT Cap + Laureate</h3>
+    <div class="big pos">+$48,000</div>
+    <div class="sm">+ Cap OT at 5 hrs/wk avg · saves ~$1.5K/mo</div>
+    <div class="sm" style="margin-top:10px;color:#c8cdd3;">Ending cash: <strong>+$38,000</strong></div>
   </div>
 </div>
 
-<!-- WATCH LIST -->
+<!-- ============ WATCH LIST ============ -->
+<div class="section-title">Watch List · Triggers That Change the Picture</div>
 <div class="panel">
-  <h2>Watch List — Triggers That Change the Picture</h2>
-  <div class="panel-sub">Specific signals to monitor and the action thresholds</div>
   <ul class="watchlist">
     <li><span class="trigger">A/R collection &lt; 70% in May</span> — June flips to small loss. Action: call delinquent accounts week of May 12.</li>
     <li><span class="trigger">Terlinden project costs &gt; $5K</span> — June net under $7K. Action: confirm material spend before invoicing.</li>
@@ -380,31 +720,6 @@
     <li><span class="trigger">Rain-out &gt; 4 days in June</span> — revenue -$5K to -$8K. Build Saturday make-up day buffer.</li>
     <li><span class="trigger">Laureate visit overruns 4 hrs</span> — contribution drops below 60%. Track time-on-site each Thursday for first 4 weeks.</li>
   </ul>
-</div>
-
-<!-- CONTRACT BOOK -->
-<div class="panel">
-  <h2>Locked-Rate Contract Book (14 accounts)</h2>
-  <div class="panel-sub">Recurring revenue base — these set your floor each month</div>
-  <table>
-    <thead><tr><th>Account</th><th>Type</th><th>Status</th></tr></thead>
-    <tbody>
-      <tr><td>Realtylink</td><td>Property mgmt</td><td>Active</td></tr>
-      <tr><td>AGY Aiken LLC</td><td>Commercial</td><td>Active</td></tr>
-      <tr><td>Property Management Solutions</td><td>Property mgmt</td><td>Active</td></tr>
-      <tr><td>CAMS</td><td>Property mgmt</td><td>Active</td></tr>
-      <tr><td>University of South Carolina</td><td>Institutional</td><td>Active</td></tr>
-      <tr><td>Tri Delta</td><td>Institutional</td><td>Active</td></tr>
-      <tr><td>Columbia Property Management</td><td>Property mgmt</td><td>Active</td></tr>
-      <tr><td>The Lexico Group</td><td>Commercial</td><td>Active</td></tr>
-      <tr><td>United Community</td><td>Commercial</td><td>Active</td></tr>
-      <tr><td>Clint Wallace</td><td>Residential</td><td>Active</td></tr>
-      <tr><td>John Mouzakis</td><td>Residential</td><td>Active</td></tr>
-      <tr><td>Laurence Noir</td><td>Residential</td><td>Active</td></tr>
-      <tr><td>David Crow</td><td>Residential</td><td>Active</td></tr>
-      <tr style="background:#1a3a2a;"><td><strong>Laureate</strong></td><td>Commercial maintenance</td><td><span class="pos">★ NEW · $3,514/mo · 67% margin</span></td></tr>
-    </tbody>
-  </table>
 </div>
 
 <div class="footnote" style="text-align:center;margin-top:24px;">
