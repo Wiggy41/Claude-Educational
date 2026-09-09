@@ -97,6 +97,15 @@ Used when `mode=forecast`. Build a forward-looking month-by-month projection
 of revenue, expenses, net income, and ending cash position. Always be explicit
 about assumptions — never bury a guess inside a number.
 
+### Known inputs for Yarddogs (confirmed 2026-09-09 — use unless user updates)
+- Accounting basis: **cash**
+- Monthly contract book: **$19,200/mo** (13+ locked-rate accounts incl. Laureate)
+- Crew: reduced by one person Sep 2026; crew rate now **~$33/hr** (was $48/hr)
+- Fully-loaded monthly payroll estimate: **~$11,700** (was ~$15,400)
+- ASA Construction $8,158 A/R: **written off** — exclude from all forecasts
+- Cash-basis rhythm: contract checks land days 10–20; payroll bi-weekly;
+  judge any month only after day ~20
+
 ### Inputs to gather (ask the user once if not in context)
 - **Accounting basis** of the QB account (`cash` or `accrual`). Critical:
   cash basis means open A/R is unrecognized revenue waiting to land.
