@@ -128,6 +128,23 @@ from the bank export instead.
   statement balance; ask for the credit limit and current statement balance
   if not in context.
 
+### Bank account registers (0514 checking, 0535 payroll)
+- Histories in `qb-dashboard-output/acct-0514-history.csv` and
+  `acct-0535-history.csv` (date, description, debit, credit, status,
+  bank_balance, bank_class, kind). Both carry the bank's running balance —
+  **use that as the real cash position, not QB's "Checking" account.**
+- Transfer descriptions are "Transfer From ####" / "Transfer To ####";
+  match the 4-digit tail to the account map.
+- **"Intuit" credits into 0514 are QuickBooks Payments customer deposits
+  (revenue), not payroll.** "Intuit" debits out of 0535 are payroll.
+- LOC draw matching: pair each 7903 "Principal Advance" with a same-amount
+  "Transfer From 7903" credit in 0514/0535 within ±2 days; the unmatched
+  remainder is the draw volume that left the business (5875 or other).
+- Same append-only procedure as the LOC CSV when new exports arrive.
+- Known as of Nov 6 2026: 0535 is ~85% LOC-funded; ~$35K of LOC draws
+  since Jul 1 did not land in 0514/0535; QB Undeposited Funds ($71.7K) is an
+  unmatched-deposit backlog, not real cash.
+
 ### Inputs to gather (ask the user once if not in context)
 - **Accounting basis** of the QB account (`cash` or `accrual`). Critical:
   cash basis means open A/R is unrecognized revenue waiting to land.

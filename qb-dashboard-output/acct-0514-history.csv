@@ -1,0 +1,2482 @@
+date,description,debit,credit,status,bank_balance,bank_class,kind
+2025-08-01,Regular Deposit,,240.0,Posted,240.0,Income,DEPOSIT
+2025-08-04,Sunoco,9.04,,Posted,230.96,Fast Food,SPEND
+2025-08-05,Regular Deposit,,150.0,Posted,380.96,Income,DEPOSIT
+2025-08-05,Luckie's PIN West Columbia Sc,107.0,,Posted,273.96,Shopping,SPEND
+2025-08-06,True Tires,156.6,,Posted,117.36,Service & Parts,SPEND
+2025-08-07,Transfer To 0535,100.0,,Posted,17.36,Transfer,PAYROLL_0535
+2025-08-08,Transfer From 2869,,500.0,Posted,517.36,Transfer,TRANSFER_OTHER
+2025-08-11,True Tires,162.0,,Posted,355.36,Service & Parts,SPEND
+2025-08-13,Pinestraw Place,33.71,,Posted,321.65,Uncategorized,SPEND
+2025-08-13,Harland Clarke,29.5,,Posted,292.15,Business Services,SPEND
+2025-08-15,Autobooks Funds Disbursement,,105.0,Posted,522.15,Books,OTHER_IN
+2025-08-15,BP Gas,19.45,,Posted,502.7,Gas,SPEND
+2025-08-15,Autobooks Inc Web,3.67,,Posted,499.03,Books,SPEND
+2025-08-15,Regular Deposit,,125.0,Posted,417.15,Income,DEPOSIT
+2025-08-18,Autobooks Funds Disbursement,,75.0,Posted,574.03,Books,OTHER_IN
+2025-08-18,Circle K,39.85,,Posted,534.18,Gas,SPEND
+2025-08-18,The Home Depot,83.75,,Posted,450.43,Home Improvement,SPEND
+2025-08-18,Autobooks Inc Web,2.62,,Posted,447.81,Books,SPEND
+2025-08-19,Autobooks Funds Disbursement,,75.0,Posted,522.81,Books,OTHER_IN
+2025-08-19,Pinestraw Place,189.18,,Posted,333.63,Shopping,SPEND
+2025-08-19,Autobooks Inc Web,2.61,,Posted,331.02,Books,SPEND
+2025-08-20,Walmart,34.61,,Posted,296.41,Shopping,SPEND
+2025-08-20,Walmart,100.0,,Posted,196.41,Shopping,SPEND
+2025-08-21,A Z Lawn Mower,35.44,,Posted,160.97,Lawn & Garden,SPEND
+2025-08-22,Autobooks Funds Disbursement,,50.0,Posted,210.97,Books,OTHER_IN
+2025-08-22,Lowe's,15.08,,Posted,195.89,Home Improvement,SPEND
+2025-08-22,Autobooks Inc Web,1.74,,Posted,194.15,Books,SPEND
+2025-08-25,Autobooks Funds Disbursement,,100.0,Posted,294.15,Books,OTHER_IN
+2025-08-25,Shell,24.46,,Posted,269.69,Gas,SPEND
+2025-08-25,Murphy USA,28.41,,Posted,241.28,Gas,SPEND
+2025-08-25,Murphy USA,100.0,,Posted,141.28,Gas,SPEND
+2025-08-25,Autobooks Inc Web,3.48,,Posted,137.8,Books,SPEND
+2025-08-26,United Community Bank Rebate,,0.24,Posted,1636.04,Bonus,OTHER_IN
+2025-08-26,Transfer From 5875,,1363.0,Posted,1635.8,Transfer,PERSONAL_5875
+2025-08-26,Circle K,9.88,,Posted,1626.16,Fast Food,SPEND
+2025-08-26,Autobooks Inc Web,4.71,,Posted,1621.45,Books,SPEND
+2025-08-26,Autobooks Funds Disbursement,,135.0,Posted,272.8,Books,OTHER_IN
+2025-08-27,Autobooks Funds Disbursement,,190.0,Posted,1811.45,Books,OTHER_IN
+2025-08-27,Murphy USA,20.75,,Posted,1790.7,Gas,SPEND
+2025-08-27,Lowe's,27.78,,Posted,1762.92,Home Improvement,SPEND
+2025-08-27,Autobooks Inc Web R,6.63,,Posted,1756.29,Books,SPEND
+2025-08-28,Autobooks Funds Disbursement,,200.0,Posted,1956.29,Books,OTHER_IN
+2025-08-28,Lowe's,17.19,,Posted,1939.1,Home Improvement,SPEND
+2025-08-28,Dog Food Center West,100.15,,Posted,1838.95,Food & Dining,SPEND
+2025-08-28,Dog Food Center West,300.46,,Posted,1538.49,Food & Dining,SPEND
+2025-08-28,Autobooks Inc Web,6.98,,Posted,1531.51,Books,SPEND
+2025-08-29,Autobooks Funds Disbursement,,160.0,Posted,1741.51,Books,OTHER_IN
+2025-08-29,The Home Depot,59.01,,Posted,1682.5,Home Improvement,SPEND
+2025-08-29,Autobooks Inc Web,5.58,,Posted,1676.92,Books,SPEND
+2025-08-29,Regular Deposit,,50.0,Posted,1581.51,Income,DEPOSIT
+2025-08-29,Transfer To 0535,1250.0,,Posted,426.92,Transfer,PAYROLL_0535
+2025-09-02,Autobooks Funds Disbursement,,1279.14,Posted,1706.06,Books,OTHER_IN
+2025-09-02,QuikTrip,4.82,,Posted,1701.24,Fast Food,SPEND
+2025-09-02,Shell,64.0,,Posted,1637.24,Gas,SPEND
+2025-09-02,Walmart,100.0,,Posted,1537.24,Shopping,SPEND
+2025-09-02,Dog Food Center West,100.15,,Posted,1437.09,Food & Dining,SPEND
+2025-09-02,Autobooks Inc Web,22.68,,Posted,1414.41,Books,SPEND
+2025-09-02,Autobooks Inc Web,44.65,,Posted,1369.76,Books,SPEND
+2025-09-02,Transfer To 0535,850.0,,Posted,519.76,Transfer,PAYROLL_0535
+2025-09-03,Autobooks Funds Disbursement,,650.0,Posted,1169.76,Books,OTHER_IN
+2025-09-03,King Fuel,75.0,,Posted,1094.76,Gas,SPEND
+2025-09-03,Transfer To 0535,600.0,,Posted,494.76,Transfer,PAYROLL_0535
+2025-09-04,Autobooks Funds Disbursement,,1255.0,Posted,1749.76,Books,OTHER_IN
+2025-09-04,Autobooks Inc Web Nyhg,17.02,,Posted,1732.74,Books,SPEND
+2025-09-04,Transfer To 0535,1200.0,,Posted,532.74,Transfer,PAYROLL_0535
+2025-09-05,Autobooks Funds Disbursement,,100.0,Posted,632.74,Books,OTHER_IN
+2025-09-05,Walmart,19.53,,Posted,613.21,Shopping,SPEND
+2025-09-05,Dog Food Center West,133.54,,Posted,479.67,Food & Dining,SPEND
+2025-09-05,Check,160.0,,Posted,319.67,Check,SPEND
+2025-09-05,Autobooks Inc Web,3.48,,Posted,316.19,Books,SPEND
+2025-09-08,Autobooks Funds Disbursement,,125.0,Posted,441.19,Books,OTHER_IN
+2025-09-08,Murphy USA,31.81,,Posted,409.38,Gas,SPEND
+2025-09-08,Sun Solutions West,129.42,,Posted,279.96,Uncategorized,SPEND
+2025-09-08,Autobooks Inc Web,2.49,,Posted,277.47,Books,SPEND
+2025-09-09,Autobooks Funds Disbursement,,150.0,Posted,427.47,Books,OTHER_IN
+2025-09-09,Autobooks Inc Web Qyg,5.22,,Posted,422.25,Books,SPEND
+2025-09-10,Thompson Rental,32.09,,Posted,390.16,Uncategorized,SPEND
+2025-09-11,Murphy USA,46.03,,Posted,344.13,Gas,SPEND
+2025-09-12,Autobooks Funds Disbursement,,110.0,Posted,454.13,Books,OTHER_IN
+2025-09-12,Murphy USA,4.09,,Posted,450.04,Fast Food,SPEND
+2025-09-12,Murphy USA,16.31,,Posted,433.73,Fast Food,SPEND
+2025-09-12,Autobooks Inc Web Qyw,3.83,,Posted,429.9,Books,SPEND
+2025-09-15,Transfer From 0535,,900.0,Posted,2204.9,Transfer,PAYROLL_0535
+2025-09-15,Murphy USA,25.0,,Posted,2179.9,Gas,SPEND
+2025-09-15,Circle K,62.09,,Posted,2117.81,Gas,SPEND
+2025-09-15,Transfer From 5875,,650.0,Posted,1304.9,Transfer,PERSONAL_5875
+2025-09-15,Autobooks Funds Disbursement,,225.0,Posted,654.9,Books,OTHER_IN
+2025-09-15,Bb's Auto & Pelion Sc,2094.18,,Posted,23.63,Uncategorized,SPEND
+2025-09-15,Autobooks Inc Web,7.85,,Posted,15.78,Books,SPEND
+2025-09-16,Transfer From 5875,,1200.0,Posted,1855.78,Transfer,PERSONAL_5875
+2025-09-16,Murphy USA,3.4,,Posted,1852.38,Fast Food,SPEND
+2025-09-16,Autobooks Inc Web,8.37,,Posted,1844.01,Books,SPEND
+2025-09-16,Transfer From 5875,,250.0,Posted,655.78,Transfer,PERSONAL_5875
+2025-09-16,Autobooks Funds Disbursement,,240.0,Posted,405.78,Books,OTHER_IN
+2025-09-16,Transfer From 5875,,150.0,Posted,165.78,Transfer,PERSONAL_5875
+2025-09-17,Circle K,10.33,,Posted,1833.68,Fast Food,SPEND
+2025-09-17,Equip Pro Rental West,295.65,,Posted,1538.03,Home Improvement,SPEND
+2025-09-17,Equip Pro Rental West,1330.42,,Posted,207.61,Uncategorized,SPEND
+2025-09-18,Transfer From 5875,,100.0,Posted,367.61,Transfer,PERSONAL_5875
+2025-09-18,Smith Turf & Irr,59.62,,Posted,307.99,Uncategorized,SPEND
+2025-09-18,Autobooks Funds Disbursement,,60.0,Posted,267.61,Books,OTHER_IN
+2025-09-18,Equip Pro Rental West,82.13,,Posted,225.86,Uncategorized,SPEND
+2025-09-18,Carolina Power,147.97,,Posted,77.89,Uncategorized,SPEND
+2025-09-18,Autobooks Inc Web,2.09,,Posted,75.8,Books,SPEND
+2025-09-19,Autobooks Funds Disbursement,,70.0,Posted,195.8,Books,OTHER_IN
+2025-09-19,Ace Hardware,19.25,,Posted,176.55,Home Improvement,SPEND
+2025-09-19,Autobooks Inc Web,2.44,,Posted,174.11,Books,SPEND
+2025-09-19,Regular Deposit,,50.0,Posted,125.8,Income,DEPOSIT
+2025-09-22,Transfer From 5875,,2520.0,Posted,2744.11,Transfer,PERSONAL_5875
+2025-09-22,Shell,2.39,,Posted,2741.72,Fast Food,SPEND
+2025-09-22,Service,3.0,,Posted,2738.72,Uncategorized,SPEND
+2025-09-22,ExxonMobil,8.0,,Posted,2730.72,Fast Food,SPEND
+2025-09-22,AutoZone,25.67,,Posted,2705.05,Service & Parts,SPEND
+2025-09-22,Monterrey Mexica,32.13,,Posted,2672.92,Restaurants,SPEND
+2025-09-22,Murphy USA,39.38,,Posted,2633.54,Gas,SPEND
+2025-09-22,Lowe's,44.87,,Posted,2588.67,Home Improvement,SPEND
+2025-09-22,Dog Food Center West,66.77,,Posted,2521.9,Food & Dining,SPEND
+2025-09-22,Dog Food Center West,131.81,,Posted,2390.09,Food & Dining,SPEND
+2025-09-22,Bb's Auto & Pelion Sc,1081.04,,Posted,1309.05,Uncategorized,SPEND
+2025-09-22,Autobooks Inc Web,1.74,,Posted,1307.31,Books,SPEND
+2025-09-22,Transfer To 5875,500.0,,Posted,807.31,Transfer,PERSONAL_5875
+2025-09-22,Autobooks Funds Disbursement,,50.0,Posted,224.11,Books,OTHER_IN
+2025-09-22,Transfer To 5875,650.0,,Posted,157.31,Transfer,PERSONAL_5875
+2025-09-23,United Community Bank Rebate,,0.02,Posted,1817.33,Bonus,OTHER_IN
+2025-09-23,Transfer From 2869,,1000.0,Posted,1817.31,Transfer,TRANSFER_OTHER
+2025-09-23,Murphy USA,12.68,,Posted,1804.65,Fast Food,SPEND
+2025-09-23,The Home Depot,17.06,,Posted,1787.59,Home Improvement,SPEND
+2025-09-23,Lowe's,192.41,,Posted,1595.18,Home Improvement,SPEND
+2025-09-23,Lowe's,329.0,,Posted,1266.18,Home Improvement,SPEND
+2025-09-23,Autobooks Funds Disbursement,,410.0,Posted,817.31,Books,OTHER_IN
+2025-09-23,The Home Depot,460.19,,Posted,805.99,Home Improvement,SPEND
+2025-09-23,Autobooks Inc Web,3.48,,Posted,802.51,Books,SPEND
+2025-09-23,Autobooks Inc Web,3.49,,Posted,799.02,Books,SPEND
+2025-09-23,Autobooks Inc Web,7.32,,Posted,791.7,Books,SPEND
+2025-09-23,Transfer From 5875,,250.0,Posted,407.31,Transfer,PERSONAL_5875
+2025-09-24,Autobooks Funds Disbursement,,125.0,Posted,916.71,Books,OTHER_IN
+2025-09-24,Circle K,12.11,,Posted,904.6,Fast Food,SPEND
+2025-09-24,Circle K,18.28,,Posted,886.32,Fast Food,SPEND
+2025-09-24,Account Verification Deposit,,0.01,Posted,791.71,Transfer,DEPOSIT
+2025-09-24,Love's Travel Stops,115.28,,Posted,771.04,Gas,SPEND
+2025-09-24,Lowe's,246.53,,Posted,524.51,Home Improvement,SPEND
+2025-09-24,Autobooks Inc Web,2.49,,Posted,522.02,Books,SPEND
+2025-09-25,Transfer From 5875,,300.0,Posted,912.02,Transfer,PERSONAL_5875
+2025-09-25,Service,3.0,,Posted,909.02,Gas,SPEND
+2025-09-25,Luckie's PIN West Columbia Sc,5.35,,Posted,903.67,Uncategorized,SPEND
+2025-09-25,Rushs West,26.51,,Posted,877.16,Food & Dining,SPEND
+2025-09-25,San Jose Mexican West,45.0,,Posted,832.16,Uncategorized,SPEND
+2025-09-25,Ace Hardware,51.97,,Posted,780.19,Home Improvement,SPEND
+2025-09-25,Transfer From 5875,,50.0,Posted,612.02,Transfer,PERSONAL_5875
+2025-09-25,Transfer From 0535,,40.0,Posted,562.02,Transfer,PAYROLL_0535
+2025-09-25,Lowe's,319.4,,Posted,460.79,Home Improvement,SPEND
+2025-09-25,Nimmer Turf,363.83,,Posted,96.96,Uncategorized,SPEND
+2025-09-26,Transfer From 2869,,319.0,Posted,415.96,Transfer,TRANSFER_OTHER
+2025-09-26,Circle K,26.74,,Posted,389.22,Gas,SPEND
+2025-09-29,United Community Bank Rebate,,0.27,Posted,999.66,Bonus,OTHER_IN
+2025-09-29,United Community Bank Rebate,,0.17,Posted,999.39,Bonus,OTHER_IN
+2025-09-29,Transfer From 0535,,350.0,Posted,999.22,Transfer,PAYROLL_0535
+2025-09-29,Smith Turf & Irr,9.91,,Posted,989.75,Uncategorized,SPEND
+2025-09-29,Shell,16.59,,Posted,973.16,Fast Food,SPEND
+2025-09-29,Bojangles,26.77,,Posted,946.39,Fast Food,SPEND
+2025-09-29,Autobooks Funds Disbursement,,260.0,Posted,649.22,Books,OTHER_IN
+2025-09-29,United Community Bank Withdrawal,300.0,,Posted,646.39,Cash,SPEND
+2025-09-29,United Community Bank Withdrawal,300.0,,Posted,346.39,Cash,SPEND
+2025-09-29,Autobooks Inc Web,9.07,,Posted,337.32,Books,SPEND
+2025-09-30,Autobooks Funds Disbursement,,730.0,Posted,1117.32,Books,OTHER_IN
+2025-09-30,Dog Food Center West,200.3,,Posted,917.02,Food & Dining,SPEND
+2025-09-30,Autobooks Inc Web,0.75,,Posted,916.27,Books,SPEND
+2025-09-30,Autobooks Inc Web,1.74,,Posted,914.53,Books,SPEND
+2025-09-30,Autobooks Inc Web,21.1,,Posted,893.43,Books,SPEND
+2025-09-30,Transfer To 0535,80.0,,Posted,813.43,Transfer,PAYROLL_0535
+2025-09-30,Transfer To 0535,200.0,,Posted,613.43,Transfer,PAYROLL_0535
+2025-09-30,Statement Service Fee,3.0,,Posted,610.43,Service Fee,SPEND
+2025-09-30,Regular Deposit,,50.0,Posted,387.32,Income,DEPOSIT
+2025-10-01,United Community Bank Rebate,,1.07,Posted,736.5,Bonus,OTHER_IN
+2025-10-01,Autobooks Funds Disbursement,,125.0,Posted,735.43,Books,OTHER_IN
+2025-10-01,Love's Travel Stops,6.46,,Posted,730.04,Fast Food,SPEND
+2025-10-01,Smith Turf & Irr,14.91,,Posted,715.13,Lawn & Garden,SPEND
+2025-10-01,Murphy,28.26,,Posted,686.87,Gas,SPEND
+2025-10-01,Shell,38.49,,Posted,648.38,Gas,SPEND
+2025-10-01,A Z Lawn Mower,97.71,,Posted,550.67,Lawn & Garden,SPEND
+2025-10-01,Murphy,100.0,,Posted,450.67,Gas,SPEND
+2025-10-01,Autobooks Inc Web,4.36,,Posted,446.31,Books,SPEND
+2025-10-02,A Z Lawn Mower,269.99,,Posted,176.32,Lawn & Garden,SPEND
+2025-10-03,Columbiaprop Vendor Payment,,235.0,Posted,411.32,Income,CUSTOMER_PAYMENT
+2025-10-03,Circle K,10.76,,Posted,400.56,Fast Food,SPEND
+2025-10-03,El Jimador,30.74,,Posted,369.82,Restaurants,SPEND
+2025-10-03,Nte,134.97,,Posted,234.85,Uncategorized,SPEND
+2025-10-06,Transfer From 2869,,250.0,Posted,884.85,Transfer,TRANSFER_OTHER
+2025-10-06,Service,3.0,,Posted,881.85,Gas,SPEND
+2025-10-06,QuikTrip,8.98,,Posted,872.87,Fast Food,SPEND
+2025-10-06,Walmart,20.13,,Posted,852.74,Shopping,SPEND
+2025-10-06,Lowe's,38.16,,Posted,814.58,Home Improvement,SPEND
+2025-10-06,Ace Hardware,58.84,,Posted,755.74,Home Improvement,SPEND
+2025-10-06,United Community Bank Withdrawal,120.0,,Posted,635.74,Cash,SPEND
+2025-10-06,Autobooks Funds Disbursement,,100.0,Posted,634.85,Books,OTHER_IN
+2025-10-06,Autobooks Inc Web,3.48,,Posted,632.26,Books,SPEND
+2025-10-06,Regular Deposit,,300.0,Posted,534.85,Income,DEPOSIT
+2025-10-07,Autobooks Funds Disbursement,,470.0,Posted,1102.26,Books,OTHER_IN
+2025-10-07,Tractor Supply,4.94,,Posted,1097.32,Shopping,SPEND
+2025-10-07,King Fuel,15.11,,Posted,1082.21,Fast Food,SPEND
+2025-10-07,Dog Food Center West,33.38,,Posted,1048.83,Food & Dining,SPEND
+2025-10-07,Tractor Supply,58.83,,Posted,990.0,Shopping,SPEND
+2025-10-07,Dog Food Center West,100.15,,Posted,889.85,Food & Dining,SPEND
+2025-10-07,Autobooks Inc Web,3.24,,Posted,886.61,Books,SPEND
+2025-10-07,Autobooks Inc Web,4.36,,Posted,882.25,Books,SPEND
+2025-10-07,Autobooks Inc Web Xvyfk,5.06,,Posted,877.19,Books,SPEND
+2025-10-08,Autobooks Funds Disbursement,,235.0,Posted,1112.19,Books,OTHER_IN
+2025-10-08,Service,3.0,,Posted,1109.19,Uncategorized,SPEND
+2025-10-08,BP Gas,16.51,,Posted,1092.68,Fast Food,SPEND
+2025-10-08,Autobooks Inc Web,8.2,,Posted,1084.48,Books,SPEND
+2025-10-08,Transfer To 0535,1000.0,,Posted,84.48,Transfer,PAYROLL_0535
+2025-10-09,Transfer From 0535,,500.0,Posted,974.48,Transfer,PAYROLL_0535
+2025-10-09,Shell,25.14,,Posted,949.34,Gas,SPEND
+2025-10-09,Lowe's,64.58,,Posted,884.76,Home Improvement,SPEND
+2025-10-09,Lowe's,98.26,,Posted,786.5,Home Improvement,SPEND
+2025-10-09,Shell,122.46,,Posted,664.04,Gas,SPEND
+2025-10-09,Columbiaprop Vendor Payment,,390.0,Posted,474.48,Income,CUSTOMER_PAYMENT
+2025-10-09,Equip Pro Rental West,257.32,,Posted,406.72,Uncategorized,SPEND
+2025-10-09,Lowe's,274.58,,Posted,132.14,Home Improvement,SPEND
+2025-10-10,Autobooks Funds Disbursement,,650.0,Posted,782.14,Books,OTHER_IN
+2025-10-10,Murphy USA,7.92,,Posted,774.22,Fast Food,SPEND
+2025-10-10,Circle K,8.61,,Posted,765.61,Fast Food,SPEND
+2025-10-10,Brothers Pelio,32.68,,Posted,732.93,Gas,SPEND
+2025-10-10,Murphy USA,100.0,,Posted,632.93,Gas,SPEND
+2025-10-10,Autobooks Inc Web,20.82,,Posted,612.11,Books,SPEND
+2025-10-14,United Community Paypvdpmt,,125.0,Posted,854.11,Income,OTHER_IN
+2025-10-14,Service,3.0,,Posted,851.11,Gas,SPEND
+2025-10-14,Murphy USA,8.95,,Posted,842.16,Fast Food,SPEND
+2025-10-14,Forest Buffet,17.5,,Posted,824.66,Restaurants,SPEND
+2025-10-14,W P Law Inc,30.35,,Posted,794.31,Legal,SPEND
+2025-10-14,Shell,47.26,,Posted,747.05,Gas,SPEND
+2025-10-14,Transfer From 0535,,100.0,Posted,729.11,Transfer,PAYROLL_0535
+2025-10-14,Smith Turf & Irr,65.92,,Posted,681.13,Uncategorized,SPEND
+2025-10-14,Transfer From 0535,,17.0,Posted,629.11,Transfer,PAYROLL_0535
+2025-10-14,Carolina Wings,120.0,,Posted,561.13,Uncategorized,SPEND
+2025-10-14,United Community Bank Withdrawal,400.0,,Posted,161.13,Cash,SPEND
+2025-10-15,Autobooks Funds Disbursement,,580.0,Posted,741.13,Books,OTHER_IN
+2025-10-15,Oracl Waffle Hou,28.08,,Posted,713.05,Uncategorized,SPEND
+2025-10-15,Autobooks Inc Web,2.09,,Posted,710.96,Books,SPEND
+2025-10-15,Autobooks Inc Web,8.3,,Posted,702.66,Books,SPEND
+2025-10-16,Autobooks Funds Disbursement,,267.0,Posted,969.66,Books,OTHER_IN
+2025-10-16,Bojangles,38.08,,Posted,931.58,Fast Food,SPEND
+2025-10-16,Autobooks Inc Web,2.02,,Posted,929.56,Books,SPEND
+2025-10-17,Autobooks Funds Disbursement,,75.0,Posted,1129.56,Books,OTHER_IN
+2025-10-17,Circle K,1.5,,Posted,1128.06,Fast Food,SPEND
+2025-10-17,Murphy USA,34.69,,Posted,1093.37,Gas,SPEND
+2025-10-17,Regular Deposit,,125.0,Posted,1054.56,Income,DEPOSIT
+2025-10-17,Murphy USA,100.0,,Posted,993.37,Gas,SPEND
+2025-10-17,Check,500.0,,Posted,493.37,Check,SPEND
+2025-10-17,Autobooks Inc Web Hyrsk,0.75,,Posted,492.62,Books,SPEND
+2025-10-20,United Community Bank Rebate,,1.52,Posted,494.14,Bonus,OTHER_IN
+2025-10-20,Circle K,1.09,,Posted,493.05,Fast Food,SPEND
+2025-10-21,Bill.com,,825.0,Posted,1393.05,Transfer,OTHER_IN
+2025-10-21,Service,3.0,,Posted,1390.05,Uncategorized,SPEND
+2025-10-21,BP Gas,3.76,,Posted,1386.29,Fast Food,SPEND
+2025-10-21,Rush's,27.33,,Posted,1358.96,Fast Food,SPEND
+2025-10-21,Autobooks Inc Web,2.62,,Posted,1356.34,Books,SPEND
+2025-10-21,Autobooks Funds Disbursement,,75.0,Posted,568.05,Books,OTHER_IN
+2025-10-22,United Community Bank Rebate,,0.01,Posted,1556.35,Bonus,OTHER_IN
+2025-10-22,Autobooks Funds Disbursement,,200.0,Posted,1556.34,Books,OTHER_IN
+2025-10-22,BP Gas,6.5,,Posted,1549.85,Fast Food,SPEND
+2025-10-22,San Jose,55.49,,Posted,1494.36,Uncategorized,SPEND
+2025-10-22,Ace Hardware,74.1,,Posted,1420.26,Home Improvement,SPEND
+2025-10-22,Dog Food Center West,200.3,,Posted,1219.96,Food & Dining,SPEND
+2025-10-22,Dog Food Center West,350.53,,Posted,869.43,Food & Dining,SPEND
+2025-10-22,Autobooks Inc Web,6.98,,Posted,862.45,Books,SPEND
+2025-10-23,Columbiaprop Vendor Payment,,525.0,Posted,2402.45,Income,CUSTOMER_PAYMENT
+2025-10-23,Dog Food Center West,75.12,,Posted,2327.33,Food & Dining,SPEND
+2025-10-23,A Z Lawn Mower,82.65,,Posted,2244.68,Lawn & Garden,SPEND
+2025-10-23,Food Lion,89.29,,Posted,2155.39,Groceries,SPEND
+2025-10-23,Circle K,100.0,,Posted,2055.39,Gas,SPEND
+2025-10-23,Autobooks Inc Web,6.88,,Posted,2048.51,Books,SPEND
+2025-10-23,United Community Paypvdpmt,,475.0,Posted,1877.45,Income,OTHER_IN
+2025-10-23,Autobooks Funds Disbursement,,340.0,Posted,1402.45,Books,OTHER_IN
+2025-10-23,United Community Paypvdpmt,,125.0,Posted,1062.45,Income,OTHER_IN
+2025-10-23,United Community Paypvdpmt,,75.0,Posted,937.45,Income,OTHER_IN
+2025-10-23,Transfer To 0535,1200.0,,Posted,848.51,Transfer,PAYROLL_0535
+2025-10-24,Autobooks Funds Disbursement,,400.0,Posted,1248.51,Books,OTHER_IN
+2025-10-24,Circle K,8.03,,Posted,1240.48,Fast Food,SPEND
+2025-10-24,Circle K,15.05,,Posted,1225.43,Fast Food,SPEND
+2025-10-24,Arby's,24.36,,Posted,1201.07,Fast Food,SPEND
+2025-10-24,Flaming Grill Su,43.67,,Posted,1157.4,Restaurants,SPEND
+2025-10-24,Circle K,53.0,,Posted,1104.4,Gas,SPEND
+2025-10-24,W P Law Inc,303.46,,Posted,800.94,Legal,SPEND
+2025-10-24,Autobooks Inc Web,4.0,,Posted,796.94,Books,SPEND
+2025-10-24,Transfer To 0535,300.0,,Posted,496.94,Transfer,PAYROLL_0535
+2025-10-27,United Community Bank Rebate,,0.17,Posted,8540.55,Bonus,OTHER_IN
+2025-10-27,Bill.com,,7503.44,Posted,8540.38,Transfer,OTHER_IN
+2025-10-27,Transfer To 2869,7188.0,,Posted,1352.55,Transfer,TRANSFER_OTHER
+2025-10-27,Shell,16.55,,Posted,1336.0,Fast Food,SPEND
+2025-10-27,Bojangles,25.49,,Posted,1310.51,Fast Food,SPEND
+2025-10-27,Tractor Supply,47.3,,Posted,1263.21,Shopping,SPEND
+2025-10-27,Shell,49.2,,Posted,1214.01,Gas,SPEND
+2025-10-27,San Jose,51.04,,Posted,1162.97,Uncategorized,SPEND
+2025-10-27,Transfer From 0535,,500.0,Posted,1036.94,Transfer,PAYROLL_0535
+2025-10-27,Autobooks Funds Disbursement,,40.0,Posted,536.94,Books,OTHER_IN
+2025-10-27,Bb's Auto & Pelion Sc,775.91,,Posted,387.06,Auto & Transport,SPEND
+2025-10-27,Autobooks Inc Web,1.4,,Posted,385.66,Books,SPEND
+2025-10-28,Autobooks Funds Disbursement,,1313.07,Posted,1698.73,Books,OTHER_IN
+2025-10-28,Double B Hardware,9.3,,Posted,1689.43,Home Improvement,SPEND
+2025-10-28,Autobooks Inc Web,0.75,,Posted,1688.68,Books,SPEND
+2025-10-28,Autobooks Inc Web,43.2,,Posted,1645.48,Books,SPEND
+2025-10-29,United Community Bank Rebate,,1.02,Posted,2980.0,Bonus,OTHER_IN
+2025-10-29,Autobooks Funds Disbursement,,60.0,Posted,2978.98,Books,OTHER_IN
+2025-10-29,Autobooks Inc Web Z,2.09,,Posted,2977.91,Books,SPEND
+2025-10-29,Regular Deposit,,1273.5,Posted,2918.98,Income,DEPOSIT
+2025-10-30,Check,2500.0,,Posted,477.91,Check,SPEND
+2025-10-31,Circle K,8.53,,Posted,469.38,Fast Food,SPEND
+2025-10-31,QuikTrip,11.75,,Posted,457.63,Fast Food,SPEND
+2025-10-31,King Fuel,45.73,,Posted,411.9,Gas,SPEND
+2025-10-31,QuikTrip,81.71,,Posted,330.19,Gas,SPEND
+2025-10-31,Statement Service Fee,3.0,,Posted,327.19,Service Fee,SPEND
+2025-11-03,Autobooks Funds Disbursement,,150.0,Posted,477.19,Books,OTHER_IN
+2025-11-03,Millennium Buffe,17.0,,Posted,460.19,Uncategorized,SPEND
+2025-11-03,Food Lion,30.02,,Posted,430.17,Groceries,SPEND
+2025-11-03,San Jose Mexican,37.92,,Posted,392.25,Uncategorized,SPEND
+2025-11-03,Love's Travel Stops,117.27,,Posted,274.98,Gas,SPEND
+2025-11-03,Autobooks Inc Web,5.22,,Posted,269.76,Books,SPEND
+2025-11-03,Transfer To 0535,100.0,,Posted,169.76,Transfer,PAYROLL_0535
+2025-11-04,Autobooks Funds Disbursement,,355.0,Posted,524.76,Books,OTHER_IN
+2025-11-04,7-Eleven,14.16,,Posted,510.6,Fast Food,SPEND
+2025-11-04,Dog Food Center West,35.56,,Posted,475.04,Food & Dining,SPEND
+2025-11-04,Autobooks Inc Web,4.79,,Posted,470.25,Books,SPEND
+2025-11-05,Bill.com,,202.5,Posted,822.75,Transfer,OTHER_IN
+2025-11-05,Murphy USA,12.71,,Posted,810.04,Fast Food,SPEND
+2025-11-05,Murphy USA,20.58,,Posted,789.46,Gas,SPEND
+2025-11-05,Autobooks Inc Web,5.24,,Posted,784.22,Books,SPEND
+2025-11-05,Autobooks Funds Disbursement,,150.0,Posted,620.25,Books,OTHER_IN
+2025-11-06,Walmart,64.24,,Posted,719.98,Shopping,SPEND
+2025-11-06,Tractor Supply,192.58,,Posted,527.4,Shopping,SPEND
+2025-11-07,Little China Buf,16.98,,Posted,510.42,Uncategorized,SPEND
+2025-11-07,Carolina Power,21.4,,Posted,489.02,Uncategorized,SPEND
+2025-11-07,Disc Tires,32.0,,Posted,457.02,Service & Parts,SPEND
+2025-11-10,Bill.com,,202.5,Posted,3806.02,Transfer,OTHER_IN
+2025-11-10,Circle K,12.82,,Posted,3793.2,Fast Food,SPEND
+2025-11-10,Murphy USA,20.12,,Posted,3773.08,Gas,SPEND
+2025-11-10,Circle K,100.0,,Posted,3673.08,Gas,SPEND
+2025-11-10,Transfer From 0535,,90.0,Posted,3603.52,Transfer,PAYROLL_0535
+2025-11-10,Regular Deposit,,3056.5,Posted,3513.52,Income,DEPOSIT
+2025-11-10,United Community Bank Withdrawal,400.0,,Posted,3273.08,Cash,SPEND
+2025-11-12,United Community Bank Rebate,,0.13,Posted,5823.21,Bonus,OTHER_IN
+2025-11-12,Transfer From 5875,,2500.0,Posted,5823.08,Transfer,PERSONAL_5875
+2025-11-12,Shell,8.74,,Posted,5814.47,Fast Food,SPEND
+2025-11-12,Circle K,9.54,,Posted,5804.93,Fast Food,SPEND
+2025-11-12,Circle K,11.4,,Posted,5793.53,Fast Food,SPEND
+2025-11-12,Murphy USA,22.07,,Posted,5771.46,Gas,SPEND
+2025-11-12,Murphy USA,42.6,,Posted,5728.86,Gas,SPEND
+2025-11-12,Smith Turf & Irr,48.96,,Posted,5679.9,Uncategorized,SPEND
+2025-11-12,Dog Food Center West,150.23,,Posted,5529.67,Food & Dining,SPEND
+2025-11-12,Autobooks Inc Web Zy,1.74,,Posted,5527.93,Books,SPEND
+2025-11-12,Autobooks Funds Disbursement,,50.0,Posted,3323.08,Books,OTHER_IN
+2025-11-12,Transfer To 5875,2500.0,,Posted,3027.93,Transfer,PERSONAL_5875
+2025-11-12,Transfer To 0535,2500.0,,Posted,527.93,Transfer,PAYROLL_0535
+2025-11-13,Autobooks Funds Disbursement,,270.0,Posted,997.93,Books,OTHER_IN
+2025-11-13,Autobooks Inc Web,9.42,,Posted,988.51,Books,SPEND
+2025-11-13,Regular Deposit,,200.0,Posted,727.93,Income,DEPOSIT
+2025-11-13,Transfer To 0535,500.0,,Posted,488.51,Transfer,PAYROLL_0535
+2025-11-13,Check #131,300.0,,Posted,188.51,Check,SPEND
+2025-11-14,United Community Bank Rebate,,0.11,Posted,1358.81,Bonus,OTHER_IN
+2025-11-14,United Community Bank Rebate,,0.1,Posted,1358.7,Bonus,OTHER_IN
+2025-11-14,United Community Bank Rebate,,0.09,Posted,1358.6,Bonus,OTHER_IN
+2025-11-14,Autobooks Funds Disbursement,,900.0,Posted,1358.51,Books,OTHER_IN
+2025-11-14,San Jose,67.26,,Posted,1291.55,Restaurants,SPEND
+2025-11-14,Autobooks Inc Web,29.54,,Posted,1262.01,Books,SPEND
+2025-11-14,Transfer To 0535,650.0,,Posted,612.01,Transfer,PAYROLL_0535
+2025-11-14,Columbiaprop Vendor Payment,,145.0,Posted,458.51,Income,CUSTOMER_PAYMENT
+2025-11-14,United Community Paypvdpmt,,125.0,Posted,313.51,Income,OTHER_IN
+2025-11-17,Bill.com,,1450.5,Posted,3062.51,Transfer,OTHER_IN
+2025-11-17,QuikTrip,12.63,,Posted,3049.88,Fast Food,SPEND
+2025-11-17,Murphy USA,82.25,,Posted,2967.63,Gas,SPEND
+2025-11-17,QuikTrip,96.8,,Posted,2870.83,Gas,SPEND
+2025-11-17,Publix,119.99,,Posted,2750.84,Groceries,SPEND
+2025-11-17,Food Lion,228.35,,Posted,2522.49,Groceries,SPEND
+2025-11-17,W D Bank,503.5,,Posted,2018.99,Cash,SPEND
+2025-11-17,Transfer From 0535,,1000.0,Posted,1612.01,Transfer,PAYROLL_0535
+2025-11-17,Transfer To 0535,1100.0,,Posted,918.99,Transfer,PAYROLL_0535
+2025-11-17,Fee for W D Bank,1.0,,Posted,917.99,Fees & Charges,SPEND
+2025-11-19,Autobooks Funds Disbursement,,1500.5,Posted,2618.49,Books,OTHER_IN
+2025-11-19,Starbucks,12.34,,Posted,2606.15,Coffee Shops,SPEND
+2025-11-19,Hobby Lobby,28.31,,Posted,2577.84,Hobbies,SPEND
+2025-11-19,Murphy USA,41.02,,Posted,2536.82,Gas,SPEND
+2025-11-19,A Z Lawn Mower,64.48,,Posted,2472.34,Lawn & Garden,SPEND
+2025-11-19,Autobooks Inc Web,15.0,,Posted,2457.34,Books,SPEND
+2025-11-19,United Community Paypvdpmt,,125.0,Posted,1117.99,Income,OTHER_IN
+2025-11-19,United Community Paypvdpmt,,75.0,Posted,992.99,Income,OTHER_IN
+2025-11-20,Autobooks Funds Disbursement,,420.0,Posted,2877.34,Books,OTHER_IN
+2025-11-20,Little Caesars,15.24,,Posted,2862.1,Fast Food,SPEND
+2025-11-20,QuikTrip,16.3,,Posted,2845.8,Fast Food,SPEND
+2025-11-20,QuikTrip,24.02,,Posted,2821.78,Gas,SPEND
+2025-11-20,Waffle House,28.71,,Posted,2793.07,Restaurants,SPEND
+2025-11-20,Metro Institute,50.0,,Posted,2743.07,Uncategorized,SPEND
+2025-11-20,Bb's Auto & Pelion Sc,379.06,,Posted,2364.01,Auto & Transport,SPEND
+2025-11-20,Autobooks Inc Web,6.68,,Posted,2357.33,Books,SPEND
+2025-11-21,Love's Travel Stops,17.08,,Posted,2340.25,Fast Food,SPEND
+2025-11-21,Murphy USA,100.0,,Posted,2240.25,Gas,SPEND
+2025-11-21,Carolina Power,588.49,,Posted,1651.76,Uncategorized,SPEND
+2025-11-24,Mobile Deposit,,5250.0,Posted,6901.76,Income,DEPOSIT
+2025-11-24,Ace Hardware,15.11,,Posted,6886.65,Home Improvement,SPEND
+2025-11-24,QuikTrip,17.69,,Posted,6868.96,Fast Food,SPEND
+2025-11-24,Lowe's,31.51,,Posted,6837.45,Home Improvement,SPEND
+2025-11-24,Smith Turf & Irr,225.92,,Posted,6611.53,Uncategorized,SPEND
+2025-11-24,Transfer To 0535,650.0,,Posted,5961.53,Transfer,PAYROLL_0535
+2025-11-25,Transfer From 0535,,500.0,Posted,6576.53,Transfer,PAYROLL_0535
+2025-11-25,Autobooks Funds Disbursement,,115.0,Posted,6076.53,Books,OTHER_IN
+2025-11-25,Transfer To 2869,5500.0,,Posted,1076.53,Transfer,TRANSFER_OTHER
+2025-11-25,7-Eleven,9.46,,Posted,1067.07,Fast Food,SPEND
+2025-11-25,Starbucks,12.45,,Posted,1054.62,Coffee Shops,SPEND
+2025-11-25,Cu Pesticide Saf,27.12,,Posted,1027.5,Uncategorized,SPEND
+2025-11-25,Autobooks Inc Web Zy,1.74,,Posted,1025.76,Books,SPEND
+2025-11-25,Autobooks Inc Web,2.27,,Posted,1023.49,Books,SPEND
+2025-11-26,Transfer From 0535,,200.0,Posted,1353.49,Transfer,PAYROLL_0535
+2025-11-26,ExxonMobil,2.76,,Posted,1350.73,Fast Food,SPEND
+2025-11-26,Murphy,13.43,,Posted,1337.3,Gas,SPEND
+2025-11-26,Carolina Wings & West,27.0,,Posted,1310.3,Uncategorized,SPEND
+2025-11-26,Autobooks Funds Disbursement,,130.0,Posted,1153.49,Books,OTHER_IN
+2025-11-26,Dog Food Center West,400.61,,Posted,909.69,Food & Dining,SPEND
+2025-11-26,Dog Food Center West,433.99,,Posted,475.7,Food & Dining,SPEND
+2025-11-26,Autobooks Inc Web,2.54,,Posted,473.16,Books,SPEND
+2025-11-28,Mobile Deposit,,8500.0,Posted,10748.19,Income,DEPOSIT
+2025-11-28,Dukes Equipm Columbia Sc,42.92,,Posted,10705.27,Uncategorized,SPEND
+2025-11-28,San Jose,65.0,,Posted,10640.27,Uncategorized,SPEND
+2025-11-28,Dog Food Center West,333.84,,Posted,10306.43,Food & Dining,SPEND
+2025-11-28,Statement Service Fee,3.0,,Posted,10303.43,Service Fee,SPEND
+2025-11-28,United Community Bank Rebate,,0.03,Posted,2248.19,Bonus,OTHER_IN
+2025-11-28,United Community Paypvdpmt,,1700.0,Posted,2248.16,Income,OTHER_IN
+2025-11-28,United Community Paypvdpmt,,75.0,Posted,548.16,Income,OTHER_IN
+2025-12-01,Transfer From 0535,,50.0,Posted,10353.43,Transfer,PAYROLL_0535
+2025-12-01,Transfer To 2869,8500.0,,Posted,1853.43,Transfer,TRANSFER_OTHER
+2025-12-01,Lowe's,46.36,,Posted,1807.07,Home Improvement,SPEND
+2025-12-01,Murphy USA,100.0,,Posted,1707.07,Gas,SPEND
+2025-12-01,IGA,104.24,,Posted,1602.83,Groceries,SPEND
+2025-12-01,Check,300.0,,Posted,1302.83,Check,SPEND
+2025-12-01,Transfer To 0535,1250.0,,Posted,52.83,Transfer,PAYROLL_0535
+2025-12-02,United Community Paypvdpmt,,2450.0,Posted,3627.83,Income,OTHER_IN
+2025-12-02,Sunoco,57.92,,Posted,3569.91,Gas,SPEND
+2025-12-02,Autobooks Inc Web,38.02,,Posted,3531.89,Books,SPEND
+2025-12-02,Transfer To 5875,640.28,,Posted,2891.61,Transfer,PERSONAL_5875
+2025-12-02,Autobooks Funds Disbursement,,1125.0,Posted,1177.83,Books,OTHER_IN
+2025-12-03,Autobooks Funds Disbursement,,75.0,Posted,2966.61,Books,OTHER_IN
+2025-12-03,BP Gas,6.68,,Posted,2959.93,Fast Food,SPEND
+2025-12-03,7-Eleven,8.15,,Posted,2951.78,Fast Food,SPEND
+2025-12-03,Love's Travel Stops,13.02,,Posted,2938.76,Fast Food,SPEND
+2025-12-03,QuikTrip,14.13,,Posted,2924.63,Fast Food,SPEND
+2025-12-03,Love's Travel Stops,14.94,,Posted,2909.69,Fast Food,SPEND
+2025-12-03,Autobooks Inc Web,0.75,,Posted,2908.94,Books,SPEND
+2025-12-03,Transfer To 0535,2500.0,,Posted,408.94,Transfer,PAYROLL_0535
+2025-12-04,Autobooks Funds Disbursement,,350.0,Posted,758.94,Books,OTHER_IN
+2025-12-04,Autobooks Inc Web,12.22,,Posted,746.72,Books,SPEND
+2025-12-05,Transfer To 2869,150.0,,Posted,596.72,Transfer,TRANSFER_OTHER
+2025-12-05,ExxonMobil,18.41,,Posted,578.31,Fast Food,SPEND
+2025-12-05,Murphy USA,43.71,,Posted,534.6,Gas,SPEND
+2025-12-08,United Community Paypvdpmt,,1025.0,Posted,1764.6,Income,OTHER_IN
+2025-12-08,Li'L Cricket,20.0,,Posted,1744.6,Gas,SPEND
+2025-12-08,Rush's,30.53,,Posted,1714.07,Fast Food,SPEND
+2025-12-08,O'Reilly Auto Parts,35.12,,Posted,1678.95,Service & Parts,SPEND
+2025-12-08,Walmart,59.67,,Posted,1619.28,Shopping,SPEND
+2025-12-08,Murphy USA,100.0,,Posted,1519.28,Gas,SPEND
+2025-12-08,Autobooks Inc Web S,7.15,,Posted,1512.13,Books,SPEND
+2025-12-08,Autobooks Funds Disbursement,,205.0,Posted,739.6,Books,OTHER_IN
+2025-12-08,Transfer To 0535,1000.0,,Posted,512.13,Transfer,PAYROLL_0535
+2025-12-09,Autobooks Funds Disbursement,,40.0,Posted,552.13,Books,OTHER_IN
+2025-12-09,Gas and Supply,25.87,,Posted,526.26,Gas,SPEND
+2025-12-09,Chapala Mexican,55.0,,Posted,471.26,Uncategorized,SPEND
+2025-12-09,Autobooks Inc Web,1.4,,Posted,469.86,Books,SPEND
+2025-12-10,Autobooks Funds Disbursement,,75.0,Posted,544.86,Books,OTHER_IN
+2025-12-10,Murphy USA,14.43,,Posted,530.43,Fast Food,SPEND
+2025-12-10,El Poblano,46.0,,Posted,484.43,Restaurants,SPEND
+2025-12-10,Murphy USA,100.0,,Posted,384.43,Gas,SPEND
+2025-12-10,Autobooks Inc Web,0.75,,Posted,383.68,Books,SPEND
+2025-12-11,United Community Bank Rebate,,0.2,Posted,383.88,Bonus,OTHER_IN
+2025-12-11,Love's Travel Stops,7.36,,Posted,376.52,Fast Food,SPEND
+2025-12-11,Love's Travel Stops,12.84,,Posted,363.68,Fast Food,SPEND
+2025-12-11,Dog Food Center West,75.12,,Posted,288.56,Food & Dining,SPEND
+2025-12-12,Autobooks Funds Disbursement,,125.0,Posted,488.56,Books,OTHER_IN
+2025-12-12,Dog Food Center West,51.19,,Posted,437.37,Food & Dining,SPEND
+2025-12-12,Autobooks Inc Web,4.36,,Posted,433.01,Books,SPEND
+2025-12-12,Columbiaprop Vendor Payment,,75.0,Posted,363.56,Income,CUSTOMER_PAYMENT
+2025-12-15,Autobooks Funds Disbursement,,315.0,Posted,748.01,Books,OTHER_IN
+2025-12-15,Shell,44.17,,Posted,703.84,Gas,SPEND
+2025-12-15,Autobooks Inc Web,11.0,,Posted,692.84,Books,SPEND
+2025-12-16,United Community Bank Rebate,,0.44,Posted,853.28,Bonus,OTHER_IN
+2025-12-16,Autobooks Funds Disbursement,,160.0,Posted,852.84,Books,OTHER_IN
+2025-12-16,The Home Depot,31.97,,Posted,821.31,Home Improvement,SPEND
+2025-12-16,The Home Depot,121.36,,Posted,699.95,Home Improvement,SPEND
+2025-12-16,Autobooks Inc Web,1.74,,Posted,698.21,Books,SPEND
+2025-12-16,Autobooks Inc Web,3.83,,Posted,694.38,Books,SPEND
+2025-12-17,ExxonMobil,6.49,,Posted,687.89,Fast Food,SPEND
+2025-12-17,Country Cupboard,37.09,,Posted,650.8,Gas,SPEND
+2025-12-17,The Home Depot,80.46,,Posted,570.34,Home Improvement,SPEND
+2025-12-17,Transfer To 0535,350.0,,Posted,220.34,Transfer,PAYROLL_0535
+2025-12-18,Transfer From 0535,,200.0,Posted,545.34,Transfer,PAYROLL_0535
+2025-12-18,San Jose,23.85,,Posted,521.49,Uncategorized,SPEND
+2025-12-18,The Home Depot,140.22,,Posted,381.27,Home Improvement,SPEND
+2025-12-18,Autobooks Inc Web Qyfrq,2.27,,Posted,379.0,Books,SPEND
+2025-12-18,Transfer From 2869,,125.0,Posted,345.34,Transfer,TRANSFER_OTHER
+2025-12-19,Autobooks Funds Disbursement,,185.0,Posted,564.0,Books,OTHER_IN
+2025-12-19,QuikTrip,5.21,,Posted,558.79,Fast Food,SPEND
+2025-12-19,El Poblano,16.83,,Posted,541.96,Restaurants,SPEND
+2025-12-19,Red Sake,233.51,,Posted,308.45,Uncategorized,SPEND
+2025-12-19,Autobooks Inc Web,6.46,,Posted,301.99,Books,SPEND
+2025-12-22,The Home Depot,,31.03,Posted,333.02,Home Improvement,OTHER_IN
+2025-12-22,QuikTrip,6.25,,Posted,326.77,Fast Food,SPEND
+2025-12-22,QuikTrip,23.81,,Posted,302.96,Gas,SPEND
+2025-12-22,Lowes Foods,41.37,,Posted,261.59,Groceries,SPEND
+2025-12-22,Bojangles,41.51,,Posted,220.08,Fast Food,SPEND
+2025-12-22,King Fuel,137.29,,Posted,82.79,Gas,SPEND
+2025-12-23,Mobile Deposit,,85.0,Posted,427.49,Income,DEPOSIT
+2025-12-23,Autobooks Inc Web,0.75,,Posted,426.74,Books,SPEND
+2025-12-23,The Home Depot,,45.17,Posted,342.49,Home Improvement,OTHER_IN
+2025-12-23,The Home Depot,,14.53,Posted,297.32,Home Improvement,OTHER_IN
+2025-12-23,United Community Paypvdpmt,,125.0,Posted,282.79,Income,OTHER_IN
+2025-12-23,Autobooks Funds Disbursement,,75.0,Posted,157.79,Books,OTHER_IN
+2025-12-24,Autobooks Funds Disbursement,,425.0,Posted,1051.74,Books,OTHER_IN
+2025-12-24,Double B Hardware,14.0,,Posted,1037.74,Home Improvement,SPEND
+2025-12-24,United Community Paypvdpmt,,200.0,Posted,626.74,Income,OTHER_IN
+2025-12-24,Check,800.0,,Posted,237.74,Check,SPEND
+2025-12-24,Autobooks Inc Web,13.6,,Posted,224.14,Books,SPEND
+2025-12-26,United Community Bank Rebate,,1.66,Posted,350.8,Bonus,OTHER_IN
+2025-12-26,Autobooks Funds Disbursement,,125.0,Posted,349.14,Books,OTHER_IN
+2025-12-26,ExxonMobil,37.16,,Posted,313.64,Gas,SPEND
+2025-12-26,United Community Bank Withdrawal,100.0,,Posted,213.64,Cash,SPEND
+2025-12-26,Autobooks Inc Web Kjxyq,4.36,,Posted,209.28,Books,SPEND
+2025-12-29,United Community Paypvdpmt,,250.0,Posted,684.28,Income,OTHER_IN
+2025-12-29,Autobooks Inc Web,3.49,,Posted,680.79,Books,SPEND
+2025-12-29,United Community Paypvdpmt,,125.0,Posted,434.28,Income,OTHER_IN
+2025-12-29,Autobooks Funds Disbursement,,100.0,Posted,309.28,Books,OTHER_IN
+2025-12-30,Autobooks Funds Disbursement,,40.0,Posted,720.79,Books,OTHER_IN
+2025-12-30,Autobooks Inc Web,1.4,,Posted,719.39,Books,SPEND
+2025-12-31,Circle K,10.34,,Posted,709.05,Fast Food,SPEND
+2025-12-31,McDonald's,41.13,,Posted,667.92,Fast Food,SPEND
+2025-12-31,Statement Service Fee,3.0,,Posted,664.92,Service Fee,SPEND
+2026-01-02,Intuit Deposit,,5.0,Posted,669.92,Income,PAYROLL_PROVIDER
+2026-01-02,Publix,15.75,,Posted,654.17,Groceries,SPEND
+2026-01-02,King Fuel,111.42,,Posted,542.75,Gas,SPEND
+2026-01-02,United Community Bank Withdrawal,300.0,,Posted,242.75,Cash,SPEND
+2026-01-02,Transfer Fee,0.05,,Posted,242.7,Business Services,TRANSFER_OTHER
+2026-01-02,Intuit,88.28,,Posted,154.42,Business Services,PAYROLL_PROVIDER
+2026-01-05,United Community Bank Rebate,,0.1,Posted,154.52,Bonus,OTHER_IN
+2026-01-05,Walmart,89.51,,Posted,65.01,Shopping,SPEND
+2026-01-06,Autobooks Funds Disbursement,,50.0,Posted,115.01,Books,OTHER_IN
+2026-01-06,Autobooks Inc Web,1.74,,Posted,113.27,Books,SPEND
+2026-01-07,United Community Paypvdpmt,,75.0,Posted,188.27,Income,OTHER_IN
+2026-01-07,BP Gas,6.95,,Posted,181.32,Fast Food,SPEND
+2026-01-08,Columbiaprop Vendor Payment,,250.0,Posted,431.32,Income,CUSTOMER_PAYMENT
+2026-01-09,Mobile Deposit,,437.5,Posted,2368.82,Income,DEPOSIT
+2026-01-09,Murphy USA,21.76,,Posted,2347.06,Gas,SPEND
+2026-01-09,A Z Lawn Mower,151.74,,Posted,2195.32,Lawn & Garden,SPEND
+2026-01-09,Transfer From 2869,,1500.0,Posted,1931.32,Transfer,TRANSFER_OTHER
+2026-01-09,Transfer To 0535,1500.0,,Posted,695.32,Transfer,PAYROLL_0535
+2026-01-12,Intuit Deposit,,200.0,Posted,1160.32,Income,PAYROLL_PROVIDER
+2026-01-12,QuikTrip,118.55,,Posted,1041.77,Gas,SPEND
+2026-01-12,Autobooks Funds Disbursement,,150.0,Posted,960.32,Books,OTHER_IN
+2026-01-12,Intuit Deposit,,115.0,Posted,810.32,Income,PAYROLL_PROVIDER
+2026-01-12,Check,500.0,,Posted,541.77,Check,SPEND
+2026-01-12,Transfer Fee,3.44,,Posted,538.33,Business Services,TRANSFER_OTHER
+2026-01-12,Autobooks Inc Web,5.24,,Posted,533.09,Books,SPEND
+2026-01-12,Transfer Fee,5.99,,Posted,527.1,Business Services,TRANSFER_OTHER
+2026-01-13,United Community Paypvdpmt,,125.0,Posted,942.1,Income,OTHER_IN
+2026-01-13,United Community Paypvdpmt,,125.0,Posted,817.1,Income,OTHER_IN
+2026-01-13,Autobooks Funds Disbursement,,125.0,Posted,692.1,Books,OTHER_IN
+2026-01-13,Dog Food Center West,350.53,,Posted,591.57,Food & Dining,SPEND
+2026-01-13,Transfer Fee,1.2,,Posted,590.37,Business Services,TRANSFER_OTHER
+2026-01-13,Autobooks Inc Web,1.25,,Posted,589.12,Books,SPEND
+2026-01-13,Intuit Deposit,,40.0,Posted,567.1,Income,PAYROLL_PROVIDER
+2026-01-14,Autobooks Funds Disbursement,,50.0,Posted,639.12,Books,OTHER_IN
+2026-01-14,Shell,37.0,,Posted,602.12,Gas,SPEND
+2026-01-14,Murphy,100.0,,Posted,502.12,Gas,SPEND
+2026-01-14,Autobooks Inc Web,1.74,,Posted,500.38,Books,SPEND
+2026-01-15,Mobile Deposit,,1273.5,Posted,1823.88,Income,DEPOSIT
+2026-01-15,Walmart+,13.86,,Posted,1810.02,Shopping,SPEND
+2026-01-15,Transfer Fee,1.5,,Posted,1808.52,Business Services,TRANSFER_OTHER
+2026-01-15,Intuit Deposit,,50.0,Posted,550.38,Income,PAYROLL_PROVIDER
+2026-01-16,Intuit Deposit,,600.0,Posted,2598.52,Income,PAYROLL_PROVIDER
+2026-01-16,KFC,42.72,,Posted,2555.8,Fast Food,SPEND
+2026-01-16,Double B Hardware,46.08,,Posted,2509.72,Home Improvement,SPEND
+2026-01-16,Columbiaprop Vendor Payment,,115.0,Posted,1998.52,Income,CUSTOMER_PAYMENT
+2026-01-16,United Community Paypvdpmt,,75.0,Posted,1883.52,Income,OTHER_IN
+2026-01-16,Check,2100.0,,Posted,409.72,Check,SPEND
+2026-01-16,Transfer Fee,17.94,,Posted,391.78,Business Services,TRANSFER_OTHER
+2026-01-20,United Community Paypvdpmt,,1250.1,Posted,2866.88,Income,OTHER_IN
+2026-01-20,Shell,5.45,,Posted,2861.43,Fast Food,SPEND
+2026-01-20,ExxonMobil,6.94,,Posted,2854.49,Fast Food,SPEND
+2026-01-20,Lowe's,25.64,,Posted,2828.85,Home Improvement,SPEND
+2026-01-20,Sam's Club,322.01,,Posted,2506.84,Shopping,SPEND
+2026-01-20,United Community Paypvdpmt,,1175.0,Posted,1616.78,Income,OTHER_IN
+2026-01-20,Check,1000.0,,Posted,1506.84,Check,SPEND
+2026-01-20,Transfer Fee,1.5,,Posted,1505.34,Business Services,TRANSFER_OTHER
+2026-01-20,Intuit Deposit,,50.0,Posted,441.78,Income,PAYROLL_PROVIDER
+2026-01-21,The Home Depot,52.32,,Posted,1453.02,Home Improvement,SPEND
+2026-01-21,Murphy USA,127.81,,Posted,1325.21,Gas,SPEND
+2026-01-22,Intuit Deposit,,90.0,Posted,1415.21,Income,PAYROLL_PROVIDER
+2026-01-22,Ace Hardware,5.32,,Posted,1409.89,Home Improvement,SPEND
+2026-01-22,Transfer Fee,2.7,,Posted,1407.19,Business Services,TRANSFER_OTHER
+2026-01-22,Transfer To 0535,1250.0,,Posted,157.19,Transfer,PAYROLL_0535
+2026-01-23,Intuit Deposit,,50.0,Posted,207.19,Income,PAYROLL_PROVIDER
+2026-01-23,Hardee's,11.55,,Posted,195.64,Fast Food,SPEND
+2026-01-23,Napa Auto Parts,32.26,,Posted,163.38,Service & Parts,SPEND
+2026-01-23,Transfer Fee,1.5,,Posted,161.88,Business Services,TRANSFER_OTHER
+2026-01-26,Intuit Deposit,,65.0,Posted,266.88,Income,PAYROLL_PROVIDER
+2026-01-26,Food Lion,25.38,,Posted,241.5,Groceries,SPEND
+2026-01-26,Intuit Deposit,,40.0,Posted,201.88,Income,PAYROLL_PROVIDER
+2026-01-26,King Fuel,98.96,,Posted,142.54,Gas,SPEND
+2026-01-26,Transfer Fee,0.4,,Posted,142.14,Business Services,TRANSFER_OTHER
+2026-01-26,Transfer Fee,1.94,,Posted,140.2,Business Services,TRANSFER_OTHER
+2026-01-27,United Community Paypvdpmt,,150.0,Posted,290.2,Income,OTHER_IN
+2026-01-27,Murphy USA,4.57,,Posted,285.63,Fast Food,SPEND
+2026-01-27,Sunoco,35.0,,Posted,250.63,Gas,SPEND
+2026-01-28,United Community Paypvdpmt,,150.0,Posted,400.63,Income,OTHER_IN
+2026-01-29,Transfer From 7903,,500.0,Posted,900.63,Transfer,LOC
+2026-01-29,Sunoco,15.0,,Posted,885.63,Gas,SPEND
+2026-01-29,Lowe's,21.16,,Posted,864.47,Home Improvement,SPEND
+2026-01-29,Bb's Auto,306.99,,Posted,557.48,Uncategorized,SPEND
+2026-01-30,Murphy USA,10.34,,Posted,547.14,Fast Food,SPEND
+2026-01-30,Gaston Tire,19.26,,Posted,527.88,Service & Parts,SPEND
+2026-01-30,Murphy USA,30.11,,Posted,497.77,Gas,SPEND
+2026-01-30,Murphy USA,41.44,,Posted,456.33,Gas,SPEND
+2026-01-30,Dog Food Center West,217.0,,Posted,239.33,Food & Dining,SPEND
+2026-01-30,Statement Service Fee,3.0,,Posted,236.33,Service Fee,SPEND
+2026-02-02,United Community Paypvdpmt,,150.0,Posted,386.33,Income,OTHER_IN
+2026-02-02,Smith Turf & Irr,192.21,,Posted,194.12,Lawn & Garden,SPEND
+2026-02-02,Intuit,102.19,,Posted,91.93,Business Services,PAYROLL_PROVIDER
+2026-02-03,Transfer From 7903,,1200.0,Posted,1291.93,Transfer,LOC
+2026-02-03,O'Reilly Auto Parts,13.46,,Posted,1278.47,Service & Parts,SPEND
+2026-02-03,Tractor Supply,21.16,,Posted,1257.31,Shopping,SPEND
+2026-02-03,Pilot Flying J,117.76,,Posted,1139.55,Gas,SPEND
+2026-02-03,Check,350.0,,Posted,789.55,Check,SPEND
+2026-02-04,Transfer From 7903,,3500.0,Posted,5047.05,Transfer,LOC
+2026-02-04,Double B Hardware,6.53,,Posted,5040.52,Home Improvement,SPEND
+2026-02-04,King Fuel,75.0,,Posted,4965.52,Gas,SPEND
+2026-02-04,Walmart,91.53,,Posted,4873.99,Shopping,SPEND
+2026-02-04,QuikTrip,175.0,,Posted,4698.99,Gas,SPEND
+2026-02-04,Tractor Supply,2453.94,,Posted,2245.05,Shopping,SPEND
+2026-02-04,Transfer Fee,22.65,,Posted,2222.4,Business Services,TRANSFER_OTHER
+2026-02-04,Intuit Deposit,,757.5,Posted,1547.05,Income,PAYROLL_PROVIDER
+2026-02-05,United Community Paypvdpmt,,150.0,Posted,2372.4,Income,OTHER_IN
+2026-02-05,Nte,35.63,,Posted,2336.77,Uncategorized,SPEND
+2026-02-06,Columbiaprop Vendor Payment,,260.0,Posted,2596.77,Income,CUSTOMER_PAYMENT
+2026-02-06,Murphy USA,0.05,,Posted,2596.72,Gas,SPEND
+2026-02-06,Murphy USA,10.65,,Posted,2586.07,Fast Food,SPEND
+2026-02-06,Murphy USA,23.13,,Posted,2562.94,Gas,SPEND
+2026-02-06,Disc Tires,25.0,,Posted,2537.94,Service & Parts,SPEND
+2026-02-06,El Poblano,30.0,,Posted,2507.94,Restaurants,SPEND
+2026-02-06,Irmo Outdoor Equ,86.4,,Posted,2421.54,Uncategorized,SPEND
+2026-02-06,Transfer To 0535,1500.0,,Posted,921.54,Transfer,PAYROLL_0535
+2026-02-09,Tractor Supply,7.48,,Posted,914.06,Shopping,SPEND
+2026-02-09,Sunoco,8.63,,Posted,905.43,Fast Food,SPEND
+2026-02-09,Tractor Supply,116.42,,Posted,789.01,Shopping,SPEND
+2026-02-10,Dog Food Center West,51.19,,Posted,737.82,Food & Dining,SPEND
+2026-02-10,Transfer To 0535,500.0,,Posted,237.82,Transfer,PAYROLL_0535
+2026-02-12,Intuit Deposit,,50.0,Posted,287.82,Income,PAYROLL_PROVIDER
+2026-02-12,Lowe's,117.64,,Posted,170.18,Home Improvement,SPEND
+2026-02-12,Transfer Fee,1.5,,Posted,168.68,Business Services,TRANSFER_OTHER
+2026-02-13,Mobile Deposit,,1030.0,Posted,1473.68,Income,DEPOSIT
+2026-02-13,QuikTrip,12.72,,Posted,1460.96,Fast Food,SPEND
+2026-02-13,La Fogata Mexica,35.59,,Posted,1425.37,Food & Dining,SPEND
+2026-02-13,Transfer Fee,2.24,,Posted,1423.13,Business Services,TRANSFER_OTHER
+2026-02-13,Columbiaprop Vendor Payment,,200.0,Posted,443.68,Income,CUSTOMER_PAYMENT
+2026-02-13,Intuit Deposit,,75.0,Posted,243.68,Income,PAYROLL_PROVIDER
+2026-02-17,Mobile Deposit,,1273.5,Posted,3486.63,Income,DEPOSIT
+2026-02-17,Advance Auto Parts,19.33,,Posted,3467.3,Service & Parts,SPEND
+2026-02-17,Shell,41.86,,Posted,3425.44,Gas,SPEND
+2026-02-17,Hiltons Power,68.47,,Posted,3356.97,Utilities,SPEND
+2026-02-17,Wells Fargo,83.0,,Posted,3273.97,Financial,SPEND
+2026-02-17,Lsu Don Pepe Pel,96.17,,Posted,3177.8,Uncategorized,SPEND
+2026-02-17,Transfer Fee,0.4,,Posted,3177.4,Business Services,TRANSFER_OTHER
+2026-02-17,Transfer Fee,5.99,,Posted,3171.41,Business Services,TRANSFER_OTHER
+2026-02-17,Intuit Deposit,,200.0,Posted,2213.13,Income,PAYROLL_PROVIDER
+2026-02-17,Transfer To 0535,1000.0,,Posted,2171.41,Transfer,PAYROLL_0535
+2026-02-17,Wells Fargo,1.0,,Posted,2170.41,Financial,SPEND
+2026-02-17,United Community Paypvdpmt,,150.0,Posted,2013.13,Income,OTHER_IN
+2026-02-17,United Community Paypvdpmt,,150.0,Posted,1863.13,Income,OTHER_IN
+2026-02-17,United Community Paypvdpmt,,125.0,Posted,1713.13,Income,OTHER_IN
+2026-02-17,United Community Paypvdpmt,,125.0,Posted,1588.13,Income,OTHER_IN
+2026-02-17,Intuit Deposit,,40.0,Posted,1463.13,Income,PAYROLL_PROVIDER
+2026-02-18,United Community Paypvdpmt,,70.0,Posted,2290.41,Income,OTHER_IN
+2026-02-18,Intuit Deposit,,50.0,Posted,2220.41,Income,PAYROLL_PROVIDER
+2026-02-18,Transfer To 7903,600.0,,Posted,1690.41,Transfer,LOC
+2026-02-18,Transfer Fee,1.5,,Posted,1688.91,Business Services,TRANSFER_OTHER
+2026-02-18,Transfer To 0535,1500.0,,Posted,188.91,Transfer,PAYROLL_0535
+2026-02-19,King Fuel,200.0,,Posted,-11.09,Gas,SPEND
+2026-02-19,Bni of the Midla,998.0,,Posted,-1009.09,Utilities,SPEND
+2026-02-20,BNI Payment and cash flow gap -$400,,1300.0,Posted,290.91,Transfer,CUSTOMER_PAYMENT
+2026-02-20,Tractor Supply,24.06,,Posted,266.85,Shopping,SPEND
+2026-02-20,Murphy USA,24.69,,Posted,242.16,Gas,SPEND
+2026-02-23,Shell,64.18,,Posted,177.98,Gas,SPEND
+2026-02-24,Intuit Deposit,,240.0,Posted,417.98,Income,PAYROLL_PROVIDER
+2026-02-24,Shell,32.91,,Posted,385.07,Gas,SPEND
+2026-02-24,Metro Institute,125.0,,Posted,260.07,Uncategorized,SPEND
+2026-02-24,Love's Travel Stops,175.0,,Posted,85.07,Gas,SPEND
+2026-02-24,Transfer Fee,7.18,,Posted,77.89,Business Services,TRANSFER_OTHER
+2026-02-25,United Community Paypvdpmt,,125.0,Posted,367.89,Income,OTHER_IN
+2026-02-25,Tractor Supply,24.0,,Posted,343.89,Shopping,SPEND
+2026-02-25,Shell,45.5,,Posted,298.39,Gas,SPEND
+2026-02-25,Transfer Fee,1.2,,Posted,297.19,Business Services,TRANSFER_OTHER
+2026-02-25,United Community Paypvdpmt,,125.0,Posted,242.89,Income,OTHER_IN
+2026-02-25,Intuit Deposit,,40.0,Posted,117.89,Income,PAYROLL_PROVIDER
+2026-02-26,United Community Bank Rebate,,0.33,Posted,297.52,Bonus,OTHER_IN
+2026-02-26,QuikTrip,36.21,,Posted,261.31,Gas,SPEND
+2026-02-27,Mobile Deposit,,463.5,Posted,3224.81,Income,DEPOSIT
+2026-02-27,Transfer From 7903,,2500.0,Posted,2761.31,Transfer,LOC
+2026-02-27,Sfa Media Bethesda Md Dzi,2500.0,,Posted,724.81,Shopping,SPEND
+2026-02-27,Statement Service Fee,3.0,,Posted,721.81,Service Fee,SPEND
+2026-03-02,Intuit Deposit,,125.0,Posted,846.81,Income,PAYROLL_PROVIDER
+2026-03-02,ExxonMobil,12.61,,Posted,834.2,Fast Food,SPEND
+2026-03-02,Murphy USA,49.5,,Posted,784.7,Gas,SPEND
+2026-03-02,Sun Solutions West,129.42,,Posted,655.28,Uncategorized,SPEND
+2026-03-02,Transfer Fee,3.74,,Posted,651.54,Business Services,TRANSFER_OTHER
+2026-03-02,Intuit,102.19,,Posted,549.35,Business Services,PAYROLL_PROVIDER
+2026-03-02,Transfer To 0535,459.2,,Posted,90.15,Transfer,PAYROLL_0535
+2026-03-03,Intuit Deposit,,650.0,Posted,815.15,Income,PAYROLL_PROVIDER
+2026-03-03,Metro Institute,75.0,,Posted,740.15,Uncategorized,SPEND
+2026-03-03,Tractor Supply,427.99,,Posted,312.16,Shopping,SPEND
+2026-03-03,Transfer Fee,19.44,,Posted,292.72,Business Services,TRANSFER_OTHER
+2026-03-03,United Community Paypvdpmt,,75.0,Posted,165.15,Income,OTHER_IN
+2026-03-04,Yarddogs Balance of Debt Increase - approx $82K,,37000.0,Posted,37392.72,Transfer,OTHER_IN
+2026-03-04,Tractor Supply,146.0,,Posted,37246.72,Shopping,SPEND
+2026-03-04,Mini Skid Steer purchase with 5 attachments,36000.0,,Posted,1246.72,Check,SPEND
+2026-03-04,Transfer From 0535,,100.0,Posted,392.72,Transfer,PAYROLL_0535
+2026-03-05,Columbiaprop Vendor Payment,,385.0,Posted,1756.72,Income,CUSTOMER_PAYMENT
+2026-03-05,QuikTrip,23.32,,Posted,1733.4,Gas,SPEND
+2026-03-05,Murphy USA,100.0,,Posted,1633.4,Gas,SPEND
+2026-03-05,Murphy USA,100.0,,Posted,1533.4,Gas,SPEND
+2026-03-05,United Community Paypvdpmt,,125.0,Posted,1371.72,Income,OTHER_IN
+2026-03-05,Southern Carolin,192.6,,Posted,1340.8,Gas,SPEND
+2026-03-05,Payroll - Cash Flow timing cover,1050.0,,Posted,290.8,Transfer,PAYROLL_PROVIDER
+2026-03-06,United Community Paypvdpmt,,70.0,Posted,360.8,Income,OTHER_IN
+2026-03-06,Shell,8.15,,Posted,352.65,Fast Food,SPEND
+2026-03-06,Advance Auto Parts,55.93,,Posted,296.72,Service & Parts,SPEND
+2026-03-06,Pedros Mexican,79.82,,Posted,216.9,Uncategorized,SPEND
+2026-03-06,Amazon,802.48,,Posted,-585.58,Shopping,SPEND
+2026-03-09,Transfer From 7903,,1000.0,Posted,539.42,Transfer,LOC
+2026-03-09,QuikTrip,23.82,,Posted,515.6,Gas,SPEND
+2026-03-09,Gaston Tire,224.7,,Posted,290.9,Service & Parts,SPEND
+2026-03-09,Transfer Fee,3.74,,Posted,287.16,Business Services,TRANSFER_OTHER
+2026-03-09,Intuit Deposit,,125.0,Posted,-460.58,Income,PAYROLL_PROVIDER
+2026-03-10,Transfer From 7903,,1000.0,Posted,1397.16,Transfer,LOC
+2026-03-10,Lowe's,61.47,,Posted,1335.69,Home Improvement,SPEND
+2026-03-10,Facebook,100.0,,Posted,1235.69,Advertising,SPEND
+2026-03-10,United Community Paypvdpmt,,70.0,Posted,397.16,Income,OTHER_IN
+2026-03-10,Intuit Deposit,,40.0,Posted,327.16,Income,PAYROLL_PROVIDER
+2026-03-10,Nimmer Turf,1091.48,,Posted,144.21,Uncategorized,SPEND
+2026-03-10,Transfer Fee,1.2,,Posted,143.01,Business Services,TRANSFER_OTHER
+2026-03-11,Overdraft Fee,36.0,,Posted,107.01,Banking Fee,SPEND
+2026-03-11,Lowe's,172.95,,Posted,-65.94,Home Improvement,SPEND
+2026-03-12,Return Miner's Land,,5.35,Posted,979.41,Shopping,OTHER_IN
+2026-03-12,Transfer From 7903,,1000.0,Posted,974.06,Transfer,LOC
+2026-03-12,Elevate Appl,20.0,,Posted,959.41,Uncategorized,SPEND
+2026-03-12,Miner's Land,53.5,,Posted,905.91,Uncategorized,SPEND
+2026-03-12,Lowe's,93.82,,Posted,812.09,Home Improvement,SPEND
+2026-03-12,Transfer Fee,1.2,,Posted,810.89,Business Services,TRANSFER_OTHER
+2026-03-12,Intuit Deposit,,40.0,Posted,-25.94,Income,PAYROLL_PROVIDER
+2026-03-13,Columbiaprop Vendor Payment,,675.0,Posted,1660.89,Income,CUSTOMER_PAYMENT
+2026-03-13,Nimmer Turf,259.88,,Posted,1401.01,Uncategorized,SPEND
+2026-03-13,Nimmer Turf,363.83,,Posted,1037.18,Uncategorized,SPEND
+2026-03-13,Transfer Fee,1.5,,Posted,1035.68,Business Services,TRANSFER_OTHER
+2026-03-13,United Community Paypvdpmt,,125.0,Posted,985.89,Income,OTHER_IN
+2026-03-13,Intuit Deposit,,50.0,Posted,860.89,Income,PAYROLL_PROVIDER
+2026-03-16,Mobile Deposit,,998.0,Posted,3097.18,Income,DEPOSIT
+2026-03-16,QuikTrip,5.38,,Posted,3091.8,Fast Food,SPEND
+2026-03-16,Facebook,10.52,,Posted,3081.28,Advertising,SPEND
+2026-03-16,Sunoco,11.98,,Posted,3069.3,Fast Food,SPEND
+2026-03-16,Facebook,15.0,,Posted,3054.3,Advertising,SPEND
+2026-03-16,Facebook,15.0,,Posted,3039.3,Advertising,SPEND
+2026-03-16,Facebook,15.0,,Posted,3024.3,Advertising,SPEND
+2026-03-16,Zaxby's,16.11,,Posted,3008.19,Fast Food,SPEND
+2026-03-16,Circle K,69.0,,Posted,2939.19,Gas,SPEND
+2026-03-16,Lowe's,171.93,,Posted,2767.26,Home Improvement,SPEND
+2026-03-16,QuikTrip,175.0,,Posted,2592.26,Gas,SPEND
+2026-03-16,QuikTrip,175.0,,Posted,2417.26,Gas,SPEND
+2026-03-16,Transfer Fee,17.94,,Posted,2399.32,Business Services,TRANSFER_OTHER
+2026-03-16,Mobile Deposit,,463.5,Posted,2099.18,Income,DEPOSIT
+2026-03-16,Intuit Deposit,,600.0,Posted,1635.68,Income,PAYROLL_PROVIDER
+2026-03-17,United Community Paypvdpmt,,310.0,Posted,2709.32,Income,OTHER_IN
+2026-03-17,The Home Depot,10.16,,Posted,2699.16,Home Improvement,SPEND
+2026-03-17,Enmarket,13.56,,Posted,2685.6,Fast Food,SPEND
+2026-03-17,Facebook,15.0,,Posted,2670.6,Advertising,SPEND
+2026-03-17,Enmarket,29.24,,Posted,2641.36,Gas,SPEND
+2026-03-17,Chapala Mexican,30.02,,Posted,2611.34,Fast Food,SPEND
+2026-03-17,The Home Depot,251.27,,Posted,2360.07,Home Improvement,SPEND
+2026-03-17,Equip Pro Rental West,465.38,,Posted,1894.69,Uncategorized,SPEND
+2026-03-17,Enmarket,486.69,,Posted,1408.0,Gas,SPEND
+2026-03-17,The Home Depot,1013.76,,Posted,394.24,Home Improvement,SPEND
+2026-03-18,Mobile Deposit,,2838.89,Posted,11231.97,Income,DEPOSIT
+2026-03-18,Sunoco,4.5,,Posted,11227.47,Fast Food,SPEND
+2026-03-18,Subway,33.97,,Posted,11193.5,Fast Food,SPEND
+2026-03-18,Tractor Supply,67.36,,Posted,11126.14,Shopping,SPEND
+2026-03-18,Transfer Fee,1.5,,Posted,11124.64,Business Services,TRANSFER_OTHER
+2026-03-18,Mobile Deposit,,2501.0,Posted,8393.08,Income,DEPOSIT
+2026-03-18,Mobile Deposit,,1273.5,Posted,5892.08,Income,DEPOSIT
+2026-03-18,Mobile Deposit,,225.0,Posted,4618.58,Income,DEPOSIT
+2026-03-18,Transfer From 7903,,1099.34,Posted,4393.58,Transfer,LOC
+2026-03-18,Transfer From 7903,,1000.0,Posted,3294.24,Transfer,LOC
+2026-03-18,Transfer From 7903,,1000.0,Posted,2294.24,Transfer,LOC
+2026-03-18,Transfer From 7903,,500.0,Posted,1294.24,Transfer,LOC
+2026-03-18,Transfer From 7903,,350.0,Posted,794.24,Transfer,LOC
+2026-03-18,Intuit Deposit,,50.0,Posted,444.24,Income,PAYROLL_PROVIDER
+2026-03-19,Transfer To 7903,3000.0,,Posted,8124.64,Transfer,LOC
+2026-03-19,Wendy's,16.77,,Posted,8107.87,Fast Food,SPEND
+2026-03-19,Dollar General,29.33,,Posted,8078.54,Shopping,SPEND
+2026-03-19,A Z Lawn Mower,715.77,,Posted,7362.77,Lawn & Garden,SPEND
+2026-03-19,Park Warehouse Boca,1855.09,,Posted,5507.68,Uncategorized,SPEND
+2026-03-19,Transfer To 5875,351.0,,Posted,5156.68,Transfer,PERSONAL_5875
+2026-03-19,Transfer To 0535,3800.0,,Posted,1356.68,Transfer,PAYROLL_0535
+2026-03-20,Intuit Deposit,,300.0,Posted,1656.68,Income,PAYROLL_PROVIDER
+2026-03-20,Circle K,6.58,,Posted,1650.1,Fast Food,SPEND
+2026-03-20,QuikTrip,13.02,,Posted,1637.08,Fast Food,SPEND
+2026-03-20,QuikTrip,15.01,,Posted,1622.07,Fast Food,SPEND
+2026-03-20,Transfer Fee,8.99,,Posted,1613.08,Business Services,TRANSFER_OTHER
+2026-03-20,Transfer To 0535,250.0,,Posted,1363.08,Transfer,PAYROLL_0535
+2026-03-23,Transfer From 7903,,1000.0,Posted,3223.08,Transfer,LOC
+2026-03-23,Sunoco,14.24,,Posted,3208.84,Fast Food,SPEND
+2026-03-23,Facebook,19.85,,Posted,3188.99,Advertising,SPEND
+2026-03-23,Enmarket,22.03,,Posted,3166.96,Gas,SPEND
+2026-03-23,Lowe's,26.73,,Posted,3140.23,Home Improvement,SPEND
+2026-03-23,Walmart,51.62,,Posted,3088.61,Shopping,SPEND
+2026-03-23,Carolina Fresh,106.11,,Posted,2982.5,Groceries,SPEND
+2026-03-23,Facebook,116.62,,Posted,2865.88,Advertising,SPEND
+2026-03-23,Carolina Fresh,295.92,,Posted,2569.96,Uncategorized,SPEND
+2026-03-23,The Home Depot,305.29,,Posted,2264.67,Home Improvement,SPEND
+2026-03-23,Transfer From 7903,,350.0,Posted,2223.08,Transfer,LOC
+2026-03-23,Intuit Deposit,,290.0,Posted,1873.08,Income,PAYROLL_PROVIDER
+2026-03-23,Carolina Fresh,480.56,,Posted,1784.11,Uncategorized,SPEND
+2026-03-23,Intuit Deposit,,100.0,Posted,1583.08,Income,PAYROLL_PROVIDER
+2026-03-23,United Community Paypvdpmt,,70.0,Posted,1483.08,Income,OTHER_IN
+2026-03-23,Intuit Deposit,,50.0,Posted,1413.08,Income,PAYROLL_PROVIDER
+2026-03-23,The Home Depot,799.16,,Posted,984.95,Home Improvement,SPEND
+2026-03-23,Transfer Fee,1.5,,Posted,983.45,Business Services,TRANSFER_OTHER
+2026-03-23,Transfer Fee,2.99,,Posted,980.46,Business Services,TRANSFER_OTHER
+2026-03-23,Transfer Fee,8.67,,Posted,971.79,Business Services,TRANSFER_OTHER
+2026-03-24,Transfer From 7903,,1000.0,Posted,2046.79,Transfer,LOC
+2026-03-24,The Home Depot,73.13,,Posted,1973.66,Home Improvement,SPEND
+2026-03-24,SiteOne Landscape Supply,181.79,,Posted,1791.87,Lawn & Garden,SPEND
+2026-03-24,Intuit Deposit,,75.0,Posted,1046.79,Income,PAYROLL_PROVIDER
+2026-03-24,Carolina Fresh,747.36,,Posted,1044.51,Uncategorized,SPEND
+2026-03-24,Transfer Fee,2.24,,Posted,1042.27,Business Services,TRANSFER_OTHER
+2026-03-25,Account Verification Deposit from Bill.com,,0.01,Posted,1042.28,Transfer,DEPOSIT
+2026-03-25,Lizards Thicket West,19.16,,Posted,1023.12,Uncategorized,SPEND
+2026-03-25,La Laguna,30.89,,Posted,992.23,Uncategorized,SPEND
+2026-03-25,Lowe's,32.7,,Posted,959.53,Home Improvement,SPEND
+2026-03-25,Circle K,47.52,,Posted,912.01,Gas,SPEND
+2026-03-25,Carolina Fresh,172.85,,Posted,739.16,Uncategorized,SPEND
+2026-03-25,Carolina Fresh,471.17,,Posted,267.99,Uncategorized,SPEND
+2026-03-25,Transfer To 0535,60.0,,Posted,207.99,Transfer,PAYROLL_0535
+2026-03-26,Transfer From 7903,,2550.0,Posted,2757.99,Transfer,LOC
+2026-03-26,Shell,0.2,,Posted,2757.79,Gas,SPEND
+2026-03-26,Dave's Grill,13.02,,Posted,2744.77,Restaurants,SPEND
+2026-03-26,Enmarket,13.79,,Posted,2730.98,Fast Food,SPEND
+2026-03-26,The Home Depot,59.56,,Posted,2671.42,Home Improvement,SPEND
+2026-03-26,The Home Depot,378.29,,Posted,2293.13,Home Improvement,SPEND
+2026-03-26,Carolina Fresh,747.36,,Posted,1545.77,Uncategorized,SPEND
+2026-03-26,Carolina Fresh,804.98,,Posted,740.79,Uncategorized,SPEND
+2026-03-27,Transfer From 7903,,300.0,Posted,1180.79,Transfer,LOC
+2026-03-27,Par Salsarita's West,15.35,,Posted,1165.44,Uncategorized,SPEND
+2026-03-27,Shell,26.82,,Posted,1138.62,Gas,SPEND
+2026-03-27,Lsu Weco Bottle West,41.98,,Posted,1096.64,Uncategorized,SPEND
+2026-03-27,Lowe's,138.97,,Posted,957.67,Home Improvement,SPEND
+2026-03-27,Intuit Deposit,,140.0,Posted,880.79,Income,PAYROLL_PROVIDER
+2026-03-27,Park Warehouse Boca,805.77,,Posted,151.9,Uncategorized,SPEND
+2026-03-27,Transfer Fee,4.18,,Posted,147.72,Business Services,TRANSFER_OTHER
+2026-03-30,Transfer From 7903,,600.0,Posted,962.72,Transfer,LOC
+2026-03-30,Enmarket,6.78,,Posted,955.94,Fast Food,SPEND
+2026-03-30,Shell,10.36,,Posted,945.58,Fast Food,SPEND
+2026-03-30,Facebook,36.0,,Posted,909.58,Advertising,SPEND
+2026-03-30,Arby's,40.62,,Posted,868.96,Fast Food,SPEND
+2026-03-30,Carolina Fresh,57.62,,Posted,811.34,Uncategorized,SPEND
+2026-03-30,The Home Depot,85.23,,Posted,726.11,Home Improvement,SPEND
+2026-03-30,The Home Depot,175.24,,Posted,550.87,Home Improvement,SPEND
+2026-03-30,Intuit Deposit,,125.0,Posted,362.72,Income,PAYROLL_PROVIDER
+2026-03-30,Intuit Deposit,,90.0,Posted,237.72,Income,PAYROLL_PROVIDER
+2026-03-30,Shell,550.0,,Posted,0.87,Gas,SPEND
+2026-03-30,Transfer Fee,2.7,,Posted,-1.83,Business Services,TRANSFER_OTHER
+2026-03-30,Transfer Fee,3.74,,Posted,-5.57,Business Services,TRANSFER_OTHER
+2026-03-31,Mobile Deposit,,225.0,Posted,2844.43,Income,DEPOSIT
+2026-03-31,AutoZone,53.48,,Posted,2790.95,Service & Parts,SPEND
+2026-03-31,Palmettostateren,123.84,,Posted,2667.11,Uncategorized,SPEND
+2026-03-31,Transfer From 7903,,2000.0,Posted,2619.43,Transfer,LOC
+2026-03-31,Intuit,197.42,,Posted,2469.69,Business Services,PAYROLL_PROVIDER
+2026-03-31,Statement Service Fee,3.0,,Posted,2466.69,Service Fee,SPEND
+2026-03-31,Transfer From 7903,,500.0,Posted,619.43,Transfer,LOC
+2026-03-31,United Community Paypvdpmt,,125.0,Posted,119.43,Income,OTHER_IN
+2026-04-01,Bill.com,,4450.0,Posted,7001.69,Transfer,OTHER_IN
+2026-04-01,Transfer To 7903,1400.0,,Posted,5601.69,Transfer,LOC
+2026-04-01,Usc Athletics,10.0,,Posted,5591.69,Entertainment,SPEND
+2026-04-01,Enmarket,10.57,,Posted,5581.12,Fast Food,SPEND
+2026-04-01,Chipotle,14.55,,Posted,5566.57,Fast Food,SPEND
+2026-04-01,Facebook,42.0,,Posted,5524.57,Advertising,SPEND
+2026-04-01,Carolina Fresh,61.02,,Posted,5463.55,Uncategorized,SPEND
+2026-04-01,Palmettostateren,123.84,,Posted,5339.71,Uncategorized,SPEND
+2026-04-01,Py Image Ink,392.9,,Posted,4946.81,Shopping,SPEND
+2026-04-01,Transfer Fee,2.54,,Posted,4944.27,Business Services,TRANSFER_OTHER
+2026-04-01,Intuit Deposit,,85.0,Posted,2551.69,Income,PAYROLL_PROVIDER
+2026-04-01,Transfer To 0535,3950.0,,Posted,994.27,Transfer,PAYROLL_0535
+2026-04-02,United Community Bank Rebate,,1.0,Posted,1495.27,Bonus,OTHER_IN
+2026-04-02,United Community Paypvdpmt,,310.0,Posted,1494.27,Income,OTHER_IN
+2026-04-02,The Home Depot,4.95,,Posted,1490.32,Home Improvement,SPEND
+2026-04-02,Shell,7.0,,Posted,1483.32,Fast Food,SPEND
+2026-04-02,Shell,22.99,,Posted,1460.33,Gas,SPEND
+2026-04-02,Circle K,31.64,,Posted,1428.69,Gas,SPEND
+2026-04-02,Carolina Fresh,57.62,,Posted,1371.07,Uncategorized,SPEND
+2026-04-02,La Laguna,66.0,,Posted,1305.07,Uncategorized,SPEND
+2026-04-02,Express Lane,82.77,,Posted,1222.3,Gas,SPEND
+2026-04-02,United Community Paypvdpmt,,125.0,Posted,1184.27,Income,OTHER_IN
+2026-04-02,The Home Depot,111.05,,Posted,1111.25,Home Improvement,SPEND
+2026-04-02,Intuit Deposit,,65.0,Posted,1059.27,Income,PAYROLL_PROVIDER
+2026-04-02,Google Workspac,202.77,,Posted,908.48,Uncategorized,SPEND
+2026-04-02,King Fuel,236.65,,Posted,671.83,Gas,SPEND
+2026-04-02,Carolina Fresh,375.84,,Posted,295.99,Uncategorized,SPEND
+2026-04-02,Transfer Fee,1.94,,Posted,294.05,Business Services,TRANSFER_OTHER
+2026-04-03,Transfer From 7903,,1000.0,Posted,1599.05,Transfer,LOC
+2026-04-03,Shell,7.59,,Posted,1591.46,Fast Food,SPEND
+2026-04-03,ExxonMobil,14.02,,Posted,1577.44,Fast Food,SPEND
+2026-04-03,La Cochinita West,17.71,,Posted,1559.73,Uncategorized,SPEND
+2026-04-03,Lsu Weco Bottle West,37.39,,Posted,1522.34,Restaurants,SPEND
+2026-04-03,Facebook,49.0,,Posted,1473.34,Advertising,SPEND
+2026-04-03,Palmettostateren,126.41,,Posted,1346.93,Uncategorized,SPEND
+2026-04-03,Transfer Fee,6.39,,Posted,1340.54,Business Services,TRANSFER_OTHER
+2026-04-03,Intuit Deposit,,240.0,Posted,599.05,Income,PAYROLL_PROVIDER
+2026-04-03,Columbiaprop Vendor Payment,,65.0,Posted,359.05,Income,CUSTOMER_PAYMENT
+2026-04-06,Mobile Deposit,,125.0,Posted,5615.54,Income,DEPOSIT
+2026-04-06,Walmart,1.87,,Posted,5613.67,Shopping,SPEND
+2026-04-06,Carolina Power,3.33,,Posted,5610.34,Uncategorized,SPEND
+2026-04-06,San Jose,48.27,,Posted,5562.07,Uncategorized,SPEND
+2026-04-06,Facebook,50.0,,Posted,5512.07,Advertising,SPEND
+2026-04-06,Transfer From 7903,,3000.0,Posted,5490.54,Transfer,LOC
+2026-04-06,Walmart,59.4,,Posted,5452.67,Shopping,SPEND
+2026-04-06,Carolina Power,336.34,,Posted,5116.33,Uncategorized,SPEND
+2026-04-06,Image Ink,833.85,,Posted,4282.48,Shopping,SPEND
+2026-04-06,Transfer Fee,1.5,,Posted,4280.98,Business Services,TRANSFER_OTHER
+2026-04-06,Transfer Fee,4.5,,Posted,4276.48,Business Services,TRANSFER_OTHER
+2026-04-06,Transfer From 7903,,500.0,Posted,2490.54,Transfer,LOC
+2026-04-06,Transfer From 7903,,450.0,Posted,1990.54,Transfer,LOC
+2026-04-06,Intuit Deposit,,150.0,Posted,1540.54,Income,PAYROLL_PROVIDER
+2026-04-06,Intuit Deposit,,50.0,Posted,1390.54,Income,PAYROLL_PROVIDER
+2026-04-07,Facebook,5.81,,Posted,4270.67,Advertising,SPEND
+2026-04-07,BP Gas,58.06,,Posted,4212.61,Gas,SPEND
+2026-04-07,A Z Lawn Mower,65.3,,Posted,4147.31,Lawn & Garden,SPEND
+2026-04-07,Tractor Supply,213.99,,Posted,3933.32,Shopping,SPEND
+2026-04-07,Walmart,381.7,,Posted,3551.62,Shopping,SPEND
+2026-04-07,A Z Lawn Mower,2920.4,,Posted,631.22,Lawn & Garden,SPEND
+2026-04-07,Intuit,21.13,,Posted,610.09,Business Services,PAYROLL_PROVIDER
+2026-04-08,Intuit Deposit,,252.5,Posted,862.59,Income,PAYROLL_PROVIDER
+2026-04-08,QuikTrip,5.98,,Posted,856.61,Fast Food,SPEND
+2026-04-08,Zaxby's,24.16,,Posted,832.45,Fast Food,SPEND
+2026-04-08,Midlands Landsca,88.28,,Posted,744.17,Home Improvement,SPEND
+2026-04-08,Transfer Fee,7.56,,Posted,736.61,Business Services,TRANSFER_OTHER
+2026-04-09,Intuit Deposit,,315.0,Posted,1051.61,Income,PAYROLL_PROVIDER
+2026-04-09,The Home Depot,79.26,,Posted,972.35,Home Improvement,SPEND
+2026-04-09,Image Ink,373.98,,Posted,598.37,Uncategorized,SPEND
+2026-04-09,Transfer Fee,9.42,,Posted,588.95,Business Services,TRANSFER_OTHER
+2026-04-10,Mobile Deposit,,725.0,Posted,2278.95,Income,DEPOSIT
+2026-04-10,National at Columbia Sc via Cantaloupe,2.0,,Posted,2276.95,Fast Food,SPEND
+2026-04-10,QuikTrip,19.86,,Posted,2257.09,Gas,SPEND
+2026-04-10,Carfax,48.14,,Posted,2208.95,Business Services,SPEND
+2026-04-10,Facebook,50.0,,Posted,2158.95,Advertising,SPEND
+2026-04-10,Love's Travel Stops,175.0,,Posted,1983.95,Gas,SPEND
+2026-04-10,Transfer Fee,6.74,,Posted,1977.21,Business Services,TRANSFER_OTHER
+2026-04-10,Transfer To 5875,225.0,,Posted,1752.21,Transfer,PERSONAL_5875
+2026-04-10,Bill.com,,450.0,Posted,1553.95,Transfer,OTHER_IN
+2026-04-10,Intuit Deposit,,225.0,Posted,1103.95,Income,PAYROLL_PROVIDER
+2026-04-10,United Community Paypvdpmt,,150.0,Posted,878.95,Income,OTHER_IN
+2026-04-10,Columbiaprop Vendor Payment,,140.0,Posted,728.95,Income,CUSTOMER_PAYMENT
+2026-04-13,Mobile Deposit,,75.0,Posted,3327.21,Income,DEPOSIT
+2026-04-13,Starbucks,35.12,,Posted,3292.09,Coffee Shops,SPEND
+2026-04-13,Brothers Pelio,35.96,,Posted,3256.13,Gas,SPEND
+2026-04-13,Transfer From 7903,,1000.0,Posted,3252.21,Transfer,LOC
+2026-04-13,QuikTrip,37.44,,Posted,3218.69,Gas,SPEND
+2026-04-13,Facebook,50.0,,Posted,3168.69,Advertising,SPEND
+2026-04-13,King Fuel,61.67,,Posted,3107.02,Gas,SPEND
+2026-04-13,Docs Bbq and Sou,71.94,,Posted,3035.08,Restaurants,SPEND
+2026-04-13,QuikTrip,86.43,,Posted,2948.65,Gas,SPEND
+2026-04-13,Ace Hardware,113.71,,Posted,2834.94,Home Improvement,SPEND
+2026-04-13,QuikTrip,127.02,,Posted,2707.92,Gas,SPEND
+2026-04-13,Transfer From 7903,,500.0,Posted,2252.21,Transfer,LOC
+2026-04-13,Bb's Auto,1309.54,,Posted,1398.38,Uncategorized,SPEND
+2026-04-13,Transfer To 5875,200.0,,Posted,1198.38,Transfer,PERSONAL_5875
+2026-04-14,Mobile Deposit,,1273.5,Posted,4171.88,Income,DEPOSIT
+2026-04-14,QuikTrip,2.0,,Posted,4169.88,Fast Food,SPEND
+2026-04-14,Nic Richlandcty,29.49,,Posted,4140.39,Uncategorized,SPEND
+2026-04-14,Lowe's,217.52,,Posted,3922.87,Home Improvement,SPEND
+2026-04-14,K & D Specialtie,342.02,,Posted,3580.85,Uncategorized,SPEND
+2026-04-14,Transfer Fee,2.24,,Posted,3578.61,Business Services,TRANSFER_OTHER
+2026-04-14,Transfer From 7903,,1500.0,Posted,2898.38,Transfer,LOC
+2026-04-14,United Community Paypvdpmt,,125.0,Posted,1398.38,Income,OTHER_IN
+2026-04-14,Intuit Deposit,,75.0,Posted,1273.38,Income,PAYROLL_PROVIDER
+2026-04-15,Mobile Deposit,,2838.89,Posted,8717.5,Income,DEPOSIT
+2026-04-15,QuikTrip,2.0,,Posted,8715.5,Fast Food,SPEND
+2026-04-15,QuikTrip,5.98,,Posted,8709.52,Fast Food,SPEND
+2026-04-15,QuikTrip,5.99,,Posted,8703.53,Fast Food,SPEND
+2026-04-15,QuikTrip,26.55,,Posted,8676.98,Gas,SPEND
+2026-04-15,Lowe's,115.78,,Posted,8561.2,Home Improvement,SPEND
+2026-04-15,QuikTrip,142.88,,Posted,8418.32,Gas,SPEND
+2026-04-15,QuikTrip,500.0,,Posted,7918.32,Gas,SPEND
+2026-04-15,Lowe's,959.77,,Posted,6958.55,Home Improvement,SPEND
+2026-04-15,Mobile Deposit,,1250.0,Posted,5878.61,Income,DEPOSIT
+2026-04-15,Nte,1710.61,,Posted,5247.94,Uncategorized,SPEND
+2026-04-15,Transfer Fee,23.94,,Posted,5224.0,Business Services,TRANSFER_OTHER
+2026-04-15,Mobile Deposit,,250.0,Posted,4628.61,Income,DEPOSIT
+2026-04-15,Intuit Deposit,,800.0,Posted,4378.61,Income,PAYROLL_PROVIDER
+2026-04-16,Intuit Deposit,,3015.0,Posted,9564.0,Income,PAYROLL_PROVIDER
+2026-04-16,Transfer To 7903,1509.0,,Posted,8055.0,Transfer,LOC
+2026-04-16,Spatel Aiken Sc,12.62,,Posted,8042.38,Uncategorized,SPEND
+2026-04-16,Enmarket,24.16,,Posted,8018.22,Gas,SPEND
+2026-04-16,Facebook,50.0,,Posted,7968.22,Advertising,SPEND
+2026-04-16,QuikTrip,106.35,,Posted,7861.87,Gas,SPEND
+2026-04-16,Transfer Fee,89.35,,Posted,7772.52,Business Services,TRANSFER_OTHER
+2026-04-16,Transfer From 7903,,500.0,Posted,6549.0,Transfer,LOC
+2026-04-16,United Community Paypvdpmt,,300.0,Posted,6049.0,Income,OTHER_IN
+2026-04-16,United Community Paypvdpmt,,150.0,Posted,5749.0,Income,OTHER_IN
+2026-04-16,United Community Paypvdpmt,,150.0,Posted,5599.0,Income,OTHER_IN
+2026-04-16,United Community Paypvdpmt,,75.0,Posted,5449.0,Income,OTHER_IN
+2026-04-16,United Community Paypvdpmt,,75.0,Posted,5374.0,Income,OTHER_IN
+2026-04-16,United Community Paypvdpmt,,75.0,Posted,5299.0,Income,OTHER_IN
+2026-04-16,Transfer To 0535,6247.29,,Posted,1525.23,Transfer,PAYROLL_0535
+2026-04-17,Transfer From 7903,,1601.0,Posted,3276.23,Transfer,LOC
+2026-04-17,QuikTrip,8.59,,Posted,3267.64,Fast Food,SPEND
+2026-04-17,Eudora Farms,11.7,,Posted,3255.94,Uncategorized,SPEND
+2026-04-17,QuikTrip,14.45,,Posted,3241.49,Fast Food,SPEND
+2026-04-17,Murphy USA,35.64,,Posted,3205.85,Gas,SPEND
+2026-04-17,Domino's,55.0,,Posted,3150.85,Fast Food,SPEND
+2026-04-17,Murphy USA,80.0,,Posted,3070.85,Gas,SPEND
+2026-04-17,Lowe's,125.4,,Posted,2945.45,Home Improvement,SPEND
+2026-04-17,Palmettostateren,538.36,,Posted,2407.09,Uncategorized,SPEND
+2026-04-17,Sfa Media,550.15,,Posted,1856.94,Shopping,SPEND
+2026-04-17,Transfer Fee,4.49,,Posted,1852.45,Business Services,TRANSFER_OTHER
+2026-04-17,Intuit Deposit,,150.0,Posted,1675.23,Income,PAYROLL_PROVIDER
+2026-04-20,Transfer From 7903,,1200.0,Posted,3552.45,Transfer,LOC
+2026-04-20,QuikTrip,10.96,,Posted,3541.49,Fast Food,SPEND
+2026-04-20,Lowe's,18.06,,Posted,3523.43,Home Improvement,SPEND
+2026-04-20,QuikTrip,26.48,,Posted,3496.95,Gas,SPEND
+2026-04-20,Facebook,50.0,,Posted,3446.95,Advertising,SPEND
+2026-04-20,Nic County,114.19,,Posted,3332.76,Uncategorized,SPEND
+2026-04-20,Advance Auto Parts,118.78,,Posted,3213.98,Service & Parts,SPEND
+2026-04-20,Thompson Rental,150.46,,Posted,3063.52,Uncategorized,SPEND
+2026-04-20,Lowe's,227.63,,Posted,2835.89,Home Improvement,SPEND
+2026-04-20,Lowe's,250.23,,Posted,2585.66,Home Improvement,SPEND
+2026-04-20,Intuit Deposit,,500.0,Posted,2352.45,Income,PAYROLL_PROVIDER
+2026-04-20,Nte,514.29,,Posted,2071.37,Uncategorized,SPEND
+2026-04-20,SiteOne Landscape Supply,726.73,,Posted,1344.64,Lawn & Garden,SPEND
+2026-04-20,Tractor Supply,1048.59,,Posted,296.05,Shopping,SPEND
+2026-04-20,Transfer Fee,14.95,,Posted,281.1,Business Services,TRANSFER_OTHER
+2026-04-21,Transfer From 7903,,2500.0,Posted,2906.1,Transfer,LOC
+2026-04-21,Circle K,22.87,,Posted,2883.23,Gas,SPEND
+2026-04-21,Circle K,60.82,,Posted,2822.41,Gas,SPEND
+2026-04-21,Transfer Fee,3.74,,Posted,2818.67,Business Services,TRANSFER_OTHER
+2026-04-21,Intuit Deposit,,125.0,Posted,406.1,Income,PAYROLL_PROVIDER
+2026-04-22,AutoZone,,10.7,Posted,3004.37,Service & Parts,OTHER_IN
+2026-04-22,QuikTrip,5.98,,Posted,2998.39,Fast Food,SPEND
+2026-04-22,Intuit Deposit,,175.0,Posted,2993.67,Income,PAYROLL_PROVIDER
+2026-04-22,Dukes Equipment,28.88,,Posted,2969.51,Uncategorized,SPEND
+2026-04-22,Facebook,50.0,,Posted,2919.51,Advertising,SPEND
+2026-04-22,Tec Equipment Co,71.56,,Posted,2847.95,Uncategorized,SPEND
+2026-04-22,Nte,79.88,,Posted,2768.07,Uncategorized,SPEND
+2026-04-22,QuikTrip,95.22,,Posted,2672.85,Gas,SPEND
+2026-04-22,A Z Lawn Mower,99.72,,Posted,2573.13,Lawn & Garden,SPEND
+2026-04-22,AutoZone,164.4,,Posted,2408.73,Service & Parts,SPEND
+2026-04-22,Palmettostateren,2152.52,,Posted,256.21,Uncategorized,SPEND
+2026-04-22,Transfer Fee,5.24,,Posted,250.97,Business Services,TRANSFER_OTHER
+2026-04-23,Transfer From 7903,,500.0,Posted,825.97,Transfer,LOC
+2026-04-23,Shell,3.05,,Posted,822.92,Fast Food,SPEND
+2026-04-23,Amazon,18.18,,Posted,804.74,Shopping,SPEND
+2026-04-23,Amazon,21.82,,Posted,782.92,Shopping,SPEND
+2026-04-23,Nic Richlandcty,45.65,,Posted,737.27,Uncategorized,SPEND
+2026-04-23,Amazon,85.58,,Posted,651.69,Shopping,SPEND
+2026-04-23,United Community Paypvdpmt,,75.0,Posted,325.97,Income,OTHER_IN
+2026-04-23,The Home Depot,536.76,,Posted,114.93,Home Improvement,SPEND
+2026-04-24,Columbiaprop Vendor Payment,,65.0,Posted,179.93,Income,CUSTOMER_PAYMENT
+2026-04-24,Circle K,54.87,,Posted,125.06,Gas,SPEND
+2026-04-24,Nic Richlandcty,83.23,,Posted,41.83,Uncategorized,SPEND
+2026-04-24,Shell,84.14,,Posted,-42.31,Gas,SPEND
+2026-04-24,Metts Constructi,258.5,,Posted,-300.81,Uncategorized,SPEND
+2026-04-27,Transfer From 7903,,1500.0,Posted,2958.79,Transfer,LOC
+2026-04-27,QuikTrip,2.02,,Posted,2956.77,Fast Food,SPEND
+2026-04-27,Shell,3.23,,Posted,2953.54,Fast Food,SPEND
+2026-04-27,Shell,4.39,,Posted,2949.15,Fast Food,SPEND
+2026-04-27,The Home Depot,32.37,,Posted,2916.78,Home Improvement,SPEND
+2026-04-27,Facebook,50.0,,Posted,2866.78,Advertising,SPEND
+2026-04-27,Dog Food Center West,57.87,,Posted,2808.91,Food & Dining,SPEND
+2026-04-27,AutoZone,64.79,,Posted,2744.12,Service & Parts,SPEND
+2026-04-27,Walmart,70.87,,Posted,2673.25,Shopping,SPEND
+2026-04-27,QuikTrip,86.25,,Posted,2587.0,Gas,SPEND
+2026-04-27,Nic County,102.66,,Posted,2484.34,Utilities,SPEND
+2026-04-27,Dog Food Center West,133.54,,Posted,2350.8,Food & Dining,SPEND
+2026-04-27,Dog Food Center West,200.3,,Posted,2150.5,Food & Dining,SPEND
+2026-04-27,Transfer Fee,5.98,,Posted,2144.52,Business Services,TRANSFER_OTHER
+2026-04-27,Transfer Fee,35.41,,Posted,2109.11,Business Services,TRANSFER_OTHER
+2026-04-27,Intuit Deposit,,1184.6,Posted,1458.79,Income,PAYROLL_PROVIDER
+2026-04-27,United Community Paypvdpmt,,375.0,Posted,274.19,Income,OTHER_IN
+2026-04-27,Intuit Deposit,,200.0,Posted,-100.81,Income,PAYROLL_PROVIDER
+2026-04-28,Rebate,,0.84,Posted,4871.94,Bonus,OTHER_IN
+2026-04-28,Rebate,,0.55,Posted,4871.1,Bonus,OTHER_IN
+2026-04-28,Rebate,,0.03,Posted,4870.55,Bonus,OTHER_IN
+2026-04-28,Intuit Deposit,,1435.0,Posted,4870.52,Income,PAYROLL_PROVIDER
+2026-04-28,Transfer To 7903,1200.0,,Posted,3671.94,Transfer,LOC
+2026-04-28,Circle K,12.25,,Posted,3659.69,Fast Food,SPEND
+2026-04-28,Amazon,21.39,,Posted,3638.3,Shopping,SPEND
+2026-04-28,Circle K,39.5,,Posted,3598.8,Gas,SPEND
+2026-04-28,Facebook,50.0,,Posted,3548.8,Advertising,SPEND
+2026-04-28,Nic Richlandcty,65.9,,Posted,3482.9,Uncategorized,SPEND
+2026-04-28,Transfer From 7903,,1326.41,Posted,3435.52,Transfer,LOC
+2026-04-28,BP Gas,101.52,,Posted,3381.38,Gas,SPEND
+2026-04-28,Nic Richlandcty,117.02,,Posted,3264.36,Uncategorized,SPEND
+2026-04-28,Dukes Equipm,123.07,,Posted,3141.29,Uncategorized,SPEND
+2026-04-28,Transfer Fee,42.92,,Posted,3098.37,Business Services,TRANSFER_OTHER
+2026-04-29,Transfer From 7903,,1000.0,Posted,5348.37,Transfer,LOC
+2026-04-29,Nic Richlandcty,46.52,,Posted,5301.85,Uncategorized,SPEND
+2026-04-29,Nic Richlandcty,59.74,,Posted,5242.11,Uncategorized,SPEND
+2026-04-29,Nic Richlandcty,106.44,,Posted,5135.67,Uncategorized,SPEND
+2026-04-29,Tractor Supply,118.76,,Posted,5016.91,Shopping,SPEND
+2026-04-29,Tractor Supply,162.49,,Posted,4854.42,Shopping,SPEND
+2026-04-29,Lowe's,209.19,,Posted,4645.23,Home Improvement,SPEND
+2026-04-29,Transfer From 7903,,1000.0,Posted,4348.37,Transfer,LOC
+2026-04-29,Equip Pro Rental West,492.75,,Posted,4152.48,Sporting Goods,SPEND
+2026-04-29,United Community Paypvdpmt,,125.0,Posted,3348.37,Income,OTHER_IN
+2026-04-29,United Community Paypvdpmt,,125.0,Posted,3223.37,Income,OTHER_IN
+2026-04-30,Intuit Deposit,,771.25,Posted,4998.73,Income,PAYROLL_PROVIDER
+2026-04-30,Ace Hardware,3.81,,Posted,4994.92,Home Improvement,SPEND
+2026-04-30,Circle K,7.97,,Posted,4986.95,Fast Food,SPEND
+2026-04-30,A Z Lawn Mower,8.06,,Posted,4978.89,Lawn & Garden,SPEND
+2026-04-30,Truck Stop,13.9,,Posted,4964.99,Gas,SPEND
+2026-04-30,Circle K,33.72,,Posted,4931.27,Gas,SPEND
+2026-04-30,Circle K,47.98,,Posted,4883.29,Gas,SPEND
+2026-04-30,Circle K,76.89,,Posted,4806.4,Gas,SPEND
+2026-04-30,Nic Richlandcty,117.6,,Posted,4688.8,Uncategorized,SPEND
+2026-04-30,Nic Richlandcty,189.27,,Posted,4499.53,Uncategorized,SPEND
+2026-04-30,Lowe's,207.54,,Posted,4291.99,Home Improvement,SPEND
+2026-04-30,United Community Paypvdpmt,,75.0,Posted,4227.48,Income,OTHER_IN
+2026-04-30,Nic Richlandcty,300.87,,Posted,3991.12,Uncategorized,SPEND
+2026-04-30,Palmettostateren,983.32,,Posted,3007.8,Uncategorized,SPEND
+2026-04-30,Transfer Fee,23.06,,Posted,2984.74,Business Services,TRANSFER_OTHER
+2026-04-30,Statement Service Fee,3.0,,Posted,2981.74,Service Fee,SPEND
+2026-05-01,Intuit Deposit,,150.0,Posted,3131.74,Income,PAYROLL_PROVIDER
+2026-05-01,The Home Depot,30.25,,Posted,3101.49,Home Improvement,SPEND
+2026-05-01,The Home Depot,41.28,,Posted,3060.21,Home Improvement,SPEND
+2026-05-01,The Home Depot,46.0,,Posted,3014.21,Home Improvement,SPEND
+2026-05-01,Facebook,50.0,,Posted,2964.21,Advertising,SPEND
+2026-05-01,Shell,93.02,,Posted,2871.19,Gas,SPEND
+2026-05-01,The Home Depot,145.46,,Posted,2725.73,Home Improvement,SPEND
+2026-05-01,Lowe's,170.01,,Posted,2555.72,Home Improvement,SPEND
+2026-05-01,Lowe's,400.18,,Posted,2155.54,Home Improvement,SPEND
+2026-05-01,Transfer Fee,4.49,,Posted,2151.05,Business Services,TRANSFER_OTHER
+2026-05-01,Intuit,223.63,,Posted,1927.42,Business Services,PAYROLL_PROVIDER
+2026-05-04,Mobile Deposit,,225.0,Posted,3352.42,Income,DEPOSIT
+2026-05-04,The Home Depot,38.84,,Posted,3313.58,Home Improvement,SPEND
+2026-05-04,The Home Depot,44.92,,Posted,3268.66,Home Improvement,SPEND
+2026-05-04,Facebook,50.0,,Posted,3218.66,Advertising,SPEND
+2026-05-04,Circle K,58.86,,Posted,3159.8,Gas,SPEND
+2026-05-04,Intuit Deposit,,775.0,Posted,3127.42,Income,PAYROLL_PROVIDER
+2026-05-04,The Home Depot,117.26,,Posted,3042.54,Home Improvement,SPEND
+2026-05-04,QuikTrip,144.25,,Posted,2898.29,Gas,SPEND
+2026-05-04,Transfer From 7903,,250.0,Posted,2352.42,Transfer,LOC
+2026-05-04,The Home Depot,583.21,,Posted,2315.08,Home Improvement,SPEND
+2026-05-04,Transfer Fee,0.5,,Posted,2314.58,Business Services,TRANSFER_OTHER
+2026-05-04,Transfer Fee,3.74,,Posted,2310.84,Business Services,TRANSFER_OTHER
+2026-05-04,Transfer Fee,9.24,,Posted,2301.6,Business Services,TRANSFER_OTHER
+2026-05-04,Intuit Deposit,,125.0,Posted,2102.42,Income,PAYROLL_PROVIDER
+2026-05-04,Intuit Deposit,,50.0,Posted,1977.42,Income,PAYROLL_PROVIDER
+2026-05-04,Check #101,2560.0,,Posted,-258.4,Check,SPEND
+2026-05-05,Mobile Deposit,,225.0,Posted,3764.6,Income,DEPOSIT
+2026-05-05,QuikTrip,16.36,,Posted,3748.24,Fast Food,SPEND
+2026-05-05,The Home Depot,105.94,,Posted,3642.3,Home Improvement,SPEND
+2026-05-05,Transfer From 7903,,1723.0,Posted,3539.6,Transfer,LOC
+2026-05-05,Miner's Land,898.8,,Posted,2743.5,Uncategorized,SPEND
+2026-05-05,Transfer From 7903,,1500.0,Posted,1816.6,Transfer,LOC
+2026-05-05,Miner's Land,1572.9,,Posted,1170.6,Uncategorized,SPEND
+2026-05-05,Transfer Fee,2.24,,Posted,1168.36,Business Services,TRANSFER_OTHER
+2026-05-05,Transfer From 7903,,500.0,Posted,316.6,Transfer,LOC
+2026-05-05,Intuit Deposit,,75.0,Posted,-183.4,Income,PAYROLL_PROVIDER
+2026-05-06,United Community Bank Rebate,,0.93,Posted,1569.63,Bonus,OTHER_IN
+2026-05-06,United Community Bank Rebate,,0.34,Posted,1568.7,Bonus,OTHER_IN
+2026-05-06,Intuit Deposit,,325.0,Posted,1568.36,Income,PAYROLL_PROVIDER
+2026-05-06,Murphy USA,4.75,,Posted,1564.88,Fast Food,SPEND
+2026-05-06,QuikTrip,24.66,,Posted,1540.22,Gas,SPEND
+2026-05-06,Circle K,56.93,,Posted,1483.29,Gas,SPEND
+2026-05-06,The Home Depot,138.75,,Posted,1344.54,Home Improvement,SPEND
+2026-05-06,Regular Deposit,,75.0,Posted,1243.36,Income,DEPOSIT
+2026-05-06,Miner's Land,802.5,,Posted,542.04,Uncategorized,SPEND
+2026-05-06,Transfer Fee,9.72,,Posted,532.32,Business Services,TRANSFER_OTHER
+2026-05-07,Intuit Deposit,,725.63,Posted,1697.95,Income,PAYROLL_PROVIDER
+2026-05-07,Facebook,3.87,,Posted,1694.08,Advertising,SPEND
+2026-05-07,Facebook,50.0,,Posted,1644.08,Advertising,SPEND
+2026-05-07,The Home Depot,89.78,,Posted,1554.3,Home Improvement,SPEND
+2026-05-07,Dog Food Center West,166.92,,Posted,1387.38,Food & Dining,SPEND
+2026-05-07,Transfer Fee,21.69,,Posted,1365.69,Business Services,TRANSFER_OTHER
+2026-05-07,Columbiaprop Vendor Payment,,440.0,Posted,972.32,Income,CUSTOMER_PAYMENT
+2026-05-08,Intuit Deposit,,737.1,Posted,2102.79,Income,PAYROLL_PROVIDER
+2026-05-08,Circle K,4.06,,Posted,2098.73,Fast Food,SPEND
+2026-05-08,Ace Hardware,39.14,,Posted,2059.59,Home Improvement,SPEND
+2026-05-08,A Z Lawn Mower,59.48,,Posted,2000.11,Lawn & Garden,SPEND
+2026-05-08,A Z Lawn Mower,63.17,,Posted,1936.94,Lawn & Garden,SPEND
+2026-05-08,Shell,64.51,,Posted,1872.43,Gas,SPEND
+2026-05-08,A Z Lawn Mower,68.31,,Posted,1804.12,Lawn & Garden,SPEND
+2026-05-08,Ace Hardware,88.78,,Posted,1715.34,Home Improvement,SPEND
+2026-05-08,Kwik Way,118.58,,Posted,1596.76,Gas,SPEND
+2026-05-08,Transfer Fee,22.04,,Posted,1574.72,Business Services,TRANSFER_OTHER
+2026-05-08,Transfer To 0535,1000.0,,Posted,574.72,Transfer,PAYROLL_0535
+2026-05-11,Mobile Deposit,,727.0,Posted,4801.72,Income,DEPOSIT
+2026-05-11,Circle K,5.73,,Posted,4795.99,Fast Food,SPEND
+2026-05-11,Facebook,50.0,,Posted,4745.99,Advertising,SPEND
+2026-05-11,The Home Depot,54.91,,Posted,4691.08,Home Improvement,SPEND
+2026-05-11,Lowes Foods,81.49,,Posted,4609.59,Groceries,SPEND
+2026-05-11,Dog Food Center West,100.15,,Posted,4509.44,Food & Dining,SPEND
+2026-05-11,Jiffy Lube,101.38,,Posted,4408.06,Service & Parts,SPEND
+2026-05-11,Agy Holding Corp,,2400.0,Posted,4074.72,Income,OTHER_IN
+2026-05-11,Thompson Rental,447.24,,Posted,3960.82,Uncategorized,SPEND
+2026-05-11,Miner's Land,449.4,,Posted,3511.42,Shopping,SPEND
+2026-05-11,Miner's Land,898.8,,Posted,2612.62,Shopping,SPEND
+2026-05-11,Transfer Fee,17.94,,Posted,2594.68,Business Services,TRANSFER_OTHER
+2026-05-11,Intuit Deposit,,600.0,Posted,1674.72,Income,PAYROLL_PROVIDER
+2026-05-11,Transfer To 0535,1500.0,,Posted,1094.68,Transfer,PAYROLL_0535
+2026-05-11,United Community Paypvdpmt,,250.0,Posted,1074.72,Income,OTHER_IN
+2026-05-11,United Community Paypvdpmt,,250.0,Posted,824.72,Income,OTHER_IN
+2026-05-12,Transfer From 7903,,5400.0,Posted,6709.68,Transfer,LOC
+2026-05-12,Circle K,39.87,,Posted,6669.81,Gas,SPEND
+2026-05-12,Lowe's,42.2,,Posted,6627.61,Home Improvement,SPEND
+2026-05-12,Tractor Supply,78.1,,Posted,6549.51,Shopping,SPEND
+2026-05-12,Circle K,126.87,,Posted,6422.64,Gas,SPEND
+2026-05-12,Transfer Fee,6.44,,Posted,6416.2,Business Services,TRANSFER_OTHER
+2026-05-12,Transfer To 0535,500.0,,Posted,5916.2,Transfer,PAYROLL_0535
+2026-05-12,Intuit Deposit,,215.0,Posted,1309.68,Income,PAYROLL_PROVIDER
+2026-05-13,Intuit Deposit,,5520.0,Posted,11436.2,Income,PAYROLL_PROVIDER
+2026-05-13,Transfer To 7903,5000.0,,Posted,6436.2,Transfer,LOC
+2026-05-13,Love's Travel Stops,9.47,,Posted,6426.73,Fast Food,SPEND
+2026-05-13,BP Gas,49.45,,Posted,6377.28,Gas,SPEND
+2026-05-13,Facebook,50.0,,Posted,6327.28,Advertising,SPEND
+2026-05-13,QuikTrip,132.0,,Posted,6195.28,Gas,SPEND
+2026-05-13,Transfer Fee,165.05,,Posted,6030.23,Business Services,TRANSFER_OTHER
+2026-05-13,Check #103,5289.37,,Posted,740.86,Check,SPEND
+2026-05-14,United Community Bank Rebate,,0.4,Posted,2496.26,Bonus,OTHER_IN
+2026-05-14,United Community Paypvdpmt,,1475.0,Posted,2495.86,Income,OTHER_IN
+2026-05-14,Circle K,15.06,,Posted,2481.2,Fast Food,SPEND
+2026-05-14,Spatel Aiken Sc,22.5,,Posted,2458.7,Uncategorized,SPEND
+2026-05-14,Dave's Grill,30.16,,Posted,2428.54,Restaurants,SPEND
+2026-05-14,Tractor Supply,93.99,,Posted,2334.55,Shopping,SPEND
+2026-05-14,A Z Lawn Mower,156.45,,Posted,2178.1,Lawn & Garden,SPEND
+2026-05-14,Transfer Fee,8.36,,Posted,2169.74,Business Services,TRANSFER_OTHER
+2026-05-14,Intuit Deposit,,280.0,Posted,1020.86,Income,PAYROLL_PROVIDER
+2026-05-15,The Home Depot,,16.47,Posted,3252.46,Home Improvement,OTHER_IN
+2026-05-15,Intuit Deposit,,841.25,Posted,3235.99,Income,PAYROLL_PROVIDER
+2026-05-15,Ace Hardware,22.0,,Posted,3230.46,Home Improvement,SPEND
+2026-05-15,Circle K,38.98,,Posted,3191.48,Gas,SPEND
+2026-05-15,The Home Depot,50.0,,Posted,3141.48,Home Improvement,SPEND
+2026-05-15,QuikTrip,53.01,,Posted,3088.47,Gas,SPEND
+2026-05-15,Shell,118.21,,Posted,2970.26,Gas,SPEND
+2026-05-15,The Home Depot,226.72,,Posted,2743.54,Home Improvement,SPEND
+2026-05-15,Columbiaprop Vendor Payment,,225.0,Posted,2394.74,Income,CUSTOMER_PAYMENT
+2026-05-15,Miner's Land,1284.0,,Posted,1459.54,Uncategorized,SPEND
+2026-05-15,Bb's Auto,1522.87,,Posted,-63.33,Service & Parts,SPEND
+2026-05-15,Transfer Fee,25.16,,Posted,-88.49,Business Services,TRANSFER_OTHER
+2026-05-18,Mobile Deposit,,1273.5,Posted,11250.4,Income,DEPOSIT
+2026-05-18,365 Retail Markets,3.05,,Posted,11247.35,Fast Food,SPEND
+2026-05-18,Murphy USA,4.75,,Posted,11242.6,Fast Food,SPEND
+2026-05-18,QuikTrip,10.3,,Posted,11232.3,Fast Food,SPEND
+2026-05-18,QuikTrip,13.32,,Posted,11218.98,Fast Food,SPEND
+2026-05-18,QuikTrip,29.1,,Posted,11189.88,Gas,SPEND
+2026-05-18,Tokyo Buffet,41.0,,Posted,11148.88,Restaurants,SPEND
+2026-05-18,Sunoco,45.03,,Posted,11103.85,Gas,SPEND
+2026-05-18,Facebook,50.5,,Posted,11053.35,Advertising,SPEND
+2026-05-18,Shell,66.52,,Posted,10986.83,Gas,SPEND
+2026-05-18,Sunoco,72.18,,Posted,10914.65,Gas,SPEND
+2026-05-18,Sunoco,103.85,,Posted,10810.8,Gas,SPEND
+2026-05-18,QuikTrip,116.08,,Posted,10694.72,Gas,SPEND
+2026-05-18,Miner's Land,128.4,,Posted,10566.32,Uncategorized,SPEND
+2026-05-18,W D Branch Banking,503.5,,Posted,10062.82,Cash,SPEND
+2026-05-18,Mobile Deposit,,1250.0,Posted,9976.9,Income,DEPOSIT
+2026-05-18,Mobile Deposit,,225.0,Posted,8726.9,Income,DEPOSIT
+2026-05-18,Mobile Deposit,,150.0,Posted,8501.9,Income,DEPOSIT
+2026-05-18,Check #104,1628.97,,Posted,8433.85,Check,SPEND
+2026-05-18,Transfer Fee,7.17,,Posted,8426.68,Business Services,TRANSFER_OTHER
+2026-05-18,Fee for W D Branch Banking,1.0,,Posted,8425.68,Fees & Charges,SPEND
+2026-05-18,United Community Bank Rebate,,0.39,Posted,8351.9,Bonus,OTHER_IN
+2026-05-18,Transfer From 0535,,5000.0,Posted,8351.51,Transfer,PAYROLL_0535
+2026-05-18,Transfer From 0535,,2000.0,Posted,3351.51,Transfer,PAYROLL_0535
+2026-05-18,Transfer From 0535,,1000.0,Posted,1351.51,Transfer,PAYROLL_0535
+2026-05-18,Intuit Deposit,,240.0,Posted,351.51,Income,PAYROLL_PROVIDER
+2026-05-18,Transfer From 0535,,200.0,Posted,111.51,Transfer,PAYROLL_0535
+2026-05-19,Bill.com,,100.0,Posted,8580.18,Transfer,OTHER_IN
+2026-05-19,S&s Corner Mart,8.47,,Posted,8571.71,Gas,SPEND
+2026-05-19,Tractor Supply,36.18,,Posted,8535.53,Shopping,SPEND
+2026-05-19,Dukes Equipm,48.14,,Posted,8487.39,Uncategorized,SPEND
+2026-05-19,Bill.com,,54.5,Posted,8480.18,Transfer,OTHER_IN
+2026-05-19,Murphy USA,100.0,,Posted,8387.39,Gas,SPEND
+2026-05-19,Gaston Tire,134.5,,Posted,8252.89,Service & Parts,SPEND
+2026-05-19,Tractor Supply,156.18,,Posted,8096.71,Shopping,SPEND
+2026-05-19,City of Colum,204.4,,Posted,7892.31,Utilities,SPEND
+2026-05-19,Lowe's,471.32,,Posted,7420.99,Home Improvement,SPEND
+2026-05-19,Miner's Land,1155.6,,Posted,6265.39,Uncategorized,SPEND
+2026-05-20,Intuit Deposit,,50.0,Posted,6315.39,Income,PAYROLL_PROVIDER
+2026-05-20,US Treasury,15.05,,Posted,6300.34,Federal Tax,TAX
+2026-05-20,QuikTrip,33.89,,Posted,6266.45,Gas,SPEND
+2026-05-20,Shell,71.55,,Posted,6194.9,Gas,SPEND
+2026-05-20,Miner's Land,342.4,,Posted,5852.5,Uncategorized,SPEND
+2026-05-20,US Treasury,510.0,,Posted,5342.5,Federal Tax,TAX
+2026-05-20,Transfer Fee,1.5,,Posted,5341.0,Business Services,TRANSFER_OTHER
+2026-05-21,Intuit Deposit,,325.0,Posted,5666.0,Income,PAYROLL_PROVIDER
+2026-05-21,ExxonMobil,10.55,,Posted,5655.45,Fast Food,SPEND
+2026-05-21,Facebook,50.0,,Posted,5605.45,Advertising,SPEND
+2026-05-21,Carolina Wings,55.0,,Posted,5550.45,Fast Food,SPEND
+2026-05-21,Shell,55.85,,Posted,5494.6,Gas,SPEND
+2026-05-21,Murphy USA,175.0,,Posted,5319.6,Gas,SPEND
+2026-05-21,Blanchard Machin,2909.75,,Posted,2409.85,Uncategorized,SPEND
+2026-05-21,Transfer Fee,9.74,,Posted,2400.11,Business Services,TRANSFER_OTHER
+2026-05-22,Msi Const Operat Zya,,15494.0,Posted,19910.23,Income,OTHER_IN
+2026-05-22,Transfer To 7903,1723.51,,Posted,18186.72,Transfer,LOC
+2026-05-22,Intuit Deposit,,1876.12,Posted,4416.23,Income,PAYROLL_PROVIDER
+2026-05-22,Transfer To 7903,15000.0,,Posted,3186.72,Transfer,LOC
+2026-05-22,QuikTrip,4.51,,Posted,3182.21,Fast Food,SPEND
+2026-05-22,QuikTrip,10.27,,Posted,3171.94,Fast Food,SPEND
+2026-05-22,QuikTrip,27.15,,Posted,3144.79,Gas,SPEND
+2026-05-22,Cracker Barrel,104.63,,Posted,3040.16,Restaurants,SPEND
+2026-05-22,Transfer Fee,56.09,,Posted,2984.07,Business Services,TRANSFER_OTHER
+2026-05-22,Columbiaprop Vendor Payment,,140.0,Posted,2540.11,Income,CUSTOMER_PAYMENT
+2026-05-22,Transfer To 0535,1250.0,,Posted,1734.07,Transfer,PAYROLL_0535
+2026-05-26,Intuit Deposit,,86.25,Posted,1895.32,Income,PAYROLL_PROVIDER
+2026-05-26,Bojangles,11.96,,Posted,1883.36,Fast Food,SPEND
+2026-05-26,Shell,12.11,,Posted,1871.25,Fast Food,SPEND
+2026-05-26,Walmart,12.82,,Posted,1858.43,Shopping,SPEND
+2026-05-26,QuikTrip,15.53,,Posted,1842.9,Fast Food,SPEND
+2026-05-26,Shell,26.71,,Posted,1816.19,Gas,SPEND
+2026-05-26,Intuit Deposit,,75.0,Posted,1809.07,Income,PAYROLL_PROVIDER
+2026-05-26,Facebook,50.0,,Posted,1766.19,Advertising,SPEND
+2026-05-26,Facebook,50.0,,Posted,1716.19,Advertising,SPEND
+2026-05-26,Shell,64.03,,Posted,1652.16,Gas,SPEND
+2026-05-26,Trijal,64.51,,Posted,1587.65,Uncategorized,SPEND
+2026-05-26,Thompson Rental,160.1,,Posted,1427.55,Uncategorized,SPEND
+2026-05-26,W D Palmetto,503.0,,Posted,924.55,Cash,SPEND
+2026-05-26,Transfer Fee,2.24,,Posted,922.31,Business Services,TRANSFER_OTHER
+2026-05-26,Transfer Fee,2.58,,Posted,919.73,Business Services,TRANSFER_OTHER
+2026-05-26,Transfer To 5875,350.0,,Posted,569.73,Transfer,PERSONAL_5875
+2026-05-26,Fee for W D Palmetto,1.0,,Posted,568.73,Fees & Charges,SPEND
+2026-05-27,Tractor Supply,13.9,,Posted,554.83,Shopping,SPEND
+2026-05-27,Lowe's,51.98,,Posted,502.85,Home Improvement,SPEND
+2026-05-27,Monterrery Resta,59.73,,Posted,443.12,Restaurants,SPEND
+2026-05-27,Tractor Supply,95.0,,Posted,348.12,Shopping,SPEND
+2026-05-27,Lowe's,290.98,,Posted,57.14,Home Improvement,SPEND
+2026-05-28,United Community Bank Rebate,,0.48,Posted,342.62,Bonus,OTHER_IN
+2026-05-28,Transfer From 0535,,200.0,Posted,342.14,Transfer,PAYROLL_0535
+2026-05-28,Murphy USA,10.97,,Posted,331.65,Fast Food,SPEND
+2026-05-28,Lowe's,16.69,,Posted,314.96,Home Improvement,SPEND
+2026-05-28,QuikTrip,42.33,,Posted,272.63,Gas,SPEND
+2026-05-28,AutoZone,70.6,,Posted,202.03,Service & Parts,SPEND
+2026-05-28,Intuit Deposit,,85.0,Posted,142.14,Income,PAYROLL_PROVIDER
+2026-05-28,Shell,139.24,,Posted,62.79,Gas,SPEND
+2026-05-28,Transfer Fee,2.54,,Posted,60.25,Business Services,TRANSFER_OTHER
+2026-05-29,Mobile Deposit,,2327.0,Posted,3820.25,Income,DEPOSIT
+2026-05-29,Lowe's,54.76,,Posted,3765.49,Home Improvement,SPEND
+2026-05-29,QuikTrip,55.0,,Posted,3710.49,Gas,SPEND
+2026-05-29,Lowe's,62.79,,Posted,3647.7,Home Improvement,SPEND
+2026-05-29,Miner's Land,102.72,,Posted,3544.98,Uncategorized,SPEND
+2026-05-29,Check #105,650.0,,Posted,2894.98,Check,SPEND
+2026-05-29,Statement Service Fee,3.0,,Posted,2891.98,Service Fee,SPEND
+2026-05-29,Mobile Deposit,,433.0,Posted,1493.25,Income,DEPOSIT
+2026-05-29,Transfer From 7903,,1000.0,Posted,1060.25,Transfer,LOC
+2026-06-01,Intuit Deposit,,506.25,Posted,3638.23,Income,PAYROLL_PROVIDER
+2026-06-01,Bluwav Vend Conway Sc via Cantaloupe,2.5,,Posted,3635.73,Fast Food,SPEND
+2026-06-01,QuikTrip,16.62,,Posted,3619.11,Fast Food,SPEND
+2026-06-01,QuikTrip,27.08,,Posted,3592.03,Gas,SPEND
+2026-06-01,Lsu Weco Bottle West,29.71,,Posted,3562.32,Restaurants,SPEND
+2026-06-01,ExxonMobil,40.95,,Posted,3521.37,Gas,SPEND
+2026-06-01,Equip Pro Rental West,114.98,,Posted,3406.39,Uncategorized,SPEND
+2026-06-01,Intuit Deposit,,155.0,Posted,3131.98,Income,PAYROLL_PROVIDER
+2026-06-01,Sfa Media,387.55,,Posted,3018.84,Shopping,SPEND
+2026-06-01,Transfer Fee,2.54,,Posted,3016.3,Business Services,TRANSFER_OTHER
+2026-06-01,Transfer Fee,4.64,,Posted,3011.66,Business Services,TRANSFER_OTHER
+2026-06-01,Transfer Fee,15.13,,Posted,2996.53,Business Services,TRANSFER_OTHER
+2026-06-01,Intuit Deposit,,85.0,Posted,2976.98,Income,PAYROLL_PROVIDER
+2026-06-01,Intuit,234.33,,Posted,2762.2,Business Services,PAYROLL_PROVIDER
+2026-06-02,Intuit Deposit,,625.0,Posted,3387.2,Income,PAYROLL_PROVIDER
+2026-06-02,Lowe's,40.74,,Posted,3346.46,Home Improvement,SPEND
+2026-06-02,Facebook,53.87,,Posted,3292.59,Advertising,SPEND
+2026-06-02,The Home Depot,109.6,,Posted,3182.99,Home Improvement,SPEND
+2026-06-02,The Home Depot,217.43,,Posted,2965.56,Home Improvement,SPEND
+2026-06-02,Check,400.0,,Posted,2565.56,Check,SPEND
+2026-06-02,Progressive,897.0,,Posted,1668.56,Financial,SPEND
+2026-06-02,Transfer To 5875,100.0,,Posted,1568.56,Transfer,PERSONAL_5875
+2026-06-03,Double B Hardware,4.27,,Posted,1564.29,Home Improvement,SPEND
+2026-06-03,QuikTrip,44.32,,Posted,1519.97,Gas,SPEND
+2026-06-03,Lowe's,128.36,,Posted,1391.61,Home Improvement,SPEND
+2026-06-03,Sheffield Financial,598.45,,Posted,793.16,Financial,SPEND
+2026-06-03,Transfer Fee,18.69,,Posted,774.47,Business Services,TRANSFER_OTHER
+2026-06-04,Intuit Deposit,,6541.15,Posted,7315.62,Income,PAYROLL_PROVIDER
+2026-06-04,Transfer To 7903,5000.0,,Posted,2315.62,Transfer,LOC
+2026-06-04,Facebook,31.0,,Posted,2284.62,Advertising,SPEND
+2026-06-04,Facebook,31.0,,Posted,2253.62,Advertising,SPEND
+2026-06-04,Lowe's,41.09,,Posted,2212.53,Home Improvement,SPEND
+2026-06-04,QuikTrip,44.34,,Posted,2168.19,Gas,SPEND
+2026-06-04,Nic County,71.12,,Posted,2097.07,Utilities,SPEND
+2026-06-04,AutoZone,120.1,,Posted,1976.97,Service & Parts,SPEND
+2026-06-04,Southern Roo West,214.0,,Posted,1762.97,Clothing,SPEND
+2026-06-04,Tractor Supply,388.78,,Posted,1374.19,Shopping,SPEND
+2026-06-04,Transfer To 5875,150.0,,Posted,1224.19,Transfer,PERSONAL_5875
+2026-06-04,Transfer Fee,195.57,,Posted,1028.62,Business Services,TRANSFER_OTHER
+2026-06-05,United Community Bank Rebate,,0.56,Posted,7179.18,Bonus,OTHER_IN
+2026-06-05,Transfer From 7903,,6000.0,Posted,7178.62,Transfer,LOC
+2026-06-05,Csc Service Melville Ny via Cantaloupe,3.0,,Posted,7176.18,Fast Food,SPEND
+2026-06-05,QuikTrip,19.63,,Posted,7156.55,Gas,SPEND
+2026-06-05,QuikTrip,56.19,,Posted,7100.36,Gas,SPEND
+2026-06-05,Napa Auto Parts,130.45,,Posted,6969.91,Service & Parts,SPEND
+2026-06-05,SiteOne Landscape Supply,140.31,,Posted,6829.6,Lawn & Garden,SPEND
+2026-06-05,Transfer Fee,4.5,,Posted,6825.1,Business Services,TRANSFER_OTHER
+2026-06-05,Intuit Deposit,,150.0,Posted,1178.62,Income,PAYROLL_PROVIDER
+2026-06-08,Mobile Deposit,,145.0,Posted,11670.1,Income,DEPOSIT
+2026-06-08,Mobile Deposit,,75.0,Posted,11525.1,Income,DEPOSIT
+2026-06-08,Agy Holding Corp,,3735.0,Posted,11450.1,Income,OTHER_IN
+2026-06-08,Intuit Deposit,,500.0,Posted,7715.1,Income,PAYROLL_PROVIDER
+2026-06-08,Intuit Deposit,,250.0,Posted,7215.1,Income,PAYROLL_PROVIDER
+2026-06-08,Transfer To 7903,4500.0,,Posted,7170.1,Transfer,LOC
+2026-06-08,Facebook,13.23,,Posted,7156.87,Advertising,SPEND
+2026-06-08,QuikTrip,15.99,,Posted,7140.88,Fast Food,SPEND
+2026-06-08,QuikTrip,16.85,,Posted,7124.03,Fast Food,SPEND
+2026-06-08,QuikTrip,18.74,,Posted,7105.29,Fast Food,SPEND
+2026-06-08,QuikTrip,20.42,,Posted,7084.87,Gas,SPEND
+2026-06-08,QuikTrip,30.23,,Posted,7054.64,Gas,SPEND
+2026-06-08,Facebook,39.0,,Posted,7015.64,Advertising,SPEND
+2026-06-08,QuikTrip,39.84,,Posted,6975.8,Gas,SPEND
+2026-06-08,Columbiaprop Vendor Payment,,140.0,Posted,6965.1,Income,CUSTOMER_PAYMENT
+2026-06-08,Shell,50.0,,Posted,6925.8,Gas,SPEND
+2026-06-08,QuikTrip,60.0,,Posted,6865.8,Gas,SPEND
+2026-06-08,QuikTrip,91.55,,Posted,6774.25,Gas,SPEND
+2026-06-08,The Home Depot,118.28,,Posted,6655.97,Home Improvement,SPEND
+2026-06-08,Equip Pro Rental West,142.35,,Posted,6513.62,Uncategorized,SPEND
+2026-06-08,Nte,149.92,,Posted,6363.7,Uncategorized,SPEND
+2026-06-08,Bb's Auto,206.68,,Posted,6157.02,Auto & Transport,SPEND
+2026-06-08,Miner's Land,272.85,,Posted,5884.17,Uncategorized,SPEND
+2026-06-08,A Z Lawn Mower,304.22,,Posted,5579.95,Lawn & Garden,SPEND
+2026-06-08,Transfer Fee,7.48,,Posted,5572.47,Business Services,TRANSFER_OTHER
+2026-06-08,Transfer Fee,21.44,,Posted,5551.03,Business Services,TRANSFER_OTHER
+2026-06-08,Check #106,5105.62,,Posted,445.41,Check,SPEND
+2026-06-09,Transfer From 7903,,8850.0,Posted,14501.73,Transfer,LOC
+2026-06-09,Nic County,33.39,,Posted,14468.34,Uncategorized,SPEND
+2026-06-09,Facebook,50.0,,Posted,14418.34,Advertising,SPEND
+2026-06-09,BP Gas,62.88,,Posted,14355.46,Gas,SPEND
+2026-06-09,Nic County,82.16,,Posted,14273.3,Uncategorized,SPEND
+2026-06-09,Tractor Supply,194.22,,Posted,14079.08,Shopping,SPEND
+2026-06-09,Transfer Fee,1.79,,Posted,14077.29,Business Services,TRANSFER_OTHER
+2026-06-09,Transfer From 7903,,5146.32,Posted,5651.73,Transfer,LOC
+2026-06-09,Intuit Deposit,,60.0,Posted,505.41,Income,PAYROLL_PROVIDER
+2026-06-10,Mobile Deposit,,1881.6,Posted,16033.89,Income,DEPOSIT
+2026-06-10,QuikTrip,2.55,,Posted,16031.34,Fast Food,SPEND
+2026-06-10,QuikTrip,2.99,,Posted,16028.35,Fast Food,SPEND
+2026-06-10,QuikTrip,4.91,,Posted,16023.44,Fast Food,SPEND
+2026-06-10,QuikTrip,5.01,,Posted,16018.43,Fast Food,SPEND
+2026-06-10,QuikTrip,27.23,,Posted,15991.2,Gas,SPEND
+2026-06-10,The Home Depot,32.37,,Posted,15958.83,Home Improvement,SPEND
+2026-06-10,Double B Hardware,36.36,,Posted,15922.47,Home Improvement,SPEND
+2026-06-10,Panda Express,43.0,,Posted,15879.47,Fast Food,SPEND
+2026-06-10,QuikTrip,44.12,,Posted,15835.35,Gas,SPEND
+2026-06-10,Walker Hardware,53.49,,Posted,15781.86,Home Improvement,SPEND
+2026-06-10,Chapala Mexican,76.74,,Posted,15705.12,Restaurants,SPEND
+2026-06-10,A Z Lawn Mower,203.88,,Posted,15501.24,Lawn & Garden,SPEND
+2026-06-10,Transfer Fee,2.24,,Posted,15499.0,Business Services,TRANSFER_OTHER
+2026-06-10,Intuit Deposit,,75.0,Posted,14152.29,Income,PAYROLL_PROVIDER
+2026-06-10,Check #107,8850.0,,Posted,6649.0,Check,SPEND
+2026-06-10,Check #108,5146.32,,Posted,1502.68,Check,SPEND
+2026-06-11,United Community Bank Rebate,,0.5,Posted,2514.43,Bonus,OTHER_IN
+2026-06-11,Intuit Deposit,,361.25,Posted,2513.93,Income,PAYROLL_PROVIDER
+2026-06-11,United Community Paypvdpmt,,250.0,Posted,2152.68,Income,OTHER_IN
+2026-06-11,Transfer To 7903,500.0,,Posted,2014.43,Transfer,LOC
+2026-06-11,Transfer Fee,10.8,,Posted,2003.63,Business Services,TRANSFER_OTHER
+2026-06-11,United Community Paypvdpmt,,250.0,Posted,1902.68,Income,OTHER_IN
+2026-06-11,Transfer To 5875,300.0,,Posted,1703.63,Transfer,PERSONAL_5875
+2026-06-11,United Community Paypvdpmt,,150.0,Posted,1652.68,Income,OTHER_IN
+2026-06-11,Transfer To 0535,700.0,,Posted,1003.63,Transfer,PAYROLL_0535
+2026-06-12,Columbiaprop Vendor Payment,,550.0,Posted,2353.63,Income,CUSTOMER_PAYMENT
+2026-06-12,QuikTrip,28.19,,Posted,2325.44,Gas,SPEND
+2026-06-12,QuikTrip,44.33,,Posted,2281.11,Gas,SPEND
+2026-06-12,Facebook,50.0,,Posted,2231.11,Advertising,SPEND
+2026-06-12,Transfer Fee,10.48,,Posted,2220.63,Business Services,TRANSFER_OTHER
+2026-06-12,Bill.com,,450.0,Posted,1803.63,Transfer,OTHER_IN
+2026-06-12,Intuit Deposit,,350.0,Posted,1353.63,Income,PAYROLL_PROVIDER
+2026-06-15,Mobile Deposit,,1250.0,Posted,3822.35,Income,DEPOSIT
+2026-06-15,Transfer To 7903,1000.0,,Posted,2822.35,Transfer,LOC
+2026-06-15,QuikTrip,2.99,,Posted,2819.36,Fast Food,SPEND
+2026-06-15,Garden City Grocery Murrells,4.26,,Posted,2815.1,Gas,SPEND
+2026-06-15,QuikTrip,8.17,,Posted,2806.93,Fast Food,SPEND
+2026-06-15,QuikTrip,18.34,,Posted,2788.59,Fast Food,SPEND
+2026-06-15,Circle K,23.05,,Posted,2765.54,Gas,SPEND
+2026-06-15,QuikTrip,36.97,,Posted,2728.57,Gas,SPEND
+2026-06-15,Transfer Fee,3.74,,Posted,2724.83,Business Services,TRANSFER_OTHER
+2026-06-15,Mobile Deposit,,225.0,Posted,2572.35,Income,DEPOSIT
+2026-06-15,Transfer To 5875,275.0,,Posted,2449.83,Transfer,PERSONAL_5875
+2026-06-15,United Community Bank Rebate,,1.72,Posted,2347.35,Bonus,OTHER_IN
+2026-06-15,Intuit Deposit,,125.0,Posted,2345.63,Income,PAYROLL_PROVIDER
+2026-06-16,Mobile Deposit,,2838.39,Posted,10467.72,Income,DEPOSIT
+2026-06-16,Transfer To 7903,1928.46,,Posted,8539.26,Transfer,LOC
+2026-06-16,Circle K,40.64,,Posted,8498.62,Gas,SPEND
+2026-06-16,Pedros Mexican,45.52,,Posted,8453.1,Fast Food,SPEND
+2026-06-16,Lowe's,53.98,,Posted,8399.12,Home Improvement,SPEND
+2026-06-16,Lowe's,234.75,,Posted,8164.37,Home Improvement,SPEND
+2026-06-16,Transfer Fee,3.96,,Posted,8160.41,Business Services,TRANSFER_OTHER
+2026-06-16,Mobile Deposit,,2327.0,Posted,7629.33,Income,DEPOSIT
+2026-06-16,Mobile Deposit,,1273.5,Posted,5302.33,Income,DEPOSIT
+2026-06-16,Mobile Deposit,,463.5,Posted,4028.83,Income,DEPOSIT
+2026-06-16,Mobile Deposit,,433.0,Posted,3565.33,Income,DEPOSIT
+2026-06-16,Transfer From 7903,,550.0,Posted,3132.33,Transfer,LOC
+2026-06-16,Intuit Deposit,,132.5,Posted,2582.33,Income,PAYROLL_PROVIDER
+2026-06-17,Transfer From 7903,,400.0,Posted,8560.41,Transfer,LOC
+2026-06-17,Transfer To 7903,7000.0,,Posted,1560.41,Transfer,LOC
+2026-06-17,QuikTrip,17.14,,Posted,1543.27,Fast Food,SPEND
+2026-06-17,Flaming Grill Su,42.67,,Posted,1500.6,Restaurants,SPEND
+2026-06-17,Miner's Land,74.9,,Posted,1425.7,Uncategorized,SPEND
+2026-06-17,Lowe's,125.51,,Posted,1300.19,Home Improvement,SPEND
+2026-06-17,Carolina Fresh,242.95,,Posted,1057.24,Uncategorized,SPEND
+2026-06-17,Carolina Fresh,393.7,,Posted,663.54,Uncategorized,SPEND
+2026-06-17,United Community Bank Withdrawal,500.0,,Posted,163.54,Cash,SPEND
+2026-06-18,Intuit Deposit,,150.0,Posted,453.54,Income,PAYROLL_PROVIDER
+2026-06-18,O'Reilly Auto Parts,6.73,,Posted,446.81,Service & Parts,SPEND
+2026-06-18,Enmarket,15.58,,Posted,431.23,Fast Food,SPEND
+2026-06-18,Sunoco,15.87,,Posted,415.36,Fast Food,SPEND
+2026-06-18,O'Reilly Auto Parts,20.26,,Posted,395.1,Service & Parts,SPEND
+2026-06-18,Lowe's,47.79,,Posted,347.31,Home Improvement,SPEND
+2026-06-18,Transfer Fee,4.48,,Posted,342.83,Business Services,TRANSFER_OTHER
+2026-06-18,Columbiaprop Vendor Payment,,140.0,Posted,303.54,Income,CUSTOMER_PAYMENT
+2026-06-22,Mobile Deposit,,2838.39,Posted,14186.63,Income,DEPOSIT
+2026-06-22,Mobile Deposit,,75.0,Posted,11348.24,Income,DEPOSIT
+2026-06-22,United Community Bank Rebate,,0.41,Posted,11273.24,Bonus,OTHER_IN
+2026-06-22,Intuit Deposit,,9165.0,Posted,11272.83,Income,PAYROLL_PROVIDER
+2026-06-22,Transfer To 7903,9300.0,,Posted,4886.63,Transfer,LOC
+2026-06-22,QuikTrip,2.99,,Posted,4883.64,Fast Food,SPEND
+2026-06-22,Csc Service Melville Ny via Cantaloupe,3.0,,Posted,4880.64,Fast Food,SPEND
+2026-06-22,QuikTrip,5.98,,Posted,4874.66,Fast Food,SPEND
+2026-06-22,QuikTrip,11.8,,Posted,4862.86,Fast Food,SPEND
+2026-06-22,QuikTrip,14.76,,Posted,4848.1,Fast Food,SPEND
+2026-06-22,QuikTrip,19.29,,Posted,4828.81,Gas,SPEND
+2026-06-22,QuikTrip,20.55,,Posted,4808.26,Gas,SPEND
+2026-06-22,QuikTrip,28.16,,Posted,4780.1,Gas,SPEND
+2026-06-22,QuikTrip,28.91,,Posted,4751.19,Gas,SPEND
+2026-06-22,Double B Hardware,30.92,,Posted,4720.27,Home Improvement,SPEND
+2026-06-22,Carolina Wings & West,42.0,,Posted,4678.27,Uncategorized,SPEND
+2026-06-22,Shell,60.0,,Posted,4618.27,Gas,SPEND
+2026-06-22,Lowe's,94.0,,Posted,4524.27,Home Improvement,SPEND
+2026-06-22,The Home Depot,113.05,,Posted,4411.22,Home Improvement,SPEND
+2026-06-22,Shell,129.97,,Posted,4281.25,Gas,SPEND
+2026-06-22,W D Palmetto South,503.0,,Posted,3778.25,Cash,SPEND
+2026-06-22,Transfer Fee,1.94,,Posted,3776.31,Business Services,TRANSFER_OTHER
+2026-06-22,Transfer Fee,5.98,,Posted,3770.33,Business Services,TRANSFER_OTHER
+2026-06-22,Transfer Fee,274.03,,Posted,3496.3,Business Services,TRANSFER_OTHER
+2026-06-22,Fee for W D Palmetto South,1.0,,Posted,3495.3,Fees & Charges,SPEND
+2026-06-22,Transfer From 7903,,1500.0,Posted,2107.83,Transfer,LOC
+2026-06-22,Intuit Deposit,,200.0,Posted,607.83,Income,PAYROLL_PROVIDER
+2026-06-22,Intuit Deposit,,65.0,Posted,407.83,Income,PAYROLL_PROVIDER
+2026-06-23,Transfer From 7903,,5000.0,Posted,8595.3,Transfer,LOC
+2026-06-23,Transfer To 7903,2500.0,,Posted,6095.3,Transfer,LOC
+2026-06-23,Lowe's,10.0,,Posted,6085.3,Home Improvement,SPEND
+2026-06-23,Food Lion,17.97,,Posted,6067.33,Groceries,SPEND
+2026-06-23,A Z Lawn Mower,451.79,,Posted,5615.54,Lawn & Garden,SPEND
+2026-06-23,Transfer Fee,3.0,,Posted,5612.54,Business Services,TRANSFER_OTHER
+2026-06-23,Intuit Deposit,,100.0,Posted,3595.3,Income,PAYROLL_PROVIDER
+2026-06-24,United Community Bank Rebate,,1.0,Posted,6063.54,Bonus,OTHER_IN
+2026-06-24,Bill.com,,150.0,Posted,6062.54,Transfer,OTHER_IN
+2026-06-24,QuikTrip,16.78,,Posted,6046.76,Fast Food,SPEND
+2026-06-24,QuikTrip,37.07,,Posted,6009.69,Gas,SPEND
+2026-06-24,Tractor Supply,58.64,,Posted,5951.05,Shopping,SPEND
+2026-06-24,Bill.com,,150.0,Posted,5912.54,Transfer,OTHER_IN
+2026-06-24,Shell,64.0,,Posted,5887.05,Gas,SPEND
+2026-06-24,Ace Hardware,91.0,,Posted,5796.05,Home Improvement,SPEND
+2026-06-24,Bill.com,,150.0,Posted,5762.54,Transfer,OTHER_IN
+2026-06-24,Transfer To 0535,5000.0,,Posted,796.05,Transfer,PAYROLL_0535
+2026-06-25,Intuit Deposit,,606.25,Posted,1402.3,Income,PAYROLL_PROVIDER
+2026-06-25,Circle K,24.43,,Posted,1377.87,Gas,SPEND
+2026-06-25,Shell,60.0,,Posted,1317.87,Gas,SPEND
+2026-06-25,Shell,131.82,,Posted,1186.05,Gas,SPEND
+2026-06-25,Transfer Fee,18.14,,Posted,1167.91,Business Services,TRANSFER_OTHER
+2026-06-26,Intuit Deposit,,50.0,Posted,1217.91,Income,PAYROLL_PROVIDER
+2026-06-26,Ace Hardware,20.71,,Posted,1197.2,Home Improvement,SPEND
+2026-06-26,Monterrey Mexica,26.11,,Posted,1171.09,Restaurants,SPEND
+2026-06-26,Shell,26.53,,Posted,1144.56,Gas,SPEND
+2026-06-26,Double B Hardware,43.56,,Posted,1101.0,Home Improvement,SPEND
+2026-06-26,Domino's,54.19,,Posted,1046.81,Fast Food,SPEND
+2026-06-26,Lowe's,117.68,,Posted,929.13,Home Improvement,SPEND
+2026-06-26,Transfer Fee,1.5,,Posted,927.63,Business Services,TRANSFER_OTHER
+2026-06-29,Mobile Deposit,,285.0,Posted,2892.9,Income,DEPOSIT
+2026-06-29,Shell,17.81,,Posted,2875.09,Fast Food,SPEND
+2026-06-29,QuikTrip,23.05,,Posted,2852.04,Gas,SPEND
+2026-06-29,QuikTrip,46.99,,Posted,2805.05,Gas,SPEND
+2026-06-29,QuikTrip,114.67,,Posted,2690.38,Gas,SPEND
+2026-06-29,Transfer Fee,1.5,,Posted,2688.88,Business Services,TRANSFER_OTHER
+2026-06-29,Transfer Fee,1.64,,Posted,2687.24,Business Services,TRANSFER_OTHER
+2026-06-29,Transfer Fee,2.24,,Posted,2685.0,Business Services,TRANSFER_OTHER
+2026-06-29,United Community Bank Rebate,,0.27,Posted,2607.9,Bonus,OTHER_IN
+2026-06-29,Transfer From 7903,,1500.0,Posted,2607.63,Transfer,LOC
+2026-06-29,Transfer To 5875,125.0,,Posted,2560.0,Transfer,PERSONAL_5875
+2026-06-29,Hubspot Inc v Nd F B Bgopjz Ru Ik,856.42,,Posted,1703.58,Business Services,SPEND
+2026-06-29,Intuit Deposit,,75.0,Posted,1107.63,Income,PAYROLL_PROVIDER
+2026-06-29,Intuit Deposit,,55.0,Posted,1032.63,Income,PAYROLL_PROVIDER
+2026-06-29,Intuit Deposit,,50.0,Posted,977.63,Income,PAYROLL_PROVIDER
+2026-06-30,Mobile Deposit,,140.0,Posted,2043.76,Income,DEPOSIT
+2026-06-30,Lowe's,32.38,,Posted,2011.38,Home Improvement,SPEND
+2026-06-30,Lowe's,37.55,,Posted,1973.83,Home Improvement,SPEND
+2026-06-30,United Community Bank Rebate,,0.18,Posted,1903.76,Bonus,OTHER_IN
+2026-06-30,Intuit Deposit,,200.0,Posted,1903.58,Income,PAYROLL_PROVIDER
+2026-06-30,Ditch Witch,1147.39,,Posted,826.44,Uncategorized,SPEND
+2026-06-30,Transfer Fee,5.99,,Posted,820.45,Business Services,TRANSFER_OTHER
+2026-07-01,Intuit Deposit,,290.0,Posted,1110.45,Income,PAYROLL_PROVIDER
+2026-07-01,Circle K,22.32,,Posted,1088.13,Gas,SPEND
+2026-07-01,QuikTrip,33.64,,Posted,1054.49,Gas,SPEND
+2026-07-01,Shell,39.78,,Posted,1014.71,Gas,SPEND
+2026-07-01,Transfer Fee,8.67,,Posted,1006.04,Business Services,TRANSFER_OTHER
+2026-07-01,Intuit,262.87,,Posted,743.17,Business Services,PAYROLL_PROVIDER
+2026-07-02,Intuit Deposit,,482.5,Posted,1225.67,Income,PAYROLL_PROVIDER
+2026-07-02,QuikTrip,13.46,,Posted,1212.21,Fast Food,SPEND
+2026-07-02,Tractor Supply,24.59,,Posted,1187.62,Shopping,SPEND
+2026-07-02,QuikTrip,37.16,,Posted,1150.46,Gas,SPEND
+2026-07-02,Smith Turf & Irr,317.49,,Posted,832.97,Uncategorized,SPEND
+2026-07-02,Transfer Fee,14.43,,Posted,818.54,Business Services,TRANSFER_OTHER
+2026-07-03,Columbiaprop Vendor Payment,,440.0,Posted,1398.54,Income,CUSTOMER_PAYMENT
+2026-07-03,Csc Service Melville Ny via Cantaloupe,3.0,,Posted,1395.54,Fast Food,SPEND
+2026-07-03,Lowe's,12.71,,Posted,1382.83,Home Improvement,SPEND
+2026-07-03,BP Gas,14.52,,Posted,1368.31,Fast Food,SPEND
+2026-07-03,Hardee's,15.39,,Posted,1352.92,Fast Food,SPEND
+2026-07-03,Tractor Supply,37.48,,Posted,1315.44,Shopping,SPEND
+2026-07-03,QuikTrip,41.24,,Posted,1274.2,Gas,SPEND
+2026-07-03,ExxonMobil,58.38,,Posted,1215.82,Gas,SPEND
+2026-07-03,QuikTrip,96.32,,Posted,1119.5,Gas,SPEND
+2026-07-03,Lowe's,127.12,,Posted,992.38,Home Improvement,SPEND
+2026-07-03,Intuit Deposit,,140.0,Posted,958.54,Income,PAYROLL_PROVIDER
+2026-07-03,Bb's Auto,201.35,,Posted,791.03,Service & Parts,SPEND
+2026-07-03,Transfer Fee,4.2,,Posted,786.83,Business Services,TRANSFER_OTHER
+2026-07-06,Mobile Deposit,,75.0,Posted,1786.83,Income,DEPOSIT
+2026-07-06,Chick-fil-A,19.25,,Posted,1767.58,Fast Food,SPEND
+2026-07-06,Energy Express,21.91,,Posted,1745.67,Utilities,SPEND
+2026-07-06,Spinx,23.14,,Posted,1722.53,Gas,SPEND
+2026-07-06,Intuit Deposit,,810.0,Posted,1711.83,Income,PAYROLL_PROVIDER
+2026-07-06,Double B Hardware,35.66,,Posted,1686.87,Home Improvement,SPEND
+2026-07-06,East Bay Deli at,41.16,,Posted,1645.71,Food & Dining,SPEND
+2026-07-06,Murphy USA,60.21,,Posted,1585.5,Gas,SPEND
+2026-07-06,Lowe's,96.17,,Posted,1489.33,Home Improvement,SPEND
+2026-07-06,W D Palmetto,403.0,,Posted,1086.33,Cash,SPEND
+2026-07-06,Intuit Deposit,,65.0,Posted,901.83,Income,PAYROLL_PROVIDER
+2026-07-06,Intuit Deposit,,50.0,Posted,836.83,Income,PAYROLL_PROVIDER
+2026-07-06,Check #109,350.0,,Posted,736.33,Check,SPEND
+2026-07-06,Transfer Fee,1.5,,Posted,734.83,Business Services,TRANSFER_OTHER
+2026-07-06,Transfer Fee,1.94,,Posted,732.89,Business Services,TRANSFER_OTHER
+2026-07-06,Transfer Fee,24.22,,Posted,708.67,Business Services,TRANSFER_OTHER
+2026-07-06,Fee for W D Palmetto,1.0,,Posted,707.67,Fees & Charges,SPEND
+2026-07-07,Transfer From 7903,,1000.0,Posted,1707.67,Transfer,LOC
+2026-07-07,Facebook,49.89,,Posted,1657.78,Advertising,SPEND
+2026-07-07,Murphy USA,171.57,,Posted,1486.21,Gas,SPEND
+2026-07-07,Carolina Power,240.23,,Posted,1245.98,Uncategorized,SPEND
+2026-07-08,Intuit Deposit,,2850.0,Posted,4095.98,Income,PAYROLL_PROVIDER
+2026-07-08,Circle K,11.0,,Posted,4084.98,Fast Food,SPEND
+2026-07-08,Circle K,31.61,,Posted,4053.37,Gas,SPEND
+2026-07-08,The Home Depot,32.37,,Posted,4021.0,Home Improvement,SPEND
+2026-07-08,Shell,60.0,,Posted,3961.0,Gas,SPEND
+2026-07-08,Shell,64.73,,Posted,3896.27,Gas,SPEND
+2026-07-08,BP Gas,65.62,,Posted,3830.65,Gas,SPEND
+2026-07-08,Nimmer Turf,788.98,,Posted,3041.67,Uncategorized,SPEND
+2026-07-08,Transfer Fee,80.74,,Posted,2960.93,Business Services,TRANSFER_OTHER
+2026-07-09,Intuit Deposit,,1621.25,Posted,5132.18,Income,PAYROLL_PROVIDER
+2026-07-09,Transfer To 7903,1500.0,,Posted,3632.18,Transfer,LOC
+2026-07-09,Food Lion,7.45,,Posted,3624.73,Groceries,SPEND
+2026-07-09,QuikTrip,38.14,,Posted,3586.59,Gas,SPEND
+2026-07-09,Chick-fil-A,41.83,,Posted,3544.76,Fast Food,SPEND
+2026-07-09,United Community Paypvdpmt,,550.0,Posted,3510.93,Income,OTHER_IN
+2026-07-09,Murphy USA,44.0,,Posted,3500.76,Gas,SPEND
+2026-07-09,Circle K,72.96,,Posted,3427.8,Gas,SPEND
+2026-07-09,A Z Lawn Mower,75.07,,Posted,3352.73,Lawn & Garden,SPEND
+2026-07-09,Check,620.0,,Posted,2732.73,Check,SPEND
+2026-07-09,Transfer Fee,48.48,,Posted,2684.25,Business Services,TRANSFER_OTHER
+2026-07-09,Transfer To 0535,1100.0,,Posted,1584.25,Transfer,PAYROLL_0535
+2026-07-10,Columbiaprop Vendor Payment,,550.0,Posted,2684.25,Income,CUSTOMER_PAYMENT
+2026-07-10,Zaxby's,12.73,,Posted,2671.52,Fast Food,SPEND
+2026-07-10,QuikTrip,17.53,,Posted,2653.99,Fast Food,SPEND
+2026-07-10,Lowe's,46.96,,Posted,2607.03,Home Improvement,SPEND
+2026-07-10,Walmart,53.0,,Posted,2554.03,Shopping,SPEND
+2026-07-10,Dog Food Center West,125.2,,Posted,2428.83,Food & Dining,SPEND
+2026-07-10,Transfer Fee,1.5,,Posted,2427.33,Business Services,TRANSFER_OTHER
+2026-07-10,United Community Paypvdpmt,,250.0,Posted,2134.25,Income,OTHER_IN
+2026-07-10,United Community Paypvdpmt,,250.0,Posted,1884.25,Income,OTHER_IN
+2026-07-10,Intuit Deposit,,50.0,Posted,1634.25,Income,PAYROLL_PROVIDER
+2026-07-13,Mobile Deposit,,570.0,Posted,7071.48,Income,DEPOSIT
+2026-07-13,Mobile Deposit,,463.5,Posted,6501.48,Income,DEPOSIT
+2026-07-13,Transfer To 7903,1000.0,,Posted,6071.48,Transfer,LOC
+2026-07-13,United Community Bank Rebate,,0.65,Posted,6037.98,Bonus,OTHER_IN
+2026-07-13,Agy Holding Corp,,2400.0,Posted,6037.33,Income,OTHER_IN
+2026-07-13,Transfer To 7903,1976.2,,Posted,4095.28,Transfer,LOC
+2026-07-13,Bluwav Vend Conway Sc via Cantaloupe,2.5,,Posted,4092.78,Fast Food,SPEND
+2026-07-13,QuikTrip,6.98,,Posted,4085.8,Fast Food,SPEND
+2026-07-13,Double B Hardware,16.41,,Posted,4069.39,Home Improvement,SPEND
+2026-07-13,7-Eleven,26.54,,Posted,4042.85,Gas,SPEND
+2026-07-13,QuikTrip,46.37,,Posted,3996.48,Gas,SPEND
+2026-07-13,Lowe's,68.17,,Posted,3928.31,Home Improvement,SPEND
+2026-07-13,Lowe's,217.47,,Posted,3710.84,Home Improvement,SPEND
+2026-07-13,Intuit Deposit,,525.0,Posted,3637.33,Income,PAYROLL_PROVIDER
+2026-07-13,Smith Turf & Irr,258.8,,Posted,3452.04,Uncategorized,SPEND
+2026-07-13,Bill.com,,450.0,Posted,3112.33,Transfer,OTHER_IN
+2026-07-13,Sheffield Financial,598.45,,Posted,2853.59,Financial,SPEND
+2026-07-13,Transfer Fee,2.54,,Posted,2851.05,Business Services,TRANSFER_OTHER
+2026-07-13,Transfer Fee,4.48,,Posted,2846.57,Business Services,TRANSFER_OTHER
+2026-07-13,Transfer Fee,15.69,,Posted,2830.88,Business Services,TRANSFER_OTHER
+2026-07-13,Intuit Deposit,,150.0,Posted,2662.33,Income,PAYROLL_PROVIDER
+2026-07-13,Intuit Deposit,,85.0,Posted,2512.33,Income,PAYROLL_PROVIDER
+2026-07-13,Check #110,850.0,,Posted,1980.88,Check,SPEND
+2026-07-14,Mobile Deposit,,2327.48,Posted,7156.36,Income,DEPOSIT
+2026-07-14,Progressive,20.0,,Posted,7136.36,Financial,SPEND
+2026-07-14,Transfer Fee,7.78,,Posted,7128.58,Business Services,TRANSFER_OTHER
+2026-07-14,Mobile Deposit,,1250.0,Posted,4828.88,Income,DEPOSIT
+2026-07-14,Mobile Deposit,,433.0,Posted,3578.88,Income,DEPOSIT
+2026-07-14,Mobile Deposit,,285.0,Posted,3145.88,Income,DEPOSIT
+2026-07-14,Intuit Deposit,,260.0,Posted,2860.88,Income,PAYROLL_PROVIDER
+2026-07-14,Regular Deposit,,620.0,Posted,2600.88,Income,DEPOSIT
+2026-07-15,Mobile Deposit,,1273.48,Posted,12602.06,Income,DEPOSIT
+2026-07-15,Transfer To 7903,620.0,,Posted,11982.06,Transfer,LOC
+2026-07-15,Transfer From 7903,,4200.0,Posted,11328.58,Transfer,LOC
+2026-07-15,Transfer To 7903,6000.0,,Posted,5982.06,Transfer,LOC
+2026-07-15,Csc Service Melville Ny via Cantaloupe,3.0,,Posted,5979.06,Fast Food,SPEND
+2026-07-15,Sunoco,21.79,,Posted,5957.27,Gas,SPEND
+2026-07-15,Love's Travel Stops,28.71,,Posted,5928.56,Gas,SPEND
+2026-07-15,Love's Travel Stops,34.84,,Posted,5893.72,Gas,SPEND
+2026-07-15,A Z Lawn Mower,264.25,,Posted,5629.47,Lawn & Garden,SPEND
+2026-07-16,Intuit Deposit,,395.0,Posted,6024.47,Income,PAYROLL_PROVIDER
+2026-07-16,Transfer To 7903,2000.0,,Posted,4024.47,Transfer,LOC
+2026-07-16,Circle K,29.03,,Posted,3995.44,Gas,SPEND
+2026-07-16,QuikTrip,87.52,,Posted,3907.92,Gas,SPEND
+2026-07-16,Transfer Fee,11.81,,Posted,3896.11,Business Services,TRANSFER_OTHER
+2026-07-17,Intuit Deposit,,845.0,Posted,4881.11,Income,PAYROLL_PROVIDER
+2026-07-17,Columbiaprop Vendor Payment,,140.0,Posted,4036.11,Income,CUSTOMER_PAYMENT
+2026-07-17,Transfer To 7903,1000.0,,Posted,3881.11,Transfer,LOC
+2026-07-17,Southern Carolin,3500.0,,Posted,381.11,Uncategorized,SPEND
+2026-07-17,Transfer Fee,25.26,,Posted,355.85,Business Services,TRANSFER_OTHER
+2026-07-20,United Community Bank Rebate,,0.29,Posted,2637.64,Bonus,OTHER_IN
+2026-07-20,Intuit Deposit,,1831.5,Posted,2637.35,Income,PAYROLL_PROVIDER
+2026-07-20,Transfer To 7903,1550.0,,Posted,1087.64,Transfer,LOC
+2026-07-20,QuikTrip,5.98,,Posted,1081.66,Fast Food,SPEND
+2026-07-20,QuikTrip,38.94,,Posted,1042.72,Gas,SPEND
+2026-07-20,Shell,58.0,,Posted,984.72,Gas,SPEND
+2026-07-20,QuikTrip,88.75,,Posted,895.97,Gas,SPEND
+2026-07-20,Transfer From 7903,,400.0,Posted,805.85,Transfer,LOC
+2026-07-20,United Community Bank Withdrawal,400.0,,Posted,495.97,Cash,SPEND
+2026-07-20,Transfer Fee,1.5,,Posted,494.47,Business Services,TRANSFER_OTHER
+2026-07-20,Transfer Fee,44.64,,Posted,449.83,Business Services,TRANSFER_OTHER
+2026-07-20,Intuit Deposit,,50.0,Posted,405.85,Income,PAYROLL_PROVIDER
+2026-07-21,United Community Bank Rebate,,0.58,Posted,2262.28,Bonus,OTHER_IN
+2026-07-21,Intuit Deposit,,1811.87,Posted,2261.7,Income,PAYROLL_PROVIDER
+2026-07-21,Transfer To 7903,1250.0,,Posted,1012.28,Transfer,LOC
+2026-07-21,Murphy USA,4.88,,Posted,1007.4,Fast Food,SPEND
+2026-07-21,Zestos of West,34.03,,Posted,973.37,Uncategorized,SPEND
+2026-07-21,Dog Food Center West,41.6,,Posted,931.77,Food & Dining,SPEND
+2026-07-21,Lowe's,62.0,,Posted,869.77,Home Improvement,SPEND
+2026-07-21,Transfer Fee,54.18,,Posted,815.59,Business Services,TRANSFER_OTHER
+2026-07-22,Intuit Deposit,,50.0,Posted,865.59,Income,PAYROLL_PROVIDER
+2026-07-22,QuikTrip,7.37,,Posted,858.22,Fast Food,SPEND
+2026-07-22,QuikTrip,9.97,,Posted,848.25,Fast Food,SPEND
+2026-07-22,Shell,11.84,,Posted,836.41,Fast Food,SPEND
+2026-07-22,QuikTrip,25.39,,Posted,811.02,Gas,SPEND
+2026-07-22,Circle K,28.51,,Posted,782.51,Gas,SPEND
+2026-07-22,Forest Buffet,46.9,,Posted,735.61,Restaurants,SPEND
+2026-07-22,Lowe's,59.75,,Posted,675.86,Home Improvement,SPEND
+2026-07-22,QuikTrip,61.0,,Posted,614.86,Gas,SPEND
+2026-07-22,Py Image Ink,280.8,,Posted,334.06,Shopping,SPEND
+2026-07-22,Transfer Fee,1.5,,Posted,332.56,Business Services,TRANSFER_OTHER
+2026-07-23,Intuit Deposit,,115.0,Posted,411.56,Income,PAYROLL_PROVIDER
+2026-07-23,QuikTrip,2.99,,Posted,408.57,Fast Food,SPEND
+2026-07-23,QuikTrip,33.17,,Posted,375.4,Gas,SPEND
+2026-07-23,Murphy USA,58.0,,Posted,317.4,Gas,SPEND
+2026-07-23,Overdraft Fee,36.0,,Posted,296.56,Banking Fee,SPEND
+2026-07-23,Smith Turf & Irr,253.23,,Posted,64.17,Uncategorized,SPEND
+2026-07-23,Dog Food Center West,300.46,,Posted,-236.29,Food & Dining,SPEND
+2026-07-23,Transfer Fee,3.44,,Posted,-239.73,Business Services,TRANSFER_OTHER
+2026-07-24,Intuit Deposit,,566.25,Posted,1126.52,Income,PAYROLL_PROVIDER
+2026-07-24,QuikTrip,5.98,,Posted,1120.54,Fast Food,SPEND
+2026-07-24,Murphy USA,6.96,,Posted,1113.58,Fast Food,SPEND
+2026-07-24,QuikTrip,14.04,,Posted,1099.54,Fast Food,SPEND
+2026-07-24,Racetrac,14.77,,Posted,1084.77,Fast Food,SPEND
+2026-07-24,QuikTrip,93.4,,Posted,991.37,Gas,SPEND
+2026-07-24,QuikTrip,97.51,,Posted,893.86,Gas,SPEND
+2026-07-24,Circle K,100.0,,Posted,793.86,Gas,SPEND
+2026-07-24,Lowe's,105.0,,Posted,688.86,Home Improvement,SPEND
+2026-07-24,Transfer Fee,16.95,,Posted,671.91,Business Services,TRANSFER_OTHER
+2026-07-24,Transfer From 7903,,500.0,Posted,560.27,Transfer,LOC
+2026-07-24,Columbiaprop Vendor Payment,,300.0,Posted,60.27,Income,CUSTOMER_PAYMENT
+2026-07-24,Check #111,684.8,,Posted,-12.89,Check,SPEND
+2026-07-27,Bill.com,,6300.0,Posted,18551.47,Transfer,OTHER_IN
+2026-07-27,Bill.com,,6300.0,Posted,12251.47,Transfer,OTHER_IN
+2026-07-27,Transfer To 7903,12600.0,,Posted,5951.47,Transfer,LOC
+2026-07-27,Transfer From 0535,,1250.0,Posted,5951.47,Transfer,PAYROLL_0535
+2026-07-27,QuikTrip,6.98,,Posted,5944.49,Fast Food,SPEND
+2026-07-27,QuikTrip,20.68,,Posted,5923.81,Gas,SPEND
+2026-07-27,Racetrac,62.33,,Posted,5861.48,Gas,SPEND
+2026-07-27,Smith Turf & Irr,75.55,,Posted,5785.93,Uncategorized,SPEND
+2026-07-27,Transfer Fee,8.07,,Posted,5777.86,Business Services,TRANSFER_OTHER
+2026-07-27,Transfer Fee,11.08,,Posted,5766.78,Business Services,TRANSFER_OTHER
+2026-07-27,Hubspot Inc C X Vxogx Bso Cpqyp Ik,856.42,,Posted,4910.36,Business Services,SPEND
+2026-07-27,Intuit Deposit,,810.0,Posted,4701.47,Income,PAYROLL_PROVIDER
+2026-07-27,Intuit Deposit,,270.0,Posted,3891.47,Income,PAYROLL_PROVIDER
+2026-07-27,Transfer From 0535,,250.0,Posted,3621.47,Transfer,PAYROLL_0535
+2026-07-27,Regular Deposit,,3348.36,Posted,3371.47,Income,DEPOSIT
+2026-07-27,Regular Deposit,,36.0,Posted,23.11,Income,DEPOSIT
+2026-07-28,Intuit Deposit,,125.0,Posted,5035.36,Income,PAYROLL_PROVIDER
+2026-07-28,Transfer To 7903,4000.0,,Posted,1035.36,Transfer,LOC
+2026-07-28,Bluwav Vend Conway Sc via Cantaloupe,2.5,,Posted,1032.86,Fast Food,SPEND
+2026-07-28,Murphy USA,29.0,,Posted,1003.86,Gas,SPEND
+2026-07-28,Dog Food Center West,275.42,,Posted,728.44,Food & Dining,SPEND
+2026-07-28,Transfer Fee,3.74,,Posted,724.7,Business Services,TRANSFER_OTHER
+2026-07-29,Intuit Deposit,,765.0,Posted,1489.7,Income,PAYROLL_PROVIDER
+2026-07-29,QuikTrip,2.99,,Posted,1486.71,Fast Food,SPEND
+2026-07-29,A Z Lawn Mower,18.17,,Posted,1468.54,Lawn & Garden,SPEND
+2026-07-29,Transfer Fee,7.65,,Posted,1460.89,Business Services,TRANSFER_OTHER
+2026-07-30,Intuit Deposit,,367.5,Posted,1828.39,Income,PAYROLL_PROVIDER
+2026-07-30,QuikTrip,2.99,,Posted,1825.4,Fast Food,SPEND
+2026-07-30,A Z Lawn Mower,11.56,,Posted,1813.84,Lawn & Garden,SPEND
+2026-07-30,Shell,46.13,,Posted,1767.71,Gas,SPEND
+2026-07-30,Love's Travel Stops,48.09,,Posted,1719.62,Gas,SPEND
+2026-07-30,Circle K,63.0,,Posted,1656.62,Gas,SPEND
+2026-07-30,A Z Lawn Mower,75.46,,Posted,1581.16,Lawn & Garden,SPEND
+2026-07-30,QuikTrip,107.08,,Posted,1474.08,Gas,SPEND
+2026-07-30,A Z Lawn Mower,202.78,,Posted,1271.3,Lawn & Garden,SPEND
+2026-07-30,Transfer Fee,10.99,,Posted,1260.31,Business Services,TRANSFER_OTHER
+2026-07-30,Transfer To 5875,250.0,,Posted,1010.31,Transfer,PERSONAL_5875
+2026-07-31,Intuit Deposit,,447.5,Posted,1457.81,Income,PAYROLL_PROVIDER
+2026-07-31,QuikTrip,10.53,,Posted,1447.28,Fast Food,SPEND
+2026-07-31,QuikTrip,11.06,,Posted,1436.22,Fast Food,SPEND
+2026-07-31,Dog Food Center West,100.15,,Posted,1336.07,Food & Dining,SPEND
+2026-07-31,Lowe's,126.0,,Posted,1210.07,Home Improvement,SPEND
+2026-07-31,Wingards Market,313.12,,Posted,896.95,Uncategorized,SPEND
+2026-07-31,Transfer Fee,13.38,,Posted,883.57,Business Services,TRANSFER_OTHER
+2026-07-31,Intuit,300.67,,Posted,582.9,Business Services,PAYROLL_PROVIDER
+2026-08-03,Transfer From 7903,,1706.33,Posted,3533.98,Transfer,LOC
+2026-08-03,QuikTrip,2.99,,Posted,3530.99,Fast Food,SPEND
+2026-08-03,ExxonMobil,8.5,,Posted,3522.49,Fast Food,SPEND
+2026-08-03,ExxonMobil,9.4,,Posted,3513.09,Fast Food,SPEND
+2026-08-03,Google Workspace,12.0,,Posted,3501.09,Shopping,SPEND
+2026-08-03,Smith Turf & Irr,26.19,,Posted,3474.9,Uncategorized,SPEND
+2026-08-03,QuikTrip,26.67,,Posted,3448.23,Gas,SPEND
+2026-08-03,Ace Hardware,28.14,,Posted,3420.09,Home Improvement,SPEND
+2026-08-03,Love's Travel Stops,39.87,,Posted,3380.22,Gas,SPEND
+2026-08-03,Smith Turf & Irr,42.59,,Posted,3337.63,Uncategorized,SPEND
+2026-08-03,Ace Hardware,55.0,,Posted,3282.63,Home Improvement,SPEND
+2026-08-03,QuikTrip,97.46,,Posted,3185.17,Gas,SPEND
+2026-08-03,Transfer Fee,1.2,,Posted,3183.97,Business Services,TRANSFER_OTHER
+2026-08-03,Transfer Fee,3.09,,Posted,3180.88,Business Services,TRANSFER_OTHER
+2026-08-03,Transfer Fee,10.5,,Posted,3170.38,Business Services,TRANSFER_OTHER
+2026-08-03,Transfer From 7903,,550.0,Posted,1827.65,Transfer,LOC
+2026-08-03,Intuit Deposit,,351.25,Posted,1277.65,Income,PAYROLL_PROVIDER
+2026-08-03,Transfer From 0535,,200.0,Posted,926.4,Transfer,PAYROLL_0535
+2026-08-03,Intuit Deposit,,103.5,Posted,726.4,Income,PAYROLL_PROVIDER
+2026-08-03,Intuit Deposit,,40.0,Posted,622.9,Income,PAYROLL_PROVIDER
+2026-08-04,Mobile Deposit,,100.0,Posted,3420.38,Income,DEPOSIT
+2026-08-04,Circle K,7.93,,Posted,3412.45,Fast Food,SPEND
+2026-08-04,Intuit Deposit,,150.0,Posted,3320.38,Income,PAYROLL_PROVIDER
+2026-08-04,Dog Food Center West,166.92,,Posted,3245.53,Food & Dining,SPEND
+2026-08-04,The Home Depot,422.65,,Posted,2822.88,Home Improvement,SPEND
+2026-08-04,Transfer Fee,4.49,,Posted,2818.39,Business Services,TRANSFER_OTHER
+2026-08-04,Check #133,1500.0,,Posted,1318.39,Check,SPEND
+2026-08-05,Transfer From 7903,,4000.0,Posted,5726.39,Transfer,LOC
+2026-08-05,QuikTrip,2.02,,Posted,5724.37,Fast Food,SPEND
+2026-08-05,AutoZone,41.7,,Posted,5682.67,Service & Parts,SPEND
+2026-08-05,BP Gas,56.63,,Posted,5626.04,Gas,SPEND
+2026-08-05,Dog Food Center West,66.77,,Posted,5559.27,Food & Dining,SPEND
+2026-08-05,QuikTrip,91.9,,Posted,5467.37,Gas,SPEND
+2026-08-05,Transfer Fee,5.57,,Posted,5461.8,Business Services,TRANSFER_OTHER
+2026-08-05,Intuit Deposit,,408.0,Posted,1726.39,Income,PAYROLL_PROVIDER
+2026-08-05,Check #132,4250.0,,Posted,1211.8,Check,SPEND
+2026-08-06,Intuit Deposit,,501.25,Posted,2213.05,Income,PAYROLL_PROVIDER
+2026-08-06,Shell,9.71,,Posted,2203.34,Fast Food,SPEND
+2026-08-06,Lowe's,45.23,,Posted,2158.11,Home Improvement,SPEND
+2026-08-06,Shell,62.0,,Posted,2096.11,Gas,SPEND
+2026-08-06,Smith Turf & Irr,138.76,,Posted,1957.35,Uncategorized,SPEND
+2026-08-06,Lowe's,145.35,,Posted,1812.0,Home Improvement,SPEND
+2026-08-06,Transfer Fee,14.98,,Posted,1797.02,Business Services,TRANSFER_OTHER
+2026-08-06,United Community Paypvdpmt,,250.0,Posted,1711.8,Income,OTHER_IN
+2026-08-06,United Community Paypvdpmt,,250.0,Posted,1461.8,Income,OTHER_IN
+2026-08-06,Check #112,550.0,,Posted,1247.02,Check,SPEND
+2026-08-07,Intuit Deposit,,305.0,Posted,1767.02,Income,PAYROLL_PROVIDER
+2026-08-07,QuikTrip,7.71,,Posted,1759.31,Fast Food,SPEND
+2026-08-07,Lowe's,58.81,,Posted,1700.5,Home Improvement,SPEND
+2026-08-07,Golden Corral,71.19,,Posted,1629.31,Restaurants,SPEND
+2026-08-07,Circle K,77.0,,Posted,1552.31,Gas,SPEND
+2026-08-07,Columbiaprop Vendor Payment,,215.0,Posted,1462.02,Income,CUSTOMER_PAYMENT
+2026-08-07,Bb's Auto,704.43,,Posted,847.88,Service & Parts,SPEND
+2026-08-07,Transfer Fee,9.12,,Posted,838.76,Business Services,TRANSFER_OTHER
+2026-08-10,Agy Holding Corp,,9600.0,Posted,15787.26,Income,OTHER_IN
+2026-08-10,Transfer To 7903,5000.0,,Posted,10787.26,Transfer,LOC
+2026-08-10,Csc Service Melville Ny via Cantaloupe,3.0,,Posted,10784.26,Fast Food,SPEND
+2026-08-10,QuikTrip,14.53,,Posted,10769.73,Fast Food,SPEND
+2026-08-10,Dog Food Center West,16.69,,Posted,10753.04,Food & Dining,SPEND
+2026-08-10,QuikTrip,27.56,,Posted,10725.48,Gas,SPEND
+2026-08-10,City Gas & Fuel,62.04,,Posted,10663.44,Gas,SPEND
+2026-08-10,Check,600.0,,Posted,10063.44,Check,SPEND
+2026-08-10,Nimmer Turf,738.05,,Posted,9325.39,Uncategorized,SPEND
+2026-08-10,Check,2500.0,,Posted,6825.39,Check,SPEND
+2026-08-10,Transfer Fee,1.5,,Posted,6823.89,Business Services,TRANSFER_OTHER
+2026-08-10,Transfer Fee,24.97,,Posted,6798.92,Business Services,TRANSFER_OTHER
+2026-08-10,Transfer To 5875,75.0,,Posted,6723.92,Transfer,PERSONAL_5875
+2026-08-10,Transfer To 0535,294.5,,Posted,6429.42,Transfer,PAYROLL_0535
+2026-08-10,Transfer From 7903,,4000.0,Posted,6187.26,Transfer,LOC
+2026-08-10,Check #113,1706.33,,Posted,4723.09,Check,SPEND
+2026-08-10,Intuit Deposit,,835.0,Posted,2187.26,Income,PAYROLL_PROVIDER
+2026-08-10,Intuit Deposit,,50.0,Posted,1352.26,Income,PAYROLL_PROVIDER
+2026-08-10,Regular Deposit,,463.5,Posted,1302.26,Income,DEPOSIT
+2026-08-11,Intuit Deposit,,50.0,Posted,4773.09,Income,PAYROLL_PROVIDER
+2026-08-11,Prime Star Oakboro Nc via Cantaloupe,3.2,,Posted,4769.89,Fast Food,SPEND
+2026-08-11,Amazon,8.51,,Posted,4761.38,Shopping,SPEND
+2026-08-11,Amazon,22.46,,Posted,4738.92,Shopping,SPEND
+2026-08-11,Double B Hardware,28.48,,Posted,4710.44,Home Improvement,SPEND
+2026-08-11,Amazon,87.43,,Posted,4623.01,Shopping,SPEND
+2026-08-11,Transfer Fee,1.5,,Posted,4621.51,Business Services,TRANSFER_OTHER
+2026-08-12,The Home Depot,,84.53,Posted,5206.04,Home Improvement,OTHER_IN
+2026-08-12,Circle K,8.88,,Posted,5197.16,Fast Food,SPEND
+2026-08-12,QuikTrip,27.79,,Posted,5169.37,Gas,SPEND
+2026-08-12,Transfer From 7903,,500.0,Posted,5121.51,Transfer,LOC
+2026-08-12,Gaston Tire,53.5,,Posted,5115.87,Service & Parts,SPEND
+2026-08-12,QuikTrip,85.34,,Posted,5030.53,Gas,SPEND
+2026-08-12,Sheffield Financial,598.45,,Posted,4432.08,Financial,SPEND
+2026-08-12,Progressive,4057.0,,Posted,375.08,Financial,SPEND
+2026-08-13,Intuit Deposit,,585.0,Posted,3125.08,Income,PAYROLL_PROVIDER
+2026-08-13,Spinx,12.0,,Posted,3113.08,Fast Food,SPEND
+2026-08-13,QuikTrip,14.76,,Posted,3098.32,Fast Food,SPEND
+2026-08-13,Dave's Grill,31.14,,Posted,3067.18,Restaurants,SPEND
+2026-08-13,Lowe's,106.23,,Posted,2960.95,Home Improvement,SPEND
+2026-08-13,Tractor Supply,139.72,,Posted,2821.23,Shopping,SPEND
+2026-08-13,Regular Deposit,,2165.0,Posted,2540.08,Income,DEPOSIT
+2026-08-13,Lowe's,342.61,,Posted,2478.62,Home Improvement,SPEND
+2026-08-13,Transfer Fee,11.52,,Posted,2467.1,Business Services,TRANSFER_OTHER
+2026-08-14,Intuit Deposit,,1840.0,Posted,4757.1,Income,PAYROLL_PROVIDER
+2026-08-14,Transfer To 7903,1000.0,,Posted,3757.1,Transfer,LOC
+2026-08-14,United Community Paypvdpmt,,450.0,Posted,2917.1,Income,OTHER_IN
+2026-08-14,Transfer To 7903,1500.0,,Posted,2257.1,Transfer,LOC
+2026-08-14,QuikTrip,8.68,,Posted,2248.42,Fast Food,SPEND
+2026-08-14,Circle K,13.85,,Posted,2234.57,Fast Food,SPEND
+2026-08-14,Bad Daddy's Burg,56.0,,Posted,2178.57,Uncategorized,SPEND
+2026-08-14,Check,1500.0,,Posted,678.57,Check,SPEND
+2026-08-14,Transfer Fee,55.01,,Posted,623.56,Business Services,TRANSFER_OTHER
+2026-08-17,Transfer From 7903,,1816.02,Posted,3523.08,Transfer,LOC
+2026-08-17,Transfer To 7903,1000.0,,Posted,2523.08,Transfer,LOC
+2026-08-17,QuikTrip,6.15,,Posted,2516.93,Fast Food,SPEND
+2026-08-17,Walmart,13.86,,Posted,2503.07,Shopping,SPEND
+2026-08-17,QuikTrip,32.82,,Posted,2470.25,Gas,SPEND
+2026-08-17,QuikTrip,116.84,,Posted,2353.41,Gas,SPEND
+2026-08-17,Walmart,145.88,,Posted,2207.53,Shopping,SPEND
+2026-08-17,Transfer Fee,3.09,,Posted,2204.44,Business Services,TRANSFER_OTHER
+2026-08-17,Transfer Fee,3.44,,Posted,2201.0,Business Services,TRANSFER_OTHER
+2026-08-17,Transfer Fee,25.87,,Posted,2175.13,Business Services,TRANSFER_OTHER
+2026-08-17,Intuit Deposit,,865.0,Posted,1707.06,Income,PAYROLL_PROVIDER
+2026-08-17,Intuit Deposit,,115.0,Posted,842.06,Income,PAYROLL_PROVIDER
+2026-08-17,Intuit Deposit,,103.5,Posted,727.06,Income,PAYROLL_PROVIDER
+2026-08-18,Mobile Deposit,,2838.36,Posted,12107.45,Income,DEPOSIT
+2026-08-18,Transfer To 7903,1250.0,,Posted,10857.45,Transfer,LOC
+2026-08-18,Spinx,7.06,,Posted,10850.39,Fast Food,SPEND
+2026-08-18,US Postal Service,8.89,,Posted,10841.5,Shipping,SPEND
+2026-08-18,Spinx,29.4,,Posted,10812.1,Gas,SPEND
+2026-08-18,King Fuel Lexington Sc,38.49,,Posted,10773.61,Gas,SPEND
+2026-08-18,Double B Hardware,64.55,,Posted,10709.06,Home Improvement,SPEND
+2026-08-18,Transfer Fee,1.64,,Posted,10707.42,Business Services,TRANSFER_OTHER
+2026-08-18,Transfer To 5875,250.0,,Posted,10457.42,Transfer,PERSONAL_5875
+2026-08-18,Mobile Deposit,,2780.0,Posted,9269.09,Income,DEPOSIT
+2026-08-18,Mobile Deposit,,2327.48,Posted,6489.09,Income,DEPOSIT
+2026-08-18,Mobile Deposit,,1273.48,Posted,4161.61,Income,DEPOSIT
+2026-08-18,Mobile Deposit,,433.0,Posted,2888.13,Income,DEPOSIT
+2026-08-18,Mobile Deposit,,225.0,Posted,2455.13,Income,DEPOSIT
+2026-08-18,Intuit Deposit,,55.0,Posted,2230.13,Income,PAYROLL_PROVIDER
+2026-08-19,Intuit Deposit,,250.0,Posted,10671.42,Income,PAYROLL_PROVIDER
+2026-08-19,QuikTrip,9.54,,Posted,10661.88,Fast Food,SPEND
+2026-08-19,Sunoco,10.75,,Posted,10651.13,Fast Food,SPEND
+2026-08-19,QuikTrip,16.66,,Posted,10634.47,Fast Food,SPEND
+2026-08-19,Circle K,20.24,,Posted,10614.23,Gas,SPEND
+2026-08-19,Shell,67.48,,Posted,10546.75,Gas,SPEND
+2026-08-19,Walmart,99.79,,Posted,10446.96,Shopping,SPEND
+2026-08-19,Overdraft Fee,36.0,,Posted,10421.42,Banking Fee,SPEND
+2026-08-19,QuikTrip,175.0,,Posted,10271.96,Gas,SPEND
+2026-08-19,Transfer Fee,7.48,,Posted,10264.48,Business Services,TRANSFER_OTHER
+2026-08-19,Transfer To 0535,6800.0,,Posted,3464.48,Transfer,PAYROLL_0535
+2026-08-19,Check #114,1816.02,,Posted,1648.46,Check,SPEND
+2026-08-20,Transfer From 7903,,1600.0,Posted,3388.46,Transfer,LOC
+2026-08-20,QuikTrip,72.42,,Posted,3316.04,Gas,SPEND
+2026-08-20,La Fogata,96.34,,Posted,3219.7,Food & Dining,SPEND
+2026-08-20,Transfer Fee,4.19,,Posted,3215.51,Business Services,TRANSFER_OTHER
+2026-08-20,Intuit Deposit,,140.0,Posted,1788.46,Income,PAYROLL_PROVIDER
+2026-08-21,Intuit Deposit,,411.25,Posted,3926.76,Income,PAYROLL_PROVIDER
+2026-08-21,Bb's Auto,130.34,,Posted,3796.42,Service & Parts,SPEND
+2026-08-21,Transfer To 0535,1.0,,Posted,3795.42,Transfer,PAYROLL_0535
+2026-08-21,Transfer Fee,12.29,,Posted,3783.13,Business Services,TRANSFER_OTHER
+2026-08-21,Columbiaprop Vendor Payment,,300.0,Posted,3515.51,Income,CUSTOMER_PAYMENT
+2026-08-21,Transfer To 0535,940.0,,Posted,2843.13,Transfer,PAYROLL_0535
+2026-08-24,Walmart,,10.7,Posted,3803.83,Shopping,OTHER_IN
+2026-08-24,Bill.com,,750.0,Posted,3793.13,Transfer,OTHER_IN
+2026-08-24,QuikTrip,30.88,,Posted,3772.95,Gas,SPEND
+2026-08-24,QuikTrip,102.75,,Posted,3670.2,Gas,SPEND
+2026-08-24,Transfer Fee,1.5,,Posted,3668.7,Business Services,TRANSFER_OTHER
+2026-08-24,Transfer From 5875,,150.0,Posted,3043.13,Transfer,PERSONAL_5875
+2026-08-24,Intuit Deposit,,50.0,Posted,2893.13,Income,PAYROLL_PROVIDER
+2026-08-25,Intuit Deposit,,125.0,Posted,3793.7,Income,PAYROLL_PROVIDER
+2026-08-25,Transfer Fee,3.74,,Posted,3789.96,Business Services,TRANSFER_OTHER
+2026-08-26,Intuit Deposit,,150.0,Posted,3939.96,Income,PAYROLL_PROVIDER
+2026-08-26,QuikTrip,21.53,,Posted,3918.43,Gas,SPEND
+2026-08-26,QuikTrip,26.45,,Posted,3891.98,Gas,SPEND
+2026-08-26,ExxonMobil,43.46,,Posted,3848.52,Gas,SPEND
+2026-08-26,Shell,58.01,,Posted,3790.51,Gas,SPEND
+2026-08-26,Walmart,60.77,,Posted,3729.74,Shopping,SPEND
+2026-08-26,ExxonMobil,97.33,,Posted,3632.41,Gas,SPEND
+2026-08-26,Transfer Fee,4.49,,Posted,3627.92,Business Services,TRANSFER_OTHER
+2026-08-27,Intuit Deposit,,690.0,Posted,4617.92,Income,PAYROLL_PROVIDER
+2026-08-27,Transfer From 7903,,100.0,Posted,3927.92,Transfer,LOC
+2026-08-27,Regular Deposit,,200.0,Posted,3827.92,Income,DEPOSIT
+2026-08-27,Transfer To 7903,1000.0,,Posted,3617.92,Transfer,LOC
+2026-08-27,Transfer To 7903,2144.05,,Posted,1473.87,Transfer,LOC
+2026-08-27,Dog Food Center West,92.36,,Posted,1381.51,Food & Dining,SPEND
+2026-08-27,Transfer Fee,20.62,,Posted,1360.89,Business Services,TRANSFER_OTHER
+2026-08-27,Transfer To 5875,125.0,,Posted,1235.89,Transfer,PERSONAL_5875
+2026-08-27,Hubspot Inc H Vxoek C Z I Ik,856.42,,Posted,379.47,Business Services,SPEND
+2026-08-28,Intuit Deposit,,170.0,Posted,699.47,Income,PAYROLL_PROVIDER
+2026-08-28,Tractor Supply,145.25,,Posted,554.22,Shopping,SPEND
+2026-08-28,Transfer Fee,5.09,,Posted,549.13,Business Services,TRANSFER_OTHER
+2026-08-28,Msi Const Operat Zya,,150.0,Posted,529.47,Income,OTHER_IN
+2026-08-28,Transfer To 5875,484.75,,Posted,64.38,Transfer,PERSONAL_5875
+2026-08-31,Transfer From 7903,,500.0,Posted,969.38,Transfer,LOC
+2026-08-31,Shell,3.39,,Posted,965.99,Fast Food,SPEND
+2026-08-31,QuikTrip,5.99,,Posted,960.0,Fast Food,SPEND
+2026-08-31,QuikTrip,28.97,,Posted,931.03,Gas,SPEND
+2026-08-31,Walmart,42.84,,Posted,888.19,Shopping,SPEND
+2026-08-31,Shell,60.28,,Posted,827.91,Gas,SPEND
+2026-08-31,QuikTrip,110.67,,Posted,717.24,Gas,SPEND
+2026-08-31,Tractor Supply,182.67,,Posted,534.57,Shopping,SPEND
+2026-08-31,Transfer Fee,2.24,,Posted,532.33,Business Services,TRANSFER_OTHER
+2026-08-31,Transfer Fee,2.24,,Posted,530.09,Business Services,TRANSFER_OTHER
+2026-08-31,Transfer Fee,3.74,,Posted,526.35,Business Services,TRANSFER_OTHER
+2026-08-31,Transfer From 7903,,130.0,Posted,469.38,Transfer,LOC
+2026-08-31,Intuit Deposit,,125.0,Posted,339.38,Income,PAYROLL_PROVIDER
+2026-08-31,Intuit Deposit,,75.0,Posted,214.38,Income,PAYROLL_PROVIDER
+2026-08-31,Intuit,355.24,,Posted,171.11,Business Services,PAYROLL_PROVIDER
+2026-08-31,Intuit Deposit,,75.0,Posted,139.38,Income,PAYROLL_PROVIDER
+2026-09-01,Transfer From 7903,,1500.0,Posted,2198.11,Transfer,LOC
+2026-09-01,Shell,48.21,,Posted,2149.9,Gas,SPEND
+2026-09-01,Lowe's,62.98,,Posted,2086.92,Home Improvement,SPEND
+2026-09-01,Walmart,72.46,,Posted,2014.46,Shopping,SPEND
+2026-09-01,Shell,94.69,,Posted,1919.77,Gas,SPEND
+2026-09-01,AutoZone,95.73,,Posted,1824.04,Service & Parts,SPEND
+2026-09-01,Transfer Fee,7.07,,Posted,1816.97,Business Services,TRANSFER_OTHER
+2026-09-01,Check #115,800.0,,Posted,1016.97,Check,SPEND
+2026-09-01,Intuit Deposit,,527.0,Posted,698.11,Income,PAYROLL_PROVIDER
+2026-09-02,Intuit Deposit,,65.0,Posted,1081.97,Income,PAYROLL_PROVIDER
+2026-09-02,Transfer To 7903,500.0,,Posted,581.97,Transfer,LOC
+2026-09-02,QuikTrip,5.98,,Posted,575.99,Fast Food,SPEND
+2026-09-02,QuikTrip,32.6,,Posted,543.39,Gas,SPEND
+2026-09-02,Tractor Supply,37.44,,Posted,505.95,Shopping,SPEND
+2026-09-02,Sunoco,60.0,,Posted,445.95,Gas,SPEND
+2026-09-02,Lowe's,107.0,,Posted,338.95,Home Improvement,SPEND
+2026-09-02,Transfer Fee,1.94,,Posted,337.01,Business Services,TRANSFER_OTHER
+2026-09-03,United Community Bank Rebate,,0.6,Posted,1462.64,Bonus,OTHER_IN
+2026-09-03,United Community Bank Rebate,,0.03,Posted,1462.04,Bonus,OTHER_IN
+2026-09-03,Transfer From 7903,,1000.0,Posted,1462.01,Transfer,LOC
+2026-09-03,QuikTrip,17.33,,Posted,1445.31,Fast Food,SPEND
+2026-09-03,Circle K,80.68,,Posted,1364.63,Gas,SPEND
+2026-09-03,Circle K,100.0,,Posted,1264.63,Gas,SPEND
+2026-09-03,Transfer Fee,3.74,,Posted,1260.89,Business Services,TRANSFER_OTHER
+2026-09-03,Intuit Deposit,,125.0,Posted,462.01,Income,PAYROLL_PROVIDER
+2026-09-03,Btisdirectpay Inspmt,1240.0,,Posted,20.89,Uncategorized,SPEND
+2026-09-04,Intuit Deposit,,597.5,Posted,993.39,Income,PAYROLL_PROVIDER
+2026-09-04,Circle K,21.19,,Posted,972.2,Gas,SPEND
+2026-09-04,Shell,72.98,,Posted,899.22,Gas,SPEND
+2026-09-04,Transfer Fee,16.18,,Posted,883.04,Business Services,TRANSFER_OTHER
+2026-09-04,Columbiaprop Vendor Payment,,375.0,Posted,395.89,Income,CUSTOMER_PAYMENT
+2026-09-08,United Community Bank Rebate,,0.6,Posted,1709.89,Bonus,OTHER_IN
+2026-09-08,United Community Paypvdpmt,,450.0,Posted,1709.29,Income,OTHER_IN
+2026-09-08,King Fuel,61.04,,Posted,1648.85,Gas,SPEND
+2026-09-08,Shell,91.04,,Posted,1557.81,Gas,SPEND
+2026-09-08,Lowe's,231.45,,Posted,1326.36,Home Improvement,SPEND
+2026-09-08,Intuit Deposit,,211.25,Posted,1259.29,Income,PAYROLL_PROVIDER
+2026-09-08,Intuit Deposit,,125.0,Posted,1048.04,Income,PAYROLL_PROVIDER
+2026-09-08,A Z Lawn Mower,323.91,,Posted,1002.45,Lawn & Garden,SPEND
+2026-09-08,Transfer Fee,1.2,,Posted,1001.25,Business Services,TRANSFER_OTHER
+2026-09-08,Transfer Fee,3.74,,Posted,997.51,Business Services,TRANSFER_OTHER
+2026-09-08,Transfer Fee,4.83,,Posted,992.68,Business Services,TRANSFER_OTHER
+2026-09-08,Intuit Deposit,,40.0,Posted,923.04,Income,PAYROLL_PROVIDER
+2026-09-08,Transfer To 0535,500.0,,Posted,492.68,Transfer,PAYROLL_0535
+2026-09-09,Transfer From 7903,,350.0,Posted,1502.68,Transfer,LOC
+2026-09-09,United Community Paypvdpmt,,310.0,Posted,1152.68,Income,OTHER_IN
+2026-09-09,Transfer To 7903,500.0,,Posted,1002.68,Transfer,LOC
+2026-09-09,United Community Paypvdpmt,,250.0,Posted,842.68,Income,OTHER_IN
+2026-09-09,Check,350.0,,Posted,652.68,Check,SPEND
+2026-09-09,Transfer Fee,1.0,,Posted,651.68,Business Services,TRANSFER_OTHER
+2026-09-09,Intuit Deposit,,100.0,Posted,592.68,Income,PAYROLL_PROVIDER
+2026-09-09,Transfer To 0535,520.0,,Posted,131.68,Transfer,PAYROLL_0535
+2026-09-10,Intuit Deposit,,157.5,Posted,289.18,Income,PAYROLL_PROVIDER
+2026-09-10,Waffle House,26.75,,Posted,262.43,Restaurants,SPEND
+2026-09-10,Shell,117.3,,Posted,145.13,Gas,SPEND
+2026-09-10,Transfer Fee,4.71,,Posted,140.42,Business Services,TRANSFER_OTHER
+2026-09-11,Mobile Deposit,,595.0,Posted,2975.42,Income,DEPOSIT
+2026-09-11,Circle K,17.96,,Posted,2957.46,Fast Food,SPEND
+2026-09-11,Transfer Fee,7.19,,Posted,2950.27,Business Services,TRANSFER_OTHER
+2026-09-11,Transfer From 7903,,2000.0,Posted,2380.42,Transfer,LOC
+2026-09-11,Check #134,1500.0,,Posted,1450.27,Check,SPEND
+2026-09-11,Intuit Deposit,,240.0,Posted,380.42,Income,PAYROLL_PROVIDER
+2026-09-14,Transfer From 7903,,2000.0,Posted,6565.27,Transfer,LOC
+2026-09-14,Transfer To 7903,500.0,,Posted,6065.27,Transfer,LOC
+2026-09-14,Cantey & Company Sigonfile,,1860.0,Posted,4565.27,Income,OTHER_IN
+2026-09-14,Transfer To 7903,3000.0,,Posted,3065.27,Transfer,LOC
+2026-09-14,Advance Auto Parts,14.51,,Posted,3050.76,Service & Parts,SPEND
+2026-09-14,Circle K,18.89,,Posted,3031.87,Fast Food,SPEND
+2026-09-14,Circle K,42.88,,Posted,2988.99,Gas,SPEND
+2026-09-14,Shell,58.0,,Posted,2930.99,Gas,SPEND
+2026-09-14,Bill.com,,450.0,Posted,2705.27,Transfer,OTHER_IN
+2026-09-14,Gaston Tire,241.93,,Posted,2689.06,Service & Parts,SPEND
+2026-09-14,Transfer Fee,1.64,,Posted,2687.42,Business Services,TRANSFER_OTHER
+2026-09-14,Transfer Fee,4.48,,Posted,2682.94,Business Services,TRANSFER_OTHER
+2026-09-14,Transfer Fee,4.5,,Posted,2678.44,Business Services,TRANSFER_OTHER
+2026-09-14,Transfer To 0535,350.0,,Posted,2328.44,Transfer,PAYROLL_0535
+2026-09-14,Transfer From 7903,,350.0,Posted,2255.27,Transfer,LOC
+2026-09-14,Intuit Deposit,,150.0,Posted,1905.27,Income,PAYROLL_PROVIDER
+2026-09-14,Intuit Deposit,,150.0,Posted,1755.27,Income,PAYROLL_PROVIDER
+2026-09-14,Transfer From 7903,,100.0,Posted,1605.27,Transfer,LOC
+2026-09-14,Intuit Deposit,,55.0,Posted,1505.27,Income,PAYROLL_PROVIDER
+2026-09-15,Intuit Deposit,,125.0,Posted,2453.44,Income,PAYROLL_PROVIDER
+2026-09-15,Gaston Tire,10.7,,Posted,2442.74,Service & Parts,SPEND
+2026-09-15,The Home Depot,312.12,,Posted,2130.62,Home Improvement,SPEND
+2026-09-15,Transfer Fee,3.74,,Posted,2126.88,Business Services,TRANSFER_OTHER
+2026-09-15,Sheffield Financial,638.45,,Posted,1488.43,Financial,SPEND
+2026-09-16,Transfer From 7903,,800.0,Posted,4366.93,Transfer,LOC
+2026-09-16,Intuit Deposit,,140.0,Posted,3566.93,Income,PAYROLL_PROVIDER
+2026-09-16,Regular Deposit,,1938.5,Posted,3426.93,Income,DEPOSIT
+2026-09-16,Transfer To 7903,1100.0,,Posted,3266.93,Transfer,LOC
+2026-09-16,BP Gas,25.11,,Posted,3241.82,Gas,SPEND
+2026-09-16,BP Gas,80.8,,Posted,3161.02,Gas,SPEND
+2026-09-16,Check,300.0,,Posted,2861.02,Check,SPEND
+2026-09-16,Transfer Fee,4.19,,Posted,2856.83,Business Services,TRANSFER_OTHER
+2026-09-16,Employers Insura Debitpmt,2336.0,,Posted,520.83,Financial,SPEND
+2026-09-17,Intuit Deposit,,240.0,Posted,760.83,Income,PAYROLL_PROVIDER
+2026-09-17,Circle K,12.94,,Posted,747.89,Fast Food,SPEND
+2026-09-17,Shell,30.03,,Posted,717.86,Gas,SPEND
+2026-09-17,Vendorsmart.com,150.0,,Posted,567.86,Uncategorized,SPEND
+2026-09-17,Transfer Fee,7.18,,Posted,560.68,Business Services,TRANSFER_OTHER
+2026-09-18,Bill.com,,450.0,Posted,1471.93,Transfer,OTHER_IN
+2026-09-18,Columbiaprop Vendor Payment,,375.0,Posted,1021.93,Income,CUSTOMER_PAYMENT
+2026-09-18,Intuit Deposit,,86.25,Posted,646.93,Income,PAYROLL_PROVIDER
+2026-09-18,Transfer To 7903,1000.0,,Posted,471.93,Transfer,LOC
+2026-09-18,Lowe's,40.11,,Posted,431.82,Home Improvement,SPEND
+2026-09-18,QuikTrip,90.57,,Posted,341.25,Gas,SPEND
+2026-09-18,Transfer Fee,2.58,,Posted,338.67,Business Services,TRANSFER_OTHER
+2026-09-21,Intuit Deposit,,240.0,Posted,793.67,Income,PAYROLL_PROVIDER
+2026-09-21,QuikTrip,16.03,,Posted,777.64,Fast Food,SPEND
+2026-09-21,Shell,65.07,,Posted,712.57,Gas,SPEND
+2026-09-21,Lowe's,72.15,,Posted,640.42,Home Improvement,SPEND
+2026-09-21,Transfer Fee,2.69,,Posted,637.73,Business Services,TRANSFER_OTHER
+2026-09-21,Transfer Fee,3.74,,Posted,633.99,Business Services,TRANSFER_OTHER
+2026-09-21,Transfer Fee,7.18,,Posted,626.81,Business Services,TRANSFER_OTHER
+2026-09-21,Intuit Deposit,,125.0,Posted,553.67,Income,PAYROLL_PROVIDER
+2026-09-21,Intuit Deposit,,90.0,Posted,428.67,Income,PAYROLL_PROVIDER
+2026-09-22,Intuit Deposit,,624.25,Posted,1251.06,Income,PAYROLL_PROVIDER
+2026-09-22,Transfer To 7903,500.0,,Posted,751.06,Transfer,LOC
+2026-09-22,Racetrac,9.34,,Posted,741.72,Fast Food,SPEND
+2026-09-22,Scgov,148.47,,Posted,593.25,Uncategorized,SPEND
+2026-09-22,Transfer Fee,18.67,,Posted,574.58,Business Services,TRANSFER_OTHER
+2026-09-22,Deluxe Check,27.5,,Posted,547.08,Business Services,SPEND
+2026-09-23,Intuit Deposit,,805.0,Posted,1352.08,Income,PAYROLL_PROVIDER
+2026-09-23,Shell,12.0,,Posted,1340.08,Fast Food,SPEND
+2026-09-23,Enmarket,41.88,,Posted,1298.2,Gas,SPEND
+2026-09-23,King Fuel,66.02,,Posted,1232.18,Gas,SPEND
+2026-09-23,SiteOne Landscape Supply,100.0,,Posted,1132.18,Lawn & Garden,SPEND
+2026-09-23,Transfer Fee,12.04,,Posted,1120.14,Business Services,TRANSFER_OTHER
+2026-09-23,Transfer To 0535,200.0,,Posted,920.14,Transfer,PAYROLL_0535
+2026-09-24,Return Rbtfuelmanusa Easy,,0.65,Posted,1113.87,Gas,OTHER_IN
+2026-09-24,Lexingtoncty Ser,0.6,,Posted,1113.27,Uncategorized,SPEND
+2026-09-24,Return Rbtfuelmanusa Easy,,0.58,Posted,1113.22,Gas,OTHER_IN
+2026-09-24,Intuit Deposit,,192.5,Posted,1112.64,Income,PAYROLL_PROVIDER
+2026-09-24,Lexington County,22.73,,Posted,1090.54,Uncategorized,SPEND
+2026-09-24,QuikTrip,34.49,,Posted,1056.05,Gas,SPEND
+2026-09-24,QuikTrip,99.53,,Posted,956.52,Gas,SPEND
+2026-09-24,Check,340.0,,Posted,616.52,Check,SPEND
+2026-09-24,Transfer Fee,5.76,,Posted,610.76,Business Services,TRANSFER_OTHER
+2026-09-25,Intuit Deposit,,200.0,Posted,910.76,Income,PAYROLL_PROVIDER
+2026-09-25,Transfer From 0535,,100.0,Posted,710.76,Transfer,PAYROLL_0535
+2026-09-25,Transfer To 7903,500.0,,Posted,410.76,Transfer,LOC
+2026-09-25,ExxonMobil,12.37,,Posted,398.39,Fast Food,SPEND
+2026-09-25,ExxonMobil,28.29,,Posted,370.1,Gas,SPEND
+2026-09-25,AutoZone,62.04,,Posted,308.06,Service & Parts,SPEND
+2026-09-25,Sunoco,64.02,,Posted,244.04,Gas,SPEND
+2026-09-25,Transfer Fee,5.98,,Posted,238.06,Business Services,TRANSFER_OTHER
+2026-09-28,Transfer From 7903,,800.0,Posted,1538.06,Transfer,LOC
+2026-09-28,Hurricane Expres,18.0,,Posted,1520.06,Uncategorized,SPEND
+2026-09-28,QuikTrip,28.82,,Posted,1491.24,Gas,SPEND
+2026-09-28,QuikTrip,33.25,,Posted,1457.99,Gas,SPEND
+2026-09-28,Lowe's,48.54,,Posted,1409.45,Home Improvement,SPEND
+2026-09-28,A Z Lawn Mower,55.67,,Posted,1353.78,Lawn & Garden,SPEND
+2026-09-28,QuikTrip,73.99,,Posted,1279.79,Gas,SPEND
+2026-09-28,Shell,105.92,,Posted,1173.87,Gas,SPEND
+2026-09-28,Gaston Tire,279.56,,Posted,894.31,Service & Parts,SPEND
+2026-09-28,Transfer Fee,2.99,,Posted,891.32,Business Services,TRANSFER_OTHER
+2026-09-28,Transfer Fee,4.18,,Posted,887.14,Business Services,TRANSFER_OTHER
+2026-09-28,Transfer Fee,5.78,,Posted,881.36,Business Services,TRANSFER_OTHER
+2026-09-28,Intuit Deposit,,260.0,Posted,738.06,Income,PAYROLL_PROVIDER
+2026-09-28,Intuit Deposit,,140.0,Posted,478.06,Income,PAYROLL_PROVIDER
+2026-09-28,Intuit Deposit,,100.0,Posted,338.06,Income,PAYROLL_PROVIDER
+2026-09-28,Hubspot Inc Cha Ik,856.42,,Posted,24.94,Business Services,SPEND
+2026-09-29,Regular Deposit,,4033.96,Posted,4058.9,Income,DEPOSIT
+2026-09-29,Transfer To 7903,1500.0,,Posted,2558.9,Transfer,LOC
+2026-09-29,Transfer To 7903,2233.37,,Posted,325.53,Transfer,LOC
+2026-09-29,Gaston Tire,210.75,,Posted,114.78,Service & Parts,SPEND
+2026-09-30,Intuit Deposit,,430.0,Posted,544.78,Income,PAYROLL_PROVIDER
+2026-09-30,QuikTrip,18.31,,Posted,526.47,Fast Food,SPEND
+2026-09-30,BP Gas,20.16,,Posted,506.31,Gas,SPEND
+2026-09-30,Energy Express,35.9,,Posted,470.41,Utilities,SPEND
+2026-09-30,King Fuel Lexington Sc Abd,60.96,,Posted,409.45,Gas,SPEND
+2026-09-30,Transfer Fee,12.86,,Posted,396.59,Business Services,TRANSFER_OTHER
+2026-09-30,Transfer To 5875,100.0,,Posted,296.59,Transfer,PERSONAL_5875
+2026-10-01,Transfer From 7903,,900.0,Posted,1512.84,Transfer,LOC
+2026-10-01,Circle K,7.37,,Posted,1505.47,Fast Food,SPEND
+2026-10-01,QuikTrip,9.84,,Posted,1495.63,Fast Food,SPEND
+2026-10-01,Circle K,19.41,,Posted,1476.22,Gas,SPEND
+2026-10-01,Lowe's,23.72,,Posted,1452.5,Home Improvement,SPEND
+2026-10-01,QuikTrip,47.12,,Posted,1405.38,Gas,SPEND
+2026-10-01,Walmart,51.78,,Posted,1353.6,Shopping,SPEND
+2026-10-01,A Z Lawn Mower,55.59,,Posted,1298.01,Lawn & Garden,SPEND
+2026-10-01,A Z Lawn Mower,177.43,,Posted,1120.58,Lawn & Garden,SPEND
+2026-10-01,Transfer Fee,9.45,,Posted,1111.13,Business Services,TRANSFER_OTHER
+2026-10-01,Intuit,341.33,,Posted,769.8,Business Services,PAYROLL_PROVIDER
+2026-10-01,Intuit Deposit,,316.25,Posted,612.84,Income,PAYROLL_PROVIDER
+2026-10-02,Intuit Deposit,,1085.0,Posted,1854.8,Income,PAYROLL_PROVIDER
+2026-10-02,Circle K,5.0,,Posted,1849.8,Gas,SPEND
+2026-10-02,Racetrac,16.36,,Posted,1833.44,Fast Food,SPEND
+2026-10-02,Ace Hardware,31.31,,Posted,1802.13,Home Improvement,SPEND
+2026-10-02,Sunoco,68.49,,Posted,1733.64,Gas,SPEND
+2026-10-02,QuikTrip,104.4,,Posted,1629.24,Gas,SPEND
+2026-10-02,Transfer Fee,16.12,,Posted,1613.12,Business Services,TRANSFER_OTHER
+2026-10-02,Transfer To 0535,690.0,,Posted,923.12,Transfer,PAYROLL_0535
+2026-10-05,Agy Holding Corp,,4800.0,Posted,7048.12,Income,OTHER_IN
+2026-10-05,Transfer To 7903,4800.0,,Posted,2248.12,Transfer,LOC
+2026-10-05,Transfer From 7903,,1100.0,Posted,2248.12,Transfer,LOC
+2026-10-05,Shell,15.47,,Posted,2232.65,Fast Food,SPEND
+2026-10-05,Dollar General,15.52,,Posted,2217.13,Shopping,SPEND
+2026-10-05,Xpress,18.25,,Posted,2198.88,Uncategorized,SPEND
+2026-10-05,Racetrac,20.21,,Posted,2178.67,Gas,SPEND
+2026-10-05,Advance Auto Parts,29.94,,Posted,2148.73,Service & Parts,SPEND
+2026-10-05,Shell,72.25,,Posted,2076.48,Gas,SPEND
+2026-10-05,A Z Lawn Mower,98.65,,Posted,1977.83,Lawn & Garden,SPEND
+2026-10-05,Lexington County,688.6,,Posted,1289.23,Uncategorized,SPEND
+2026-10-05,Intuit Deposit,,125.0,Posted,1148.12,Income,PAYROLL_PROVIDER
+2026-10-05,Intuit Deposit,,50.0,Posted,1023.12,Income,PAYROLL_PROVIDER
+2026-10-05,Intuit Deposit,,50.0,Posted,973.12,Income,PAYROLL_PROVIDER
+2026-10-05,Google Workspac,1129.92,,Posted,159.31,Shopping,SPEND
+2026-10-05,Transfer Fee,1.5,,Posted,157.81,Business Services,TRANSFER_OTHER
+2026-10-05,Transfer Fee,1.5,,Posted,156.31,Business Services,TRANSFER_OTHER
+2026-10-05,Transfer Fee,3.74,,Posted,152.57,Business Services,TRANSFER_OTHER
+2026-10-06,United Community Paypvdpmt,,575.0,Posted,1002.57,Income,OTHER_IN
+2026-10-06,Transfer To 7903,500.0,,Posted,502.57,Transfer,LOC
+2026-10-06,Docs Bbq and Sou,40.0,,Posted,462.57,Restaurants,SPEND
+2026-10-06,Intuit Deposit,,275.0,Posted,427.57,Income,PAYROLL_PROVIDER
+2026-10-06,Bb's Auto,94.35,,Posted,368.22,Uncategorized,SPEND
+2026-10-06,Transfer Fee,5.74,,Posted,362.48,Business Services,TRANSFER_OTHER
+2026-10-07,Intuit Deposit,,600.0,Posted,1337.48,Income,PAYROLL_PROVIDER
+2026-10-07,Transfer To 7903,500.0,,Posted,837.48,Transfer,LOC
+2026-10-07,United Community Paypvdpmt,,375.0,Posted,737.48,Income,OTHER_IN
+2026-10-07,Transfer To 7903,500.0,,Posted,337.48,Transfer,LOC
+2026-10-07,Keisler's Store,16.45,,Posted,321.03,Gas,SPEND
+2026-10-07,QuikTrip,18.16,,Posted,302.87,Fast Food,SPEND
+2026-10-07,QuikTrip,18.6,,Posted,284.27,Fast Food,SPEND
+2026-10-07,A Z Lawn Mower,22.03,,Posted,262.24,Lawn & Garden,SPEND
+2026-10-07,Shealys Bar B Qu Batsbrg,30.94,,Posted,231.3,Restaurants,SPEND
+2026-10-07,The Home Depot,35.61,,Posted,195.69,Home Improvement,SPEND
+2026-10-07,Transfer Fee,17.94,,Posted,177.75,Business Services,TRANSFER_OTHER
+2026-10-08,Intuit Deposit,,460.0,Posted,637.75,Income,PAYROLL_PROVIDER
+2026-10-08,QuikTrip,3.25,,Posted,634.5,Fast Food,SPEND
+2026-10-08,QuikTrip,9.07,,Posted,625.43,Fast Food,SPEND
+2026-10-08,QuikTrip,11.2,,Posted,614.23,Fast Food,SPEND
+2026-10-08,QuikTrip,14.37,,Posted,599.86,Fast Food,SPEND
+2026-10-08,Shell,66.33,,Posted,533.53,Gas,SPEND
+2026-10-08,QuikTrip,78.33,,Posted,455.2,Gas,SPEND
+2026-10-08,Walmart,81.16,,Posted,374.04,Shopping,SPEND
+2026-10-08,Transfer Fee,13.75,,Posted,360.29,Business Services,TRANSFER_OTHER
+2026-10-09,Cantey & Company Sigonfile,,2290.0,Posted,3205.29,Income,OTHER_IN
+2026-10-09,Transfer To 7903,2100.0,,Posted,1105.29,Transfer,LOC
+2026-10-09,BP Gas,67.61,,Posted,1037.68,Gas,SPEND
+2026-10-09,City Gas & Fuel,83.24,,Posted,954.44,Gas,SPEND
+2026-10-09,Columbiaprop Vendor Payment,,440.0,Posted,915.29,Income,CUSTOMER_PAYMENT
+2026-10-09,QuikTrip,101.15,,Posted,853.29,Gas,SPEND
+2026-10-09,A Z Lawn Mower,220.92,,Posted,632.37,Lawn & Garden,SPEND
+2026-10-09,Intuit Deposit,,115.0,Posted,475.29,Income,PAYROLL_PROVIDER
+2026-10-09,Bb's Auto,431.49,,Posted,200.88,Uncategorized,SPEND
+2026-10-09,Transfer Fee,3.44,,Posted,197.44,Business Services,TRANSFER_OTHER
+2026-10-13,Transfer From 7903,,200.0,Posted,4385.94,Transfer,LOC
+2026-10-13,Intuit Deposit,,170.0,Posted,4185.94,Income,PAYROLL_PROVIDER
+2026-10-13,Intuit Deposit,,150.0,Posted,4015.94,Income,PAYROLL_PROVIDER
+2026-10-13,Intuit Deposit,,130.0,Posted,3865.94,Income,PAYROLL_PROVIDER
+2026-10-13,Intuit Deposit,,125.0,Posted,3735.94,Income,PAYROLL_PROVIDER
+2026-10-13,Regular Deposit,,3413.5,Posted,3610.94,Income,DEPOSIT
+2026-10-13,Transfer To 7903,3000.0,,Posted,1385.94,Transfer,LOC
+2026-10-13,Leesburg Convenient,2.54,,Posted,1383.4,Gas,SPEND
+2026-10-13,QuikTrip,22.14,,Posted,1361.26,Gas,SPEND
+2026-10-13,Little Caesars,27.2,,Posted,1334.06,Fast Food,SPEND
+2026-10-13,Nic County,35.02,,Posted,1299.04,Uncategorized,SPEND
+2026-10-13,Buc-ee's,36.25,,Posted,1262.79,Gas,SPEND
+2026-10-13,Nic County,46.1,,Posted,1216.69,Uncategorized,SPEND
+2026-10-13,Shell,58.71,,Posted,1157.98,Gas,SPEND
+2026-10-13,Equip Pro Rental West,82.13,,Posted,1075.85,Uncategorized,SPEND
+2026-10-13,Shell,85.03,,Posted,990.82,Gas,SPEND
+2026-10-13,United Community Bank Withdrawal,200.0,,Posted,790.82,Cash,SPEND
+2026-10-13,Transfer Fee,3.74,,Posted,787.08,Business Services,TRANSFER_OTHER
+2026-10-13,Transfer Fee,3.88,,Posted,783.2,Business Services,TRANSFER_OTHER
+2026-10-13,Transfer Fee,4.5,,Posted,778.7,Business Services,TRANSFER_OTHER
+2026-10-13,Transfer Fee,5.08,,Posted,773.62,Business Services,TRANSFER_OTHER
+2026-10-14,Transfer From 7903,,900.0,Posted,2198.62,Transfer,LOC
+2026-10-14,Intuit Deposit,,525.0,Posted,1298.62,Income,PAYROLL_PROVIDER
+2026-10-14,Transfer To 7903,1000.0,,Posted,1198.62,Transfer,LOC
+2026-10-14,QuikTrip,7.39,,Posted,1191.23,Fast Food,SPEND
+2026-10-14,QuikTrip,23.75,,Posted,1167.48,Gas,SPEND
+2026-10-14,Rush's,23.9,,Posted,1143.58,Fast Food,SPEND
+2026-10-14,Red Sake,28.0,,Posted,1115.58,Restaurants,SPEND
+2026-10-14,QuikTrip,75.9,,Posted,1039.68,Gas,SPEND
+2026-10-14,The Home Depot,145.93,,Posted,893.75,Home Improvement,SPEND
+2026-10-14,Transfer Fee,9.73,,Posted,884.02,Business Services,TRANSFER_OTHER
+2026-10-14,Check #180,750.0,,Posted,134.02,Check,SPEND
+2026-10-15,Intuit Deposit,,305.0,Posted,689.02,Income,PAYROLL_PROVIDER
+2026-10-15,Racetrac,11.96,,Posted,677.06,Fast Food,SPEND
+2026-10-15,Walmart,13.86,,Posted,663.2,Shopping,SPEND
+2026-10-15,Circle K,91.59,,Posted,571.61,Gas,SPEND
+2026-10-15,Transfer Fee,9.12,,Posted,562.49,Business Services,TRANSFER_OTHER
+2026-10-15,United Community Paypvdpmt,,250.0,Posted,384.02,Income,OTHER_IN
+2026-10-16,Bill.com,,450.0,Posted,5014.22,Transfer,OTHER_IN
+2026-10-16,Bill.com,,400.0,Posted,4564.22,Transfer,OTHER_IN
+2026-10-16,Intuit Deposit,,285.25,Posted,4164.22,Income,PAYROLL_PROVIDER
+2026-10-16,Regular Deposit,,1781.48,Posted,3878.97,Income,DEPOSIT
+2026-10-16,Transfer To 7903,2250.0,,Posted,2764.22,Transfer,LOC
+2026-10-16,W P Law Inc,35.76,,Posted,2728.46,Legal,SPEND
+2026-10-16,QuikTrip,85.9,,Posted,2642.56,Gas,SPEND
+2026-10-16,Smith Turf & Irr,88.47,,Posted,2554.09,Uncategorized,SPEND
+2026-10-16,Ace Hardware,93.56,,Posted,2460.53,Home Improvement,SPEND
+2026-10-16,Regular Deposit,,1535.0,Posted,2097.49,Income,DEPOSIT
+2026-10-16,Check,850.0,,Posted,1610.53,Check,SPEND
+2026-10-16,Transfer Fee,8.54,,Posted,1601.99,Business Services,TRANSFER_OTHER
+2026-10-16,Transfer To 5875,75.0,,Posted,1526.99,Transfer,PERSONAL_5875
+2026-10-19,Intuit Deposit,,455.0,Posted,8218.71,Income,PAYROLL_PROVIDER
+2026-10-19,Intuit Deposit,,110.0,Posted,7763.71,Income,PAYROLL_PROVIDER
+2026-10-19,Intuit Deposit,,75.0,Posted,7653.71,Income,PAYROLL_PROVIDER
+2026-10-19,Regular Deposit,,6051.72,Posted,7578.71,Income,DEPOSIT
+2026-10-19,Transfer To 7903,800.0,,Posted,7418.71,Transfer,LOC
+2026-10-19,Transfer To 7903,5000.0,,Posted,2418.71,Transfer,LOC
+2026-10-19,QuikTrip,8.97,,Posted,2409.74,Fast Food,SPEND
+2026-10-19,QuikTrip,18.7,,Posted,2391.04,Fast Food,SPEND
+2026-10-19,O'hara's Pu,23.52,,Posted,2367.52,Fast Food,SPEND
+2026-10-19,Nic County,44.38,,Posted,2323.14,Uncategorized,SPEND
+2026-10-19,Lizards Thicket,50.0,,Posted,2273.14,Uncategorized,SPEND
+2026-10-19,QuikTrip,65.02,,Posted,2208.12,Gas,SPEND
+2026-10-19,Walmart,83.43,,Posted,2124.69,Shopping,SPEND
+2026-10-19,QuikTrip,175.0,,Posted,1949.69,Gas,SPEND
+2026-10-19,Dog Food Center West,312.0,,Posted,1637.69,Food & Dining,SPEND
+2026-10-19,Transfer Fee,2.24,,Posted,1635.45,Business Services,TRANSFER_OTHER
+2026-10-19,Transfer Fee,3.29,,Posted,1632.16,Business Services,TRANSFER_OTHER
+2026-10-19,Transfer Fee,13.61,,Posted,1618.55,Business Services,TRANSFER_OTHER
+2026-10-19,Afore Insurance F Vxoem Wv Ik,1515.56,,Posted,102.99,Financial,SPEND
+2026-10-20,Transfer From 7903,,1600.0,Posted,4180.47,Transfer,LOC
+2026-10-20,Intuit Deposit,,150.0,Posted,2580.47,Income,PAYROLL_PROVIDER
+2026-10-20,Regular Deposit,,2327.48,Posted,2430.47,Income,DEPOSIT
+2026-10-20,Transfer To 7903,2000.0,,Posted,2180.47,Transfer,LOC
+2026-10-20,BP Gas,28.34,,Posted,2152.13,Gas,SPEND
+2026-10-20,Transfer Fee,1.5,,Posted,2150.63,Business Services,TRANSFER_OTHER
+2026-10-21,Columbiaprop Vendor Payment,,290.0,Posted,2440.63,Income,CUSTOMER_PAYMENT
+2026-10-21,QuikTrip,13.22,,Posted,2427.41,Fast Food,SPEND
+2026-10-21,Enmarket,20.0,,Posted,2407.41,Gas,SPEND
+2026-10-21,San Jose,26.0,,Posted,2381.41,Uncategorized,SPEND
+2026-10-21,QuikTrip,63.7,,Posted,2317.71,Gas,SPEND
+2026-10-21,Havird S Tire O West,1592.01,,Posted,725.7,Service & Parts,SPEND
+2026-10-22,Intuit Deposit,,235.0,Posted,960.7,Income,PAYROLL_PROVIDER
+2026-10-22,Transfer To 7903,500.0,,Posted,460.7,Transfer,LOC
+2026-10-22,QuikTrip,3.36,,Posted,457.34,Fast Food,SPEND
+2026-10-22,QuikTrip,40.62,,Posted,416.72,Gas,SPEND
+2026-10-22,Walmart,55.74,,Posted,360.98,Shopping,SPEND
+2026-10-22,Transfer Fee,7.02,,Posted,353.96,Business Services,TRANSFER_OTHER
+2026-10-23,Bill.com,,120.0,Posted,623.96,Transfer,OTHER_IN
+2026-10-23,Piecewise Co,7.87,,Posted,616.09,Uncategorized,SPEND
+2026-10-23,QuikTrip,11.2,,Posted,604.89,Fast Food,SPEND
+2026-10-23,Food Lion,23.52,,Posted,581.37,Groceries,SPEND
+2026-10-23,Shell,25.67,,Posted,555.7,Gas,SPEND
+2026-10-23,Subway,37.02,,Posted,518.68,Fast Food,SPEND
+2026-10-23,Intuit Deposit,,90.0,Posted,503.96,Income,PAYROLL_PROVIDER
+2026-10-23,Papa John's,51.32,,Posted,467.36,Fast Food,SPEND
+2026-10-23,Transfer Fee,2.7,,Posted,464.66,Business Services,TRANSFER_OTHER
+2026-10-23,Cantey & Company Sigonfile P,,60.0,Posted,413.96,Income,OTHER_IN
+2026-10-26,Intuit Deposit,,140.0,Posted,659.66,Income,PAYROLL_PROVIDER
+2026-10-26,QuikTrip,14.63,,Posted,645.03,Fast Food,SPEND
+2026-10-26,Dollar Tree,24.88,,Posted,620.15,Shopping,SPEND
+2026-10-26,Ask Chat Ai,29.99,,Posted,590.16,Uncategorized,SPEND
+2026-10-26,Food Lion,39.9,,Posted,550.26,Groceries,SPEND
+2026-10-26,Intuit Deposit,,55.0,Posted,519.66,Income,PAYROLL_PROVIDER
+2026-10-26,QuikTrip,89.77,,Posted,460.49,Gas,SPEND
+2026-10-26,Tractor Supply,112.39,,Posted,348.1,Shopping,SPEND
+2026-10-26,Transfer Fee,1.64,,Posted,346.46,Business Services,TRANSFER_OTHER
+2026-10-26,Transfer Fee,4.18,,Posted,342.28,Business Services,TRANSFER_OTHER
+2026-10-27,Transfer From 7903,,600.0,Posted,992.28,Transfer,LOC
+2026-10-27,Tokyo Grill West,22.02,,Posted,970.26,Restaurants,SPEND
+2026-10-27,Hurricane Expres,38.0,,Posted,932.26,Uncategorized,SPEND
+2026-10-27,Sunoco,39.85,,Posted,892.41,Gas,SPEND
+2026-10-27,Transfer Fee,1.5,,Posted,890.91,Business Services,TRANSFER_OTHER
+2026-10-27,Intuit Deposit,,50.0,Posted,392.28,Income,PAYROLL_PROVIDER
+2026-10-27,Hubspot Inc H F Ct Qsoa Z Ik,856.42,,Posted,34.49,Business Services,SPEND
+2026-10-28,Overdraft Fee,36.0,,Posted,-1.51,Banking Fee,SPEND
+2026-10-28,Sunoco,11.42,,Posted,-12.93,Fast Food,SPEND
+2026-10-28,Overdraft Fee,36.0,,Posted,-48.93,Banking Fee,SPEND
+2026-10-28,QuikTrip,15.43,,Posted,-64.36,Fast Food,SPEND
+2026-10-28,Overdraft Fee,36.0,,Posted,-100.36,Banking Fee,SPEND
+2026-10-28,Shell,43.59,,Posted,-143.95,Gas,SPEND
+2026-10-28,Circle K,56.01,,Posted,-199.96,Gas,SPEND
+2026-10-28,QuikTrip,69.75,,Posted,-269.71,Gas,SPEND
+2026-10-28,Energy Express,108.79,,Posted,-378.5,Utilities,SPEND
+2026-10-28,Www.net,149.0,,Posted,-527.5,Uncategorized,SPEND
+2026-10-29,Intuit Deposit,,395.0,Posted,-132.5,Income,PAYROLL_PROVIDER
+2026-10-29,QuikTrip,10.08,,Posted,-142.58,Fast Food,SPEND
+2026-10-29,QuikTrip,26.4,,Posted,-168.98,Gas,SPEND
+2026-10-29,Lowe's,121.89,,Posted,-290.87,Home Improvement,SPEND
+2026-10-29,Transfer Fee,11.8,,Posted,-302.67,Business Services,TRANSFER_OTHER
+2026-10-30,Lowe's,,85.57,Posted,856.15,Home Improvement,OTHER_IN
+2026-10-30,The Home Depot,38.09,,Posted,818.06,Home Improvement,SPEND
+2026-10-30,Transfer From 7903,,500.0,Posted,770.58,Transfer,LOC
+2026-10-30,Circle K,84.1,,Posted,733.96,Gas,SPEND
+2026-10-30,Transfer Fee,4.28,,Posted,729.68,Business Services,TRANSFER_OTHER
+2026-10-30,Transfer From 7903,,317.0,Posted,270.58,Transfer,LOC
+2026-10-30,Check #181,750.0,,Posted,-20.32,Check,SPEND
+2026-10-30,Intuit Deposit,,256.25,Posted,-46.42,Income,PAYROLL_PROVIDER
+2026-11-02,Transfer From 7903,,700.0,Posted,6450.28,Transfer,LOC
+2026-11-02,Intuit Deposit,,648.6,Posted,5750.28,Income,PAYROLL_PROVIDER
+2026-11-02,Transfer To 7903,1250.0,,Posted,5200.28,Transfer,LOC
+2026-11-02,Intuit Deposit,,562.0,Posted,5101.68,Income,PAYROLL_PROVIDER
+2026-11-02,Intuit Deposit,,60.0,Posted,4539.68,Income,PAYROLL_PROVIDER
+2026-11-02,Regular Deposit,,4500.0,Posted,4479.68,Income,DEPOSIT
+2026-11-02,Transfer To 7903,2297.95,,Posted,2902.33,Transfer,LOC
+2026-11-02,QuikTrip,12.17,,Posted,2890.16,Fast Food,SPEND
+2026-11-02,QuikTrip,21.08,,Posted,2869.08,Gas,SPEND
+2026-11-02,Double,37.23,,Posted,2831.85,Uncategorized,SPEND
+2026-11-02,7-Eleven,54.0,,Posted,2777.85,Gas,SPEND
+2026-11-02,QuikTrip,55.03,,Posted,2722.82,Gas,SPEND
+2026-11-02,W D,503.0,,Posted,2219.82,Uncategorized,SPEND
+2026-11-02,Transfer Fee,1.79,,Posted,2218.03,Business Services,TRANSFER_OTHER
+2026-11-02,Transfer Fee,16.8,,Posted,2201.23,Business Services,TRANSFER_OTHER
+2026-11-02,Transfer Fee,19.39,,Posted,2181.84,Business Services,TRANSFER_OTHER
+2026-11-02,Transfer To 4076,200.0,,Posted,1981.84,Transfer,TRANSFER_OTHER
+2026-11-02,Intuit,341.33,,Posted,1640.51,Business Services,PAYROLL_PROVIDER
+2026-11-02,Fee for W D,1.0,,Posted,1639.51,Fees & Charges,SPEND
+2026-11-03,Regular Deposit,,2350.0,Posted,3989.51,Income,DEPOSIT
+2026-11-03,Transfer To 7903,2700.0,,Posted,1289.51,Transfer,LOC
+2026-11-03,Energy Express,11.62,,Posted,1277.89,Utilities,SPEND
+2026-11-03,McDonald's,30.46,,Posted,1247.43,Fast Food,SPEND
+2026-11-03,A Z Lawn Mower,30.91,,Posted,1216.52,Lawn & Garden,SPEND
+2026-11-03,Nic County,37.26,,Posted,1179.26,Uncategorized,SPEND
+2026-11-03,Ace Hardware,76.59,,Posted,1102.67,Home Improvement,SPEND
+2026-11-03,Energy Express,125.0,,Posted,977.67,Utilities,SPEND
+2026-11-03,Dog Food Center West,500.76,,Posted,476.91,Food & Dining,SPEND
+2026-11-04,The Home Depot,,390.84,Posted,3842.75,Home Improvement,OTHER_IN
+2026-11-04,QuikTrip,7.7,,Posted,3835.05,Fast Food,SPEND
+2026-11-04,Energy Express,12.93,,Posted,3822.12,Utilities,SPEND
+2026-11-04,Shell,13.56,,Posted,3808.56,Fast Food,SPEND
+2026-11-04,Shell,26.99,,Posted,3781.57,Gas,SPEND
+2026-11-04,Energy Express,39.88,,Posted,3741.69,Utilities,SPEND
+2026-11-04,Nic County,73.26,,Posted,3668.43,Uncategorized,SPEND
+2026-11-04,QuikTrip,86.76,,Posted,3581.67,Gas,SPEND
+2026-11-04,Transfer From 7903,,1500.0,Posted,3451.91,Transfer,LOC
+2026-11-04,Nic County,155.18,,Posted,3426.49,Uncategorized,SPEND
+2026-11-04,The Home Depot,166.64,,Posted,3259.85,Home Improvement,SPEND
+2026-11-04,Transfer From 7903,,1400.0,Posted,1951.91,Transfer,LOC
+2026-11-04,The Home Depot,1386.1,,Posted,1873.75,Home Improvement,SPEND
+2026-11-04,Transfer Fee,0.75,,Posted,1873.0,Business Services,TRANSFER_OTHER
+2026-11-04,Sheffield Financial,750.0,,Posted,1123.0,Financial,SPEND
+2026-11-04,Intuit Deposit,,75.0,Posted,551.91,Income,PAYROLL_PROVIDER
+2026-11-04,Sheffield Financial,750.0,,Posted,373.0,Financial,SPEND
+2026-11-05,Intuit Deposit,,11100.0,Posted,11473.0,Income,PAYROLL_PROVIDER
+2026-11-05,Transfer To 7903,7000.0,,Posted,4473.0,Transfer,LOC
+2026-11-05,Pinestraw Place,104.31,,Posted,4368.69,Shopping,SPEND
+2026-11-05,BP Gas,123.78,,Posted,4244.91,Gas,SPEND
+2026-11-05,Pinestraw Place,136.66,,Posted,4108.25,Shopping,SPEND
+2026-11-05,The Home Depot,193.43,,Posted,3914.82,Home Improvement,SPEND
+2026-11-05,Transfer Fee,331.89,,Posted,3582.93,Business Services,TRANSFER_OTHER
+2026-11-05,Check #182,376.6,,Posted,3206.33,Check,SPEND
+2026-11-05,Check #184,110.0,,Posted,3096.33,Check,SPEND
+2026-11-06,Intuit Deposit,,1130.0,Posted,6926.33,Income,PAYROLL_PROVIDER
+2026-11-06,Columbiaprop Vendor Payment,,450.0,Posted,5796.33,Income,CUSTOMER_PAYMENT
+2026-11-06,Transfer To 7903,1250.0,,Posted,5676.33,Transfer,LOC
+2026-11-06,Regular Deposit,,2250.0,Posted,5346.33,Income,DEPOSIT
+2026-11-06,Transfer To 7903,1600.0,,Posted,4076.33,Transfer,LOC
+2026-11-06,Circle K,55.0,,Posted,4021.33,Gas,SPEND
+2026-11-06,QuikTrip,94.31,,Posted,3927.02,Gas,SPEND
+2026-11-06,Lowe's,104.0,,Posted,3823.02,Home Improvement,SPEND
+2026-11-06,Equip Pro Rental West,164.25,,Posted,3658.77,Uncategorized,SPEND
+2026-11-06,Lowe's,440.86,,Posted,3217.91,Home Improvement,SPEND
+2026-11-06,Transfer Fee,14.29,,Posted,3203.62,Business Services,TRANSFER_OTHER
+2026-11-06,884516 DDA PREAUTH QT 1176 OUTSIDE CAYCE SC 1018 884516,1.0,,Pending,3202.62,,
+2026-11-07,79252 DDA POS PURCH LOWE'S #2967 LEXINGTON SC 001 631115079252,15.26,,Pending,3187.36,,
+2026-11-07,565465 DDA POS RETURN RBTSHELL EasySavings NY 01160123 565465,,0.14,Pending,3096.66,,
+2026-11-07,878137 DDA POS PURCH LOWE'S #2967 LEXINGTON SC 001 631113878137,90.84,,Pending,3096.52,,
+2026-11-07,Transfer to xxx4076 Reimbursement,100.0,,Pending,2996.66,,
+2026-11-07,29887 DDA POS PURCH FAMILY DOLLAR PELION SC 98464001 098461,29.63,,Pending,2967.03,,
+2026-11-07,462996 DDA POS PURCH NIC*-COUNTY OF L LEXINGTON SC 28607999 462996,120.8,,Pending,2846.23,,
+2026-11-07,121326 DDA POS PURCH NIMMER TURF AND COLUMBIA SC 32773713 121326,525.99,,Pending,2320.24,,
+2026-11-07,646769 DDA POS PURCH DOG FOOD CENTER WEST COLUMBIA SC 22356588 646769,133.54,,Pending,2186.7,,
+2026-11-07,693554 DDA POS PURCH QT 1176 OUTSIDE CAYCE SC 16392870 693554,12.57,,Pending,2174.13,,
+2026-11-07,684866 DDA POS PURCH QT 1198 INSIDE LEXINGTON SC 12201778 684866,10.96,,Pending,2163.17,,
