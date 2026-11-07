@@ -106,6 +106,28 @@ about assumptions — never bury a guess inside a number.
 - Cash-basis rhythm: contract checks land days 10–20; payroll bi-weekly;
   judge any month only after day ~20
 
+### LOC 7903 tracking (bank register, not QB)
+QB's "Lines of credit" account does **not** reflect the real LOC. Track
+from the bank export instead.
+- History lives in `qb-dashboard-output/loc-7903-history.csv` (columns:
+  date, description, debit_draw, credit_payment, status, bank_class, tag,
+  running_balance). Debit = draw (balance up). Credit = payment (balance down).
+- When the user uploads a new bank export (.xls/.csv), parse it, **append
+  only rows newer than the last date in the CSV**, recompute running balance,
+  and refresh the LOC panel on the dashboard.
+- Tag rules: `WIGINGTON_GROUP` (memo mentions Wigington), `CAPEX` (named
+  equipment), `FEE`, `SCHEDULED_PAYMENT` ("Payment Extra to Principal"),
+  `REVERSAL_PAIR` (same-day, same-amount debit+credit — exclude from flow
+  totals and flag), else `DRAW` / `PAYMENT`.
+- Account map: 7903 LOC · 0514 Yarddogs checking · 0535 payroll/payroll tax
+  · 5875 Ross personal. Only 0514→7903 and 7903→0514 are business flow.
+- Known structure: Feb 9 2026 Yarddogs assumed $204,234 of which $185,638
+  was Wigington Group's; WG has paid $29,480 since. Mar 2026 $45,500 of
+  equipment (skid steer, trailer) sits on the LOC.
+- Always state the register-cumulative balance **needs anchoring** to a
+  statement balance; ask for the credit limit and current statement balance
+  if not in context.
+
 ### Inputs to gather (ask the user once if not in context)
 - **Accounting basis** of the QB account (`cash` or `accrual`). Critical:
   cash basis means open A/R is unrecognized revenue waiting to land.

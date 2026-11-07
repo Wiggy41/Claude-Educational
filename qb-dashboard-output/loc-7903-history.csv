@@ -1,0 +1,325 @@
+date,description,debit_draw,credit_payment,status,bank_class,tag,running_balance
+2026-01-22,New Loan Proceeds,,,Posted,Transfer,OPEN,0.0
+2026-01-22,Origination Fee Loan,1250.0,,Posted,Fees & Charges,FEE,1250.0
+2026-01-22,Ucc Filing Fee,70.0,,Posted,Fees & Charges,FEE,1320.0
+2026-01-22,Ucc Lien Search,20.0,,Posted,Uncategorized,FEE,1340.0
+2026-01-28,Principal Advance,11147.07,,Posted,Transfer,DRAW,12487.07
+2026-01-29,Principal Advance,9400.0,,Posted,Transfer,DRAW,21887.07
+2026-01-29,Principal Advance,1200.0,,Posted,Transfer,DRAW,23087.07
+2026-01-29,Principal Advance,500.0,,Posted,Transfer,DRAW,23587.07
+2026-02-03,Principal Advance,1200.0,,Posted,Transfer,DRAW,24787.07
+2026-02-04,Principal Advance,3500.0,,Posted,Transfer,DRAW,28287.07
+2026-02-09,"Yarddog Assume full amount, $185,638 Amount attributable to Wigington Group",204234.02,,Posted,Transfer,WIGINGTON_GROUP,232521.09
+2026-02-11,Principal Advance,250.0,,Posted,Transfer,DRAW,232771.09
+2026-02-13,Principal Advance,3000.0,,Posted,Transfer,DRAW,235771.09
+2026-02-17,Principal Advance,100.0,,Posted,Transfer,DRAW,235871.09
+2026-02-18,Payment Extra to Principal,,600.0,Posted,Financial,SCHEDULED_PAYMENT,235271.09
+2026-02-20,Principal Advance,1300.0,,Posted,Transfer,DRAW,236571.09
+2026-02-24,"Wigington Group amount reduced $180,888 outstanding",,4500.0,Posted,Transfer,WIGINGTON_GROUP,232071.09
+2026-02-24,Wigington Group Outstanding amount decrease,,250.0,Posted,Transfer,WIGINGTON_GROUP,231821.09
+2026-02-27,Yarddogs Cash Flow,2500.0,,Posted,Transfer,DRAW,234321.09
+2026-03-02,20 ft Dump Trailer Purchase,8500.0,,Posted,Transfer,CAPEX,242821.09
+2026-03-04,Mini Skid Steer,37000.0,,Posted,Transfer,CAPEX,279821.09
+2026-03-06,Principal Advance,1200.0,,Posted,Transfer,DRAW,281021.09
+2026-03-09,Principal Advance,1000.0,,Posted,Transfer,DRAW,282021.09
+2026-03-09,Principal Advance,700.0,,Posted,Transfer,DRAW,282721.09
+2026-03-10,Principal Advance,1000.0,,Posted,Transfer,DRAW,283721.09
+2026-03-12,Principal Advance,1000.0,,Posted,Transfer,DRAW,284721.09
+2026-03-12,Principal Advance,250.0,,Posted,Transfer,DRAW,284971.09
+2026-03-13,Principal Advance,550.0,,Posted,Transfer,DRAW,285521.09
+2026-03-16,"Wigington Group LLC Principal Payment $179,388 outstanding balance",,1500.0,Posted,Transfer,WIGINGTON_GROUP,284021.09
+2026-03-16,Wigington Group LLC Principal Payment to Yarddogs/Wigington Group Interest,,1230.26,Posted,Financial,WIGINGTON_GROUP,282790.83
+2026-03-17,Principal Advance,350.0,,Posted,Transfer,DRAW,283140.83
+2026-03-18,Principal Advance,1099.34,,Posted,Transfer,DRAW,284240.17
+2026-03-18,Principal Advance,1000.0,,Posted,Transfer,DRAW,285240.17
+2026-03-18,Principal Advance,1000.0,,Posted,Transfer,DRAW,286240.17
+2026-03-18,Principal Advance,500.0,,Posted,Transfer,DRAW,286740.17
+2026-03-18,Principal Advance,350.0,,Posted,Transfer,DRAW,287090.17
+2026-03-18,Principal Advance,200.0,,Posted,Transfer,DRAW,287290.17
+2026-03-19,Transfer,,3000.0,Posted,Transfer,PAYMENT,284290.17
+2026-03-23,Principal Advance,1000.0,,Posted,Transfer,DRAW,285290.17
+2026-03-23,Principal Advance,350.0,,Posted,Transfer,DRAW,285640.17
+2026-03-24,Principal Advance,1000.0,,Posted,Transfer,DRAW,286640.17
+2026-03-25,Principal Advance,150.0,,Posted,Transfer,DRAW,286790.17
+2026-03-26,Principal Advance,2550.0,,Posted,Transfer,DRAW,289340.17
+2026-03-27,Principal Advance,300.0,,Posted,Transfer,DRAW,289640.17
+2026-03-30,Principal Advance,600.0,,Posted,Transfer,DRAW,290240.17
+2026-03-31,Principal Advance,2000.0,,Posted,Transfer,DRAW,292240.17
+2026-03-31,Principal Advance,500.0,,Posted,Transfer,DRAW,292740.17
+2026-04-01,Transfer,,1400.0,Posted,Transfer,PAYMENT,291340.17
+2026-04-03,Principal Advance,1000.0,,Posted,Transfer,DRAW,292340.17
+2026-04-03,Principal Advance,455.0,,Posted,Transfer,DRAW,292795.17
+2026-04-06,Principal Advance,3000.0,,Posted,Transfer,DRAW,295795.17
+2026-04-06,Principal Advance,500.0,,Posted,Transfer,DRAW,296295.17
+2026-04-06,Principal Advance,450.0,,Posted,Transfer,DRAW,296745.17
+2026-04-09,Principal Advance,25000.0,,Posted,Transfer,DRAW,321745.17
+2026-04-13,"THE WIGINGTON GROUP BALANCE REDUCTION $179,388-$22,000 = $157,388",,22000.0,Posted,Transfer,WIGINGTON_GROUP,299745.17
+2026-04-13,Principal Advance,1000.0,,Posted,Transfer,DRAW,300745.17
+2026-04-13,Principal Advance,750.0,,Posted,Transfer,DRAW,301495.17
+2026-04-13,Principal Advance,500.0,,Posted,Transfer,DRAW,301995.17
+2026-04-14,Principal Advance,1500.0,,Posted,Transfer,DRAW,303495.17
+2026-04-15,Principal Advance,14022.0,,Posted,Transfer,DRAW,317517.17
+2026-04-16,Payment Extra to Principal ROSS OUT OF POCKET PRINCIPAL REDUCTION ON WHOLE,,1509.0,Posted,Financial,SCHEDULED_PAYMENT,316008.17
+2026-04-16,Principal Advance,500.0,,Posted,Transfer,DRAW,316508.17
+2026-04-17,Principal Advance,1601.0,,Posted,Transfer,DRAW,318109.17
+2026-04-20,Principal Advance,1200.0,,Posted,Transfer,DRAW,319309.17
+2026-04-20,Principal Advance,150.0,,Posted,Transfer,DRAW,319459.17
+2026-04-21,Principal Advance,2500.0,,Posted,Transfer,DRAW,321959.17
+2026-04-23,Principal Advance,500.0,,Posted,Transfer,DRAW,322459.17
+2026-04-27,Transfer,,800.0,Posted,Transfer,PAYMENT,321659.17
+2026-04-27,Principal Advance,1500.0,,Posted,Transfer,DRAW,323159.17
+2026-04-28,Transfer,,1200.0,Posted,Transfer,PAYMENT,321959.17
+2026-04-28,Principal Advance,1326.41,,Posted,Transfer,DRAW,323285.58
+2026-04-28,Principal Advance,1000.0,,Posted,Transfer,DRAW,324285.58
+2026-04-29,Principal Advance,1000.0,,Posted,Transfer,DRAW,325285.58
+2026-04-29,Principal Advance,1000.0,,Posted,Transfer,DRAW,326285.58
+2026-04-30,Principal Advance,250.0,,Posted,Transfer,DRAW,326535.58
+2026-05-01,Principal Advance,9900.0,,Posted,Transfer,DRAW,336435.58
+2026-05-01,Principal Advance,50.0,,Posted,Transfer,DRAW,336485.58
+2026-05-04,Principal Advance,500.0,,Posted,Transfer,DRAW,336985.58
+2026-05-04,Principal Advance,2500.0,,Posted,Transfer,DRAW,339485.58
+2026-05-04,Principal Advance,1000.0,,Posted,Transfer,DRAW,340485.58
+2026-05-04,Principal Advance,250.0,,Posted,Transfer,DRAW,340735.58
+2026-05-05,Principal Advance,1723.0,,Posted,Transfer,DRAW,342458.58
+2026-05-05,Principal Advance,1500.0,,Posted,Transfer,DRAW,343958.58
+2026-05-05,Principal Advance,500.0,,Posted,Transfer,DRAW,344458.58
+2026-05-08,Principal Advance,1500.0,,Posted,Transfer,DRAW,345958.58
+2026-05-11,Principal Advance,1000.0,,Posted,Transfer,DRAW,346958.58
+2026-05-11,Principal Advance,700.0,,Posted,Transfer,DRAW,347658.58
+2026-05-12,Principal Advance,5400.0,,Posted,Transfer,DRAW,353058.58
+2026-05-12,Principal Advance,500.0,,Posted,Transfer,DRAW,353558.58
+2026-05-12,Principal Advance,400.0,,Posted,Transfer,DRAW,353958.58
+2026-05-13,Transfer,,5000.0,Posted,Transfer,PAYMENT,348958.58
+2026-05-14,Transfer,,5600.0,Posted,Transfer,PAYMENT,343358.58
+2026-05-14,Principal Advance,1700.0,,Posted,Transfer,DRAW,345058.58
+2026-05-15,Principal Advance,8900.0,,Posted,Transfer,DRAW,353958.58
+2026-05-15,Principal Advance,8900.0,,Posted,Transfer,DRAW,362858.58
+2026-05-18,Principal Advance,15000.0,,Posted,Transfer,DRAW,377858.58
+2026-05-22,Transfer,,15000.0,Posted,Transfer,PAYMENT,362858.58
+2026-05-22,Payment Extra to Principal,,1723.51,Posted,Financial,SCHEDULED_PAYMENT,361135.07
+2026-05-26,Principal Advance,1000.0,,Posted,Transfer,DRAW,362135.07
+2026-05-29,Principal Advance,8700.0,,Posted,Transfer,DRAW,370835.07
+2026-05-29,Principal Advance,1000.0,,Posted,Transfer,DRAW,371835.07
+2026-06-04,Transfer,,5000.0,Posted,Transfer,PAYMENT,366835.07
+2026-06-05,Principal Advance,6000.0,,Posted,Transfer,DRAW,372835.07
+2026-06-08,Transfer,,4500.0,Posted,Transfer,PAYMENT,368335.07
+2026-06-09,Principal Advance,8850.0,,Posted,Transfer,DRAW,377185.07
+2026-06-09,Principal Advance,5146.32,,Posted,Transfer,DRAW,382331.39
+2026-06-10,Principal Advance,9400.0,,Posted,Transfer,DRAW,391731.39
+2026-06-11,Transfer,,500.0,Posted,Transfer,PAYMENT,391231.39
+2026-06-12,Principal Advance,1000.0,,Posted,Transfer,DRAW,392231.39
+2026-06-15,Transfer,,1000.0,Posted,Transfer,PAYMENT,391231.39
+2026-06-15,Principal Advance,725.0,,Posted,Transfer,DRAW,391956.39
+2026-06-16,Payment Extra to Principal,,1928.46,Posted,Financial,SCHEDULED_PAYMENT,390027.93
+2026-06-16,Principal Advance,550.0,,Posted,Transfer,DRAW,390577.93
+2026-06-17,Transfer,,7000.0,Posted,Transfer,PAYMENT,383577.93
+2026-06-17,Transfer,,5250.0,Posted,Transfer,PAYMENT,378327.93
+2026-06-17,Principal Advance,400.0,,Posted,Transfer,DRAW,378727.93
+2026-06-22,Transfer,,9300.0,Posted,Transfer,PAYMENT,369427.93
+2026-06-22,Principal Advance,1800.0,,Posted,Transfer,DRAW,371227.93
+2026-06-22,Principal Advance,1500.0,,Posted,Transfer,DRAW,372727.93
+2026-06-23,Transfer,,2500.0,Posted,Transfer,PAYMENT,370227.93
+2026-06-23,Principal Advance,5000.0,,Posted,Transfer,DRAW,375227.93
+2026-06-26,Principal Advance,1300.0,,Posted,Transfer,DRAW,376527.93
+2026-06-26,Principal Advance,10000.0,,Posted,Transfer,DRAW,386527.93
+2026-06-29,Principal Advance,1500.0,,Posted,Transfer,DRAW,388027.93
+2026-06-30,Principal Advance,1750.0,,Posted,Transfer,DRAW,389777.93
+2026-07-06,Principal Advance,2100.0,,Posted,Transfer,DRAW,391877.93
+2026-07-07,Principal Advance,1000.0,,Posted,Transfer,DRAW,392877.93
+2026-07-09,Transfer,,1500.0,Posted,Transfer,PAYMENT,391377.93
+2026-07-09,Principal Advance,15000.0,,Posted,Transfer,DRAW,406377.93
+2026-07-13,Transfer,,1000.0,Posted,Transfer,PAYMENT,405377.93
+2026-07-13,Payment Extra to Principal,,1976.2,Posted,Financial,SCHEDULED_PAYMENT,403401.73
+2026-07-13,Principal Advance,1700.0,,Posted,Transfer,DRAW,405101.73
+2026-07-15,Transfer,,6000.0,Posted,Transfer,PAYMENT,399101.73
+2026-07-15,Transfer,,620.0,Posted,Transfer,PAYMENT,398481.73
+2026-07-15,Principal Advance,4200.0,,Posted,Transfer,DRAW,402681.73
+2026-07-16,Transfer,,2000.0,Posted,Transfer,PAYMENT,400681.73
+2026-07-16,Principal Advance,30.0,,Posted,Transfer,DRAW,400711.73
+2026-07-17,Transfer,,1000.0,Posted,Transfer,REVERSAL_PAIR,399711.73
+2026-07-17,Principal Advance,1000.0,,Posted,Transfer,REVERSAL_PAIR,400711.73
+2026-07-17,Principal Advance,300.0,,Posted,Transfer,DRAW,401011.73
+2026-07-17,Principal Advance,250.0,,Posted,Transfer,DRAW,401261.73
+2026-07-20,Transfer,,1550.0,Posted,Transfer,PAYMENT,399711.73
+2026-07-20,Principal Advance,400.0,,Posted,Transfer,DRAW,400111.73
+2026-07-21,Transfer,,1250.0,Posted,Transfer,PAYMENT,398861.73
+2026-07-24,Principal Advance,1250.0,,Posted,Transfer,DRAW,400111.73
+2026-07-24,Principal Advance,9500.0,,Posted,Transfer,DRAW,409611.73
+2026-07-24,Principal Advance,500.0,,Posted,Transfer,DRAW,410111.73
+2026-07-24,Principal Advance,50.0,,Posted,Transfer,DRAW,410161.73
+2026-07-27,Transfer,,12600.0,Posted,Transfer,PAYMENT,397561.73
+2026-07-27,Transfer,,2000.0,Posted,Transfer,PAYMENT,395561.73
+2026-07-27,Principal Advance,1800.0,,Posted,Transfer,DRAW,397361.73
+2026-07-28,Transfer,,4000.0,Posted,Transfer,PAYMENT,393361.73
+2026-07-30,Disbursement of Fees,,2900.0,Posted,Fees & Charges,REVERSAL_PAIR,390461.73
+2026-07-30,Disbursement of Fees,2900.0,,Posted,Fees & Charges,REVERSAL_PAIR,393361.73
+2026-07-30,Principal Advance Disbursement on Loc,2900.0,,Posted,Transfer,DRAW,396261.73
+2026-07-31,Principal Advance,2715.4,,Posted,Transfer,DRAW,398977.13
+2026-07-31,Principal Advance,300.0,,Posted,Transfer,DRAW,399277.13
+2026-08-03,Principal Advance,1706.33,,Posted,Transfer,DRAW,400983.46
+2026-08-03,Principal Advance,550.0,,Posted,Transfer,DRAW,401533.46
+2026-08-03,Principal Advance,350.0,,Posted,Transfer,DRAW,401883.46
+2026-08-04,Principal Advance,875.0,,Posted,Transfer,DRAW,402758.46
+2026-08-04,Principal Advance,378.0,,Posted,Transfer,DRAW,403136.46
+2026-08-05,Principal Advance,4000.0,,Posted,Transfer,DRAW,407136.46
+2026-08-05,Principal Advance,500.0,,Posted,Transfer,DRAW,407636.46
+2026-08-05,Principal Advance,450.0,,Posted,Transfer,DRAW,408086.46
+2026-08-05,Principal Advance,250.0,,Posted,Transfer,DRAW,408336.46
+2026-08-07,Principal Advance,6500.0,,Posted,Transfer,DRAW,414836.46
+2026-08-10,Transfer,,5000.0,Posted,Transfer,PAYMENT,409836.46
+2026-08-10,Principal Advance,4000.0,,Posted,Transfer,DRAW,413836.46
+2026-08-11,Principal Advance,100.0,,Posted,Transfer,DRAW,413936.46
+2026-08-12,Principal Advance,500.0,,Posted,Transfer,DRAW,414436.46
+2026-08-12,Principal Advance,350.0,,Posted,Transfer,DRAW,414786.46
+2026-08-14,Transfer,,1500.0,Posted,Transfer,PAYMENT,413286.46
+2026-08-14,Transfer,,1000.0,Posted,Transfer,PAYMENT,412286.46
+2026-08-14,Principal Advance,50.0,,Posted,Transfer,DRAW,412336.46
+2026-08-17,Transfer,,1000.0,Posted,Transfer,PAYMENT,411336.46
+2026-08-17,Principal Advance,1816.02,,Posted,Transfer,DRAW,413152.48
+2026-08-18,Transfer,,1250.0,Posted,Transfer,PAYMENT,411902.48
+2026-08-19,Principal Advance,1500.0,,Posted,Transfer,DRAW,413402.48
+2026-08-20,Principal Advance,1600.0,,Posted,Transfer,DRAW,415002.48
+2026-08-21,Principal Advance,900.0,,Posted,Transfer,DRAW,415902.48
+2026-08-25,Transfer,,6000.0,Posted,Transfer,PAYMENT,409902.48
+2026-08-25,Principal Advance,900.0,,Posted,Transfer,DRAW,410802.48
+2026-08-27,Transfer,,1000.0,Posted,Transfer,PAYMENT,409802.48
+2026-08-27,Payment Extra to Principal,,2144.05,Posted,Financial,SCHEDULED_PAYMENT,407658.43
+2026-08-27,Principal Advance,1600.0,,Posted,Transfer,DRAW,409258.43
+2026-08-27,Principal Advance,13608.0,,Posted,Transfer,DRAW,422866.43
+2026-08-27,Principal Advance,100.0,,Posted,Transfer,DRAW,422966.43
+2026-08-27,Principal Advance,100.0,,Posted,Transfer,DRAW,423066.43
+2026-08-31,Principal Advance,500.0,,Posted,Transfer,DRAW,423566.43
+2026-08-31,Principal Advance,130.0,,Posted,Transfer,DRAW,423696.43
+2026-08-31,Principal Advance,50.0,,Posted,Transfer,DRAW,423746.43
+2026-09-01,Principal Advance,1500.0,,Posted,Transfer,DRAW,425246.43
+2026-09-02,Transfer,,500.0,Posted,Transfer,PAYMENT,424746.43
+2026-09-02,Transfer,,200.0,Posted,Transfer,PAYMENT,424546.43
+2026-09-03,Principal Advance,1000.0,,Posted,Transfer,DRAW,425546.43
+2026-09-04,Transfer,,1200.0,Posted,Transfer,PAYMENT,424346.43
+2026-09-04,Principal Advance,9800.0,,Posted,Transfer,DRAW,434146.43
+2026-09-04,Principal Advance,125.0,,Posted,Transfer,DRAW,434271.43
+2026-09-08,Principal Advance,475.0,,Posted,Transfer,DRAW,434746.43
+2026-09-08,Principal Advance,150.0,,Posted,Transfer,DRAW,434896.43
+2026-09-08,Principal Advance,100.0,,Posted,Transfer,DRAW,434996.43
+2026-09-08,Principal Advance,100.0,,Posted,Transfer,DRAW,435096.43
+2026-09-08,Principal Advance,100.0,,Posted,Transfer,DRAW,435196.43
+2026-09-08,Principal Advance,100.0,,Posted,Transfer,DRAW,435296.43
+2026-09-08,Principal Advance,60.0,,Posted,Transfer,DRAW,435356.43
+2026-09-08,Principal Advance,50.0,,Posted,Transfer,DRAW,435406.43
+2026-09-08,Principal Advance,50.0,,Posted,Transfer,DRAW,435456.43
+2026-09-08,Principal Advance,25.0,,Posted,Transfer,DRAW,435481.43
+2026-09-09,Transfer,,500.0,Posted,Transfer,PAYMENT,434981.43
+2026-09-09,Principal Advance,350.0,,Posted,Transfer,DRAW,435331.43
+2026-09-10,Principal Advance,97.0,,Posted,Transfer,DRAW,435428.43
+2026-09-11,Principal Advance,2000.0,,Posted,Transfer,DRAW,437428.43
+2026-09-14,Transfer,,3000.0,Posted,Transfer,PAYMENT,434428.43
+2026-09-14,Transfer,,1850.0,Posted,Transfer,PAYMENT,432578.43
+2026-09-14,Transfer,,500.0,Posted,Transfer,PAYMENT,432078.43
+2026-09-14,Principal Advance,3500.0,,Posted,Transfer,DRAW,435578.43
+2026-09-14,Principal Advance,2000.0,,Posted,Transfer,DRAW,437578.43
+2026-09-14,Principal Advance,350.0,,Posted,Transfer,DRAW,437928.43
+2026-09-14,Principal Advance,250.0,,Posted,Transfer,DRAW,438178.43
+2026-09-14,Principal Advance,100.0,,Posted,Transfer,DRAW,438278.43
+2026-09-14,Principal Advance,25.0,,Posted,Transfer,DRAW,438303.43
+2026-09-16,Transfer,,1100.0,Posted,Transfer,PAYMENT,437203.43
+2026-09-16,Principal Advance,800.0,,Posted,Transfer,DRAW,438003.43
+2026-09-18,Transfer,,2000.0,Posted,Transfer,PAYMENT,436003.43
+2026-09-18,Transfer,,1000.0,Posted,Transfer,PAYMENT,435003.43
+2026-09-18,Principal Advance,707.0,,Posted,Transfer,DRAW,435710.43
+2026-09-18,Principal Advance,9000.0,,Posted,Transfer,DRAW,444710.43
+2026-09-21,Principal Advance,3310.0,,Posted,Transfer,DRAW,448020.43
+2026-09-22,Transfer,,500.0,Posted,Transfer,PAYMENT,447520.43
+2026-09-22,Principal Advance,1050.0,,Posted,Transfer,DRAW,448570.43
+2026-09-25,Transfer,,500.0,Posted,Transfer,PAYMENT,448070.43
+2026-09-28,Principal Advance,800.0,,Posted,Transfer,DRAW,448870.43
+2026-09-29,Transfer,,1500.0,Posted,Transfer,PAYMENT,447370.43
+2026-09-29,Payment Extra to Principal,,2233.37,Posted,Financial,SCHEDULED_PAYMENT,445137.06
+2026-09-29,Principal Advance,200.0,,Posted,Transfer,DRAW,445337.06
+2026-10-01,Principal Advance,900.0,,Posted,Transfer,DRAW,446237.06
+2026-10-01,Principal Advance,300.0,,Posted,Transfer,DRAW,446537.06
+2026-10-01,Principal Advance,50.0,,Posted,Transfer,DRAW,446587.06
+2026-10-01,Principal Advance,40.0,,Posted,Transfer,DRAW,446627.06
+2026-10-02,Transfer,,2600.0,Posted,Transfer,PAYMENT,444027.06
+2026-10-02,Principal Advance,7200.0,,Posted,Transfer,DRAW,451227.06
+2026-10-02,Principal Advance,1300.0,,Posted,Transfer,DRAW,452527.06
+2026-10-02,Principal Advance,150.0,,Posted,Transfer,DRAW,452677.06
+2026-10-05,Transfer,,4800.0,Posted,Transfer,PAYMENT,447877.06
+2026-10-05,Principal Advance,1100.0,,Posted,Transfer,DRAW,448977.06
+2026-10-06,Transfer,,500.0,Posted,Transfer,PAYMENT,448477.06
+2026-10-06,Principal Advance,150.0,,Posted,Transfer,DRAW,448627.06
+2026-10-07,Transfer,,500.0,Posted,Transfer,PAYMENT,448127.06
+2026-10-07,Transfer,,500.0,Posted,Transfer,PAYMENT,447627.06
+2026-10-08,Principal Advance,800.0,,Posted,Transfer,DRAW,448427.06
+2026-10-08,Principal Advance,150.0,,Posted,Transfer,DRAW,448577.06
+2026-10-08,Principal Advance,150.0,,Posted,Transfer,DRAW,448727.06
+2026-10-09,Transfer,,2100.0,Posted,Transfer,PAYMENT,446627.06
+2026-10-13,Transfer,,3000.0,Posted,Transfer,PAYMENT,443627.06
+2026-10-13,Principal Advance,350.0,,Posted,Transfer,DRAW,443977.06
+2026-10-13,Principal Advance,200.0,,Posted,Transfer,DRAW,444177.06
+2026-10-13,Principal Advance,100.0,,Posted,Transfer,DRAW,444277.06
+2026-10-14,Transfer,,1000.0,Posted,Transfer,PAYMENT,443277.06
+2026-10-14,Principal Advance,900.0,,Posted,Transfer,DRAW,444177.06
+2026-10-16,Transfer,,2250.0,Posted,Transfer,PAYMENT,441927.06
+2026-10-16,Principal Advance,1050.0,,Posted,Transfer,DRAW,442977.06
+2026-10-16,Principal Advance,7800.0,,Posted,Transfer,DRAW,450777.06
+2026-10-16,Principal Advance,780.0,,Posted,Transfer,DRAW,451557.06
+2026-10-19,Transfer,,5000.0,Posted,Transfer,PAYMENT,446557.06
+2026-10-19,Transfer,,800.0,Posted,Transfer,PAYMENT,445757.06
+2026-10-19,Principal Advance,300.0,,Posted,Transfer,DRAW,446057.06
+2026-10-19,Principal Advance,300.0,,Posted,Transfer,DRAW,446357.06
+2026-10-19,Principal Advance,155.0,,Posted,Transfer,DRAW,446512.06
+2026-10-19,Principal Advance,100.0,,Posted,Transfer,DRAW,446612.06
+2026-10-20,Transfer,,2000.0,Posted,Transfer,PAYMENT,444612.06
+2026-10-20,Transfer,,300.0,Posted,Transfer,PAYMENT,444312.06
+2026-10-20,Principal Advance,1600.0,,Posted,Transfer,DRAW,445912.06
+2026-10-20,Principal Advance,750.0,,Posted,Transfer,DRAW,446662.06
+2026-10-21,Transfer,2500.0,,Posted,Transfer,REVERSAL_PAIR,449162.06
+2026-10-21,Transfer,,2500.0,Posted,Transfer,REVERSAL_PAIR,446662.06
+2026-10-21,Payment Extra to Principal,,2500.0,Posted,Financial,SCHEDULED_PAYMENT,444162.06
+2026-10-22,Transfer,,500.0,Posted,Transfer,REVERSAL_PAIR,443662.06
+2026-10-22,Transfer,,500.0,Posted,Transfer,PAYMENT,443162.06
+2026-10-22,Transfer,500.0,,Posted,Transfer,REVERSAL_PAIR,443662.06
+2026-10-23,Principal Advance,600.0,,Posted,Transfer,REVERSAL_PAIR,444262.06
+2026-10-23,Principal Advance,600.0,,Posted,Transfer,DRAW,444862.06
+2026-10-23,Principal Advance,,600.0,Posted,Income,REVERSAL_PAIR,444262.06
+2026-10-27,Principal Advance,775.0,,Posted,Transfer,REVERSAL_PAIR,445037.06
+2026-10-27,Principal Advance,,775.0,Posted,Income,REVERSAL_PAIR,444262.06
+2026-10-27,Principal Advance,600.0,,Posted,Transfer,REVERSAL_PAIR,444862.06
+2026-10-27,Principal Advance,775.0,,Posted,Transfer,DRAW,445637.06
+2026-10-27,Principal Advance,,600.0,Posted,Income,REVERSAL_PAIR,445037.06
+2026-10-27,Principal Advance,600.0,,Posted,Transfer,DRAW,445637.06
+2026-10-27,Principal Advance,50.0,,Posted,Transfer,REVERSAL_PAIR,445687.06
+2026-10-27,Principal Advance,50.0,,Posted,Transfer,DRAW,445737.06
+2026-10-27,Principal Advance,,50.0,Posted,Income,REVERSAL_PAIR,445687.06
+2026-10-28,Principal Advance,100.0,,Posted,Transfer,REVERSAL_PAIR,445787.06
+2026-10-28,Principal Advance,100.0,,Posted,Transfer,DRAW,445887.06
+2026-10-28,Principal Advance,,100.0,Posted,Income,REVERSAL_PAIR,445787.06
+2026-10-30,Principal Advance,5500.0,,Posted,Transfer,REVERSAL_PAIR,451287.06
+2026-10-30,Principal Advance,,5500.0,Posted,Income,REVERSAL_PAIR,445787.06
+2026-10-30,Principal Advance,500.0,,Posted,Transfer,REVERSAL_PAIR,446287.06
+2026-10-30,Principal Advance,,500.0,Posted,Income,REVERSAL_PAIR,445787.06
+2026-10-30,Principal Advance,5500.0,,Posted,Transfer,DRAW,451287.06
+2026-10-30,Principal Advance,317.0,,Posted,Transfer,REVERSAL_PAIR,451604.06
+2026-10-30,Principal Advance,500.0,,Posted,Transfer,DRAW,452104.06
+2026-10-30,Principal Advance,,317.0,Posted,Income,REVERSAL_PAIR,451787.06
+2026-10-30,Principal Advance,317.0,,Posted,Transfer,DRAW,452104.06
+2026-10-30,Principal Advance,100.0,,Posted,Transfer,REVERSAL_PAIR,452204.06
+2026-10-30,Principal Advance,100.0,,Posted,Transfer,DRAW,452304.06
+2026-10-30,Principal Advance,,100.0,Posted,Income,REVERSAL_PAIR,452204.06
+2026-11-02,Transfer,,1250.0,Posted,Transfer,PAYMENT,450954.06
+2026-11-02,Payment Extra to Principal,,2297.95,Posted,Financial,SCHEDULED_PAYMENT,448656.11
+2026-11-02,Principal Advance,700.0,,Posted,Transfer,DRAW,449356.11
+2026-11-02,Principal Advance,655.0,,Posted,Transfer,DRAW,450011.11
+2026-11-02,Principal Advance,80.0,,Posted,Transfer,DRAW,450091.11
+2026-11-03,Transfer,,2700.0,Posted,Transfer,PAYMENT,447391.11
+2026-11-03,Principal Advance,200.0,,Posted,Transfer,DRAW,447591.11
+2026-11-03,Principal Advance,150.0,,Posted,Transfer,DRAW,447741.11
+2026-11-04,Principal Advance,1500.0,,Posted,Transfer,DRAW,449241.11
+2026-11-04,Principal Advance,1400.0,,Posted,Transfer,DRAW,450641.11
+2026-11-05,Transfer,,7000.0,Posted,Transfer,PAYMENT,443641.11
+2026-11-05,Principal Advance,1100.0,,Posted,Transfer,DRAW,444741.11
+2026-11-05,Principal Advance,300.0,,Posted,Transfer,DRAW,445041.11
+2026-11-06,Transfer,,1600.0,Posted,Transfer,PAYMENT,443441.11
+2026-11-06,Transfer,,1250.0,Posted,Transfer,PAYMENT,442191.11
+2026-11-06,Principal Advance,200.0,,Posted,Transfer,DRAW,442391.11
+2026-11-09,Transfer to xxx5875 Funds Transfer via Mobile,150.0,,Pending,,PENDING,
