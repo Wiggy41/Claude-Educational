@@ -161,12 +161,27 @@
       <tbody>
         <tr><td>→ 0535 Payroll</td><td>—</td><td>$74,065</td><td>48%</td></tr>
         <tr><td>→ 0514 Checking</td><td>—</td><td>$38,202</td><td>25%</td></tr>
-        <tr style="background:#2a1a15;"><td><strong>→ Unmatched (not 0514, not 0535)</strong></td><td>66</td><td class="neg"><strong>$43,325</strong></td><td class="neg"><strong>28%</strong></td></tr>
+        <tr style="background:#2a1a15;"><td><strong>→ Wigington Group (via 5875)</strong></td><td>66</td><td class="neg"><strong>$43,325</strong></td><td class="neg"><strong>28%</strong></td></tr>
         <tr class="total"><td><strong>Total draws</strong></td><td>108</td><td><strong>$155,593</strong></td><td></td></tr>
       </tbody>
     </table>
-    <div style="font-size:10px;color:#8b95a3;margin-top:8px;line-height:1.5;">~$7.9K of "From 7903" receipts in the business accounts had no same-amount draw (split or re-dated), so the true unaccounted figure is closer to <strong style="color:#f87171;">$35K</strong>. Largest single unmatched draw: <strong>Aug 27 · $13,608</strong>. 47 of the 66 are under $500 ($8,140 total) — looks like card-style spending straight off the line.</div>
-    <div style="font-size:10px;color:#fbbf24;margin-top:6px;">By your account map, the only other destination is <strong>5875 (personal)</strong>. The 5875 register would confirm.</div>
+    <div style="font-size:10px;color:#8b95a3;margin-top:8px;line-height:1.5;">Owner confirmed: LOC draws that did not land in 0514/0535 went to 5875 and are <strong style="color:#a78bfa;">Wigington Group</strong> — a receivable Yarddogs will be repaid. Tagged <code style="font-size:9px;">WIGINGTON_GROUP_DRAW</code> in loc-7903-history.csv; ledger in <code style="font-size:9px;">wigington-group-receivable.csv</code>. Largest: Aug 27 · $13,608.</div>
+
+    <div style="height:1px;background:#2a3038;margin:14px 0;"></div>
+    <div style="background:#1a1a2e;border:1px solid #4c3a7a;border-radius:6px;padding:12px;">
+      <div style="font-size:10px;color:#a78bfa;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;font-weight:600;">Wigington Group · owed to Yarddogs LOC</div>
+      <table style="font-size:11px;">
+        <tbody>
+          <tr><td>Feb 9 assumed WG portion</td><td>$185,638</td></tr>
+          <tr><td>less WG payments (Feb–Apr)</td><td class="pos">–$29,480</td></tr>
+          <tr><td>plus WG draws via 5875, Jan–Nov</td><td class="neg">+$140,469</td></tr>
+          <tr class="total"><td><strong>WG receivable</strong></td><td class="neg"><strong>$296,627</strong></td></tr>
+          <tr><td style="color:#8b95a3;">of which draws since Jul 1</td><td style="color:#8b95a3;">$43,325</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:10px;color:#c8cdd3;margin-top:6px;line-height:1.5;">Register cumulative LOC $442,391 − WG receivable $296,627 = <strong style="color:#4ade80;">Yarddogs' own share ≈ $145,764</strong>.</div>
+      <div style="font-size:10px;color:#fbbf24;margin-top:6px;line-height:1.5;">⚠ Pre-July matching is less certain — 0514 labels vary before then. Confirm the big ones: Jan 28 $11,147 · Jan 29 $9,400 · Apr 9 $25,000 · Apr 15 $14,022 · May 18 $15,000. If any were Yarddogs, the receivable drops by that amount.</div>
+    </div>
 
     <div style="height:1px;background:#2a3038;margin:14px 0;"></div>
     <div style="font-size:10px;color:#8b95a3;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;">Payroll is funded by the LOC</div>
@@ -188,7 +203,7 @@
     <table>
       <thead><tr><th>Where the cash went that QB profit doesn't show</th><th>$</th></tr></thead>
       <tbody>
-        <tr><td>LOC draws not landing in business accounts (→ 5875 / other)</td><td class="neg">~$35,000</td></tr>
+        <tr><td>LOC draws to Wigington Group via 5875 (receivable, not expense)</td><td class="neg">$43,325</td></tr>
         <tr><td>Scheduled LOC principal payments (balance-sheet, not P&amp;L)</td><td class="neg">$11,152</td></tr>
         <tr><td>Checks &amp; non-Intuit spend out of 0535 (may be unbooked in QB)</td><td class="neg">$14,925</td></tr>
         <tr><td>Direct 0514 → 5875 transfers</td><td class="neg">$1,360</td></tr>
@@ -197,7 +212,7 @@
         <tr><td style="color:#8b95a3;">Remaining (timing, fees, QB vs bank cutoffs)</td><td style="color:#8b95a3;">~$14,000</td></tr>
       </tbody>
     </table>
-    <div style="font-size:10px;color:#4ade80;margin-top:8px;line-height:1.5;">The business itself is not the leak. Payroll, materials, fuel, and vehicle costs are covered by revenue. The LOC growth is roughly half personal/unaccounted draws and half debt-service plus off-books checks.</div>
+    <div style="font-size:10px;color:#4ade80;margin-top:8px;line-height:1.5;">The business itself is not the leak. Payroll, materials, fuel, and vehicle costs are covered by revenue. Roughly half the LOC growth is Wigington Group draws that Yarddogs is owed back; the rest is debt service and off-books checks.</div>
 
     <div style="height:1px;background:#2a3038;margin:14px 0;"></div>
     <div style="font-size:10px;color:#8b95a3;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;">Real bank balances vs. QuickBooks</div>

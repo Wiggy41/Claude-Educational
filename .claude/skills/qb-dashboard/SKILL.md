@@ -138,8 +138,13 @@ from the bank export instead.
 - **"Intuit" credits into 0514 are QuickBooks Payments customer deposits
   (revenue), not payroll.** "Intuit" debits out of 0535 are payroll.
 - LOC draw matching: pair each 7903 "Principal Advance" with a same-amount
-  "Transfer From 7903" credit in 0514/0535 within ±2 days; the unmatched
-  remainder is the draw volume that left the business (5875 or other).
+  "Transfer From 7903" credit in 0514/0535 within ±2 days → tag
+  `DRAW_TO_0514` / `DRAW_TO_0535`. **Unmatched draws went to 5875 and are
+  Wigington Group draws** (owner confirmed) → tag `WIGINGTON_GROUP_DRAW`.
+  They are a receivable owed back to Yarddogs, not an expense.
+- WG receivable ledger: `qb-dashboard-output/wigington-group-receivable.csv`
+  (assumption share $185,638 − WG payments + WG draws). As of Nov 6 2026:
+  **$296,627**. Yarddogs' own LOC share = register cumulative − WG receivable.
 - Same append-only procedure as the LOC CSV when new exports arrive.
 - Known as of Nov 6 2026: 0535 is ~85% LOC-funded; ~$35K of LOC draws
   since Jul 1 did not land in 0514/0535; QB Undeposited Funds ($71.7K) is an
