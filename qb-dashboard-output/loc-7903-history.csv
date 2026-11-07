@@ -9,7 +9,7 @@ date,description,debit_draw,credit_payment,status,bank_class,tag,running_balance
 2026-01-29,Principal Advance,500.0,,Posted,Transfer,DRAW_TO_0514,23587.07
 2026-02-03,Principal Advance,1200.0,,Posted,Transfer,DRAW_TO_0514,24787.07
 2026-02-04,Principal Advance,3500.0,,Posted,Transfer,DRAW_TO_0514,28287.07
-2026-02-09,"Yarddog Assume full amount, $185,638 Amount attributable to Wigington Group",204234.02,,Posted,Transfer,WIGINGTON_GROUP,232521.09
+2026-02-09,"Yarddog Assume full amount, $185,638 Amount attributable to Wigington Group",204234.02,,Posted,Transfer,ASSUMPTION,232521.09
 2026-02-11,Principal Advance,250.0,,Posted,Transfer,WIGINGTON_GROUP_DRAW,232771.09
 2026-02-13,Principal Advance,3000.0,,Posted,Transfer,DRAW_TO_0535,235771.09
 2026-02-17,Principal Advance,100.0,,Posted,Transfer,WIGINGTON_GROUP_DRAW,235871.09

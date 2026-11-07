@@ -128,6 +128,19 @@ from the bank export instead.
   statement balance; ask for the credit limit and current statement balance
   if not in context.
 
+### Bank-based P&L (owner prefers this over QB)
+- Revenue = non-transfer credits into 0514 + 0535 (deposits, Intuit/QB
+  Payments, ACH). Exclude any "Transfer From ####".
+- Payroll = **all** non-transfer debits out of 0535: Intuit, checks, and the
+  Nov 2 2026 Guild Mortgage (owner: payroll, one-time coding error — count
+  it as payroll).
+- Operating = 0514 debits by bank classification (Gas→fuel, Service &
+  Parts→vehicle repairs, Lawn & Garden/Home Improvement/Shopping→supplies,
+  Food→meals, Financial→loan interest, Check/Uncategorized→flag).
+- Scheduled LOC principal is a financing line below net operating.
+- Always show QB vs bank for the same month; the gap is almost all revenue
+  timing (QB books cash revenue at Undeposited Funds, bank at deposit).
+
 ### Bank account registers (0514 checking, 0535 payroll)
 - Histories in `qb-dashboard-output/acct-0514-history.csv` and
   `acct-0535-history.csv` (date, description, debit, credit, status,
