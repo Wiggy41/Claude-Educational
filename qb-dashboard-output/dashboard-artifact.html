@@ -1,0 +1,1826 @@
+
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Yarddogs Financial Dashboard — November 2026</title>
+<style>
+  :root { color-scheme: dark; --bg:#0f1419; --fg:#e6e8eb; --panel:#161c24; --line:#2a3038; --muted:#8b95a3; --pos:#4ade80; --neg:#f87171; --warn:#fbbf24; --wg:#a78bfa; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    padding-block:28px; padding-left:max(16px, env(safe-area-inset-left,0px)); padding-right:max(16px, env(safe-area-inset-right,0px));
+    line-height: 1.4;
+  }
+  .header { margin-bottom: 28px; border-bottom: 1px solid #2a3038; padding-bottom: 16px; }
+  .header h1 { font-size: 26px; font-weight: 600; color: #fff; }
+  .header .meta { color: #8b95a3; font-size: 13px; margin-top: 6px; }
+  .header .meta span { margin-right: 18px; }
+
+  .section-title { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #8b95a3; margin: 32px 0 14px 4px; font-weight: 600; }
+
+  /* ---------- KPI METERS ---------- */
+  .meters {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .meter {
+    background: #161c24;
+    border: 1px solid #2a3038;
+    border-radius: 12px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .meter-label { color: #8b95a3; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+  .meter-sub { color: #8b95a3; font-size: 11px; margin-top: 4px; text-align: center; }
+  .pos { color: #4ade80; }
+  .neg { color: #f87171; }
+  .warn { color: #fbbf24; }
+
+  /* ---------- MONTH CARDS ---------- */
+  .month-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+  }
+  .month-card {
+    background: #161c24;
+    border: 1px solid #2a3038;
+    border-radius: 10px;
+    padding: 14px;
+  }
+  .month-card.forecast { border-color: #2d5a3a; background: linear-gradient(180deg, #161c24 0%, #15201a 100%); }
+  .month-card .month-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #2a3038;
+    padding-bottom: 6px;
+  }
+  .month-card .month-name { font-size: 14px; font-weight: 600; color: #fff; }
+  .month-card .month-tag { font-size: 9px; padding: 2px 6px; border-radius: 8px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .month-card .tag-actual { background: #2a3038; color: #8b95a3; }
+  .month-card .tag-forecast { background: #2d5a3a; color: #4ade80; }
+  .month-card .metric { margin-bottom: 8px; }
+  .month-card .metric-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: #8b95a3;
+    margin-bottom: 3px;
+  }
+  .month-card .metric-row .val { font-weight: 600; color: #c8cdd3; }
+  .bar-track {
+    background: #0f1419;
+    border-radius: 4px;
+    height: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+  .bar-track.diverging { background: linear-gradient(to right, #1a1015 0%, #1a1015 50%, #0f1410 50%, #0f1410 100%); }
+  .bar-track.diverging::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #2a3038;
+  }
+  .bar-fill { height: 100%; border-radius: 4px; transition: width 0.3s; }
+  .bar-fill.rev { background: linear-gradient(to right, #2563eb, #3b82f6); }
+  .bar-fill.exp { background: linear-gradient(to right, #b45309, #f59e0b); }
+  .bar-fill.net-pos { background: linear-gradient(to right, #15803d, #4ade80); position: absolute; left: 50%; }
+  .bar-fill.net-neg { background: linear-gradient(to left, #991b1b, #f87171); position: absolute; right: 50%; }
+  .bar-fill.cash-pos { background: linear-gradient(to right, #6d28d9, #a78bfa); position: absolute; left: 50%; }
+  .bar-fill.cash-neg { background: linear-gradient(to left, #991b1b, #f87171); position: absolute; right: 50%; }
+
+  /* ---------- TREND CHARTS ---------- */
+  .trend-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .panel {
+    background: #161c24;
+    border: 1px solid #2a3038;
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .panel h2 { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 4px; }
+  .panel .panel-sub { color: #8b95a3; font-size: 11px; margin-bottom: 14px; }
+
+  /* ---------- TABLE ---------- */
+  table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  th { text-align: right; color: #8b95a3; font-weight: 500; padding: 7px 8px; border-bottom: 1px solid #2a3038; font-size: 11px; }
+  th:first-child { text-align: left; }
+  td { padding: 7px 8px; border-bottom: 1px solid #1d242c; text-align: right; }
+  td:first-child { text-align: left; color: #c8cdd3; }
+  tr.actual td:first-child::before { content: "● "; color: #6b7280; font-size: 9px; }
+  tr.forecast td:first-child::before { content: "○ "; color: #4ade80; font-size: 9px; }
+  tr.total td { font-weight: 600; color: #fff; border-top: 1px solid #3a4048; padding-top: 10px; }
+
+  .grid-2 { display: grid; grid-template-columns: 1.4fr 1fr; gap: 16px; }
+  .scenario-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .scenario { background: #1a2129; border: 1px solid #2a3038; border-radius: 10px; padding: 16px; }
+  .scenario h3 { font-size: 11px; color: #8b95a3; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 8px; }
+  .scenario .big { font-size: 22px; font-weight: 600; margin-bottom: 4px; }
+  .scenario .sm { font-size: 11px; color: #8b95a3; }
+
+  .watchlist li { padding: 9px 0; border-bottom: 1px solid #1d242c; font-size: 12px; color: #c8cdd3; list-style: none; }
+  .watchlist li:last-child { border-bottom: none; }
+  .watchlist .trigger { color: #fbbf24; font-weight: 500; }
+
+  .footnote { color: #6b7280; font-size: 11px; margin-top: 8px; line-height: 1.5; }
+
+  table { display:block; max-width:100%; overflow-x:auto; }
+  @media (max-width: 760px) {
+    .meters, .month-grid, .trend-grid, .grid-2, .scenario-cards { grid-template-columns: 1fr !important; }
+    .panel > div[style*="grid-template-columns:repeat(3,1fr)"] { grid-template-columns: 1fr !important; }
+    body { padding-block: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+
+
+<div class="header">
+  <h1>Yarddogs Commercial Landscaping LLP</h1>
+  <div class="meta">
+    <span>Cash basis · NAICS 561730 · SC</span>
+    <span>November 2026 MTD + October & September Final · Live QB data</span>
+    <span>Refreshed 2026-11-07</span>
+  </div>
+</div>
+
+<!-- ============ ALL ACCOUNTS · CONSOLIDATED ============ -->
+<div class="section-title">All Accounts · 2026 Consolidated · 7903 LOC · 0514 · 0535 · 5875 · BOA · Jan 1 – Nov 7</div>
+
+<div class="panel" style="margin-bottom:16px;">
+  <h2>Three money systems, one line of credit</h2>
+  <div class="panel-sub">Every transfer between the five accounts nets to zero. What remains is real money entering and leaving.</div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:8px;">
+
+    <div style="background:#15201a;border:1px solid #2d5a3a;border-radius:10px;padding:14px;">
+      <div style="font-size:10px;color:#4ade80;text-transform:uppercase;letter-spacing:0.05em;font-weight:600;margin-bottom:8px;">Yarddogs · 0514 + 0535</div>
+      <table style="font-size:11px;">
+        <tbody>
+          <tr><td>Customer receipts</td><td class="pos">$324,299</td></tr>
+          <tr><td>LOC advances received</td><td>$259,618</td></tr>
+          <tr><td>LOC repaid</td><td class="pos">–$146,020</td></tr>
+          <tr><td>Payroll (Intuit + checks + mortgage)</td><td class="neg">–$177,251</td></tr>
+          <tr><td>Operating spend</td><td class="neg">–$233,816</td></tr>
+          <tr class="total"><td><strong>Net LOC used by the business</strong></td><td class="neg"><strong>$113,598</strong></td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:10px;color:#8b95a3;margin-top:6px;line-height:1.5;">Business cash out ($411K) exceeded customer cash in ($324K) by $87K; the LOC covered it plus timing. $92.6K of the operating spend is uncategorized checks, including the $36,000 skid steer.</div>
+    </div>
+
+    <div style="background:#1a1a2e;border:1px solid #4c3a7a;border-radius:10px;padding:14px;">
+      <div style="font-size:10px;color:#a78bfa;text-transform:uppercase;letter-spacing:0.05em;font-weight:600;margin-bottom:8px;">Ross / Wigington Group · 5875</div>
+      <table style="font-size:11px;">
+        <tbody>
+          <tr><td>Feb 9 refinance in → out (pass-through)</td><td style="color:#8b95a3;">$204,234</td></tr>
+          <tr><td>LOC advances received</td><td>$85,232</td></tr>
+          <tr><td>LOC repaid</td><td class="pos">–$53,280</td></tr>
+          <tr><td>Other deposits (ex-refinance)</td><td class="pos">$75,706</td></tr>
+          <tr><td>IRS · tuition · insurance · vehicle · checks</td><td class="neg">–$70,076</td></tr>
+          <tr><td>Living</td><td class="neg">–$29,290</td></tr>
+          <tr class="total"><td><strong>Net LOC kept by WG/5875</strong></td><td class="neg"><strong>$31,952</strong></td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:10px;color:#8b95a3;margin-top:6px;line-height:1.5;">Runs flat (month-end $94–$2,984). The LOC is a bridge here, not a source: 62% of what came in went back.</div>
+    </div>
+
+    <div style="background:#1a2129;border:1px solid #2a3038;border-radius:10px;padding:14px;">
+      <div style="font-size:10px;color:#8b95a3;text-transform:uppercase;letter-spacing:0.05em;font-weight:600;margin-bottom:8px;">Household · BOA</div>
+      <table style="font-size:11px;">
+        <tbody>
+          <tr><td>Americas Styrenics W-2</td><td class="pos">$106,822</td></tr>
+          <tr><td>Other deposits</td><td class="pos">$28,811</td></tr>
+          <tr><td>Mortgage · PNC · auto loans</td><td class="neg">–$46,956</td></tr>
+          <tr><td>Fidelity · checks</td><td class="neg">–$17,550</td></tr>
+          <tr><td>Living</td><td class="neg">–$72,010</td></tr>
+          <tr class="total"><td><strong>LOC involvement</strong></td><td><strong>none</strong></td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:10px;color:#8b95a3;margin-top:6px;line-height:1.5;">Self-funded. Month-end $6–$5,055. Not part of the Yarddogs problem or the Yarddogs solution.</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="grid-2">
+  <div class="panel">
+    <h2>LOC 7903 · 2026 net new borrowing · $433,949</h2>
+    <div class="panel-sub">Gross advances $647,662 · gross payments $213,713 · where the net went</div>
+    <table>
+      <thead><tr><th>Use</th><th>$</th><th>Who owes it</th></tr></thead>
+      <tbody>
+        <tr><td>Feb 9 refinance of prior debt</td><td>$204,234</td><td><span style="color:#a78bfa;">WG $185,638</span> · Yarddogs $18,596</td></tr>
+        <tr><td>Yarddogs operations (net of repayments)</td><td>$113,598</td><td style="color:#4ade80;">Yarddogs</td></tr>
+        <tr><td>Equipment (skid steer, trailer)</td><td>$45,500</td><td style="color:#4ade80;">Yarddogs</td></tr>
+        <tr><td>WG / 5875 (net of repayments)</td><td>$31,952</td><td style="color:#a78bfa;">WG</td></tr>
+        <tr><td>Unmatched advances</td><td class="warn">$51,737</td><td class="warn">unknown</td></tr>
+        <tr><td>Scheduled principal paid</td><td class="pos">–$14,413</td><td></td></tr>
+        <tr><td>Fees</td><td>$1,340</td><td style="color:#4ade80;">Yarddogs</td></tr>
+        <tr class="total"><td><strong>Sum</strong></td><td><strong>$433,948</strong></td><td></td></tr>
+      </tbody>
+    </table>
+    <div style="font-size:10px;color:#8b95a3;margin-top:8px;line-height:1.5;">Ties to the register within $1. <strong style="color:#fbbf24;">The $51,737 unmatched</strong> is 18 advances that landed in none of the four accounts. Apr 9 $25,000 is most of it; a $22,900 mobile deposit hit 5875 the same day, which may be the same money less $2,100 cash. Jan 29 $9,400 is the other large one.</div>
+  </div>
+
+  <div class="panel">
+    <h2>What is actually going on</h2>
+    <div class="panel-sub">Read across all five accounts</div>
+    <div style="font-size:12px;color:#c8cdd3;line-height:1.7;">
+      <div style="margin-bottom:10px;"><strong style="color:#4ade80;">1 · Yarddogs is close to self-sustaining but not there.</strong> Customers paid $324K; the business spent $411K. The $87K shortfall is mostly first-half: equipment, project materials, and a payroll that ran ahead of revenue through August. October and early November are cash-positive from the bank's view.</div>
+      <div style="margin-bottom:10px;"><strong style="color:#a78bfa;">2 · The LOC is carrying Wigington Group's old debt.</strong> $185,638 of the $204,234 Feb 9 refinance was WG's. Add 2026 net draws of $31,952 and WG owes the Yarddogs line <strong>$217,590</strong>. Every scheduled payment and every interest dollar on that portion is Yarddogs cash servicing another entity.</div>
+      <div style="margin-bottom:10px;"><strong style="color:#fbbf24;">3 · Payroll is LOC-funded.</strong> 0535 received $144K from the LOC and $88K from checking in 2026. When customer cash is late, the LOC pays the crew. That is why the line grows mid-month and shrinks when checks land.</div>
+      <div style="margin-bottom:10px;"><strong style="color:#f87171;">4 · QuickBooks is not describing any of this.</strong> QB shows the LOC at –$11,953 and checking at –$53,834. The bank shows the LOC at ~$442K cumulative and checking at $3,204. The $71.7K Undeposited Funds is the symptom: payments recorded, never matched to deposits.</div>
+      <div><strong style="color:#8b95a3;">5 · Personal spending is not the leak.</strong> 5875 kept $32K of LOC money for taxes, tuition, insurance, and a vehicle. BOA never touched the line.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 5875 / BOA — WHAT THE LOC-TO-PERSONAL MONEY DID ============ -->
+<div class="section-title">Personal / Wigington Group Accounts · 5875 and BOA · Jan 1 – Nov 7, 2026</div>
+<div class="grid-2">
+
+  <div class="panel">
+    <h2>5875 · the account the LOC draws went to</h2>
+    <div class="panel-sub">It was not $140K. The LOC sent $85,232 to 5875 in 2026, and $53,280 went straight back.</div>
+
+    <table>
+      <thead><tr><th>5875 inflows 2026</th><th>$</th></tr></thead>
+      <tbody>
+        <tr><td>Feb 9 deposit (LOC refinance pass-through)</td><td>$204,234</td></tr>
+        <tr style="background:#1a1a2e;"><td><strong>Transfers from 7903 LOC</strong> (77)</td><td class="neg"><strong>$85,232</strong></td></tr>
+        <tr><td>Other deposits (22)</td><td>$73,163</td></tr>
+        <tr><td>From 0514 / 0535 / other</td><td>$6,924</td></tr>
+        <tr class="total"><td><strong>Total in</strong></td><td><strong>$356,411</strong></td></tr>
+      </tbody>
+    </table>
+
+    <table style="margin-top:12px;">
+      <thead><tr><th>5875 outflows 2026</th><th>$</th></tr></thead>
+      <tbody>
+        <tr><td>Feb 9 check — paid off prior debt (pass-through)</td><td>$204,234</td></tr>
+        <tr style="background:#1a1a2e;"><td><strong>Repayments to 7903 LOC</strong> (14)</td><td class="pos"><strong>$53,280</strong></td></tr>
+        <tr><td>IRS tax payment (Apr)</td><td>$14,022</td></tr>
+        <tr><td>Check #1051 (May 19)</td><td>$14,318</td></tr>
+        <tr><td>University of Colorado Boulder</td><td>$13,610</td></tr>
+        <tr><td>State Farm (5)</td><td>$11,562</td></tr>
+        <tr><td>Creekwood Motor (vehicle)</td><td>$10,815</td></tr>
+        <tr><td>Checks #1050, #1052, other transfers</td><td>$10,344</td></tr>
+        <tr><td>Living: food, groceries, gas, travel, medical, misc</td><td>$18,900</td></tr>
+        <tr style="background:#2a1a15;"><td class="warn">Uncategorized card spend (81 items)</td><td class="warn">$5,174*</td></tr>
+        <tr class="total"><td><strong>Total out</strong></td><td><strong>$356,258</strong></td></tr>
+      </tbody>
+    </table>
+    <div style="font-size:10px;color:#8b95a3;margin-top:8px;line-height:1.5;">*After pulling named payees out of the bank's "Uncategorized" bucket. Full detail in <code style="font-size:9px;">acct-5875-history.csv</code>.</div>
+    <div style="font-size:10px;color:#4ade80;margin-top:6px;line-height:1.5;"><strong>Answer to "what am I spending $140K on":</strong> net of what went back to the LOC, 5875 kept <strong>$31,952</strong> of LOC money in 2026. That covered the IRS payment, tuition, insurance, the vehicle, and living costs — the rest of 5875's spending was funded by its own $73K of other deposits.</div>
+  </div>
+
+  <div class="panel">
+    <h2>BOA · household account</h2>
+    <div class="panel-sub">Americas Styrenics payroll in, mortgage / cars / PNC out. No 7903 activity.</div>
+    <table style="font-size:11px;">
+      <thead><tr><th>Jan 1 – Nov 6 2026</th><th>$</th></tr></thead>
+      <tbody>
+        <tr><td>Americas Styrenics payroll + AMSTY (28)</td><td class="pos">$106,822</td></tr>
+        <tr><td>Insperity, Venmo, Zelle, deposits, other</td><td>$28,811</td></tr>
+        <tr class="total"><td><strong>Total in</strong></td><td><strong>$135,633</strong></td></tr>
+        <tr><td>PNC Lending (9)</td><td>$14,949</td></tr>
+        <tr><td>Honda + iBank Auto (21)</td><td>$14,641</td></tr>
+        <tr><td>Provident + Select Portfolio + Mortgage Serv (14)</td><td>$17,365</td></tr>
+        <tr><td>Fidelity (8)</td><td>$4,200</td></tr>
+        <tr><td>Checks 224/230/241/242/261</td><td>$9,950</td></tr>
+        <tr><td>Utilities, phone, groceries, Uber Eats, Venmo, Cash App, other</td><td>$75,775</td></tr>
+        <tr class="total"><td><strong>Total out</strong></td><td><strong>$136,880</strong></td></tr>
+        <tr><td style="color:#8b95a3;">Balance Nov 6</td><td style="color:#8b95a3;">$6</td></tr>
+      </tbody>
+    </table>
+    <div style="font-size:10px;color:#8b95a3;margin-top:8px;line-height:1.5;">BOA is self-funded by W-2 income and runs flat (month-end $6–$5,055). It does not touch Yarddogs or the LOC. Kept here for completeness; detail in <code style="font-size:9px;">acct-boa-history.csv</code>.</div>
+
+    <div style="height:1px;background:#2a3038;margin:14px 0;"></div>
+    <div style="background:#1a1a2e;border:1px solid #4c3a7a;border-radius:6px;padding:12px;">
+      <div style="font-size:10px;color:#a78bfa;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;font-weight:600;">Wigington Group receivable · corrected</div>
+      <table style="font-size:11px;">
+        <tbody>
+          <tr><td>Feb 9 WG share of the $204,234 refinance</td><td>$185,638</td></tr>
+          <tr><td>plus LOC → 5875 draws, 2026</td><td class="neg">+$85,232</td></tr>
+          <tr><td>less 5875 → LOC repayments, 2026</td><td class="pos">–$53,280</td></tr>
+          <tr class="total"><td><strong>WG owes Yarddogs LOC</strong></td><td class="neg"><strong>$217,590</strong></td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:10px;color:#fbbf24;margin-top:6px;line-height:1.5;">Replaces the $296,627 I reported earlier, which assumed every LOC draw not found in 0514/0535 was WG. The 5875 register shows $85K actually arrived there, and $53K of repayments the LOC register had labeled only as "Transfer."</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============ BANK-BASED P&L ============ -->
+<div class="section-title">Bank-Based P&amp;L · October 2026 and YTD · read from 0514 + 0535, not QuickBooks</div>
+<div class="grid-2">
+
+  <div class="panel">
+    <h2>Profit &amp; Loss from the Bank</h2>
+    <div class="panel-sub">Revenue = non-transfer deposits into 0514 + 0535 · Payroll = all 0535 outflows incl. the Nov 2 Guild Mortgage (owner: payroll, one-time coding error) · transfers between own accounts excluded</div>
+    <table>
+      <thead><tr><th>Line</th><th>Oct 2026</th><th>YTD Jan 1–Nov 6</th><th>Nov 1–6</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Revenue</strong></td><td><strong>$32,023</strong></td><td><strong>$324,299</strong></td><td><strong>$23,516</strong></td></tr>
+        <tr style="background:#1a2129;"><td colspan="4" style="color:#8b95a3;font-size:10px;text-transform:uppercase;letter-spacing:0.05em;">Payroll (0535)</td></tr>
+        <tr><td>Intuit payroll runs</td><td>$20,257</td><td>$152,119</td><td>$0</td></tr>
+        <tr><td>Payroll checks</td><td>$0</td><td>$23,537</td><td>$0</td></tr>
+        <tr><td>Mortgage reclassed to payroll</td><td>$0</td><td>$1,595</td><td>$1,595</td></tr>
+        <tr><td><em>Total payroll</em></td><td><em>$20,257</em></td><td><em>$177,251</em></td><td><em>$1,595</em></td></tr>
+        <tr style="background:#1a2129;"><td colspan="4" style="color:#8b95a3;font-size:10px;text-transform:uppercase;letter-spacing:0.05em;">Operating (0514, by bank classification)</td></tr>
+        <tr><td>Supplies &amp; materials</td><td>$2,633</td><td>$44,272</td><td>$2,640</td></tr>
+        <tr><td>Vehicle gas &amp; fuel</td><td>$2,060</td><td>$18,945</td><td>$517</td></tr>
+        <tr><td>Vehicle repairs</td><td>$1,622</td><td>$6,567</td><td>$0</td></tr>
+        <tr><td>Loan interest &amp; financial</td><td>$1,516</td><td>$12,843</td><td>$1,500</td></tr>
+        <tr><td>Software, services &amp; fees</td><td>$1,198</td><td>$6,928</td><td>$341</td></tr>
+        <tr><td>Meals</td><td>$909</td><td>$6,939</td><td>$565</td></tr>
+        <tr><td>Utilities / advertising / legal / bank</td><td>$253</td><td>$3,808</td><td>$190</td></tr>
+        <tr><td>Cash withdrawals</td><td>$200</td><td>$3,313</td><td>$0</td></tr>
+        <tr style="background:#2a1a15;"><td>Checks (uncategorized)</td><td class="warn">$2,350</td><td class="warn"><strong>$92,634</strong></td><td>$487</td></tr>
+        <tr style="background:#2a1a15;"><td>Other / uncategorized</td><td class="warn">$1,830</td><td class="warn"><strong>$47,557</strong></td><td>$970</td></tr>
+        <tr class="total"><td><strong>Total expenses</strong></td><td><strong>$34,827</strong></td><td><strong>$421,057</strong></td><td><strong>$8,804</strong></td></tr>
+        <tr class="total"><td><strong>Net operating (cash)</strong></td><td class="neg"><strong>–$2,804</strong></td><td class="neg"><strong>–$96,758</strong></td><td class="pos"><strong>+$14,712</strong></td></tr>
+        <tr><td>Margin</td><td class="neg">–8.8%</td><td class="neg">–29.8%</td><td class="pos">+62.6%</td></tr>
+        <tr style="background:#1a2129;"><td colspan="4" style="color:#8b95a3;font-size:10px;text-transform:uppercase;letter-spacing:0.05em;">Financing</td></tr>
+        <tr><td>Scheduled LOC principal</td><td class="neg">–$2,500</td><td class="neg">–$16,913</td><td class="neg">–$2,298</td></tr>
+        <tr class="total"><td><strong>Net after LOC principal</strong></td><td class="neg"><strong>–$5,304</strong></td><td class="neg"><strong>–$113,671</strong></td><td class="pos"><strong>+$12,414</strong></td></tr>
+      </tbody>
+    </table>
+    <div style="font-size:10px;color:#fbbf24;margin-top:8px;line-height:1.5;"><strong>$140K of YTD outflow is uncategorized</strong> (checks $92.6K + other $47.6K). Some of that is likely Wigington Group, equipment, or other-lender repayments rather than operating cost — the YTD loss is overstated until those are tagged. October is clean enough to trust.</div>
+  </div>
+
+  <div class="panel">
+    <h2>Bank vs. QuickBooks · October</h2>
+    <div class="panel-sub">Why the two disagree</div>
+    <table style="font-size:11px;">
+      <thead><tr><th>Line</th><th>QB (cash)</th><th>Bank</th><th>Δ</th></tr></thead>
+      <tbody>
+        <tr><td>Revenue</td><td>$49,694</td><td>$32,023</td><td class="neg">–$17,672</td></tr>
+        <tr><td>Payroll</td><td>$23,277</td><td>$20,257</td><td class="pos">–$3,020</td></tr>
+        <tr><td>Other expenses</td><td>$11,625</td><td>$14,570</td><td class="neg">+$2,945</td></tr>
+        <tr class="total"><td><strong>Net</strong></td><td class="pos"><strong>+$14,869</strong></td><td class="neg"><strong>–$2,804</strong></td><td class="neg"><strong>–$17,673</strong></td></tr>
+      </tbody>
+    </table>
+    <div style="font-size:10px;color:#8b95a3;margin-top:8px;line-height:1.5;">Almost the entire gap is <strong>revenue timing</strong>. QB books "cash" revenue when a payment is recorded into Undeposited Funds; the bank books it when the deposit clears. October's QB revenue includes ~$17K that had not reached the bank by Oct 31 — consistent with Undeposited Funds climbing to $71.7K. Expenses are within ~$100 net.</div>
+
+    <div style="height:1px;background:#2a3038;margin:14px 0;"></div>
+    <div style="font-size:10px;color:#8b95a3;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;">LOC 7903 · October and YTD</div>
+    <table style="font-size:11px;">
+      <thead><tr><th></th><th>Oct</th><th>YTD</th></tr></thead>
+      <tbody>
+        <tr><td>Gross draws</td><td>$43,759</td><td>$415,072</td></tr>
+        <tr><td>Payments (excl. scheduled, excl. WG)</td><td>$37,392</td><td>$185,762</td></tr>
+        <tr><td>Scheduled principal</td><td>$2,500</td><td>$16,913</td></tr>
+        <tr><td>Net</td><td class="neg">+$6,867</td><td class="neg">+$212,397*</td></tr>
+        <tr><td style="color:#8b95a3;">Register cumulative balance</td><td colspan="2">$442,391 (needs statement anchor)</td></tr>
+      </tbody>
+    </table>
+    <div style="font-size:10px;color:#8b95a3;margin-top:6px;">*YTD net includes the Feb 9 $204,234 assumption and $45,500 equipment. Operating-only YTD net ≈ +$52K since July.</div>
+
+    <div style="height:1px;background:#2a3038;margin:14px 0;"></div>
+    <div style="background:#1a1a2e;border:1px solid #4c3a7a;border-radius:6px;padding:12px;">
+      <div style="font-size:10px;color:#a78bfa;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;font-weight:600;">Wigington Group · pulled via 5875 (full year)</div>
+      <table style="font-size:11px;">
+        <tbody>
+          <tr><td>LOC → 5875 draws Jan–Nov 7 (77)</td><td class="neg"><strong>$85,232</strong></td></tr>
+          <tr><td>5875 → LOC repayments (14)</td><td class="pos">–$53,280</td></tr>
+          <tr><td>Net 2026 WG/5875 usage</td><td class="neg">$31,952</td></tr>
+          <tr><td>Feb 9 WG share of refinance</td><td>$185,638</td></tr>
+          <tr class="total"><td><strong>WG receivable to Yarddogs</strong></td><td class="neg"><strong>$217,590</strong></td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:10px;color:#c8cdd3;margin-top:6px;">Full ledger: <code style="font-size:9px;">wigington-group-receivable.csv</code> · rebuilt from the 5875 register.</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============ ACCOUNT FLOWS & RECONCILIATION ============ -->
+<div class="section-title">Bank Account Flows · 7903 / 0514 / 0535 / 5875 · Jul 1 – Nov 6 · from bank registers</div>
+<div class="grid-2">
+
+  <div class="panel">
+    <h2>Where the LOC money went · full year 2026</h2>
+    <div class="panel-sub">Every "Principal Advance" matched by amount ±2 days to a receipt in 0514, 0535, or 5875</div>
+    <table>
+      <thead><tr><th>Destination</th><th>Draws</th><th>Jan–Nov 7</th><th>Since Jul 1</th></tr></thead>
+      <tbody>
+        <tr><td>→ 0535 Payroll</td><td>26</td><td>$139,770</td><td>$75,765</td></tr>
+        <tr><td>→ 0514 Checking</td><td>81</td><td>$119,848</td><td>$38,202</td></tr>
+        <tr style="background:#1a1a2e;"><td><strong>→ 5875 Wigington Group</strong></td><td>77</td><td class="neg"><strong>$85,232</strong></td><td class="neg">$28,388</td></tr>
+        <tr style="background:#2a1a15;"><td class="warn">→ Unmatched</td><td>18</td><td class="warn">$51,737</td><td class="warn">$13,237</td></tr>
+        <tr class="total"><td><strong>Total advances</strong></td><td>202</td><td><strong>$396,587</strong></td><td><strong>$155,593</strong></td></tr>
+      </tbody>
+    </table>
+    <table style="margin-top:10px;">
+      <thead><tr><th>Payments came from</th><th>Pmts</th><th>Jan–Nov 7</th><th>Since Jul 1</th></tr></thead>
+      <tbody>
+        <tr><td>← 0514 Checking</td><td>52</td><td>$142,020</td><td>$86,620</td></tr>
+        <tr><td>← 5875 Wigington Group</td><td>14</td><td>$53,280</td><td>$12,150</td></tr>
+        <tr><td>← 0535 Payroll</td><td>2</td><td>$4,000</td><td>$4,000</td></tr>
+        <tr class="total"><td><strong>Total (all matched)</strong></td><td>68</td><td><strong>$199,300</strong></td><td><strong>$102,770</strong></td></tr>
+      </tbody>
+    </table>
+    <div style="font-size:10px;color:#fbbf24;margin-top:8px;line-height:1.5;"><strong>Unmatched $51,737:</strong> two big ones — <strong>Apr 9 $25,000</strong> and <strong>Jan 29 $9,400</strong> — plus 16 small. These landed in none of the four accounts. Tell me where and I'll tag them; until then they sit on Yarddogs' side.</div>
+
+    <div style="height:1px;background:#2a3038;margin:14px 0;"></div>
+    <div style="background:#1a1a2e;border:1px solid #4c3a7a;border-radius:6px;padding:12px;">
+      <div style="font-size:10px;color:#a78bfa;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;font-weight:600;">Split of the LOC balance · Nov 6</div>
+      <table style="font-size:11px;">
+        <tbody>
+          <tr><td>Register cumulative balance</td><td>$442,391</td></tr>
+          <tr><td>less Wigington Group receivable</td><td class="pos">–$217,590</td></tr>
+          <tr class="total"><td><strong>Yarddogs' own share</strong></td><td class="neg"><strong>$224,801</strong></td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:10px;color:#c8cdd3;margin-top:6px;line-height:1.5;">Yarddogs' share = 2026 net business draws (~$114K) + $45.5K equipment + $18.6K Yarddogs portion of the Feb 9 refinance + $51.7K unmatched − $16.9K scheduled principal, plus fees and reversal-pair residue.</div>
+    </div>
+
+    <div style="height:1px;background:#2a3038;margin:14px 0;"></div>
+    <div style="font-size:10px;color:#8b95a3;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;">Payroll is funded by the LOC</div>
+    <table style="font-size:11px;">
+      <tbody>
+        <tr><td>0535 inflows since Jul 1</td><td>$94,261</td></tr>
+        <tr><td>of which from 7903 LOC</td><td class="neg"><strong>$80,565 (85%)</strong></td></tr>
+        <tr><td>of which from 0514 checking</td><td>$11,396</td></tr>
+        <tr><td>Paid to Intuit (payroll)</td><td>$71,991</td></tr>
+        <tr><td>Checks + other out of 0535</td><td class="warn">$14,925</td></tr>
+        <tr><td>Guild Mortgage (Nov 2) out of 0535</td><td class="neg">$1,595</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="panel">
+    <h2>Reconciling profit to borrowing</h2>
+    <div class="panel-sub">Jul–Nov: QB says +$25,355 profit · bank says +$52,613 net LOC borrowing · gap $77,968</div>
+    <table>
+      <thead><tr><th>Where the cash went that QB profit doesn't show</th><th>$</th></tr></thead>
+      <tbody>
+        <tr><td>LOC draws to Wigington Group via 5875, net of 5875 repayments</td><td class="neg">$16,238</td></tr>
+        <tr><td>LOC draws unmatched to any account</td><td class="neg">$13,237</td></tr>
+        <tr><td>Scheduled LOC principal payments (balance-sheet, not P&amp;L)</td><td class="neg">$11,152</td></tr>
+        <tr><td>Checks &amp; non-Intuit spend out of 0535 (may be unbooked in QB)</td><td class="neg">$14,925</td></tr>
+        <tr><td>Direct 0514 → 5875 transfers</td><td class="neg">$1,360</td></tr>
+        <tr><td>Guild Mortgage from 0535</td><td class="neg">$1,595</td></tr>
+        <tr class="total"><td><strong>Identified</strong></td><td class="neg"><strong>~$64,000</strong></td></tr>
+        <tr><td style="color:#8b95a3;">Remaining (timing, fees, QB vs bank cutoffs)</td><td style="color:#8b95a3;">~$14,000</td></tr>
+      </tbody>
+    </table>
+    <div style="font-size:10px;color:#4ade80;margin-top:8px;line-height:1.5;">The business itself is not the leak. Payroll, materials, fuel, and vehicle costs are covered by revenue. Roughly half the LOC growth is Wigington Group draws that Yarddogs is owed back; the rest is debt service and off-books checks.</div>
+
+    <div style="height:1px;background:#2a3038;margin:14px 0;"></div>
+    <div style="font-size:10px;color:#8b95a3;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;">Real bank balances vs. QuickBooks</div>
+    <table style="font-size:11px;">
+      <thead><tr><th>Date</th><th>0514 bank</th><th>0535 bank</th><th>QB "Checking"</th><th>QB Undeposited</th></tr></thead>
+      <tbody>
+        <tr><td>Jun 30</td><td>$820</td><td>$71</td><td class="neg">–$22,443</td><td>$30,744</td></tr>
+        <tr><td>Jul 31</td><td>$583</td><td>$235</td><td class="neg">–$37,339</td><td>$36,939</td></tr>
+        <tr><td>Aug 31</td><td>$139</td><td>$1</td><td class="neg">–$45,133</td><td>$38,972</td></tr>
+        <tr><td>Sep 30</td><td>$297</td><td>$8</td><td class="neg">–$54,687*</td><td>$40,312*</td></tr>
+        <tr><td>Oct 31</td><td class="neg">–$46</td><td>$941</td><td>—</td><td>—</td></tr>
+        <tr style="background:#15201a;"><td><strong>Nov 6</strong></td><td><strong>$3,204</strong></td><td><strong>$1</strong></td><td class="neg">–$53,834</td><td class="warn">$71,695</td></tr>
+      </tbody>
+    </table>
+    <div style="font-size:10px;color:#8b95a3;margin-top:6px;line-height:1.5;">*Sep 9 QB snapshot. <strong style="color:#fbbf24;">The real checking account runs between –$46 and $3,204 every month-end.</strong> QB's –$53.8K and the $71.7K Undeposited Funds are the same bookkeeping backlog seen from two sides — ~$70K of received payments were recorded in QB but never matched to bank deposits. The bank already has that money; it was spent.</div>
+  </div>
+
+</div>
+
+<!-- ============ LOC 7903 TRACKER — BANK REGISTER ============ -->
+<div class="section-title">Line of Credit 7903 · Bank Register Tracker · Jan 22 – Nov 6, 2026</div>
+<div class="grid-2">
+
+  <div class="panel">
+    <h2>Monthly Draws vs. Payments · from bank register</h2>
+    <div class="panel-sub">Source: LineofCreditHistory.xls (Posted only) · 324 transactions · reversal pairs excluded · tracked in loc-7903-history.csv</div>
+    <table>
+      <thead><tr><th>Month</th><th>Draws</th><th>Payments</th><th>Sched. Pmt</th><th>Net</th><th>Cum. Balance*</th></tr></thead>
+      <tbody>
+        <tr><td>Jan</td><td>$22,247</td><td>$0</td><td>$0</td><td class="neg">+$23,587</td><td>$23,587</td></tr>
+        <tr style="background:#2a1a15;"><td>Feb</td><td>$11,850</td><td>$0</td><td>$600</td><td class="neg">+$6,500</td><td><strong>$234,321</strong></td></tr>
+        <tr><td>Mar</td><td>$18,649</td><td>$3,000</td><td>$0</td><td class="neg">+$58,419</td><td>$292,740</td></tr>
+        <tr><td>Apr</td><td>$60,704</td><td>$3,400</td><td>$1,509</td><td class="neg">+$33,795</td><td>$326,536</td></tr>
+        <tr><td>May</td><td>$72,623</td><td>$25,600</td><td>$1,724</td><td class="neg">+$45,299</td><td>$371,835</td></tr>
+        <tr><td>Jun</td><td>$54,921</td><td>$35,050</td><td>$1,928</td><td class="neg">+$17,943</td><td>$389,778</td></tr>
+        <tr style="border-top:2px solid #3a4048;"><td>Jul</td><td>$43,995</td><td>$32,520</td><td>$1,976</td><td class="neg">+$9,499</td><td>$399,277</td></tr>
+        <tr><td>Aug</td><td>$43,363</td><td>$16,750</td><td>$2,144</td><td class="neg">+$24,469</td><td>$423,746</td></tr>
+        <tr><td>Sep</td><td>$38,174</td><td>$14,350</td><td>$2,233</td><td class="neg">+$21,591</td><td>$445,337</td></tr>
+        <tr><td>Oct</td><td>$35,217</td><td>$25,850</td><td>$2,500</td><td class="neg">+$6,867</td><td>$452,204</td></tr>
+        <tr style="background:#15201a;"><td>Nov 1–6</td><td>$6,285</td><td>$13,800</td><td>$2,298</td><td class="pos">–$9,813</td><td>$442,391</td></tr>
+        <tr class="total"><td><strong>Since Jul 1</strong></td><td><strong>$167,035</strong></td><td><strong>$103,270</strong></td><td><strong>$11,152</strong></td><td class="neg"><strong>+$52,613</strong></td><td></td></tr>
+      </tbody>
+    </table>
+    <div style="font-size:10px;color:#8b95a3;margin-top:8px;line-height:1.5;">*Cumulative from the Jan 22 "New Loan Proceeds $0" line. Includes the Feb 9 $204,234 assumption (see right). <strong style="color:#fbbf24;">Needs anchoring to an actual statement balance</strong> — if the LOC carried a balance before Jan 22, add it.</div>
+    <div style="font-size:10px;color:#f87171;margin-top:6px;line-height:1.5;"><strong>vs. QB:</strong> the "–$16K since July" figure I gave on Sep 10 was QB-derived (LOC +$1,772 + short-term loans +$14,780). The bank says <strong>+$52,613</strong>. QB is undercounting LOC activity by ~$36K over the same window.</div>
+  </div>
+
+  <div class="panel">
+    <h2>Key Events &amp; Structure</h2>
+    <div class="panel-sub">What drives the balance beyond day-to-day bridging</div>
+
+    <div style="background:#2a1a15;border:1px solid #5a2d2d;border-radius:6px;padding:12px;margin-bottom:12px;">
+      <div style="font-size:10px;color:#f87171;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;font-weight:600;">Feb 9 · Yarddogs assumed $204,234</div>
+      <div style="font-size:11px;color:#c8cdd3;line-height:1.5;">Memo: "$185,638 attributable to Wigington Group." The 5875 register confirms this was a refinance: $204,234 landed in 5875 as a deposit and left the same day as a check to pay off prior debt. Since then the LOC has sent <strong>$85,232</strong> to 5875 and 5875 has returned <strong>$53,280</strong>.</div>
+      <table style="font-size:11px;margin-top:8px;">
+        <tbody>
+          <tr><td>Register cumulative balance</td><td>$442,391</td></tr>
+          <tr><td>less Wigington Group receivable</td><td class="pos">–$217,590</td></tr>
+          <tr class="total"><td><strong>Yarddogs' own share</strong></td><td><strong>$224,801</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="background:#0f1419;border-radius:6px;padding:12px;margin-bottom:12px;">
+      <div style="font-size:10px;color:#8b95a3;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;">Capex on the LOC</div>
+      <table style="font-size:11px;">
+        <tbody>
+          <tr><td>Mar 4 · Mini Skid Steer</td><td class="neg">$37,000</td></tr>
+          <tr><td>Mar 2 · 20 ft Dump Trailer</td><td class="neg">$8,500</td></tr>
+          <tr class="total"><td><strong>Equipment on revolving credit</strong></td><td class="neg"><strong>$45,500</strong></td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:10px;color:#fbbf24;margin-top:6px;">Equipment on a LOC is expensive long-term. Candidate for refinance to an equipment term loan.</div>
+    </div>
+
+    <div style="background:#0f1419;border-radius:6px;padding:12px;margin-bottom:12px;">
+      <div style="font-size:10px;color:#8b95a3;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;">Scheduled "Payment Extra to Principal"</div>
+      <div style="font-size:11px;color:#c8cdd3;line-height:1.5;">Monthly, rising: $600 → $1,509 → $1,724 → $1,928 → $1,976 → $2,144 → $2,233 → $2,500 → $2,298. Looks like a percentage-of-balance minimum. <strong>$11,152 since July.</strong></div>
+    </div>
+
+    <div style="background:#2a1a15;border:1px solid #5a2d2d;border-radius:6px;padding:12px;">
+      <div style="font-size:10px;color:#fbbf24;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;font-weight:600;">⚠ 13 same-day debit/credit pairs · $15,442</div>
+      <div style="font-size:11px;color:#c8cdd3;line-height:1.5;">Oct 21–30 has nine pairs where a "Principal Advance" debit and an identical credit (classified "Income") post the same day — $5,500, $775, $600, $500, $317, $100, $50. Plus Jul 17 ($1,000), Jul 30 ($2,900 fee), Oct 21 ($2,500), Oct 22 ($500). These net to zero and are excluded above, but <strong>ask the bank what they are</strong> — reversed draws, or failed transfers?</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="panel" style="margin-bottom:24px;">
+  <h2>LOC 7903 · Cumulative Balance from Register</h2>
+  <div class="panel-sub">Month-end · from Jan 22 open · the Feb step is the Wigington Group assumption</div>
+  <svg width="100%" viewBox="0 0 560 250" style="display:block;">
+    <line x1="50" y1="20" x2="50" y2="220" stroke="#2a3038"/>
+    <line x1="50" y1="220" x2="540" y2="220" stroke="#2a3038"/>
+    <text x="46" y="224" text-anchor="end" fill="#6b7280" font-size="9">$0</text>
+    <text x="46" y="124" text-anchor="end" fill="#6b7280" font-size="9">$250K</text>
+    <text x="46" y="24" text-anchor="end" fill="#6b7280" font-size="9">$500K</text>
+    <line x1="50" y1="120" x2="540" y2="120" stroke="#1d242c"/>
+    <line x1="50" y1="70" x2="540" y2="70" stroke="#1d242c"/>
+    <line x1="50" y1="170" x2="540" y2="170" stroke="#1d242c"/>
+    <!-- WG share band ~156K → y = 220 - 62.4 = 157.6 -->
+    <rect x="104" y="133" width="436" height="87" fill="#f87171" opacity="0.08"/>
+    <text x="536" y="214" text-anchor="end" fill="#f87171" font-size="9" opacity="0.8">Wigington Group receivable ≈ $218K</text>
+    <polyline points="60,210.6 104,126.3 148,103 192,89.4 236,71.3 280,64.1 324,60.3 368,50.5 412,41.9 456,39.1 500,43" stroke="#f87171" stroke-width="2.5" fill="none"/>
+    <polygon points="60,210.6 104,126.3 148,103 192,89.4 236,71.3 280,64.1 324,60.3 368,50.5 412,41.9 456,39.1 500,43 500,220 60,220" fill="#f87171" opacity="0.08"/>
+    <circle cx="60" cy="210.6" r="3" fill="#f87171"/><circle cx="104" cy="126.3" r="4" fill="#fbbf24" stroke="#fff" stroke-width="1"/><circle cx="148" cy="103" r="3" fill="#f87171"/><circle cx="192" cy="89.4" r="3" fill="#f87171"/><circle cx="236" cy="71.3" r="3" fill="#f87171"/><circle cx="280" cy="64.1" r="3" fill="#f87171"/><circle cx="324" cy="60.3" r="3" fill="#f87171"/><circle cx="368" cy="50.5" r="3" fill="#f87171"/><circle cx="412" cy="41.9" r="3" fill="#f87171"/><circle cx="456" cy="39.1" r="4" fill="#f87171" stroke="#fff" stroke-width="1"/><circle cx="500" cy="43" r="3" fill="#4ade80" stroke="#fff" stroke-width="1"/>
+    <text x="104" y="118" text-anchor="middle" fill="#fbbf24" font-size="9">+$204K assumed</text>
+    <text x="456" y="31" text-anchor="middle" fill="#f87171" font-size="9">Peak $452K</text>
+    <text x="500" y="58" text-anchor="middle" fill="#4ade80" font-size="9">$442K</text>
+    <text x="60" y="238" text-anchor="middle" fill="#c8cdd3" font-size="10">Jan</text><text x="104" y="238" text-anchor="middle" fill="#c8cdd3" font-size="10">Feb</text><text x="148" y="238" text-anchor="middle" fill="#c8cdd3" font-size="10">Mar</text><text x="192" y="238" text-anchor="middle" fill="#c8cdd3" font-size="10">Apr</text><text x="236" y="238" text-anchor="middle" fill="#c8cdd3" font-size="10">May</text><text x="280" y="238" text-anchor="middle" fill="#c8cdd3" font-size="10">Jun</text><text x="324" y="238" text-anchor="middle" fill="#c8cdd3" font-size="10">Jul</text><text x="368" y="238" text-anchor="middle" fill="#c8cdd3" font-size="10">Aug</text><text x="412" y="238" text-anchor="middle" fill="#c8cdd3" font-size="10">Sep</text><text x="456" y="238" text-anchor="middle" fill="#c8cdd3" font-size="10">Oct</text><text x="500" y="238" text-anchor="middle" fill="#c8cdd3" font-size="10">Nov</text>
+  </svg>
+  <div style="font-size:10px;color:#8b95a3;margin-top:8px;line-height:1.5;">Account map (owner): <strong>7903</strong> = LOC · <strong>0514</strong> = Yarddogs checking/spending · <strong>0535</strong> = payroll &amp; payroll tax · <strong>5875</strong> = Ross personal. This register shows only the 7903 side; destinations are not itemized except one pending transfer to 5875. The 0514 register would let us split business draws from personal.</div>
+
+  <div style="height:1px;background:#2a3038;margin:16px 0;"></div>
+  <h2 style="font-size:13px;">P&amp;L Net Income vs. LOC Net Flow · Jul–Nov</h2>
+  <div class="panel-sub">Does the LOC move with profitability? Positive LOC = net borrowing that month.</div>
+  <table>
+    <thead><tr><th>Month</th><th>P&amp;L Net (QB, cash)</th><th>LOC Net Flow (bank)</th><th>Read</th></tr></thead>
+    <tbody>
+      <tr><td>Jul</td><td class="neg">–$3,940</td><td class="neg">+$9,499</td><td style="color:#8b95a3;font-size:11px;">Loss covered by borrowing</td></tr>
+      <tr><td>Aug</td><td class="neg">–$7,132</td><td class="neg">+$24,469</td><td style="color:#8b95a3;font-size:11px;">Borrowed 3× the loss — payroll + supplies front-loaded</td></tr>
+      <tr><td>Sep</td><td class="neg">–$3,334</td><td class="neg">+$21,591</td><td style="color:#8b95a3;font-size:11px;">A/R lagged to Oct; LOC bridged the gap</td></tr>
+      <tr style="background:#15201a;"><td><strong>Oct</strong></td><td class="pos"><strong>+$14,869</strong></td><td class="neg">+$6,867</td><td style="color:#8b95a3;font-size:11px;">Best month — borrowing slowed but did not reverse</td></tr>
+      <tr style="background:#15201a;"><td><strong>Nov 1–6</strong></td><td class="pos"><strong>+$24,892</strong></td><td class="pos"><strong>–$9,813</strong></td><td style="color:#4ade80;font-size:11px;">First net paydown since the LOC opened</td></tr>
+      <tr class="total"><td><strong>Jul–Nov</strong></td><td class="pos"><strong>+$25,355</strong></td><td class="neg"><strong>+$52,613</strong></td><td style="color:#fbbf24;font-size:11px;">Profitable on paper, yet $52K deeper on the LOC</td></tr>
+    </tbody>
+  </table>
+  <div style="font-size:10px;color:#fbbf24;margin-top:8px;line-height:1.5;">The gap between +$25K profit and +$53K borrowing is the question to answer. Candidates: payroll tax catch-up, the $11K of scheduled LOC payments, transfers to 5875, and the Undeposited Funds pile ($71.7K) that has not reached the bank. The 0514 register would close this.</div>
+</div>
+
+<!-- ============ NOVEMBER + OCTOBER FOCUS ============ -->
+<div class="section-title">November 2026 MTD · October 2026 Final</div>
+<div class="grid-2">
+
+  <div class="panel">
+    <h2>November Progress · Nov 1–7 Actual</h2>
+    <div class="panel-sub">Live from QuickBooks · 7 days · contract checks already landed · payroll not yet</div>
+
+    <div style="background:#15201a;border-radius:8px;padding:16px;border:1px solid #2d5a3a;">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px;">
+        <div style="font-size:11px;color:#4ade80;text-transform:uppercase;letter-spacing:0.05em;">MTD Actual</div>
+        <div style="font-size:11px;color:#8b95a3;">7 of 30 days · 23% complete</div>
+      </div>
+      <div style="margin-bottom:10px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Revenue</span><span style="color:#fff;font-weight:600;">$28,665</span></div>
+        <div class="bar-track"><div class="bar-fill rev" style="width:58%"></div></div>
+      </div>
+      <div style="margin-bottom:10px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Expenses</span><span style="color:#fff;font-weight:600;">$3,783</span></div>
+        <div class="bar-track"><div class="bar-fill exp" style="width:8%"></div></div>
+      </div>
+      <div style="margin-bottom:14px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Net Profit</span><span class="pos" style="font-weight:600;">+$24,892</span></div>
+        <div class="bar-track diverging" style="position:relative;"><div class="bar-fill net-pos" style="width:50%"></div></div>
+      </div>
+      <div style="font-size:10px;color:#8b95a3;border-top:1px solid #2d5a3a;padding-top:10px;">
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Services revenue</span><span style="color:#c8cdd3;">$28,665</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Supplies</span><span style="color:#c8cdd3;">$2,042</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Payroll (partial)</span><span style="color:#c8cdd3;">$844</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Vehicle + fees + other</span><span style="color:#c8cdd3;">$897</span></div>
+        <div style="height:1px;background:#2d5a3a;margin:6px 0;"></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;font-weight:600;"><span class="pos">Margin (MTD)</span><span class="pos">86.8%</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="color:#fbbf24;">⚠ Two payroll cycles (~$20K) still to land this month</span><span></span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="color:#8b95a3;">Realistic Nov finish: +$8K to +$14K</span><span></span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>October Final · Oct 1–31 Verified</h2>
+    <div class="panel-sub">Closed month · best month of 2026 · 29.9% net margin</div>
+
+    <div style="background:#15201a;border-radius:8px;padding:16px;border:1px solid #2d5a3a;">
+      <div style="margin-bottom:10px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Revenue</span><span style="color:#fff;font-weight:600;">$49,694</span></div>
+        <div class="bar-track"><div class="bar-fill rev" style="width:100%"></div></div>
+      </div>
+      <div style="margin-bottom:10px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Expenses</span><span style="color:#fff;font-weight:600;">$34,902</span></div>
+        <div class="bar-track"><div class="bar-fill exp" style="width:70%"></div></div>
+      </div>
+      <div style="margin-bottom:14px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Net Profit</span><span class="pos" style="font-weight:600;">+$14,869</span></div>
+        <div class="bar-track diverging" style="position:relative;"><div class="bar-fill net-pos" style="width:43%"></div></div>
+      </div>
+      <div style="font-size:10px;color:#8b95a3;border-top:1px solid #2d5a3a;padding-top:10px;">
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Services revenue</span><span style="color:#c8cdd3;">$49,694</span></div>
+        <div style="height:1px;background:#2d5a3a;margin:6px 0;"></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Payroll (wages + taxes)</span><span style="color:#c8cdd3;">$23,277</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Vehicle (gas + repairs)</span><span style="color:#c8cdd3;">$3,002</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Software &amp; apps</span><span style="color:#c8cdd3;">$2,358</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Repairs &amp; maintenance</span><span style="color:#c8cdd3;">$2,167</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Supplies</span><span class="pos">$1,610</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Insurance</span><span style="color:#c8cdd3;">$1,516</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Meals + fees + other</span><span style="color:#c8cdd3;">$972</span></div>
+        <div style="height:1px;background:#2d5a3a;margin:6px 0;"></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;font-weight:600;"><span class="pos">Margin (full month)</span><span class="pos">29.9%</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="color:#fbbf24;">⚠ Payroll $23.3K — highest of the year; check OT</span><span></span></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============ SEPTEMBER FINAL + FORECAST VS ACTUAL ============ -->
+<div class="section-title">September 2026 · Final vs. Sep 9 Forecast</div>
+<div class="grid-2">
+
+  <div class="panel">
+    <h2>September Final · Sep 1–30 Verified</h2>
+    <div class="panel-sub">Closed month · payroll ran $20.2K vs $16.2K modeled · vehicle repairs $3.3K</div>
+    <div style="background:#2a1a15;border-radius:8px;padding:16px;border:1px solid #5a2d2d;">
+      <div style="margin-bottom:10px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Revenue</span><span style="color:#fff;font-weight:600;">$28,225</span></div>
+        <div class="bar-track"><div class="bar-fill rev" style="width:57%"></div></div>
+      </div>
+      <div style="margin-bottom:10px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Expenses</span><span style="color:#fff;font-weight:600;">$31,634</span></div>
+        <div class="bar-track"><div class="bar-fill exp" style="width:63%"></div></div>
+      </div>
+      <div style="margin-bottom:14px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Net Profit</span><span class="neg" style="font-weight:600;">–$3,334</span></div>
+        <div class="bar-track diverging" style="position:relative;"><div class="bar-fill net-neg" style="width:10%"></div></div>
+      </div>
+      <div style="font-size:10px;color:#8b95a3;border-top:1px solid #5a2d2d;padding-top:10px;">
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;font-weight:600;"><span style="color:#fbbf24;">⚠ Payroll (wages + taxes)</span><span style="color:#fbbf24;">$20,180</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Vehicle gas + repairs</span><span style="color:#c8cdd3;">$5,951</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Supplies</span><span style="color:#c8cdd3;">$2,336</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Insurance + software + other</span><span style="color:#c8cdd3;">$3,167</span></div>
+        <div style="height:1px;background:#5a2d2d;margin:6px 0;"></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;font-weight:600;"><span class="neg">Margin</span><span class="neg">–11.8%</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>September · Forecast vs. Actual</h2>
+    <div class="panel-sub">The Sep 9 base case missed on both sides</div>
+    <div style="background:#1a2129;border-radius:8px;padding:16px;border:1px solid #2a3038;">
+      <table style="font-size:11px;">
+        <thead><tr><th>Line</th><th>Forecast (9/9)</th><th>Actual</th><th>Miss</th></tr></thead>
+        <tbody>
+          <tr><td>Revenue</td><td>$45,700</td><td>$28,225</td><td class="neg">–$17,475</td></tr>
+          <tr><td>Expenses</td><td>$29,084</td><td>$31,634</td><td class="neg">–$2,550</td></tr>
+          <tr style="background:#2a1a15;"><td><strong>Net</strong></td><td>+$16,616</td><td class="neg"><strong>–$3,334</strong></td><td class="neg"><strong>–$19,950</strong></td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:10px;color:#8b95a3;border-top:1px solid #2a3038;padding-top:10px;margin-top:10px;line-height:1.6;">
+        <div style="color:#fbbf24;font-weight:600;margin-bottom:4px;">What happened</div>
+        <div>• The $47.7K A/R queue did <strong>not</strong> collect in September — it landed in <strong>October</strong> ($49.7K revenue). Collection lag is ~30 days, not ~10.</div>
+        <div>• Payroll came in at $20.2K, not the $16.2K modeled from the –$15/hr crew change. The savings have not shown up in the ledger yet.</div>
+        <div>• Vehicle repairs $3.3K — unplanned.</div>
+        <div style="color:#4ade80;margin-top:6px;">Sep + Oct combined: <strong>+$11,535</strong> — the two-month view is what the forecast was really predicting.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============ OLD SEPTEMBER PANEL (superseded) ============ -->
+<div class="section-title" style="opacity:0.5;">Archived · September Forecast Panel (as of Sep 9)</div>
+<div class="grid-2" style="opacity:0.5;">
+
+  <!-- SEP PROGRESS (MTD) -->
+  <div class="panel">
+    <h2>September Progress · Sep 1–9 Actual</h2>
+    <div class="panel-sub">Live from QuickBooks · 9 days · cash basis · early-month payroll timing</div>
+
+    <div style="background:#2a1a15;border-radius:8px;padding:16px;border:1px solid #5a2d2d;">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px;">
+        <div style="font-size:11px;color:#f87171;text-transform:uppercase;letter-spacing:0.05em;">MTD Actual</div>
+        <div style="font-size:11px;color:#8b95a3;">9 of 30 days · 30% complete</div>
+      </div>
+
+      <div style="margin-bottom:10px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Revenue</span><span style="color:#fff;font-weight:600;">$2,585</span></div>
+        <div class="bar-track"><div class="bar-fill rev" style="width:5%"></div></div>
+      </div>
+      <div style="margin-bottom:10px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Expenses</span><span style="color:#fff;font-weight:600;">$10,817</span></div>
+        <div class="bar-track"><div class="bar-fill exp" style="width:22%"></div></div>
+      </div>
+      <div style="margin-bottom:14px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Net Profit</span><span class="neg" style="font-weight:600;">–$8,213</span></div>
+        <div class="bar-track diverging" style="position:relative;"><div class="bar-fill net-neg" style="width:23%"></div></div>
+      </div>
+
+      <div style="font-size:10px;color:#8b95a3;border-top:1px solid #5a2d2d;padding-top:10px;">
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Services revenue</span><span style="color:#c8cdd3;">$2,595</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Tips</span><span style="color:#c8cdd3;">$19</span></div>
+        <div style="height:1px;background:#5a2d2d;margin:6px 0;"></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;font-weight:600;"><span style="color:#fbbf24;">⚠ Payroll (full bi-weekly cycle)</span><span style="color:#fbbf24;">$10,784</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>QB fees</span><span style="color:#c8cdd3;">$33</span></div>
+        <div style="height:1px;background:#5a2d2d;margin:6px 0;"></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;font-weight:600;"><span style="color:#a78bfa;">$47.7K current A/R queued to land mid-Sep</span><span style="color:#a78bfa;">→</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="color:#8b95a3;">Timing artifact — judge Sep after day 20</span><span></span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEP FORECAST FINISH -->
+  <div class="panel">
+    <h2>September Forecast Finish · Full Month</h2>
+    <div class="panel-sub">MTD + 85% A/R collection + residential trickle · supplies assumed lighter than Aug</div>
+
+    <div style="background:#15201a;border-radius:8px;padding:16px;border:1px solid #2d5a3a;">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px;">
+        <div style="font-size:11px;color:#4ade80;text-transform:uppercase;letter-spacing:0.05em;">Base Case Projection</div>
+        <div style="font-size:11px;color:#8b95a3;">30 days · two payroll cycles</div>
+      </div>
+
+      <div style="margin-bottom:10px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Revenue (base)</span><span style="color:#fff;font-weight:600;">$45,700</span></div>
+        <div class="bar-track"><div class="bar-fill rev" style="width:91%"></div></div>
+      </div>
+      <div style="margin-bottom:10px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Expenses (base)</span><span style="color:#fff;font-weight:600;">$29,084</span></div>
+        <div class="bar-track"><div class="bar-fill exp" style="width:58%"></div></div>
+      </div>
+      <div style="margin-bottom:14px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Net Profit (base)</span><span class="pos" style="font-weight:600;">+$16,616</span></div>
+        <div class="bar-track diverging" style="position:relative;"><div class="bar-fill net-pos" style="width:47%"></div></div>
+      </div>
+
+      <div style="font-size:10px;color:#8b95a3;border-top:1px solid #2d5a3a;padding-top:10px;">
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>MTD revenue (verified)</span><span style="color:#c8cdd3;">$2,585</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;font-weight:600;"><span style="color:#4ade80;">Contract book $19.2K @ 95%</span><span style="color:#4ade80;">+$18,240</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;font-weight:600;"><span style="color:#a78bfa;">Non-contract A/R $28.5K @ 75%</span><span style="color:#a78bfa;">+$21,375</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>New residential work</span><span style="color:#c8cdd3;">+$3,500</span></div>
+        <div style="height:1px;background:#2d5a3a;margin:6px 0;"></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Payroll MTD (booked)</span><span style="color:#f87171;">$10,784</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;font-weight:600;"><span style="color:#4ade80;">Payroll 2nd cycle (–$15/hr crew)</span><span style="color:#4ade80;">$6,000</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Supplies</span><span style="color:#f87171;">$7,000</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Vehicle + advertising + other</span><span style="color:#f87171;">$5,300</span></div>
+        <div style="height:1px;background:#2d5a3a;margin:6px 0;"></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;font-weight:600;"><span class="pos">Optimistic</span><span class="pos">+$24,851</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;font-weight:600;"><span style="color:#fbbf24;">Conservative</span><span style="color:#fbbf24;">+$6,421</span></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============ STRUCTURAL INPUTS + WINTER OUTLOOK ============ -->
+<div class="section-title">Structural Inputs · Confirmed Sep 9 · Winter Outlook</div>
+<div class="grid-2">
+
+  <div class="panel">
+    <h2>Confirmed Business Inputs</h2>
+    <div class="panel-sub">Replaces earlier placeholders · drives all forward forecasts</div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:16px;">
+      <div style="background:#15201a;border:1px solid #2d5a3a;border-radius:8px;padding:14px;text-align:center;">
+        <div style="font-size:10px;color:#8b95a3;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;">Contract Book</div>
+        <div style="font-size:22px;font-weight:600;color:#4ade80;">$19,200</div>
+        <div style="font-size:10px;color:#8b95a3;margin-top:4px;">per month · recurring floor</div>
+      </div>
+      <div style="background:#1a2129;border:1px solid #2a3038;border-radius:8px;padding:14px;text-align:center;">
+        <div style="font-size:10px;color:#8b95a3;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;">Variable Yards</div>
+        <div style="font-size:22px;font-weight:600;color:#a78bfa;">$28.5K</div>
+        <div style="font-size:10px;color:#8b95a3;margin-top:4px;">current non-contract A/R</div>
+      </div>
+      <div style="background:#15201a;border:1px solid #2d5a3a;border-radius:8px;padding:14px;text-align:center;">
+        <div style="font-size:10px;color:#8b95a3;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;">Crew Rate</div>
+        <div style="font-size:22px;font-weight:600;color:#4ade80;">–$15/hr</div>
+        <div style="font-size:10px;color:#8b95a3;margin-top:4px;">one fewer on crew</div>
+      </div>
+    </div>
+
+    <div style="background:#0f1419;border-radius:6px;padding:12px;">
+      <div style="font-size:10px;color:#8b95a3;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px;">Labor reduction — annualized impact</div>
+      <table style="font-size:11px;">
+        <tbody>
+          <tr><td>Savings per week (–$15/hr × ~50 hrs)</td><td class="pos">$750</td></tr>
+          <tr><td>Per month (× 4.33)</td><td class="pos">$3,250</td></tr>
+          <tr><td>Fully loaded (+15% burden)</td><td class="pos">$3,737/mo</td></tr>
+          <tr class="total"><td><strong>Annualized</strong></td><td class="pos"><strong>~$44,850/yr</strong></td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:10px;color:#fbbf24;margin-top:8px;">⚠ Assumes remaining crew covers routes without OT creep. If OT climbs, savings erode.</div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Winter Outlook · Oct 2026 – Feb 2027</h2>
+    <div class="panel-sub">Contract floor $19.2K + reduced payroll ~$11.7K/mo = structurally profitable off-season</div>
+
+    <table>
+      <thead>
+        <tr><th>Month</th><th>Contracts</th><th>Resid.</th><th>Revenue</th><th>Expenses</th><th>Net</th></tr>
+      </thead>
+      <tbody>
+        <tr class="forecast"><td>Oct 2026</td><td>$19,200</td><td>$8,000</td><td>$27,200</td><td>$22,200</td><td class="pos"><strong>+$5,000</strong></td></tr>
+        <tr class="forecast"><td>Nov 2026</td><td>$19,200</td><td>$4,000</td><td>$23,200</td><td>$19,700</td><td class="pos"><strong>+$3,500</strong></td></tr>
+        <tr class="forecast"><td>Dec 2026</td><td>$19,200</td><td>$2,000</td><td>$21,200</td><td>$18,200</td><td class="pos"><strong>+$3,000</strong></td></tr>
+        <tr class="forecast"><td>Jan 2027</td><td>$19,200</td><td>$1,500</td><td>$20,700</td><td>$17,700</td><td class="pos"><strong>+$3,000</strong></td></tr>
+        <tr class="forecast"><td>Feb 2027</td><td>$19,200</td><td>$2,000</td><td>$21,200</td><td>$18,700</td><td class="pos"><strong>+$2,500</strong></td></tr>
+        <tr class="total"><td>5-mo winter</td><td>$96,000</td><td>$17,500</td><td>$113,500</td><td>$96,500</td><td class="pos"><strong>+$17,000</strong></td></tr>
+      </tbody>
+    </table>
+
+    <div style="font-size:10px;color:#8b95a3;margin-top:12px;line-height:1.6;">
+      <div style="color:#4ade80;font-weight:600;margin-bottom:4px;">Before the labor cut, Nov–Feb ran –$1K to –$4K/mo.</div>
+      <div>Contracts now cover the entire reduced cost base. Residential is pure margin on top.</div>
+      <div style="color:#fbbf24;margin-top:6px;">⚠ Assumes contracts hold at $19.2K through winter. Seasonal scope reductions would lower the floor.</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============ LIQUIDITY + LOC PANEL ============ -->
+<div class="section-title">Liquidity · Cash, LOC 7903, Payroll Tax · Jun 30 → Sep 9</div>
+<div class="grid-2">
+
+  <div class="panel">
+    <h2>Liquidity Trend · Balance Sheet Snapshots</h2>
+    <div class="panel-sub">Cash basis · net cash-equivalent = bank accounts + undeposited funds · reconciles to cash flow statement</div>
+
+    <table>
+      <thead>
+        <tr><th>Date</th><th>QB Checking</th><th>Undeposited</th><th>Net Cash</th><th>LOC 7903</th><th>Payroll Tax</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Jun 30</td><td class="neg">–$22,443</td><td>$30,744</td><td class="pos"><strong>+$3,629</strong></td><td>$8,850</td><td class="warn">$7,417</td></tr>
+        <tr><td>Jul 31</td><td class="neg">–$37,339</td><td>$36,939</td><td class="neg"><strong>–$527</strong></td><td class="pos">$6,200</td><td>$4,793</td></tr>
+        <tr style="background:#15201a;"><td>Aug 18</td><td class="neg">–$11,700</td><td>$38,347</td><td class="pos"><strong>+$17,021</strong></td><td class="neg">$12,800</td><td class="pos">$2,541</td></tr>
+        <tr><td>Aug 31</td><td class="neg">–$45,133</td><td>$38,972</td><td class="neg"><strong>–$5,992</strong></td><td>$10,622</td><td>$4,481</td></tr>
+        <tr style="background:#2a1a15;"><td><strong>Sep 9</strong></td><td class="neg"><strong>–$54,687</strong></td><td><strong>$40,312</strong></td><td class="neg"><strong>–$14,206</strong></td><td><strong>$10,622</strong></td><td class="warn"><strong>$7,193</strong></td></tr>
+        <tr style="background:#15201a;"><td><strong>Nov 7</strong></td><td class="neg"><strong>–$53,834</strong></td><td class="warn"><strong>$71,695</strong></td><td class="pos"><strong>+$24,364</strong></td><td class="warn"><strong>–$11,953</strong></td><td class="warn"><strong>$5,635</strong></td></tr>
+      </tbody>
+    </table>
+
+    <div style="font-size:10px;color:#8b95a3;margin-top:12px;line-height:1.6;">
+      <div style="color:#4ade80;font-weight:600;margin-bottom:4px;">Net cash-equivalent swung +$38.6K since Sep 9 — Oct and early Nov collections.</div>
+      <div style="color:#fbbf24;">⚠ Undeposited Funds now $71.7K and still never clears. The –$53.8K checking figure is unreliable until QB is reconciled to the bank.</div>
+      <div style="color:#f87171;margin-top:4px;">⚠ LOC 7903 ledger reads <strong>–$11,953</strong> — a negative liability. Either payments were over-applied or LOC payments were coded to this account while draws went to "Short-term loans." Reconcile.</div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>LOC 7903 · Activity Since July 1</h2>
+    <div class="panel-sub">Net movement per period from balance-sheet snapshots · gross draws/payments need the bank register</div>
+
+    <div style="background:#0f1419;border-radius:6px;padding:12px;margin-bottom:14px;">
+      <table style="font-size:11px;">
+        <thead><tr><th>Period</th><th>Start</th><th>End</th><th>Net</th></tr></thead>
+        <tbody>
+          <tr><td>July</td><td>$8,850</td><td>$6,200</td><td class="pos">–$2,650 paydown</td></tr>
+          <tr><td>Aug 1–18</td><td>$6,200</td><td>$12,800</td><td class="neg">+$6,600 draw</td></tr>
+          <tr><td>Aug 19–31</td><td>$12,800</td><td>$10,622</td><td class="pos">–$2,178 paydown</td></tr>
+          <tr><td>Sep 1–9</td><td>$10,622</td><td>$10,622</td><td>$0</td></tr>
+          <tr class="total"><td><strong>Net since Jul 1 (QB ledger)</strong></td><td>$8,850</td><td>$10,622</td><td class="neg"><strong>+$1,772</strong></td></tr>
+          <tr style="background:#2a1a15;border-top:2px solid #5a2d2d;"><td><strong>LOC 7903 net usage since July — per owner</strong></td><td colspan="2" style="color:#8b95a3;font-size:10px;">bank records</td><td class="neg"><strong>–$16,000</strong></td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:10px;color:#8b95a3;margin-top:8px;">QB minimum gross: draws ≥ $6,600 · payments ≥ $4,828. Intra-period cycles invisible in snapshots.</div>
+      <div style="font-size:10px;color:#fbbf24;margin-top:8px;line-height:1.5;"><strong>Reconciliation flag:</strong> owner reports ~$16,000 net LOC usage; QB "Lines of credit" shows only +$1,772. Gap ≈ $14,228 — nearly the unexplained +$14,780 in "Short-term business loans." <strong>LOC draws may be coded to the wrong liability account.</strong> QB LOC +$1,772 + short-term loans +$14,780 = $16,552.</div>
+    </div>
+
+    <div style="background:#2a1a15;border:1px solid #5a2d2d;border-radius:6px;padding:12px;">
+      <div style="font-size:10px;color:#f87171;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px;font-weight:600;">"Short-term business loans" ledger +$14,780 in July — unexplained</div>
+      <table style="font-size:11px;">
+        <thead><tr><th>Debt</th><th>Jun 30</th><th>Sep 9</th><th>Δ</th></tr></thead>
+        <tbody>
+          <tr><td>LOC 7903</td><td>$8,850</td><td>$10,622</td><td class="neg">+$1,772</td></tr>
+          <tr><td>Short-term biz loans</td><td>$38,794</td><td>$53,574</td><td class="neg"><strong>+$14,780</strong></td></tr>
+          <tr><td>Shareholder loans</td><td>$54,628</td><td>$54,628</td><td>$0</td></tr>
+          <tr><td>Long-term loans</td><td>$48,246</td><td>$47,648</td><td class="pos">–$598</td></tr>
+          <tr class="total"><td><strong>Total debt</strong></td><td>$150,518</td><td>$166,472</td><td class="neg"><strong>+$15,954</strong></td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:10px;color:#c8cdd3;margin-top:8px;">The QB account "Short-term business loans" reads $38,794 on Jun 30 and $53,574 on Jul 31. <strong>No loan was taken</strong> (owner confirmed). Cash flow books it as a non-cash adjustment; July P&amp;L carries $14,026 loan interest the same month. <span style="color:#fbbf24;">Either a lender capitalized interest, or it's a bookkeeping error.</span> Open the July register for this account to resolve — the memo will say.</div>
+
+      <div style="height:1px;background:#5a2d2d;margin:10px 0;"></div>
+      <div style="font-size:10px;color:#8b95a3;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;">Debt snapshot · Nov 7</div>
+      <table style="font-size:11px;">
+        <tbody>
+          <tr><td>LOC 7903 (ledger)</td><td class="warn">–$11,953</td><td style="color:#8b95a3;font-size:10px;">negative — reconcile</td></tr>
+          <tr><td>Short-term biz loans</td><td>$48,391</td><td class="pos" style="font-size:10px;">–$5,183 since Sep</td></tr>
+          <tr><td>Shareholder loans</td><td>$55,128</td><td style="color:#8b95a3;font-size:10px;">+$500</td></tr>
+          <tr><td>Long-term biz loans</td><td>$53,798</td><td class="neg" style="font-size:10px;">+$6,150 since Sep</td></tr>
+          <tr class="total"><td><strong>Total (incl. negative LOC)</strong></td><td><strong>$145,364</strong></td><td class="pos" style="font-size:10px;">–$21K vs Sep 9</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:10px;color:#fbbf24;margin-top:6px;">The "–$21K" improvement is mostly the LOC going negative. Real debt reduction is closer to –$5K to –$9K pending the LOC reconciliation.</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============ AUGUST FINAL (CLOSED) ============ -->
+<div class="section-title">August 2026 · Final Closed Numbers</div>
+<div class="grid-2">
+
+  <!-- AUG FINAL -->
+  <div class="panel">
+    <h2>August Final · Aug 1–31 Verified</h2>
+    <div class="panel-sub">Closed month · cash basis · back-half revenue collapsed to $3.7K</div>
+
+    <div style="background:#15201a;border-radius:8px;padding:16px;border:1px solid #2d5a3a;">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px;">
+        <div style="font-size:11px;color:#4ade80;text-transform:uppercase;letter-spacing:0.05em;">MTD Actual</div>
+        <div style="font-size:11px;color:#8b95a3;">18 of 31 days · 58% complete</div>
+      </div>
+
+      <div style="margin-bottom:10px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Revenue</span><span style="color:#fff;font-weight:600;">$32,540</span></div>
+        <div class="bar-track"><div class="bar-fill rev" style="width:65%"></div></div>
+      </div>
+      <div style="margin-bottom:10px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Expenses</span><span style="color:#fff;font-weight:600;">$39,723</span></div>
+        <div class="bar-track"><div class="bar-fill exp" style="width:79%"></div></div>
+      </div>
+      <div style="margin-bottom:14px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Net Profit</span><span class="neg" style="font-weight:600;">–$7,132</span></div>
+        <div class="bar-track diverging" style="position:relative;"><div class="bar-fill net-neg" style="width:20%"></div></div>
+      </div>
+
+      <div style="font-size:10px;color:#8b95a3;border-top:1px solid #2d5a3a;padding-top:10px;">
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Services revenue</span><span style="color:#c8cdd3;">$34,113</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Discounts + unapplied cash</span><span style="color:#f87171;">-$1,573</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Tips</span><span style="color:#c8cdd3;">$51</span></div>
+        <div style="height:1px;background:#2d5a3a;margin:6px 0;"></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Payroll (wages + taxes)</span><span style="color:#c8cdd3;">$15,438</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;font-weight:600;"><span style="color:#fbbf24;">⚠ Supplies &amp; materials</span><span style="color:#fbbf24;">$14,388</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;font-weight:600;"><span style="color:#fbbf24;">⚠ Business insurance</span><span style="color:#fbbf24;">$4,057</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Vehicle gas</span><span style="color:#c8cdd3;">$3,777</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Advertising</span><span style="color:#c8cdd3;">$1,500</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Meals + office + fees + bank</span><span style="color:#c8cdd3;">$564</span></div>
+        <div style="height:1px;background:#2d5a3a;margin:6px 0;"></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;font-weight:600;"><span class="neg">Margin (full month)</span><span class="neg">–21.9%</span></div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="color:#8b95a3;">Aug 1–18: $28.8K rev · Aug 19–31: $3.7K rev</span><span></span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AUG FORECAST VS ACTUAL -->
+  <div class="panel">
+    <h2>August · Forecast vs. Actual</h2>
+    <div class="panel-sub">How the Aug 18 projection held up · lesson for the September model</div>
+
+    <div style="background:#1a2129;border-radius:8px;padding:16px;border:1px solid #2a3038;">
+      <table style="font-size:11px;">
+        <thead>
+          <tr><th>Line</th><th>Forecast (8/18)</th><th>Actual</th><th>Miss</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Revenue</td><td>$38,843</td><td>$32,540</td><td class="neg">–$6,303</td></tr>
+          <tr><td>Expenses</td><td>$40,365</td><td>$39,723</td><td class="pos">+$642</td></tr>
+          <tr style="background:#2a1a15;"><td><strong>Net</strong></td><td>–$1,522</td><td class="neg"><strong>–$7,132</strong></td><td class="neg"><strong>–$5,610</strong></td></tr>
+        </tbody>
+      </table>
+
+      <div style="font-size:10px;color:#8b95a3;border-top:1px solid #2a3038;padding-top:10px;margin-top:10px;">
+        <div style="margin-bottom:6px;color:#fbbf24;font-weight:600;">What the miss taught us</div>
+        <div style="margin-bottom:4px;">• Back-half revenue (Aug 19–31) came in at <span style="color:#f87171;">$3,697</span>, not the $10K modeled</div>
+        <div style="margin-bottom:4px;">• Contract checks are <strong>front-loaded mid-month</strong>, then residential trickle</div>
+        <div style="margin-bottom:4px;">• Expense forecast was accurate (+$642)</div>
+        <div style="margin-bottom:4px;">• Sep model now uses <strong>A/R queue</strong> as the revenue driver instead of daily run-rate</div>
+      </div>
+    </div>
+
+    <div style="margin-top:14px;background:#0f1419;border-radius:6px;padding:12px;">
+      <div style="font-size:10px;color:#8b95a3;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px;">Monthly cash-basis rhythm</div>
+      <div style="font-size:10px;color:#c8cdd3;font-family:monospace;line-height:1.7;">
+        <div><span style="color:#f87171;">Days 1–9</span>&nbsp;&nbsp;&nbsp; Payroll hits · Rev ≈ 0 · <span style="color:#f87171;">looks terrible</span></div>
+        <div><span style="color:#4ade80;">Days 10–20</span>&nbsp; Contract checks land ($30–45K) · <span style="color:#4ade80;">big swing</span></div>
+        <div><span style="color:#fbbf24;">Days 21–31</span>&nbsp; Residential trickle + 2nd payroll · <span style="color:#fbbf24;">drifts down</span></div>
+      </div>
+      <div style="font-size:10px;color:#a78bfa;margin-top:8px;font-weight:600;">→ Judge any month only after day ~20</div>
+    </div>
+
+    <!-- Payroll trend callout -->
+    <div style="margin-top:14px;background:#0f1419;border-radius:6px;padding:12px;">
+      <div style="font-size:10px;color:#8b95a3;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px;">Payroll trend (the good news)</div>
+      <table style="font-size:11px;">
+        <tbody>
+          <tr><td>Jul 2026 actual</td><td class="neg" style="font-weight:600;">$18,958</td></tr>
+          <tr><td>Aug 2026 projected</td><td class="pos" style="font-weight:600;">$16,197</td></tr>
+          <tr style="background:#15201a;"><td><strong>Monthly savings</strong></td><td class="pos" style="font-weight:600;">–$2,761 (–15%)</td></tr>
+          <tr><td>Annualized impact</td><td class="pos" style="font-weight:600;">+$33K/yr</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============ MONTH-OVER-MONTH REAL DATA ============ -->
+<div class="section-title">Monthly P&L Trend · Real QB Data (Cash Basis)</div>
+<div class="panel">
+  <div class="panel-sub">Highlights: Jul loan interest spike (–$14K one-time); Aug margin recovery to 32%</div>
+  <table>
+    <thead>
+      <tr><th>Month</th><th>Revenue</th><th>Expenses</th><th>Net</th><th>Margin</th><th>Notes</th></tr>
+    </thead>
+    <tbody>
+      <tr class="actual"><td>Jan 2026</td><td>$12,852</td><td>$13,744</td><td class="neg">-$892</td><td class="neg">-7%</td><td style="color:#8b95a3;font-size:11px;">Season start</td></tr>
+      <tr class="actual"><td>Feb 2026</td><td>$13,079</td><td>$35,179</td><td class="neg">-$22,100</td><td class="neg">-169%</td><td style="color:#8b95a3;font-size:11px;">Equipment ramp</td></tr>
+      <tr class="actual"><td>Mar 2026</td><td>$25,488</td><td>$57,645</td><td class="neg">-$32,171</td><td class="neg">-126%</td><td style="color:#8b95a3;font-size:11px;">Project material front-load</td></tr>
+      <tr class="actual"><td>Apr 2026</td><td>$35,680</td><td>$55,325</td><td class="neg">-$19,630</td><td class="neg">-55%</td><td style="color:#8b95a3;font-size:11px;">Peak spend</td></tr>
+      <tr class="actual"><td>Jul 2026</td><td>$49,213</td><td>$53,309</td><td class="neg">-$3,940</td><td class="neg">-8%</td><td style="color:#fbbf24;font-size:11px;">⚠ $14K loan interest booked — likely capitalized, not cash; verify</td></tr>
+      <tr class="actual"><td><strong>Aug 2026 FINAL</strong></td><td><strong>$32,540</strong></td><td><strong>$39,723</strong></td><td class="neg"><strong>–$7,132</strong></td><td class="neg"><strong>–21.9%</strong></td><td style="color:#fbbf24;font-size:11px;">⚠ Supplies $14.4K + Insurance $4K; back-half rev only $3.7K</td></tr>
+      <tr class="actual"><td><strong>Sep 2026 FINAL</strong></td><td><strong>$28,225</strong></td><td><strong>$31,634</strong></td><td class="neg"><strong>–$3,334</strong></td><td class="neg"><strong>–11.8%</strong></td><td style="color:#fbbf24;font-size:11px;">A/R lagged to Oct; payroll $20.2K</td></tr>
+      <tr class="actual" style="background:#15201a;"><td><strong>Oct 2026 FINAL</strong></td><td><strong>$49,694</strong></td><td><strong>$34,902</strong></td><td class="pos"><strong>+$14,869</strong></td><td class="pos"><strong>+29.9%</strong></td><td style="color:#4ade80;font-size:11px;">🏆 Best month of 2026</td></tr>
+      <tr class="actual" style="background:#15201a;"><td><strong>Nov MTD (7d)</strong></td><td><strong>$28,665</strong></td><td><strong>$3,783</strong></td><td class="pos"><strong>+$24,892</strong></td><td class="pos"><strong>+86.8%</strong></td><td style="color:#8b95a3;font-size:11px;">Checks landed early; ~$20K payroll still to come</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ============ ORIGINAL MONTH-BY-MONTH CARDS ============ -->
+<div class="section-title">YTD Snapshot</div>
+<div class="meters">
+
+  <div class="meter">
+    <div class="meter-label">YTD Revenue (Cash)</div>
+    <svg width="140" height="90" viewBox="0 0 140 90">
+      <path d="M 20 80 A 50 50 0 0 1 120 80" stroke="#2a3038" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <path d="M 20 80 A 50 50 0 0 1 88 36" stroke="#4ade80" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <text x="70" y="72" text-anchor="middle" fill="#fff" font-size="18" font-weight="600">$91.4K</text>
+    </svg>
+    <div class="meter-sub">14% of $636K SC peer median</div>
+  </div>
+
+  <div class="meter">
+    <div class="meter-label">Net Margin (Cash)</div>
+    <svg width="140" height="90" viewBox="0 0 140 90">
+      <path d="M 20 80 A 50 50 0 0 1 120 80" stroke="#2a3038" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <path d="M 20 80 A 50 50 0 0 1 32 50" stroke="#f87171" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <text x="70" y="72" text-anchor="middle" fill="#f87171" font-size="18" font-weight="600">-43%</text>
+    </svg>
+    <div class="meter-sub">+18% w/ A/R earned (~break-even)</div>
+  </div>
+
+  <div class="meter">
+    <div class="meter-label">YTD Expenses</div>
+    <svg width="140" height="90" viewBox="0 0 140 90">
+      <path d="M 20 80 A 50 50 0 0 1 120 80" stroke="#2a3038" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <path d="M 20 80 A 50 50 0 0 1 110 47" stroke="#fbbf24" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <text x="70" y="72" text-anchor="middle" fill="#fff" font-size="18" font-weight="600">$130.6K</text>
+    </svg>
+    <div class="meter-sub">Payroll 42% · Supplies 28% · Vehicle 15%</div>
+  </div>
+
+  <div class="meter">
+    <div class="meter-label">Cash Position</div>
+    <svg width="140" height="90" viewBox="0 0 140 90">
+      <path d="M 20 80 A 50 50 0 0 1 120 80" stroke="#2a3038" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <path d="M 20 80 A 50 50 0 0 1 28 56" stroke="#f87171" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <text x="70" y="72" text-anchor="middle" fill="#f87171" font-size="18" font-weight="600">-$9.8K</text>
+    </svg>
+    <div class="meter-sub">$48K A/R · est. +$8K end-May</div>
+  </div>
+
+</div>
+
+<!-- ============ MONTH-BY-MONTH CARDS ============ -->
+<div class="section-title">Month-by-Month Performance · Each Metric</div>
+<div class="month-grid">
+
+  <!-- JAN -->
+  <div class="month-card">
+    <div class="month-head"><span class="month-name">Jan 2026</span><span class="month-tag tag-actual">Actual</span></div>
+    <div class="metric">
+      <div class="metric-row"><span>Revenue</span><span class="val">$12.9K</span></div>
+      <div class="bar-track"><div class="bar-fill rev" style="width:21.4%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Expenses</span><span class="val">$13.7K</span></div>
+      <div class="bar-track"><div class="bar-fill exp" style="width:22.9%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Net Profit</span><span class="val neg">-$0.9K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill net-neg" style="width:1.3%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>End Cash</span><span class="val neg">-$1.5K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill cash-neg" style="width:0.9%"></div></div>
+    </div>
+  </div>
+
+  <!-- FEB -->
+  <div class="month-card">
+    <div class="month-head"><span class="month-name">Feb 2026</span><span class="month-tag tag-actual">Actual</span></div>
+    <div class="metric">
+      <div class="metric-row"><span>Revenue</span><span class="val">$13.1K</span></div>
+      <div class="bar-track"><div class="bar-fill rev" style="width:21.8%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Expenses</span><span class="val">$35.2K</span></div>
+      <div class="bar-track"><div class="bar-fill exp" style="width:58.6%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Net Profit</span><span class="val neg">-$22.1K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill net-neg" style="width:31.6%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>End Cash</span><span class="val neg">-$23.5K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill cash-neg" style="width:14.7%"></div></div>
+    </div>
+  </div>
+
+  <!-- MAR -->
+  <div class="month-card">
+    <div class="month-head"><span class="month-name">Mar 2026</span><span class="month-tag tag-actual">Actual</span></div>
+    <div class="metric">
+      <div class="metric-row"><span>Revenue</span><span class="val">$25.5K</span></div>
+      <div class="bar-track"><div class="bar-fill rev" style="width:42.5%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Expenses</span><span class="val">$57.6K</span></div>
+      <div class="bar-track"><div class="bar-fill exp" style="width:96.0%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Net Profit</span><span class="val neg">-$32.2K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill net-neg" style="width:46.0%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>End Cash</span><span class="val neg">-$55.7K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill cash-neg" style="width:34.8%"></div></div>
+    </div>
+  </div>
+
+  <!-- APR -->
+  <div class="month-card">
+    <div class="month-head"><span class="month-name">Apr 2026</span><span class="month-tag tag-actual">Actual</span></div>
+    <div class="metric">
+      <div class="metric-row"><span>Revenue</span><span class="val">$35.7K</span></div>
+      <div class="bar-track"><div class="bar-fill rev" style="width:59.5%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Expenses</span><span class="val">$55.3K</span></div>
+      <div class="bar-track"><div class="bar-fill exp" style="width:92.2%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Net Profit</span><span class="val neg">-$19.6K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill net-neg" style="width:28.0%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>End Cash</span><span class="val neg">-$2.0K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill cash-neg" style="width:1.3%"></div></div>
+    </div>
+  </div>
+
+  <!-- MAY (FORECAST) -->
+  <div class="month-card forecast">
+    <div class="month-head"><span class="month-name">May 2026</span><span class="month-tag tag-forecast">Forecast</span></div>
+    <div class="metric">
+      <div class="metric-row"><span>Revenue</span><span class="val">$58.8K</span></div>
+      <div class="bar-track"><div class="bar-fill rev" style="width:97.9%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Expenses</span><span class="val">$40.8K</span></div>
+      <div class="bar-track"><div class="bar-fill exp" style="width:68.0%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Net Profit</span><span class="val pos">+$18.0K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill net-pos" style="width:25.7%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>End Cash</span><span class="val pos">+$8.2K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill cash-pos" style="width:5.1%"></div></div>
+    </div>
+  </div>
+
+  <!-- JUN (FORECAST) -->
+  <div class="month-card forecast">
+    <div class="month-head"><span class="month-name">Jun 2026</span><span class="month-tag tag-forecast">Forecast</span></div>
+    <div class="metric">
+      <div class="metric-row"><span>Revenue</span><span class="val">$54.0K</span></div>
+      <div class="bar-track"><div class="bar-fill rev" style="width:90.0%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Expenses</span><span class="val">$42.4K</span></div>
+      <div class="bar-track"><div class="bar-fill exp" style="width:70.6%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Net Profit</span><span class="val pos">+$11.6K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill net-pos" style="width:16.6%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>End Cash</span><span class="val pos">+$19.8K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill cash-pos" style="width:12.4%"></div></div>
+    </div>
+  </div>
+
+  <!-- JUL (FORECAST) -->
+  <div class="month-card forecast">
+    <div class="month-head"><span class="month-name">Jul 2026</span><span class="month-tag tag-forecast">Forecast</span></div>
+    <div class="metric">
+      <div class="metric-row"><span>Revenue</span><span class="val">$46.5K</span></div>
+      <div class="bar-track"><div class="bar-fill rev" style="width:77.5%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Expenses</span><span class="val">$42.7K</span></div>
+      <div class="bar-track"><div class="bar-fill exp" style="width:71.1%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Net Profit</span><span class="val pos">+$3.8K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill net-pos" style="width:5.5%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>End Cash</span><span class="val pos">+$23.6K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill cash-pos" style="width:14.8%"></div></div>
+    </div>
+  </div>
+
+  <!-- AUG (FORECAST) -->
+  <div class="month-card forecast">
+    <div class="month-head"><span class="month-name">Aug 2026</span><span class="month-tag tag-forecast">Forecast</span></div>
+    <div class="metric">
+      <div class="metric-row"><span>Revenue</span><span class="val">$42.5K</span></div>
+      <div class="bar-track"><div class="bar-fill rev" style="width:70.8%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Expenses</span><span class="val">$42.2K</span></div>
+      <div class="bar-track"><div class="bar-fill exp" style="width:70.3%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Net Profit</span><span class="val pos">+$0.3K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill net-pos" style="width:0.5%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>End Cash</span><span class="val pos">+$24.0K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill cash-pos" style="width:15.0%"></div></div>
+    </div>
+  </div>
+
+  <!-- SEP (FORECAST) -->
+  <div class="month-card forecast">
+    <div class="month-head"><span class="month-name">Sep 2026</span><span class="month-tag tag-forecast">Forecast</span></div>
+    <div class="metric">
+      <div class="metric-row"><span>Revenue</span><span class="val">$38.5K</span></div>
+      <div class="bar-track"><div class="bar-fill rev" style="width:64.2%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Expenses</span><span class="val">$39.2K</span></div>
+      <div class="bar-track"><div class="bar-fill exp" style="width:65.3%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Net Profit</span><span class="val neg">-$0.7K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill net-neg" style="width:1.0%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>End Cash</span><span class="val pos">+$23.3K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill cash-pos" style="width:14.6%"></div></div>
+    </div>
+  </div>
+
+  <!-- OCT (FORECAST) -->
+  <div class="month-card forecast">
+    <div class="month-head"><span class="month-name">Oct 2026</span><span class="month-tag tag-forecast">Forecast</span></div>
+    <div class="metric">
+      <div class="metric-row"><span>Revenue</span><span class="val">$27.5K</span></div>
+      <div class="bar-track"><div class="bar-fill rev" style="width:45.9%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Expenses</span><span class="val">$33.2K</span></div>
+      <div class="bar-track"><div class="bar-fill exp" style="width:55.3%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>Net Profit</span><span class="val neg">-$5.7K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill net-neg" style="width:8.1%"></div></div>
+    </div>
+    <div class="metric">
+      <div class="metric-row"><span>End Cash</span><span class="val pos">+$17.7K</span></div>
+      <div class="bar-track diverging" style="position:relative;height:8px;"><div class="bar-fill cash-pos" style="width:11.1%"></div></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============ TREND CHARTS — ONE PER METRIC ============ -->
+<div class="section-title">Trend Charts · One per Metric</div>
+<div class="trend-grid">
+
+  <!-- REVENUE TREND -->
+  <div class="panel">
+    <h2>Revenue · Monthly</h2>
+    <div class="panel-sub">Filled bars = actual · Outlined bars = forecast · Scale 0–$60K</div>
+    <svg width="100%" viewBox="0 0 540 220">
+      <line x1="40" y1="20" x2="40" y2="180" stroke="#2a3038"/>
+      <line x1="40" y1="180" x2="530" y2="180" stroke="#2a3038"/>
+      <text x="36" y="184" text-anchor="end" fill="#6b7280" font-size="9">$0</text>
+      <text x="36" y="140" text-anchor="end" fill="#6b7280" font-size="9">$15K</text>
+      <text x="36" y="100" text-anchor="end" fill="#6b7280" font-size="9">$30K</text>
+      <text x="36" y="60" text-anchor="end" fill="#6b7280" font-size="9">$45K</text>
+      <text x="36" y="24" text-anchor="end" fill="#6b7280" font-size="9">$60K</text>
+      <line x1="40" y1="140" x2="530" y2="140" stroke="#1d242c"/>
+      <line x1="40" y1="100" x2="530" y2="100" stroke="#1d242c"/>
+      <line x1="40" y1="60" x2="530" y2="60" stroke="#1d242c"/>
+      <line x1="40" y1="20" x2="530" y2="20" stroke="#1d242c"/>
+
+      <!-- Bars: 10 months @ x=60,108,156,...,492 (48px spacing, 30px wide) -->
+      <!-- scale: $60K = 160px, $1 = 0.00267px -->
+      <rect x="55" y="146" width="30" height="34" fill="#3b82f6" opacity="0.85"/>
+      <text x="70" y="200" text-anchor="middle" fill="#c8cdd3" font-size="10">Jan</text>
+      <rect x="103" y="145" width="30" height="35" fill="#3b82f6" opacity="0.85"/>
+      <text x="118" y="200" text-anchor="middle" fill="#c8cdd3" font-size="10">Feb</text>
+      <rect x="151" y="112" width="30" height="68" fill="#3b82f6" opacity="0.85"/>
+      <text x="166" y="200" text-anchor="middle" fill="#c8cdd3" font-size="10">Mar</text>
+      <rect x="199" y="85" width="30" height="95" fill="#3b82f6" opacity="0.85"/>
+      <text x="214" y="200" text-anchor="middle" fill="#c8cdd3" font-size="10">Apr</text>
+      <rect x="247" y="23" width="30" height="157" fill="none" stroke="#3b82f6" stroke-width="2"/>
+      <text x="262" y="200" text-anchor="middle" fill="#4ade80" font-size="10">May</text>
+      <rect x="295" y="36" width="30" height="144" fill="none" stroke="#3b82f6" stroke-width="2"/>
+      <text x="310" y="200" text-anchor="middle" fill="#4ade80" font-size="10">Jun</text>
+      <rect x="343" y="56" width="30" height="124" fill="none" stroke="#3b82f6" stroke-width="2"/>
+      <text x="358" y="200" text-anchor="middle" fill="#4ade80" font-size="10">Jul</text>
+      <rect x="391" y="67" width="30" height="113" fill="none" stroke="#3b82f6" stroke-width="2"/>
+      <text x="406" y="200" text-anchor="middle" fill="#4ade80" font-size="10">Aug</text>
+      <rect x="439" y="77" width="30" height="103" fill="none" stroke="#3b82f6" stroke-width="2"/>
+      <text x="454" y="200" text-anchor="middle" fill="#4ade80" font-size="10">Sep</text>
+      <rect x="487" y="107" width="30" height="73" fill="none" stroke="#3b82f6" stroke-width="2"/>
+      <text x="502" y="200" text-anchor="middle" fill="#4ade80" font-size="10">Oct</text>
+
+      <!-- May A/R indicator -->
+      <text x="262" y="215" text-anchor="middle" fill="#a78bfa" font-size="9">+A/R wave</text>
+    </svg>
+  </div>
+
+  <!-- EXPENSES TREND -->
+  <div class="panel">
+    <h2>Expenses · Monthly</h2>
+    <div class="panel-sub">Mar peak ($57.6K) was equipment + project material spike</div>
+    <svg width="100%" viewBox="0 0 540 220">
+      <line x1="40" y1="20" x2="40" y2="180" stroke="#2a3038"/>
+      <line x1="40" y1="180" x2="530" y2="180" stroke="#2a3038"/>
+      <text x="36" y="184" text-anchor="end" fill="#6b7280" font-size="9">$0</text>
+      <text x="36" y="140" text-anchor="end" fill="#6b7280" font-size="9">$15K</text>
+      <text x="36" y="100" text-anchor="end" fill="#6b7280" font-size="9">$30K</text>
+      <text x="36" y="60" text-anchor="end" fill="#6b7280" font-size="9">$45K</text>
+      <text x="36" y="24" text-anchor="end" fill="#6b7280" font-size="9">$60K</text>
+      <line x1="40" y1="140" x2="530" y2="140" stroke="#1d242c"/>
+      <line x1="40" y1="100" x2="530" y2="100" stroke="#1d242c"/>
+      <line x1="40" y1="60" x2="530" y2="60" stroke="#1d242c"/>
+      <line x1="40" y1="20" x2="530" y2="20" stroke="#1d242c"/>
+
+      <rect x="55" y="143" width="30" height="37" fill="#f59e0b" opacity="0.85"/>
+      <text x="70" y="200" text-anchor="middle" fill="#c8cdd3" font-size="10">Jan</text>
+      <rect x="103" y="86" width="30" height="94" fill="#f59e0b" opacity="0.85"/>
+      <text x="118" y="200" text-anchor="middle" fill="#c8cdd3" font-size="10">Feb</text>
+      <rect x="151" y="26" width="30" height="154" fill="#f59e0b" opacity="0.85"/>
+      <text x="166" y="200" text-anchor="middle" fill="#c8cdd3" font-size="10">Mar</text>
+      <rect x="199" y="33" width="30" height="147" fill="#f59e0b" opacity="0.85"/>
+      <text x="214" y="200" text-anchor="middle" fill="#c8cdd3" font-size="10">Apr</text>
+      <rect x="247" y="71" width="30" height="109" fill="none" stroke="#f59e0b" stroke-width="2"/>
+      <text x="262" y="200" text-anchor="middle" fill="#4ade80" font-size="10">May</text>
+      <rect x="295" y="67" width="30" height="113" fill="none" stroke="#f59e0b" stroke-width="2"/>
+      <text x="310" y="200" text-anchor="middle" fill="#4ade80" font-size="10">Jun</text>
+      <rect x="343" y="66" width="30" height="114" fill="none" stroke="#f59e0b" stroke-width="2"/>
+      <text x="358" y="200" text-anchor="middle" fill="#4ade80" font-size="10">Jul</text>
+      <rect x="391" y="68" width="30" height="112" fill="none" stroke="#f59e0b" stroke-width="2"/>
+      <text x="406" y="200" text-anchor="middle" fill="#4ade80" font-size="10">Aug</text>
+      <rect x="439" y="76" width="30" height="104" fill="none" stroke="#f59e0b" stroke-width="2"/>
+      <text x="454" y="200" text-anchor="middle" fill="#4ade80" font-size="10">Sep</text>
+      <rect x="487" y="92" width="30" height="88" fill="none" stroke="#f59e0b" stroke-width="2"/>
+      <text x="502" y="200" text-anchor="middle" fill="#4ade80" font-size="10">Oct</text>
+    </svg>
+  </div>
+
+  <!-- NET PROFIT TREND -->
+  <div class="panel">
+    <h2>Net Profit · Monthly</h2>
+    <div class="panel-sub">Inflection in May; small positive band Jun–Aug; back to losses in fall</div>
+    <svg width="100%" viewBox="0 0 540 220">
+      <line x1="40" y1="20" x2="40" y2="200" stroke="#2a3038"/>
+      <!-- Zero line at y=110 (middle), +20K at top, -35K at bottom -->
+      <line x1="40" y1="110" x2="530" y2="110" stroke="#3a4048" stroke-width="1.5"/>
+      <text x="36" y="24" text-anchor="end" fill="#6b7280" font-size="9">+$20K</text>
+      <text x="36" y="70" text-anchor="end" fill="#6b7280" font-size="9">+$10K</text>
+      <text x="36" y="114" text-anchor="end" fill="#6b7280" font-size="9">$0</text>
+      <text x="36" y="155" text-anchor="end" fill="#6b7280" font-size="9">-$15K</text>
+      <text x="36" y="195" text-anchor="end" fill="#6b7280" font-size="9">-$30K</text>
+      <line x1="40" y1="70" x2="530" y2="70" stroke="#1d242c"/>
+      <line x1="40" y1="155" x2="530" y2="155" stroke="#1d242c"/>
+      <line x1="40" y1="195" x2="530" y2="195" stroke="#1d242c"/>
+
+      <!-- Bars: scale +20K=90px above zero; -35K=85px below. So 1K = 4.5px above, 2.4px below -->
+      <!-- Jan -892 (small neg): h=2 -->
+      <rect x="55" y="110" width="30" height="2" fill="#f87171"/>
+      <text x="70" y="215" text-anchor="middle" fill="#c8cdd3" font-size="10">Jan</text>
+      <!-- Feb -22.1K -->
+      <rect x="103" y="110" width="30" height="61" fill="#f87171"/>
+      <text x="118" y="215" text-anchor="middle" fill="#c8cdd3" font-size="10">Feb</text>
+      <!-- Mar -32.2K (deepest) -->
+      <rect x="151" y="110" width="30" height="89" fill="#f87171"/>
+      <text x="166" y="215" text-anchor="middle" fill="#c8cdd3" font-size="10">Mar</text>
+      <!-- Apr -19.6K -->
+      <rect x="199" y="110" width="30" height="54" fill="#f87171"/>
+      <text x="214" y="215" text-anchor="middle" fill="#c8cdd3" font-size="10">Apr</text>
+      <!-- May +18K -->
+      <rect x="247" y="29" width="30" height="81" fill="#4ade80"/>
+      <text x="262" y="215" text-anchor="middle" fill="#4ade80" font-size="10">May</text>
+      <!-- Jun +11.6K -->
+      <rect x="295" y="58" width="30" height="52" fill="#4ade80"/>
+      <text x="310" y="215" text-anchor="middle" fill="#4ade80" font-size="10">Jun</text>
+      <!-- Jul +3.8K -->
+      <rect x="343" y="93" width="30" height="17" fill="#4ade80"/>
+      <text x="358" y="215" text-anchor="middle" fill="#4ade80" font-size="10">Jul</text>
+      <!-- Aug +0.3K -->
+      <rect x="391" y="108" width="30" height="2" fill="#4ade80"/>
+      <text x="406" y="215" text-anchor="middle" fill="#4ade80" font-size="10">Aug</text>
+      <!-- Sep -0.7K -->
+      <rect x="439" y="110" width="30" height="2" fill="#f87171"/>
+      <text x="454" y="215" text-anchor="middle" fill="#4ade80" font-size="10">Sep</text>
+      <!-- Oct -5.7K -->
+      <rect x="487" y="110" width="30" height="16" fill="#f87171"/>
+      <text x="502" y="215" text-anchor="middle" fill="#4ade80" font-size="10">Oct</text>
+
+      <!-- Inflection annotation -->
+      <line x1="232" y1="20" x2="232" y2="200" stroke="#4ade80" stroke-width="1" stroke-dasharray="2,3" opacity="0.4"/>
+      <text x="232" y="14" text-anchor="middle" fill="#4ade80" font-size="9">Inflection</text>
+    </svg>
+  </div>
+
+  <!-- CASH POSITION TREND -->
+  <div class="panel">
+    <h2>Cash on Hand · End of Month</h2>
+    <div class="panel-sub">Trough at end-March; recovery through summer; A/R-funded</div>
+    <svg width="100%" viewBox="0 0 540 220">
+      <line x1="40" y1="20" x2="40" y2="200" stroke="#2a3038"/>
+      <!-- Zero line; range -60K (y=200) to +30K (y=20). 1K = 2px -->
+      <line x1="40" y1="140" x2="530" y2="140" stroke="#3a4048" stroke-width="1.5"/>
+      <text x="36" y="24" text-anchor="end" fill="#6b7280" font-size="9">+$30K</text>
+      <text x="36" y="84" text-anchor="end" fill="#6b7280" font-size="9">+$0</text>
+      <text x="36" y="140" text-anchor="end" fill="#6b7280" font-size="9">-$30K</text>
+      <text x="36" y="195" text-anchor="end" fill="#6b7280" font-size="9">-$60K</text>
+      <line x1="40" y1="84" x2="530" y2="84" stroke="#a78bfa" stroke-width="1" stroke-dasharray="2,2" opacity="0.4"/>
+      <line x1="40" y1="200" x2="530" y2="200" stroke="#1d242c"/>
+
+      <!-- Cash positions: Jan -1.5, Feb -23.5, Mar -55.7, Apr -2, May +8.2, Jun +19.8, Jul +23.6, Aug +24, Sep +23.3, Oct +17.7 -->
+      <!-- y formula: y = 84 + (-cash * 2). So +30K = y 24, 0 = y 84, -30K = y 144, -60K = y 204 -->
+      <!-- Jan: -1.5 → 87 -->
+      <!-- Feb: -23.5 → 131 -->
+      <!-- Mar: -55.7 → 195 -->
+      <!-- Apr: -2 → 88 -->
+      <!-- May: +8.2 → 67.6 -->
+      <!-- Jun: +19.8 → 44.4 -->
+      <!-- Jul: +23.6 → 36.8 -->
+      <!-- Aug: +24 → 36 -->
+      <!-- Sep: +23.3 → 37.4 -->
+      <!-- Oct: +17.7 → 48.6 -->
+
+      <polyline points="70,87 118,131 166,195 214,88 262,68 310,44 358,37 406,36 454,37 502,49"
+                stroke="#a78bfa" stroke-width="2.5" fill="none"/>
+      <!-- Area fill below line -->
+      <polygon points="70,87 118,131 166,195 214,88 262,68 310,44 358,37 406,36 454,37 502,49 502,200 70,200"
+               fill="#a78bfa" opacity="0.08"/>
+      <!-- Dots -->
+      <circle cx="70" cy="87" r="3" fill="#a78bfa"/>
+      <circle cx="118" cy="131" r="3" fill="#a78bfa"/>
+      <circle cx="166" cy="195" r="4" fill="#f87171" stroke="#fff" stroke-width="1"/>
+      <circle cx="214" cy="88" r="3" fill="#a78bfa"/>
+      <circle cx="262" cy="68" r="4" fill="#4ade80" stroke="#fff" stroke-width="1"/>
+      <circle cx="310" cy="44" r="3" fill="#a78bfa"/>
+      <circle cx="358" cy="37" r="3" fill="#a78bfa"/>
+      <circle cx="406" cy="36" r="4" fill="#4ade80" stroke="#fff" stroke-width="1"/>
+      <circle cx="454" cy="37" r="3" fill="#a78bfa"/>
+      <circle cx="502" cy="49" r="3" fill="#a78bfa"/>
+
+      <text x="166" y="212" text-anchor="middle" fill="#f87171" font-size="9">Trough -$55.7K</text>
+      <text x="406" y="28" text-anchor="middle" fill="#4ade80" font-size="9">Peak +$24K</text>
+
+      <!-- Month labels -->
+      <text x="70" y="218" text-anchor="middle" fill="#c8cdd3" font-size="10">Jan</text>
+      <text x="118" y="218" text-anchor="middle" fill="#c8cdd3" font-size="10">Feb</text>
+      <text x="166" y="218" text-anchor="middle" fill="#c8cdd3" font-size="10">Mar</text>
+      <text x="214" y="218" text-anchor="middle" fill="#c8cdd3" font-size="10">Apr</text>
+      <text x="262" y="218" text-anchor="middle" fill="#4ade80" font-size="10">May</text>
+      <text x="310" y="218" text-anchor="middle" fill="#4ade80" font-size="10">Jun</text>
+      <text x="358" y="218" text-anchor="middle" fill="#4ade80" font-size="10">Jul</text>
+      <text x="406" y="218" text-anchor="middle" fill="#4ade80" font-size="10">Aug</text>
+      <text x="454" y="218" text-anchor="middle" fill="#4ade80" font-size="10">Sep</text>
+      <text x="502" y="218" text-anchor="middle" fill="#4ade80" font-size="10">Oct</text>
+    </svg>
+  </div>
+
+</div>
+
+<!-- ============ APRIL VS MAY FOCUS + A/R WAVE ============ -->
+<div class="section-title">April Actuals vs May Projection · A/R Wave Detail</div>
+<div class="grid-2">
+
+  <!-- Side-by-side April vs May -->
+  <div class="panel">
+    <h2>April Actuals · May Projection</h2>
+    <div class="panel-sub">Cash basis · Revenue and expense composition month-over-month</div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+
+      <div style="background:#1a2129;border-radius:8px;padding:14px;border:1px solid #2a3038;">
+        <div style="font-size:11px;color:#8b95a3;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">April · Actual</div>
+        <div style="font-size:11px;color:#8b95a3;margin-bottom:14px;">Highest revenue month so far</div>
+
+        <div style="margin-bottom:10px;">
+          <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Revenue</span><span style="color:#fff;font-weight:600;">$35,680</span></div>
+          <div class="bar-track"><div class="bar-fill rev" style="width:60%"></div></div>
+        </div>
+        <div style="margin-bottom:10px;">
+          <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Expenses</span><span style="color:#fff;font-weight:600;">$55,325</span></div>
+          <div class="bar-track"><div class="bar-fill exp" style="width:92%"></div></div>
+        </div>
+        <div style="margin-bottom:14px;">
+          <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Net</span><span class="neg" style="font-weight:600;">-$19,630</span></div>
+          <div class="bar-track diverging" style="position:relative;"><div class="bar-fill net-neg" style="width:28%"></div></div>
+        </div>
+
+        <div style="font-size:10px;color:#8b95a3;border-top:1px solid #2a3038;padding-top:10px;">
+          <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Payroll</span><span style="color:#c8cdd3;">$11,630 · 33%</span></div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Supplies/materials</span><span style="color:#c8cdd3;">$10,180 · 29%</span></div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Vehicle</span><span style="color:#c8cdd3;">$4,507 · 13%</span></div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Equipment rental</span><span style="color:#c8cdd3;">$4,317 · 12%</span></div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Advertising</span><span style="color:#c8cdd3;">$2,648 · 7%</span></div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Capex (tools/equip)</span><span style="color:#fbbf24;">$18,282 · 51%</span></div>
+        </div>
+      </div>
+
+      <div style="background:#15201a;border-radius:8px;padding:14px;border:1px solid #2d5a3a;">
+        <div style="font-size:11px;color:#4ade80;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">May · Forecast</div>
+        <div style="font-size:11px;color:#8b95a3;margin-bottom:14px;">First profitable month — A/R wave lands</div>
+
+        <div style="margin-bottom:10px;">
+          <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Revenue</span><span style="color:#fff;font-weight:600;">$58,750</span></div>
+          <div class="bar-track"><div class="bar-fill rev" style="width:98%"></div></div>
+        </div>
+        <div style="margin-bottom:10px;">
+          <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Expenses</span><span style="color:#fff;font-weight:600;">$40,773</span></div>
+          <div class="bar-track"><div class="bar-fill exp" style="width:68%"></div></div>
+        </div>
+        <div style="margin-bottom:14px;">
+          <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span>Net</span><span class="pos" style="font-weight:600;">+$17,950</span></div>
+          <div class="bar-track diverging" style="position:relative;"><div class="bar-fill net-pos" style="width:25.6%"></div></div>
+        </div>
+
+        <div style="font-size:10px;color:#8b95a3;border-top:1px solid #2d5a3a;padding-top:10px;">
+          <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Operational rev</span><span style="color:#c8cdd3;">$35,000 · 60%</span></div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span><strong style="color:#a78bfa;">A/R wave collection</strong></span><span style="color:#a78bfa;font-weight:600;">$23,750 · 40%</span></div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Payroll</span><span style="color:#c8cdd3;">~$12,000</span></div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Variable other</span><span style="color:#c8cdd3;">~$12,400</span></div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Fixed/admin allocation</span><span style="color:#c8cdd3;">~$16,400</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- A/R Wave Detail -->
+  <div class="panel">
+    <h2>A/R Aging · $45.6K as of Nov 7</h2>
+    <div class="panel-sub">Current $31.3K · Overdue $14.3K (31%) · ASA $7.4K written off · 49 customers</div>
+
+    <div style="background:#2a1a15;border:1px solid #5a2d2d;border-radius:6px;padding:12px;margin-bottom:14px;">
+      <div style="font-size:10px;color:#f87171;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px;font-weight:600;">New overdue — AGY Aiken LLC</div>
+      <table style="font-size:11px;">
+        <tbody>
+          <tr><td>AGY total owed</td><td class="neg">$7,200</td></tr>
+          <tr><td>of which 1–30 days overdue</td><td class="neg"><strong>$4,800</strong></td></tr>
+          <tr><td>still current</td><td>$2,400</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:10px;color:#c8cdd3;margin-top:6px;">A $19.2K-book contract customer slipping 30 days. Call this week before it ages further.</div>
+    </div>
+
+    <div style="background:#0f1419;border-radius:6px;padding:12px;margin-bottom:14px;">
+      <div style="font-size:10px;color:#8b95a3;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px;">Top current balances — November revenue queue</div>
+      <table style="font-size:11px;">
+        <tbody>
+          <tr><td>USC / Fraternity &amp; Sorority Life</td><td class="pos">$3,338</td></tr>
+          <tr><td>United Community Bank (3 branches)</td><td class="pos">$5,700</td></tr>
+          <tr><td>AGY Aiken (current portion)</td><td class="pos">$2,400</td></tr>
+          <tr><td>Cantey &amp; Company</td><td class="pos">$1,740</td></tr>
+          <tr><td>Rogers Property Management (new)</td><td class="pos">$980</td></tr>
+          <tr><td>609 S Lake Dr</td><td class="pos">$500</td></tr>
+          <tr><td>Property Mgmt Solutions Lexington</td><td class="pos">$464</td></tr>
+          <tr class="total"><td>Top 7 subtotal</td><td class="pos">$15,122</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="font-size:10px;color:#8b95a3;margin-bottom:12px;">Historical project A/R below (May–Aug) — all collected except ASA.</div>
+
+    <table style="margin-bottom:16px;">
+      <thead>
+        <tr><th>Project</th><th>$</th><th>Lands</th><th>Prob</th><th>Costs Paid?</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>MSI</td><td>$15,000</td><td><span class="pos">Collected May ✓</span></td><td>—</td><td><span class="pos">✓</span></td></tr>
+        <tr style="background:#2a1515;"><td><strong>ASA</strong></td><td><strong>$8,158</strong></td><td><span class="neg"><strong>91+ days · WRITE OFF</strong></span></td><td class="neg">0%</td><td><span class="pos">✓ (cost sunk)</span></td></tr>
+        <tr><td>Other small</td><td>$2,000</td><td><span style="color:#a78bfa;">May</span></td><td>95%</td><td><span class="pos">✓</span></td></tr>
+        <tr><td>Morgan Leath</td><td>$5,750</td><td><span style="color:#fbbf24;">June</span></td><td>75%</td><td><span class="pos">✓</span></td></tr>
+        <tr><td>Lacy Appleton</td><td>$5,750</td><td><span style="color:#fbbf24;">June</span></td><td>75%</td><td><span class="pos">✓</span></td></tr>
+        <tr><td>Helen Rucker</td><td>$5,750</td><td><span style="color:#fbbf24;">June</span></td><td>75%</td><td><span class="pos">✓</span></td></tr>
+        <tr><td>Chris Terlinden</td><td>$5,750</td><td><span style="color:#fbbf24;">June</span></td><td>75%</td><td><span class="neg">✗ pending</span></td></tr>
+        <tr class="total"><td>Total A/R</td><td>$48,000</td><td>—</td><td>—</td><td>—</td></tr>
+      </tbody>
+    </table>
+
+    <!-- A/R waterfall visualization -->
+    <div style="background:#0f1419;border-radius:6px;padding:12px;">
+      <div style="font-size:10px;color:#8b95a3;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px;">When does the cash land?</div>
+
+      <div style="margin-bottom:10px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span style="color:#a78bfa;">May 2026</span><span style="color:#fff;font-weight:600;">$23,750 (49%)</span></div>
+        <div class="bar-track" style="height:14px;"><div style="background:linear-gradient(to right,#6d28d9,#a78bfa);height:100%;width:49%;border-radius:4px;"></div></div>
+      </div>
+
+      <div style="margin-bottom:10px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span style="color:#fbbf24;">June 2026</span><span style="color:#fff;font-weight:600;">$18,500 (39%)</span></div>
+        <div class="bar-track" style="height:14px;"><div style="background:linear-gradient(to right,#b45309,#fbbf24);height:100%;width:39%;border-radius:4px;"></div></div>
+      </div>
+
+      <div>
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px;"><span style="color:#8b95a3;">July+ tail / write-off risk</span><span style="color:#fff;font-weight:600;">$5,750 (12%)</span></div>
+        <div class="bar-track" style="height:14px;"><div style="background:#6b7280;height:100%;width:12%;border-radius:4px;"></div></div>
+      </div>
+    </div>
+
+    <!-- May sensitivity -->
+    <div style="margin-top:14px;">
+      <div style="font-size:11px;color:#8b95a3;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px;">May Net at Different Collection Rates</div>
+      <table style="font-size:11px;">
+        <tbody>
+          <tr><td>100% collection</td><td class="pos" style="font-weight:600;">+$19,200</td><td style="color:#8b95a3;">cash +$9.4K</td></tr>
+          <tr style="background:#15201a;"><td><strong>95% (base)</strong></td><td class="pos" style="font-weight:600;">+$17,950</td><td style="color:#8b95a3;">cash +$8.2K</td></tr>
+          <tr><td>80%</td><td class="pos">+$14,200</td><td style="color:#8b95a3;">cash +$4.4K</td></tr>
+          <tr><td>70% (threshold)</td><td class="warn" style="font-weight:600;">+$11,700</td><td style="color:#fbbf24;">cash $0</td></tr>
+          <tr><td>60%</td><td class="warn">+$9,200</td><td class="neg">cash -$650</td></tr>
+          <tr><td>50%</td><td class="warn">+$6,700</td><td class="neg">cash -$3,150</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============ FORECAST TABLE + EXPENSE COMPOSITION ============ -->
+<div class="section-title">Detail Tables</div>
+<div class="grid-2">
+
+  <div class="panel">
+    <h2>Month-by-Month Ledger</h2>
+    <div class="panel-sub">Cash basis · Base scenario (with Laureate, current $75 minimum)</div>
+    <table>
+      <thead>
+        <tr><th>Month</th><th>Revenue</th><th>Expenses</th><th>Net</th><th>End Cash</th></tr>
+      </thead>
+      <tbody>
+        <tr class="actual"><td>Jan 2026</td><td>$12,852</td><td>$13,744</td><td class="neg">-$892</td><td class="neg">-$1,500</td></tr>
+        <tr class="actual"><td>Feb 2026</td><td>$13,079</td><td>$35,179</td><td class="neg">-$22,100</td><td class="neg">-$23,500</td></tr>
+        <tr class="actual"><td>Mar 2026</td><td>$25,488</td><td>$57,645</td><td class="neg">-$32,171</td><td class="neg">-$55,700</td></tr>
+        <tr class="actual"><td>Apr 2026</td><td>$35,680</td><td>$55,325</td><td class="neg">-$19,630</td><td class="neg">-$2,000</td></tr>
+        <tr class="forecast"><td>May 2026</td><td>$58,750</td><td>$40,773</td><td class="pos">+$17,977</td><td class="pos">+$8,150</td></tr>
+        <tr class="forecast"><td>Jun 2026</td><td>$54,014</td><td>$42,373</td><td class="pos">+$11,641</td><td class="pos">+$19,790</td></tr>
+        <tr class="forecast"><td>Jul 2026</td><td>$46,514</td><td>$42,673</td><td class="pos">+$3,841</td><td class="pos">+$23,630</td></tr>
+        <tr class="forecast"><td>Aug 2026</td><td>$42,514</td><td>$42,173</td><td class="pos">+$341</td><td class="pos">+$23,970</td></tr>
+        <tr class="forecast"><td>Sep 2026</td><td>$38,514</td><td>$39,173</td><td class="neg">-$659</td><td class="pos">+$23,310</td></tr>
+        <tr class="forecast"><td>Oct 2026</td><td>$27,514</td><td>$33,173</td><td class="neg">-$5,659</td><td class="pos">+$17,650</td></tr>
+        <tr class="total"><td>10-mo Total</td><td>$354,919</td><td>$402,232</td><td class="neg">-$47,311</td><td>—</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="panel">
+    <h2>YTD Expense Composition</h2>
+    <div class="panel-sub">Where the $130.6K went · Jan–May 6, 2026 actuals</div>
+    <svg width="100%" viewBox="0 0 420 280" style="display:block;">
+      <text x="0" y="14" fill="#c8cdd3" font-size="11">Payroll &amp; taxes</text>
+      <rect x="160" y="4" width="183" height="14" fill="#3b82f6" opacity="0.85"/>
+      <text x="350" y="14" fill="#c8cdd3" font-size="10">$54.8K · 42%</text>
+
+      <text x="0" y="44" fill="#c8cdd3" font-size="11">Supplies/materials</text>
+      <rect x="160" y="34" width="122" height="14" fill="#10b981" opacity="0.85"/>
+      <text x="350" y="44" fill="#c8cdd3" font-size="10">$36.6K · 28%</text>
+
+      <text x="0" y="74" fill="#c8cdd3" font-size="11">Vehicle (gas + repairs)</text>
+      <rect x="160" y="64" width="64" height="14" fill="#f59e0b" opacity="0.85"/>
+      <text x="350" y="74" fill="#c8cdd3" font-size="10">$19.3K · 15%</text>
+
+      <text x="0" y="104" fill="#c8cdd3" font-size="11">Advertising</text>
+      <rect x="160" y="94" width="24" height="14" fill="#a78bfa" opacity="0.85"/>
+      <text x="350" y="104" fill="#c8cdd3" font-size="10">$7.2K · 6%</text>
+
+      <text x="0" y="134" fill="#c8cdd3" font-size="11">Equipment rental</text>
+      <rect x="160" y="124" width="17" height="14" fill="#f87171" opacity="0.85"/>
+      <text x="350" y="134" fill="#c8cdd3" font-size="10">$5.0K · 4%</text>
+
+      <text x="0" y="164" fill="#c8cdd3" font-size="11">Repairs &amp; maintenance</text>
+      <rect x="160" y="154" width="8" height="14" fill="#fb923c" opacity="0.85"/>
+      <text x="350" y="164" fill="#c8cdd3" font-size="10">$2.4K · 2%</text>
+
+      <text x="0" y="194" fill="#c8cdd3" font-size="11">Other (purchases, fees, meals)</text>
+      <rect x="160" y="184" width="17" height="14" fill="#6b7280" opacity="0.85"/>
+      <text x="350" y="194" fill="#c8cdd3" font-size="10">$5.4K · 4%</text>
+
+      <line x1="160" y1="220" x2="343" y2="220" stroke="#2a3038"/>
+      <text x="160" y="240" fill="#fbbf24" font-size="11" font-weight="600">Labor + Vehicle = 57% of all spend</text>
+      <text x="160" y="258" fill="#8b95a3" font-size="10">Levers: minimum price, OT cap, route density</text>
+    </svg>
+  </div>
+
+</div>
+
+<!-- ============ SCENARIOS ============ -->
+<div class="section-title">6-Month Outlook · Three Operating Choices</div>
+<div class="scenario-cards">
+  <div class="scenario">
+    <h3>Status Quo + Laureate</h3>
+    <div class="big pos">+$27,531</div>
+    <div class="sm">Keep $75 minimum · current OT · Laureate adds ~$28K/yr at steady state</div>
+    <div class="sm" style="margin-top:10px;color:#c8cdd3;">Ending cash: <strong>+$17,650</strong></div>
+  </div>
+  <div class="scenario">
+    <h3>Raise Min → $95 + Laureate</h3>
+    <div class="big pos">+$38,531</div>
+    <div class="sm">Effective Jun 1 · 5% churn assumed · Laureate steady-state</div>
+    <div class="sm" style="margin-top:10px;color:#c8cdd3;">Ending cash: <strong>+$28,650</strong></div>
+  </div>
+  <div class="scenario">
+    <h3>$95 + OT Cap + Laureate</h3>
+    <div class="big pos">+$48,000</div>
+    <div class="sm">+ Cap OT at 5 hrs/wk avg · saves ~$1.5K/mo</div>
+    <div class="sm" style="margin-top:10px;color:#c8cdd3;">Ending cash: <strong>+$38,000</strong></div>
+  </div>
+</div>
+
+<!-- ============ WATCH LIST ============ -->
+<div class="section-title">Watch List · Triggers That Change the Picture</div>
+<div class="panel">
+  <ul class="watchlist">
+    <li><span class="trigger">A/R collection &lt; 70% in May</span> — June flips to small loss. Action: call delinquent accounts week of May 12.</li>
+    <li><span class="trigger">Terlinden project costs &gt; $5K</span> — June net under $7K. Action: confirm material spend before invoicing.</li>
+    <li><span class="trigger">Variable book churn &gt; 5%</span> on price hike — adjust min to $90 instead of $95. Track residential cancellations weekly through July.</li>
+    <li><span class="trigger">OT averages &gt; 12 hrs/week in June</span> — adds ~$2K to monthly fixed. Daily 10-hr cap; review by 6/15.</li>
+    <li><span class="trigger">Rain-out &gt; 4 days in June</span> — revenue -$5K to -$8K. Build Saturday make-up day buffer.</li>
+    <li><span class="trigger">Laureate visit overruns 4 hrs</span> — contribution drops below 60%. Track time-on-site each Thursday for first 4 weeks.</li>
+  </ul>
+</div>
+
+<div class="footnote" style="text-align:center;margin-top:24px;">
+  Generated by qb-dashboard skill · Data source: QuickBooks MCP connector (cash basis) · Yarddogs Commercial Landscaping LLP
+</div>
+
+
+
