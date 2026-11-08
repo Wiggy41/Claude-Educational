@@ -151,13 +151,22 @@ from the bank export instead.
 - **"Intuit" credits into 0514 are QuickBooks Payments customer deposits
   (revenue), not payroll.** "Intuit" debits out of 0535 are payroll.
 - LOC draw matching: pair each 7903 "Principal Advance" with a same-amount
-  "Transfer From 7903" credit in 0514/0535 within ±2 days → tag
-  `DRAW_TO_0514` / `DRAW_TO_0535`. **Unmatched draws went to 5875 and are
-  Wigington Group draws** (owner confirmed) → tag `WIGINGTON_GROUP_DRAW`.
-  They are a receivable owed back to Yarddogs, not an expense.
+  credit in **0514, 0535, or 5875** within ±2 days (prefer rows whose
+  description names 7903) → tag `DRAW_TO_<acct>`; do the same for LOC
+  payments against debits. Draws matched to 5875 are Wigington Group;
+  payments from 5875 are WG repayments. Anything unmatched stays on
+  Yarddogs' side and is listed for the owner to place.
+- **Do not** assume unmatched = WG (that overstated the receivable by $79K
+  before the 5875 register was available).
 - WG receivable ledger: `qb-dashboard-output/wigington-group-receivable.csv`
-  (assumption share $185,638 − WG payments + WG draws). As of Nov 6 2026:
-  **$296,627**. Yarddogs' own LOC share = register cumulative − WG receivable.
+  = $185,638 WG share of the Feb 9 refinance + LOC→5875 draws − 5875→LOC
+  repayments. As of Nov 7 2026: **$217,590**. Yarddogs' own LOC share =
+  register cumulative − WG receivable (≈ $224,801).
+- Account histories also saved: `acct-5875-history.csv` (personal/WG),
+  `acct-boa-history.csv` (household, W-2 funded, no LOC activity),
+  `loc-7903-matched.csv` (every advance/payment with its matched account).
+- The Feb 9 $204,234 is a refinance pass-through (deposit into 5875, same-day
+  check out). Not spending.
 - Same append-only procedure as the LOC CSV when new exports arrive.
 - Known as of Nov 6 2026: 0535 is ~85% LOC-funded; ~$35K of LOC draws
   since Jul 1 did not land in 0514/0535; QB Undeposited Funds ($71.7K) is an

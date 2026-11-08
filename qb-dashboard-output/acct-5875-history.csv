@@ -1,0 +1,521 @@
+date,description,debit,credit,bank_balance,bank_class,source
+2026-01-05,East Bay Deli at West,42.59,,994.83,Food & Dining,SPEND
+2026-01-05,Mobile Deposit,,1000.0,1037.42,Income,DEPOSIT
+2026-01-07,CVS,6.0,,986.2,Pharmacy,SPEND
+2026-01-07,BP Gas,2.63,,992.2,Fast Food,SPEND
+2026-01-08,Food Lion,19.25,,963.95,Groceries,SPEND
+2026-01-08,Csc Service Melville Ny 78076133 856487 via Cantaloupe,3.0,,983.2,Uncategorized,SPEND
+2026-01-09,Mediterranean Te,54.62,,909.33,Groceries,SPEND
+2026-01-12,Hoffman Hvac,925.0,,510.54,Home Improvement,SPEND
+2026-01-12,Target,213.42,,1435.54,Shopping,SPEND
+2026-01-12,Il Giorgione,159.88,,1648.96,Uncategorized,SPEND
+2026-01-12,DoorDash,25.49,,1808.84,Food & Dining,SPEND
+2026-01-12,Transfer From 2869,,925.0,1834.33,Transfer,XFER_OTHER
+2026-01-13,Recurr Payment Psychotherapy Boulder Co Iqgkcitc,200.0,,310.54,Doctor,SPEND
+2026-01-14,Mailchimp,48.15,,262.39,Advertising,SPEND
+2026-01-15,Walker Pest Mana Pes St X J a,35.0,,198.5,Transfer,SPEND
+2026-01-15,DoorDash,28.89,,233.5,Food & Dining,SPEND
+2026-01-20,Kelsey Bec Mete,400.0,,1785.93,Uncategorized,SPEND
+2026-01-20,Transfer to Venmo,50.0,,2185.93,Transfer,XFER_OTHER
+2026-01-20,Mediterranean Te,49.5,,2235.93,Groceries,SPEND
+2026-01-20,Weco Bottleshop West,13.07,,2285.43,Uncategorized,SPEND
+2026-01-20,Mobile Deposit,,2100.0,2298.5,Income,DEPOSIT
+2026-01-22,Walker Pest Mana Pes St v a B R,33.0,,502.93,Transfer,SPEND
+2026-01-22,Transfer To 2869,1250.0,,535.93,Transfer,XFER_OTHER
+2026-01-23,Transfer To 2869,450.0,,52.93,Transfer,XFER_OTHER
+2026-01-27,Recurr Payment Psychotherapy Boulder Co Iqgkcitc,200.0,,-183.07,Doctor,SPEND
+2026-01-27,Overdraft Fee,36.0,,16.93,Banking Fee,SPEND
+2026-01-28,Regular Deposit,,11147.07,10964.0,Income,DEPOSIT
+2026-01-30,Statement Service Fee,3.0,,146.0,Service Fee,SPEND
+2026-01-30,Creekwood Motor,10815.0,,149.0,Uncategorized,SPEND
+2026-02-09,Check,204234.02,,65.69,Check,SPEND
+2026-02-09,Lowe's,80.31,,204299.71,Home Improvement,SPEND
+2026-02-09,Regular Deposit,,204234.02,204380.02,Income,DEPOSIT
+2026-02-10,Recurr Payment Psychotherapy Boulder Co Iqgkcitc,200.0,,-162.79,Uncategorized,SPEND
+2026-02-10,Food Lion,28.48,,37.21,Groceries,SPEND
+2026-02-11,Food Lion,18.37,,68.84,Groceries,SPEND
+2026-02-11,Transfer From 7903,,250.0,87.21,Transfer,XFER_7903
+2026-02-17,Walker Pest Mana Pes St J M D,35.0,,61.42,Transfer,SPEND
+2026-02-17,Mailchimp,48.15,,96.42,Advertising,SPEND
+2026-02-17,CVS,24.27,,144.57,Pharmacy,SPEND
+2026-02-17,Transfer From 7903,,100.0,168.84,Transfer,XFER_7903
+2026-02-18,Mediterranean Te,44.51,,9.03,Groceries,SPEND
+2026-02-18,CVS,7.88,,53.54,Pharmacy,SPEND
+2026-02-19,Kelsey Bec Mete,400.0,,-461.57,Uncategorized,SPEND
+2026-02-19,The Farmhous,34.6,,-61.57,Uncategorized,SPEND
+2026-02-19,Overdraft Fee,36.0,,-26.97,Banking Fee,SPEND
+2026-02-20,Starbucks,7.21,,-504.78,Coffee Shops,SPEND
+2026-02-20,Overdraft Fee,36.0,,-497.57,Banking Fee,SPEND
+2026-02-23,Walker Pest Mana Pes St L I N a,33.0,,712.22,Transfer,SPEND
+2026-02-23,Mobile Deposit,,1000.0,745.22,Income,DEPOSIT
+2026-02-23,Mobile Deposit,,250.0,-254.78,Income,DEPOSIT
+2026-02-24,Recurr Payment Psychotherapy Boulder Co Iqgkcitc,200.0,,262.22,Doctor,SPEND
+2026-02-24,Transfer To 7903,4500.0,,462.22,Transfer,XFER_7903
+2026-02-24,Transfer To 7903,250.0,,4962.22,Transfer,XFER_7903
+2026-02-24,Regular Deposit,,4500.0,5212.22,Income,DEPOSIT
+2026-02-27,Statement Service Fee,3.0,,259.22,Service Fee,SPEND
+2026-03-05,San Jose,89.35,,163.87,Uncategorized,SPEND
+2026-03-05,Food Lion,6.0,,253.22,Groceries,SPEND
+2026-03-06,Spinx,65.05,,89.5,Gas,SPEND
+2026-03-06,Piecewise Co,9.32,,154.55,Uncategorized,SPEND
+2026-03-09,Wings West,80.9,,-101.73,Fast Food,SPEND
+2026-03-09,Weco Bottleshop West,47.38,,-20.83,Uncategorized,SPEND
+2026-03-09,Weco Bottleshop West,43.79,,26.55,Uncategorized,SPEND
+2026-03-09,Weco Bottleshop West,19.16,,70.34,Uncategorized,SPEND
+2026-03-12,Transfer From 7903,,250.0,148.27,Transfer,XFER_7903
+2026-03-13,Uber Eats,73.63,,3124.64,Food & Dining,SPEND
+2026-03-13,Mobile Deposit,,2500.0,3198.27,Income,DEPOSIT
+2026-03-13,Transfer From 7903,,550.0,698.27,Transfer,XFER_7903
+2026-03-16,Walker Pest Mana Pes St D J P,35.0,,-171.17,Transfer,SPEND
+2026-03-16,Bulletpoint M North,117.47,,-136.17,Groceries,SPEND
+2026-03-16,Lowes Foods,115.85,,-18.7,Groceries,SPEND
+2026-03-16,Uber Eats,107.32,,97.15,Food & Dining,SPEND
+2026-03-16,Weco Bottleshop West,52.65,,204.47,Uncategorized,SPEND
+2026-03-16,Backstreets,50.37,,257.12,Uncategorized,SPEND
+2026-03-16,Uber Eats,32.41,,307.49,Food & Dining,SPEND
+2026-03-16,La Dolce Vit,18.48,,339.9,Clothing,SPEND
+2026-03-16,Transfer To 7903,1500.0,,358.38,Transfer,XFER_7903
+2026-03-16,Transfer To 7903,1230.26,,1858.38,Transfer,XFER_7903
+2026-03-16,Overdraft Fee,36.0,,3088.64,Banking Fee,SPEND
+2026-03-17,Transfer From 7903,,350.0,178.83,Transfer,XFER_7903
+2026-03-18,Transfer From 7903,,200.0,378.83,Transfer,XFER_7903
+2026-03-19,Di Vino Rosso,429.89,,299.94,Uncategorized,SPEND
+2026-03-19,Transfer From 0514,,351.0,729.83,Transfer,XFER_0514
+2026-03-23,Walker Pest Mana Pes St S Y X D,33.0,,266.94,Transfer,SPEND
+2026-03-26,Provisional Credit,,117.47,384.41,Reimbursement,OTHER_IN
+2026-03-31,Statement Service Fee,3.0,,381.41,Service Fee,SPEND
+2026-04-09,Lsu Weco Bottle West,39.16,,23212.36,Uncategorized,SPEND
+2026-04-09,Lsu Weco Bottle West,29.89,,23251.52,Uncategorized,SPEND
+2026-04-09,Mobile Deposit,,22900.0,23281.41,Income,DEPOSIT
+2026-04-10,Citi Credit Card Payment,274.11,,22606.06,Credit Card Payment,SPEND
+2026-04-10,Scenic City Auto Hixson Tn Ruwoonbm,500.0,,22880.17,Uncategorized,SPEND
+2026-04-10,Lsu Weco Bottle West,57.19,,23380.17,Uncategorized,SPEND
+2026-04-10,Transfer From 0514,,225.0,23437.36,Transfer,XFER_0514
+2026-04-13,Il Giorgione,159.7,,1452.57,Uncategorized,SPEND
+2026-04-13,Shell,138.85,,1612.27,Gas,SPEND
+2026-04-13,Uber Eats,88.65,,1751.12,Food & Dining,SPEND
+2026-04-13,Uber Eats,61.21,,1839.77,Food & Dining,SPEND
+2026-04-13,Uber Eats,57.42,,1900.98,Food & Dining,SPEND
+2026-04-13,Uber Eats,39.29,,1958.4,Food & Dining,SPEND
+2026-04-13,Lsu Weco Bottle West,37.62,,1997.69,Restaurants,SPEND
+2026-04-13,ExxonMobil,11.37,,2035.31,Fast Food,SPEND
+2026-04-13,Shell,9.38,,2046.68,Fast Food,SPEND
+2026-04-13,Transfer To 7903,22000.0,,2056.06,Transfer,XFER_7903
+2026-04-13,Return Scenic City Auto Hixson Tn Ruwoonbm,,500.0,24056.06,Uncategorized,OTHER_IN
+2026-04-13,Transfer From 7903,,750.0,23556.06,Transfer,XFER_7903
+2026-04-13,Transfer From 0514,,200.0,22806.06,Transfer,XFER_0514
+2026-04-14,South Carolina Department of Revenue,25.0,,797.6,Taxes,SPEND
+2026-04-14,Salerno Sports,299.0,,822.6,Sporting Goods,SPEND
+2026-04-14,Motor Supply Com,197.4,,1121.6,Shopping,SPEND
+2026-04-14,Uber Eats,76.33,,1319.0,Food & Dining,SPEND
+2026-04-14,Uber Eats,57.24,,1395.33,Food & Dining,SPEND
+2026-04-15,Walker Pest Mana Pes St Q G G E,35.0,,14720.59,Transfer,SPEND
+2026-04-15,Uber Eats,52.31,,14755.59,Food & Dining,SPEND
+2026-04-15,Uber Eats,12.79,,14807.9,Food & Dining,SPEND
+2026-04-15,United Community Bank Rebate,,1.0,14820.69,Bonus,OTHER_IN
+2026-04-15,United Community Bank Rebate,,0.09,14819.69,Bonus,OTHER_IN
+2026-04-15,Transfer From 7903,,14022.0,14819.6,Transfer,XFER_7903
+2026-04-17,Uber Eats,79.1,,14597.67,Food & Dining,SPEND
+2026-04-17,American United Federal Credit Union,38.22,,14676.77,Transfer,SPEND
+2026-04-17,American United Federal Credit Union,5.6,,14714.99,Transfer,SPEND
+2026-04-20,IRS Tax Payment,14022.0,,311.34,Federal Tax,SPEND
+2026-04-20,Lsu Weco Bottle West,120.8,,14333.34,Uncategorized,SPEND
+2026-04-20,Uber Eats,67.44,,14454.14,Food & Dining,SPEND
+2026-04-20,Uber Eats,60.75,,14521.58,Food & Dining,SPEND
+2026-04-20,Lsu Weco Bottle West,48.7,,14582.33,Uncategorized,SPEND
+2026-04-20,Lowe's,43.0,,14631.03,Home Improvement,SPEND
+2026-04-20,Uber Eats,31.37,,14674.03,Food & Dining,SPEND
+2026-04-20,Uber Eats,26.34,,14705.4,Food & Dining,SPEND
+2026-04-20,Starbucks,15.93,,14731.74,Coffee Shops,SPEND
+2026-04-20,Transfer From 7903,,150.0,14747.67,Transfer,XFER_7903
+2026-04-21,Salerno Sports,110.0,,150.94,Sporting Goods,SPEND
+2026-04-21,Uber Eats,56.0,,260.94,Food & Dining,SPEND
+2026-04-21,American United Federal Credit Union,,5.6,316.94,Transfer,OTHER_IN
+2026-04-22,Walker Pest Mana Pes St I H Z a,33.0,,95.89,Transfer,SPEND
+2026-04-22,Uber Eats,22.05,,128.89,Food & Dining,SPEND
+2026-04-24,Salerno Sports,165.83,,930.06,Sporting Goods,SPEND
+2026-04-24,Mobile Deposit,,1000.0,1095.89,Income,DEPOSIT
+2026-04-27,Uber Eats,84.81,,-35.76,Food & Dining,SPEND
+2026-04-27,Uber Eats,70.18,,49.05,Food & Dining,SPEND
+2026-04-27,Starbucks,10.83,,119.23,Coffee Shops,SPEND
+2026-04-27,Transfer To 7903,800.0,,130.06,Transfer,XFER_7903
+2026-04-28,Lowe's,611.98,,237.77,Home Improvement,SPEND
+2026-04-28,Salerno Sports,110.0,,849.75,Sporting Goods,SPEND
+2026-04-28,Circle K,4.49,,959.75,Fast Food,SPEND
+2026-04-28,Transfer From 7903,,1000.0,964.24,Transfer,XFER_7903
+2026-04-30,Statement Service Fee,3.0,,315.93,Service Fee,SPEND
+2026-04-30,Sharpe Shoppe,113.34,,318.93,Gas,SPEND
+2026-04-30,Lsu Weco Bottle West,49.79,,432.27,Uncategorized,SPEND
+2026-04-30,Shell,5.71,,482.06,Fast Food,SPEND
+2026-04-30,Transfer From 7903,,250.0,487.77,Transfer,XFER_7903
+2026-05-01,Dog Food Center West,166.92,,93.89,Food & Dining,SPEND
+2026-05-01,Lsu Weco Bottle West,86.08,,260.81,Uncategorized,SPEND
+2026-05-01,Starbucks,9.67,,346.89,Coffee Shops,SPEND
+2026-05-01,Uber Eats,9.37,,356.56,Food & Dining,SPEND
+2026-05-01,Transfer From 7903,,50.0,365.93,Transfer,XFER_7903
+2026-05-04,Mirchcpa.com,1500.0,,1224.23,Uncategorized,SPEND
+2026-05-04,Mirchcpa.com,500.0,,2724.23,Uncategorized,SPEND
+2026-05-04,Lowes Foods,209.84,,3224.23,Groceries,SPEND
+2026-05-04,Salerno Sports,165.83,,3434.07,Sporting Goods,SPEND
+2026-05-04,Uber Eats,70.3,,3599.9,Food & Dining,SPEND
+2026-05-04,Uber Eats,59.14,,3670.2,Food & Dining,SPEND
+2026-05-04,Wings West,33.05,,3729.34,Fast Food,SPEND
+2026-05-04,Lsu Weco Bottle West,31.26,,3762.39,Uncategorized,SPEND
+2026-05-04,Craft,18.84,,3793.65,Uncategorized,SPEND
+2026-05-04,CVS,17.42,,3812.49,Pharmacy,SPEND
+2026-05-04,7-Eleven,9.98,,3829.91,Fast Food,SPEND
+2026-05-04,Transfer From 7903,,2500.0,3839.89,Transfer,XFER_7903
+2026-05-04,State of South Carolina,,1246.0,1339.89,Taxes,OTHER_IN
+2026-05-05,Bb's Auto,242.35,,871.88,Service & Parts,SPEND
+2026-05-05,Salerno Sports,110.0,,1114.23,Sporting Goods,SPEND
+2026-05-06,Circle K,65.0,,724.82,Gas,SPEND
+2026-05-06,Mediterranean Te,49.64,,789.82,Groceries,SPEND
+2026-05-06,American United Federal Credit Union,11.2,,839.46,Transfer,SPEND
+2026-05-06,American United Federal Credit Union,11.2,,850.66,Transfer,SPEND
+2026-05-06,Circle K,10.08,,861.86,Fast Food,SPEND
+2026-05-06,United Community Bank Rebate,,0.06,871.94,Bonus,OTHER_IN
+2026-05-07,State Farm,175.9,,533.13,Financial,SPEND
+2026-05-07,Starbucks,9.67,,709.03,Coffee Shops,SPEND
+2026-05-07,Express Lane,6.12,,718.7,Fast Food,SPEND
+2026-05-08,Salerno Sports,165.83,,1701.17,Sporting Goods,SPEND
+2026-05-08,Bad Daddy's Burg,93.21,,1867.0,Uncategorized,SPEND
+2026-05-08,Uber Eats,62.65,,1960.21,Food & Dining,SPEND
+2026-05-08,Avanti Markets,10.27,,2022.86,Fast Food,SPEND
+2026-05-08,Transfer From 7903,,1500.0,2033.13,Transfer,XFER_7903
+2026-05-11,Lincoln Embassy,1052.83,,556.55,Uncategorized,SPEND
+2026-05-11,Cu Law Seat Depo,750.0,,1609.38,Uncategorized,SPEND
+2026-05-11,Aragon Taver,415.08,,2359.38,Alcohol & Bars,SPEND
+2026-05-11,Lincoln Runn,145.84,,2774.46,Uncategorized,SPEND
+2026-05-11,Zipline Tap,110.24,,2920.3,Alcohol & Bars,SPEND
+2026-05-11,Carolinaconcessi West,79.2,,3030.54,Fast Food,SPEND
+2026-05-11,HopCat,59.5,,3109.74,Restaurants,SPEND
+2026-05-11,The Nines Lin,58.36,,3169.24,Uncategorized,SPEND
+2026-05-11,Uber,42.02,,3227.6,Rental Car & Taxi,SPEND
+2026-05-11,CVS,32.8,,3269.62,Pharmacy,SPEND
+2026-05-11,BP,23.46,,3302.42,Gas,SPEND
+2026-05-11,Serv Fee,21.38,,3325.88,Service Fee,SPEND
+2026-05-11,CVS,13.72,,3347.26,Pharmacy,SPEND
+2026-05-11,American United Federal Credit Union,11.2,,3360.98,Transfer,SPEND
+2026-05-11,Shell,10.99,,3372.18,Fast Food,SPEND
+2026-05-11,Lincoln Embassy,7.0,,3383.17,Uncategorized,SPEND
+2026-05-11,Lincoln Embassy,5.0,,3390.17,Uncategorized,SPEND
+2026-05-11,Parking,3.0,,3395.17,Parking,SPEND
+2026-05-11,Parking,3.0,,3398.17,Parking,SPEND
+2026-05-11,Transfer From 7903,,1000.0,3401.17,Transfer,XFER_7903
+2026-05-11,Transfer From 7903,,700.0,2401.17,Transfer,XFER_7903
+2026-05-12,Fuelin Thrive Ai,399.0,,923.69,Gas,SPEND
+2026-05-12,Hickory Gru,96.0,,1322.69,Uncategorized,SPEND
+2026-05-12,Uber,37.97,,1418.69,Rental Car & Taxi,SPEND
+2026-05-12,United Community Bank Rebate,,0.11,1456.66,Bonus,OTHER_IN
+2026-05-12,Transfer From 7903,,500.0,1456.55,Transfer,XFER_7903
+2026-05-12,Transfer From 7903,,400.0,956.55,Transfer,XFER_7903
+2026-05-13,On.com,221.01,,6056.8,Shopping,SPEND
+2026-05-13,Instacart,157.21,,6277.81,Groceries,SPEND
+2026-05-13,Salerno Sports,110.0,,6435.02,Sporting Goods,SPEND
+2026-05-13,Mediterranean Te,40.41,,6545.02,Groceries,SPEND
+2026-05-13,Texas Life Bar,26.63,,6585.43,Alcohol & Bars,SPEND
+2026-05-13,Mobile Deposit,,5289.37,6612.06,Income,DEPOSIT
+2026-05-13,Return Fuelin Thrive Ai,,399.0,1322.69,Gas,OTHER_IN
+2026-05-14,Check #1050,1800.0,,346.8,Check,SPEND
+2026-05-14,A on Tips Uq,10.0,,2146.8,Shopping,SPEND
+2026-05-14,State Farm,5600.0,,2156.8,Financial,SPEND
+2026-05-14,Transfer From 7903,,1700.0,7756.8,Transfer,XFER_7903
+2026-05-15,Walker Pest Mana Pes St G I U G,35.0,,36.8,Transfer,SPEND
+2026-05-15,Transfer To Cash App,275.0,,71.8,Transfer,XFER_OTHER
+2026-05-18,Lsu Weco Bottle West,33.61,,14918.01,Uncategorized,SPEND
+2026-05-18,Lsu Weco Bottle West,27.99,,14951.62,Clothing,SPEND
+2026-05-18,Crave,21.1,,14979.61,Uncategorized,SPEND
+2026-05-18,Southern Way,19.2,,15000.71,Uncategorized,SPEND
+2026-05-18,Crave,16.89,,15019.91,Uncategorized,SPEND
+2026-05-18,Transfer From 7903,,15000.0,15036.8,Transfer,XFER_7903
+2026-05-19,Check #1051,14318.0,,600.01,Check,SPEND
+2026-05-20,Shell,0.28,,599.73,Gas,SPEND
+2026-05-21,United,589.45,,10.28,Uncategorized,SPEND
+2026-05-22,Walker Pest Mana Pes St L W a R,33.0,,-224.55,Transfer,SPEND
+2026-05-22,Salerno Sports,165.83,,-191.55,Sporting Goods,SPEND
+2026-05-22,Overdraft Fee,36.0,,-25.72,Banking Fee,SPEND
+2026-05-26,American United Federal Credit Union,439.2,,722.25,Transfer,SPEND
+2026-05-26,Transfer From 7903,,1000.0,1161.45,Transfer,XFER_7903
+2026-05-26,Transfer From 0514,,350.0,161.45,Transfer,XFER_0514
+2026-05-26,Regular Deposit,,36.0,-188.55,Income,DEPOSIT
+2026-05-28,Salerno Sports,110.0,,612.25,Sporting Goods,SPEND
+2026-05-29,Statement Service Fee,3.0,,609.25,Service Fee,SPEND
+2026-06-01,AutoZone,138.84,,275.21,Service & Parts,SPEND
+2026-06-01,Lsu Weco Bottle West,105.76,,414.05,Clothing,SPEND
+2026-06-01,Food Lion,31.57,,519.81,Groceries,SPEND
+2026-06-01,Uber Eats,31.14,,551.38,Food & Dining,SPEND
+2026-06-01,AutoZone,26.73,,582.52,Service & Parts,SPEND
+2026-06-02,Salerno Sports,110.0,,218.4,Sporting Goods,SPEND
+2026-06-02,Uber Eats,29.56,,328.4,Food & Dining,SPEND
+2026-06-02,Shell,8.7,,357.96,Fast Food,SPEND
+2026-06-02,Uber Eats,8.55,,366.66,Food & Dining,SPEND
+2026-06-02,Transfer From 0514,,100.0,375.21,Transfer,XFER_0514
+2026-06-03,ExxonMobil,69.55,,116.06,Gas,SPEND
+2026-06-03,Uber Eats,32.79,,185.61,Food & Dining,SPEND
+2026-06-04,Uber Eats,93.52,,172.54,Food & Dining,SPEND
+2026-06-04,Transfer From 0514,,150.0,266.06,Transfer,XFER_0514
+2026-06-05,Salerno Sports,165.83,,-47.48,Sporting Goods,SPEND
+2026-06-05,Lsu Weco Bottle West,54.19,,118.35,Restaurants,SPEND
+2026-06-08,Uber Eats,37.76,,-121.24,Food & Dining,SPEND
+2026-06-08,Overdraft Fee,36.0,,-83.48,Banking Fee,SPEND
+2026-06-09,Salerno Sports,110.0,,-267.24,Sporting Goods,SPEND
+2026-06-09,Overdraft Fee,36.0,,-157.24,Banking Fee,SPEND
+2026-06-11,Transfer From 0514,,300.0,32.76,Transfer,XFER_0514
+2026-06-12,Transfer From 7903,,1000.0,1032.76,Transfer,XFER_7903
+2026-06-15,Walker Pest Mana Pes St a G J C,35.0,,625.81,Transfer,SPEND
+2026-06-15,Pillar to Post,1009.85,,660.81,Uncategorized,SPEND
+2026-06-15,Salerno Sports,165.83,,1670.66,Sporting Goods,SPEND
+2026-06-15,Circle K,89.79,,1836.49,Gas,SPEND
+2026-06-15,Amazon,36.86,,1926.28,Shopping,SPEND
+2026-06-15,Murphy USA,26.47,,1963.14,Gas,SPEND
+2026-06-15,Lowe's,18.61,,1989.61,Home Improvement,SPEND
+2026-06-15,Circle K,16.56,,2008.22,Fast Food,SPEND
+2026-06-15,Vendop Llc Powell Oh via Cantaloupe,4.25,,2024.78,Fast Food,SPEND
+2026-06-15,Circle K,3.73,,2029.03,Fast Food,SPEND
+2026-06-15,Transfer From 7903,,725.0,2032.76,Transfer,XFER_7903
+2026-06-15,Transfer From 0514,,275.0,1307.76,Transfer,XFER_0514
+2026-06-16,Instacart,176.23,,5459.79,Groceries,SPEND
+2026-06-16,Salerno Sports,110.0,,5636.02,Sporting Goods,SPEND
+2026-06-16,Amazon,41.87,,5746.02,Shopping,SPEND
+2026-06-16,Uber Eats,28.4,,5787.89,Food & Dining,SPEND
+2026-06-16,Mobile Deposit,,5190.48,5816.29,Income,DEPOSIT
+2026-06-17,Uber Eats,42.69,,167.1,Food & Dining,SPEND
+2026-06-17,State Farm,5250.0,,209.79,Financial,SPEND
+2026-06-18,Home Team,63.1,,45.2,Home,SPEND
+2026-06-18,Home Team,58.8,,108.3,Uncategorized,SPEND
+2026-06-22,Walker Pest Mana Pes St P a U I,33.0,,12.2,Transfer,SPEND
+2026-06-29,Shell,53.97,,-13.39,Gas,SPEND
+2026-06-29,Lsu Weco Bottle West,48.47,,40.58,Clothing,SPEND
+2026-06-29,AutoZone,37.95,,89.05,Service & Parts,SPEND
+2026-06-29,Waffle House via Oracle,10.2,,127.0,Restaurants,SPEND
+2026-06-29,Transfer From 0514,,125.0,137.2,Transfer,XFER_0514
+2026-06-30,Statement Service Fee,3.0,,1733.61,Service Fee,SPEND
+2026-06-30,Transfer From 7903,,1750.0,1736.61,Transfer,XFER_7903
+2026-07-01,Check #1052,1500.0,,202.75,Check,SPEND
+2026-07-01,Lizards Thicket West,30.86,,1702.75,Uncategorized,SPEND
+2026-07-02,Uber Eats,94.56,,59.04,Food & Dining,SPEND
+2026-07-02,Lsu Weco Bottle West,49.15,,153.6,Uncategorized,SPEND
+2026-07-03,United Community Bank Rebate,,0.54,59.58,Bonus,OTHER_IN
+2026-07-06,Return Inv,,21.04,80.62,Uncategorized,OTHER_IN
+2026-07-14,Lsu Weco Bottle West,48.47,,32.15,Uncategorized,SPEND
+2026-07-15,Walker Pest Mana Pes St Y E P O,35.0,,-2.85,Transfer,SPEND
+2026-07-16,Transfer From 0535,,20.0,47.15,Transfer,XFER_0535
+2026-07-16,Regular Deposit,,30.0,27.15,Income,DEPOSIT
+2026-07-17,Craft,14.93,,563.68,Uncategorized,SPEND
+2026-07-17,Global Work Ai,9.99,,578.61,Uncategorized,SPEND
+2026-07-17,AutoZone,8.55,,588.6,Service & Parts,SPEND
+2026-07-17,Transfer From 7903,,300.0,597.15,Transfer,XFER_7903
+2026-07-17,Transfer From 7903,,250.0,297.15,Transfer,XFER_7903
+2026-07-20,U-Haul,368.08,,4.48,Home,SPEND
+2026-07-20,U-Haul,111.18,,372.56,Home,SPEND
+2026-07-20,Lsu Weco Bottle West,51.02,,483.74,Uncategorized,SPEND
+2026-07-20,Chick-fil-A,23.78,,534.76,Fast Food,SPEND
+2026-07-20,QuikTrip,5.14,,558.54,Fast Food,SPEND
+2026-07-22,Walker Pest Mana Pes St B Y J W,33.0,,-64.52,Transfer,SPEND
+2026-07-22,Return Item Fee,36.0,,-31.52,Banking Fee,SPEND
+2026-07-23,Returned Item Insufficient Funds Walker Pest Mana Pes St B Y J W,,33.0,-31.52,Transfer,OTHER_IN
+2026-07-24,Transfer From 7903,,50.0,18.48,Transfer,XFER_7903
+2026-07-30,Transfer From 0514,,250.0,268.48,Transfer,XFER_0514
+2026-07-31,Statement Service Fee,3.0,,435.48,Service Fee,SPEND
+2026-07-31,Circle K,100.0,,438.48,Gas,SPEND
+2026-07-31,Wire Transfer,2715.4,,538.48,Transfer,XFER_OTHER
+2026-07-31,Wire Fee,30.0,,3253.88,Banking Fee,SPEND
+2026-07-31,Transfer From 7903,,300.0,3283.88,Transfer,XFER_7903
+2026-07-31,Regular Deposit,,2715.4,2983.88,Income,DEPOSIT
+2026-08-03,Cola's Rest,314.55,,396.53,Uncategorized,SPEND
+2026-08-03,Cola's Rest,74.4,,711.08,Food & Dining,SPEND
+2026-08-03,Transfer From 7903,,350.0,785.48,Transfer,XFER_7903
+2026-08-04,Transfer From 7903,,875.0,1649.53,Transfer,XFER_7903
+2026-08-04,Transfer From 7903,,378.0,774.53,Transfer,XFER_7903
+2026-08-05,Transfer to Venmo,875.5,,1316.11,Transfer,XFER_OTHER
+2026-08-05,Aloft Hotels,357.92,,2191.61,Hotel,SPEND
+2026-08-05,Recurr Payment Psychotherapy Boulder Co Iqgkcitc,300.0,,2549.53,Doctor,SPEND
+2026-08-05,Transfer From 7903,,500.0,2849.53,Transfer,XFER_7903
+2026-08-05,Transfer From 7903,,450.0,2349.53,Transfer,XFER_7903
+2026-08-05,Transfer From 7903,,250.0,1899.53,Transfer,XFER_7903
+2026-08-06,Transfer to Venmo,450.0,,330.49,Transfer,XFER_OTHER
+2026-08-06,State Farm,332.45,,780.49,Financial,SPEND
+2026-08-06,State Farm,203.17,,1112.94,Financial,SPEND
+2026-08-10,Hampton Inn,139.55,,133.11,Hotel,SPEND
+2026-08-10,Love's Travel Stops,119.8,,272.66,Gas,SPEND
+2026-08-10,Spo Pat'stap,10.32,,392.46,Uncategorized,SPEND
+2026-08-10,Travel Center,2.71,,402.78,Fast Food,SPEND
+2026-08-10,Transfer From 0514,,75.0,405.49,Transfer,XFER_0514
+2026-08-11,Safeway Fuel,65.02,,145.83,Gas,SPEND
+2026-08-11,Spo Pat'stap,22.26,,210.85,Uncategorized,SPEND
+2026-08-11,Transfer From 7903,,100.0,233.11,Transfer,XFER_7903
+2026-08-12,DoorDash,64.09,,409.96,Food & Dining,SPEND
+2026-08-12,Safeway,21.78,,474.05,Groceries,SPEND
+2026-08-12,Transfer From 7903,,350.0,495.83,Transfer,XFER_7903
+2026-08-13,Transfer to Venmo,309.0,,71.41,Transfer,XFER_OTHER
+2026-08-13,Safeway,28.35,,380.41,Groceries,SPEND
+2026-08-13,U-Haul,1.2,,408.76,Home,SPEND
+2026-08-14,Safeway,29.98,,91.43,Groceries,SPEND
+2026-08-14,Transfer From 7903,,50.0,121.41,Transfer,XFER_7903
+2026-08-17,Walker Pest Mana Pes St B v M D,35.0,,14.7,Transfer,SPEND
+2026-08-17,Safeway,32.21,,49.7,Groceries,SPEND
+2026-08-17,Spo Pat'stap,9.52,,81.91,Uncategorized,SPEND
+2026-08-18,Flatiron,3.99,,260.71,Uncategorized,SPEND
+2026-08-18,Transfer From 0514,,250.0,264.7,Transfer,XFER_0514
+2026-08-20,El Tapatio Broom,37.31,,223.4,Restaurants,SPEND
+2026-08-24,Transfer To 0514,150.0,,6230.78,Transfer,XFER_0514
+2026-08-24,Walker Pest Mana Pes St Y W M J,33.0,,6380.78,Transfer,SPEND
+2026-08-24,Rocky,64.2,,6413.78,Uncategorized,SPEND
+2026-08-24,Mobile Deposit,,5254.58,6477.98,Income,DEPOSIT
+2026-08-24,Mobile Deposit,,1000.0,1223.4,Income,DEPOSIT
+2026-08-25,Transfer To 7903,6000.0,,230.78,Transfer,XFER_7903
+2026-08-26,Uber Eats,104.31,,49.97,Food & Dining,SPEND
+2026-08-26,Floyd S Basem,63.75,,154.28,Uncategorized,SPEND
+2026-08-26,FedEx Office,12.75,,218.03,Business Services,SPEND
+2026-08-27,Recurr Payment Psychotherapy Boulder Co Iqgkcitc,300.0,,13451.93,Doctor,SPEND
+2026-08-27,Uber Eats,104.84,,13751.93,Food & Dining,SPEND
+2026-08-27,Broadway Wine,26.2,,13856.77,Alcohol & Bars,SPEND
+2026-08-27,Transfer From 7903,,13608.0,13882.97,Transfer,XFER_7903
+2026-08-27,Transfer From 0514,,125.0,274.97,Transfer,XFER_0514
+2026-08-27,Transfer From 7903,,100.0,149.97,Transfer,XFER_7903
+2026-08-28,University of Co Cu Boulder,13609.83,,96.29,Uncategorized,SPEND
+2026-08-28,Rovente Pizza,131.1,,13706.12,Food & Dining,SPEND
+2026-08-28,CVS,72.17,,13837.22,Pharmacy,SPEND
+2026-08-28,Mailchimp,27.29,,13909.39,Advertising,SPEND
+2026-08-28,Transfer From 0514,,484.75,13936.68,Transfer,XFER_0514
+2026-08-31,Printed Statement Fee,3.0,,38.4,Banking Fee,SPEND
+2026-08-31,Country Cat,96.0,,41.4,Uncategorized,SPEND
+2026-08-31,Bossladypiz,8.6,,137.4,Uncategorized,SPEND
+2026-08-31,Bossladypiz,0.29,,146.0,Food & Dining,SPEND
+2026-08-31,Transfer From 7903,,50.0,146.29,Transfer,XFER_7903
+2026-09-01,Mobile Deposit,,500.0,538.4,Income,DEPOSIT
+2026-09-02,Recurr Payment Psychotherapy Boulder Co Iqgkcitc,300.0,,38.4,Doctor,SPEND
+2026-09-02,Transfer To 7903,200.0,,338.4,Transfer,XFER_7903
+2026-09-04,Uber Eats,52.57,,86.71,Food & Dining,SPEND
+2026-09-04,Spo Pat'stap,24.12,,139.28,Uncategorized,SPEND
+2026-09-04,Transfer To 7903,1200.0,,163.4,Transfer,XFER_7903
+2026-09-04,Transfer From 7903,,125.0,1363.4,Transfer,XFER_7903
+2026-09-04,Regular Deposit,,1200.0,1238.4,Income,DEPOSIT
+2026-09-08,King Soopers,392.11,,254.07,Groceries,SPEND
+2026-09-08,Murphys Tap,112.88,,646.18,Uncategorized,SPEND
+2026-09-08,Uber Eats,103.26,,759.06,Food & Dining,SPEND
+2026-09-08,Uber Eats,81.28,,862.32,Food & Dining,SPEND
+2026-09-08,Walgreens,77.64,,943.6,Pharmacy,SPEND
+2026-09-08,Murphys Tap,66.61,,1021.24,Uncategorized,SPEND
+2026-09-08,Walgreens,45.17,,1087.85,Pharmacy,SPEND
+2026-09-08,Safeway,36.38,,1133.02,Groceries,SPEND
+2026-09-08,Target,31.2,,1169.4,Shopping,SPEND
+2026-09-08,Target,28.69,,1200.6,Shopping,SPEND
+2026-09-08,Benihana,26.43,,1229.29,Restaurants,SPEND
+2026-09-08,Red Robin,23.89,,1255.72,Restaurants,SPEND
+2026-09-08,Red Robin,17.1,,1279.61,Restaurants,SPEND
+2026-09-08,Transfer From 7903,,475.0,1296.71,Transfer,XFER_7903
+2026-09-08,Transfer From 7903,,150.0,821.71,Transfer,XFER_7903
+2026-09-08,Transfer From 7903,,100.0,671.71,Transfer,XFER_7903
+2026-09-08,Transfer From 7903,,100.0,571.71,Transfer,XFER_7903
+2026-09-08,Transfer From 7903,,100.0,471.71,Transfer,XFER_7903
+2026-09-08,Transfer From 7903,,100.0,371.71,Transfer,XFER_7903
+2026-09-08,Transfer From 7903,,60.0,271.71,Transfer,XFER_7903
+2026-09-08,Transfer From 7903,,50.0,211.71,Transfer,XFER_7903
+2026-09-08,Transfer From 7903,,50.0,161.71,Transfer,XFER_7903
+2026-09-08,Transfer From 7903,,25.0,111.71,Transfer,XFER_7903
+2026-09-09,Safeway,69.0,,152.86,Groceries,SPEND
+2026-09-09,Noses Ou,32.21,,221.86,Uncategorized,SPEND
+2026-09-10,Lsu Weco Bottle West,96.61,,0.36,Uncategorized,SPEND
+2026-09-10,Cru Wine Bar Den,79.12,,96.97,Alcohol & Bars,SPEND
+2026-09-10,Safeway Fuel,48.31,,176.09,Gas,SPEND
+2026-09-10,La Dolce Vi,17.56,,224.4,Uncategorized,SPEND
+2026-09-10,Dunkin',7.9,,241.96,Coffee Shops,SPEND
+2026-09-10,Transfer From 7903,,97.0,249.86,Transfer,XFER_7903
+2026-09-11,Mobile Deposit,,1850.0,1850.36,Income,DEPOSIT
+2026-09-14,Transfer To 7903,1850.0,,275.36,Transfer,XFER_7903
+2026-09-14,Transfer From 7903,,250.0,2125.36,Transfer,XFER_7903
+2026-09-14,Transfer From 7903,,25.0,1875.36,Transfer,XFER_7903
+2026-09-15,Walker Pest Mana Pes St M Q C a,35.0,,-45.21,Transfer,SPEND
+2026-09-15,King Soopers,249.57,,-10.21,Groceries,SPEND
+2026-09-15,Return Item Fee,36.0,,239.36,Banking Fee,SPEND
+2026-09-16,Returned Item Insufficient Funds Walker Pest Mana Pes St M Q C a,,35.0,-10.21,Transfer,OTHER_IN
+2026-09-22,Walker Pest Mana Pes St U C H W,33.0,,-79.21,Transfer,SPEND
+2026-09-22,Return Item Fee,36.0,,-46.21,Banking Fee,SPEND
+2026-09-23,Walker Pest Mana Pes St Z H Q C,150.0,,-232.21,Transfer,SPEND
+2026-09-23,Returned Item Insufficient Funds Walker Pest Mana Pes St U C H W,,33.0,-82.21,Transfer,OTHER_IN
+2026-09-23,Return Item Fee,36.0,,-115.21,Banking Fee,SPEND
+2026-09-24,Returned Item Insufficient Funds Walker Pest Mana Pes St Z H Q C,,150.0,-82.21,Transfer,OTHER_IN
+2026-09-29,Love's Travel Stops,27.36,,79.26,Gas,SPEND
+2026-09-29,Scgov,11.17,,106.62,Auto & Transport,SPEND
+2026-09-29,Transfer From 7903,,200.0,117.79,Transfer,XFER_7903
+2026-09-30,Printed Statement Fee,3.0,,131.94,Banking Fee,SPEND
+2026-09-30,Lsu Weco Bottle West,30.39,,134.94,Uncategorized,SPEND
+2026-09-30,Love's Travel Stops,13.93,,165.33,Fast Food,SPEND
+2026-09-30,Transfer From 0514,,100.0,179.26,Transfer,XFER_0514
+2026-10-01,Transfer From 7903,,300.0,521.94,Transfer,XFER_7903
+2026-10-01,Transfer From 7903,,50.0,221.94,Transfer,XFER_7903
+2026-10-01,Transfer From 7903,,40.0,171.94,Transfer,XFER_7903
+2026-10-02,Home Suites by,281.49,,85.52,Hotel,SPEND
+2026-10-02,Atl Vino Volo,63.76,,367.01,Restaurants,SPEND
+2026-10-02,Atl Airp Still,50.95,,430.77,Uncategorized,SPEND
+2026-10-02,Lyft,43.91,,481.72,Rental Car & Taxi,SPEND
+2026-10-02,Atl Vino Volo,33.34,,525.63,Restaurants,SPEND
+2026-10-02,Iah Relay Istore,12.97,,558.97,Uncategorized,SPEND
+2026-10-02,Transfer To 7903,2600.0,,571.94,Transfer,XFER_7903
+2026-10-02,Transfer From 7903,,1300.0,3171.94,Transfer,XFER_7903
+2026-10-02,Transfer From 7903,,150.0,1871.94,Transfer,XFER_7903
+2026-10-02,Regular Deposit,,1200.0,1721.94,Income,DEPOSIT
+2026-10-06,Transfer From 7903,,150.0,235.52,Transfer,XFER_7903
+2026-10-07,Return Rbtdinovausa Easy,,0.96,237.16,Fast Food,OTHER_IN
+2026-10-07,Return Rbtdinovausa Easy,,0.68,236.2,Uncategorized,OTHER_IN
+2026-10-08,Hilton Hotel,116.7,,409.56,Hotel,SPEND
+2026-10-08,Hilton Hotel,10.9,,526.26,Hotel,SPEND
+2026-10-08,Transfer From 7903,,150.0,537.16,Transfer,XFER_7903
+2026-10-08,Transfer From 7903,,150.0,387.16,Transfer,XFER_7903
+2026-10-13,King Soopers,376.91,,58.04,Groceries,SPEND
+2026-10-13,Hilton Garden Inn,330.61,,434.95,Hotel,SPEND
+2026-10-13,Recscmpltd,94.0,,765.56,Uncategorized,SPEND
+2026-10-13,Transfer From 7903,,350.0,859.56,Transfer,XFER_7903
+2026-10-13,Transfer From 7903,,100.0,509.56,Transfer,XFER_7903
+2026-10-15,Walker Pest Mana Pes St K C K J,35.0,,23.04,Transfer,SPEND
+2026-10-16,Uber Eats,52.54,,814.42,Food & Dining,SPEND
+2026-10-16,Uber Eats,11.08,,866.96,Food & Dining,SPEND
+2026-10-16,Transfer From 7903,,780.0,878.04,Transfer,XFER_7903
+2026-10-16,Transfer From 0514,,75.0,98.04,Transfer,XFER_0514
+2026-10-19,United,737.05,,468.98,Groceries,SPEND
+2026-10-19,Whole Foods,197.38,,1206.03,Groceries,SPEND
+2026-10-19,Target,135.56,,1403.41,Shopping,SPEND
+2026-10-19,Spo Parmatrattor,66.78,,1538.97,Uncategorized,SPEND
+2026-10-19,Spo Pat'stap,30.31,,1605.75,Uncategorized,SPEND
+2026-10-19,Uber Eats,23.55,,1636.06,Food & Dining,SPEND
+2026-10-19,Safeway,9.81,,1659.61,Groceries,SPEND
+2026-10-19,Transfer From 7903,,300.0,1669.42,Transfer,XFER_7903
+2026-10-19,Transfer From 7903,,300.0,1369.42,Transfer,XFER_7903
+2026-10-19,Transfer From 7903,,155.0,1069.42,Transfer,XFER_7903
+2026-10-19,Transfer From 7903,,100.0,914.42,Transfer,XFER_7903
+2026-10-20,Fee for W D Massage,1.0,,3043.42,Spa & Massage,SPEND
+2026-10-20,W D Massage,204.0,,3044.42,Spa & Massage,SPEND
+2026-10-20,Uber,99.99,,3248.42,Rental Car & Taxi,SPEND
+2026-10-20,Eat,70.57,,3348.41,Uncategorized,SPEND
+2026-10-20,Transfer To 7903,300.0,,3418.98,Transfer,XFER_7903
+2026-10-20,Mobile Deposit,,2500.0,3718.98,Income,DEPOSIT
+2026-10-20,Transfer From 7903,,750.0,1218.98,Transfer,XFER_7903
+2026-10-21,Maggiano's Conc,58.91,,410.08,Uncategorized,SPEND
+2026-10-21,Angry Goat Pub,34.64,,468.99,Alcohol & Bars,SPEND
+2026-10-21,Slackwater Ogd,24.49,,503.63,Uncategorized,SPEND
+2026-10-21,Roosters 25th,15.3,,528.12,Uncategorized,SPEND
+2026-10-21,Transfer To 7903,2500.0,,543.42,Transfer,XFER_7903
+2026-10-22,Walker Pest Mana Pes St L Z T N,33.0,,194.72,Transfer,SPEND
+2026-10-22,Hilton Hotel,177.36,,227.72,Hotel,SPEND
+2026-10-22,Hilton Hotel,5.0,,405.08,Hotel,SPEND
+2026-10-23,Uber Eats,15.38,,779.34,Food & Dining,SPEND
+2026-10-23,Transfer From 7903,,600.0,794.72,Transfer,XFER_7903
+2026-10-26,Transfer to Venmo,669.5,,109.84,Transfer,XFER_OTHER
+2026-10-27,Transfer From 7903,,50.0,159.84,Transfer,XFER_7903
+2026-10-28,Rock Creek Liquor,112.36,,144.17,Alcohol & Bars,SPEND
+2026-10-28,Empire Phillips Idaho Springs Co,3.31,,256.53,Gas,SPEND
+2026-10-28,Transfer From 7903,,100.0,259.84,Transfer,XFER_7903
+2026-10-29,Safeway,47.48,,96.69,Groceries,SPEND
+2026-10-30,Printed Statement Fee,3.0,,93.69,Banking Fee,SPEND
+2026-11-03,Transfer From 7903,,200.0,443.69,Transfer,XFER_7903
+2026-11-03,Transfer From 7903,,150.0,243.69,Transfer,XFER_7903
+2026-11-04,Uber Eats,49.22,,343.52,Food & Dining,SPEND
+2026-11-04,Grand Ole Opry,28.49,,392.74,Uncategorized,SPEND
+2026-11-04,Fleet Stree,22.46,,421.23,Uncategorized,SPEND
+2026-11-05,Mel's Nashv,49.36,,576.79,Uncategorized,SPEND
+2026-11-05,Towneplace,17.37,,626.15,Uncategorized,SPEND
+2026-11-05,Transfer From 7903,,300.0,643.52,Transfer,XFER_7903
+2026-11-06,COUNTRY Financial,259.58,,190.42,Financial,SPEND
+2026-11-06,Towneplace,112.26,,450.0,Hotel,SPEND
+2026-11-06,Acme Seed & Feed,14.53,,562.26,Uncategorized,SPEND

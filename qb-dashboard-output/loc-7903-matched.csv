@@ -1,0 +1,271 @@
+date,description,debit_draw,credit_payment,matched_account
+2026-01-28,Principal Advance,11147.07,,5875
+2026-01-29,Principal Advance,9400.0,,UNMATCHED
+2026-01-29,Principal Advance,1200.0,,0535
+2026-01-29,Principal Advance,500.0,,0514
+2026-02-03,Principal Advance,1200.0,,0514
+2026-02-04,Principal Advance,3500.0,,0514
+2026-02-11,Principal Advance,250.0,,5875
+2026-02-13,Principal Advance,3000.0,,0535
+2026-02-17,Principal Advance,100.0,,5875
+2026-02-20,Principal Advance,1300.0,,0514
+2026-02-24,"Wigington Group amount reduced $180,888 outstanding",,4500.0,5875
+2026-02-24,Wigington Group Outstanding amount decrease,,250.0,5875
+2026-02-27,Yarddogs Cash Flow,2500.0,,0514
+2026-03-06,Principal Advance,1200.0,,0535
+2026-03-09,Principal Advance,1000.0,,0514
+2026-03-09,Principal Advance,700.0,,0535
+2026-03-10,Principal Advance,1000.0,,0514
+2026-03-12,Principal Advance,1000.0,,UNMATCHED
+2026-03-12,Principal Advance,250.0,,5875
+2026-03-13,Principal Advance,550.0,,5875
+2026-03-16,"Wigington Group LLC Principal Payment $179,388 outstanding balance",,1500.0,5875
+2026-03-16,Wigington Group LLC Principal Payment to Yarddogs/Wigington Group Interest,,1230.26,5875
+2026-03-17,Principal Advance,350.0,,0514
+2026-03-18,Principal Advance,1099.34,,0514
+2026-03-18,Principal Advance,1000.0,,0514
+2026-03-18,Principal Advance,1000.0,,0514
+2026-03-18,Principal Advance,500.0,,0514
+2026-03-18,Principal Advance,350.0,,5875
+2026-03-18,Principal Advance,200.0,,5875
+2026-03-19,Transfer,,3000.0,0514
+2026-03-23,Principal Advance,1000.0,,0514
+2026-03-23,Principal Advance,350.0,,0514
+2026-03-24,Principal Advance,1000.0,,0514
+2026-03-25,Principal Advance,150.0,,0535
+2026-03-26,Principal Advance,2550.0,,0514
+2026-03-27,Principal Advance,300.0,,0514
+2026-03-30,Principal Advance,600.0,,0514
+2026-03-31,Principal Advance,2000.0,,0514
+2026-03-31,Principal Advance,500.0,,0514
+2026-04-01,Transfer,,1400.0,0514
+2026-04-03,Principal Advance,1000.0,,0514
+2026-04-03,Principal Advance,455.0,,0535
+2026-04-06,Principal Advance,3000.0,,0514
+2026-04-06,Principal Advance,500.0,,0514
+2026-04-06,Principal Advance,450.0,,0514
+2026-04-09,Principal Advance,25000.0,,UNMATCHED
+2026-04-13,Principal Advance,1000.0,,0514
+2026-04-13,Principal Advance,750.0,,5875
+2026-04-13,Principal Advance,500.0,,0514
+2026-04-13,"THE WIGINGTON GROUP BALANCE REDUCTION $179,388-$22,000 = $157,388",,22000.0,5875
+2026-04-14,Principal Advance,1500.0,,0514
+2026-04-15,Principal Advance,14022.0,,5875
+2026-04-16,Principal Advance,500.0,,0514
+2026-04-17,Principal Advance,1601.0,,0514
+2026-04-20,Principal Advance,1200.0,,0514
+2026-04-20,Principal Advance,150.0,,5875
+2026-04-21,Principal Advance,2500.0,,0514
+2026-04-23,Principal Advance,500.0,,0514
+2026-04-27,Principal Advance,1500.0,,0514
+2026-04-27,Transfer,,800.0,5875
+2026-04-28,Principal Advance,1326.41,,0514
+2026-04-28,Principal Advance,1000.0,,0514
+2026-04-28,Transfer,,1200.0,0514
+2026-04-29,Principal Advance,1000.0,,0514
+2026-04-29,Principal Advance,1000.0,,5875
+2026-04-30,Principal Advance,250.0,,5875
+2026-05-01,Principal Advance,9900.0,,0535
+2026-05-01,Principal Advance,50.0,,5875
+2026-05-04,Principal Advance,500.0,,0514
+2026-05-04,Principal Advance,2500.0,,5875
+2026-05-04,Principal Advance,1000.0,,0535
+2026-05-04,Principal Advance,250.0,,0514
+2026-05-05,Principal Advance,1723.0,,0514
+2026-05-05,Principal Advance,1500.0,,0514
+2026-05-05,Principal Advance,500.0,,0535
+2026-05-08,Principal Advance,1500.0,,5875
+2026-05-11,Principal Advance,1000.0,,5875
+2026-05-11,Principal Advance,700.0,,5875
+2026-05-12,Principal Advance,5400.0,,0514
+2026-05-12,Principal Advance,500.0,,5875
+2026-05-12,Principal Advance,400.0,,5875
+2026-05-13,Transfer,,5000.0,0514
+2026-05-14,Principal Advance,1700.0,,5875
+2026-05-14,Transfer,,5600.0,5875
+2026-05-15,Principal Advance,8900.0,,0535
+2026-05-15,Principal Advance,8900.0,,0535
+2026-05-18,Principal Advance,15000.0,,5875
+2026-05-22,Transfer,,15000.0,0514
+2026-05-26,Principal Advance,1000.0,,5875
+2026-05-29,Principal Advance,8700.0,,0535
+2026-05-29,Principal Advance,1000.0,,0514
+2026-06-04,Transfer,,5000.0,0514
+2026-06-05,Principal Advance,6000.0,,0514
+2026-06-08,Transfer,,4500.0,0514
+2026-06-09,Principal Advance,8850.0,,0514
+2026-06-09,Principal Advance,5146.32,,0514
+2026-06-10,Principal Advance,9400.0,,0535
+2026-06-11,Transfer,,500.0,0514
+2026-06-12,Principal Advance,1000.0,,5875
+2026-06-15,Principal Advance,725.0,,5875
+2026-06-15,Transfer,,1000.0,0514
+2026-06-16,Principal Advance,550.0,,0514
+2026-06-17,Principal Advance,400.0,,0514
+2026-06-17,Transfer,,7000.0,0514
+2026-06-17,Transfer,,5250.0,5875
+2026-06-22,Principal Advance,1800.0,,UNMATCHED
+2026-06-22,Principal Advance,1500.0,,0514
+2026-06-22,Transfer,,9300.0,0514
+2026-06-23,Principal Advance,5000.0,,0514
+2026-06-23,Transfer,,2500.0,0514
+2026-06-26,Principal Advance,1300.0,,UNMATCHED
+2026-06-26,Principal Advance,10000.0,,0535
+2026-06-29,Principal Advance,1500.0,,0514
+2026-06-30,Principal Advance,1750.0,,5875
+2026-07-06,Principal Advance,2100.0,,UNMATCHED
+2026-07-07,Principal Advance,1000.0,,0514
+2026-07-09,Principal Advance,15000.0,,0535
+2026-07-09,Transfer,,1500.0,0514
+2026-07-13,Principal Advance,1700.0,,0535
+2026-07-13,Transfer,,1000.0,0514
+2026-07-15,Principal Advance,4200.0,,0514
+2026-07-15,Transfer,,6000.0,0514
+2026-07-15,Transfer,,620.0,0514
+2026-07-16,Principal Advance,30.0,,5875
+2026-07-16,Transfer,,2000.0,0514
+2026-07-17,Principal Advance,300.0,,5875
+2026-07-17,Principal Advance,250.0,,5875
+2026-07-20,Principal Advance,400.0,,0514
+2026-07-20,Transfer,,1550.0,0514
+2026-07-21,Transfer,,1250.0,0514
+2026-07-24,Principal Advance,1250.0,,UNMATCHED
+2026-07-24,Principal Advance,9500.0,,0535
+2026-07-24,Principal Advance,500.0,,0514
+2026-07-24,Principal Advance,50.0,,5875
+2026-07-27,Principal Advance,1800.0,,0535
+2026-07-27,Transfer,,12600.0,0514
+2026-07-27,Transfer,,2000.0,0535
+2026-07-28,Transfer,,4000.0,0514
+2026-07-31,Principal Advance,2715.4,,5875
+2026-07-31,Principal Advance,300.0,,5875
+2026-08-03,Principal Advance,1706.33,,0514
+2026-08-03,Principal Advance,550.0,,0514
+2026-08-03,Principal Advance,350.0,,5875
+2026-08-04,Principal Advance,875.0,,5875
+2026-08-04,Principal Advance,378.0,,5875
+2026-08-05,Principal Advance,4000.0,,0514
+2026-08-05,Principal Advance,500.0,,5875
+2026-08-05,Principal Advance,450.0,,5875
+2026-08-05,Principal Advance,250.0,,5875
+2026-08-07,Principal Advance,6500.0,,0535
+2026-08-10,Principal Advance,4000.0,,0514
+2026-08-10,Transfer,,5000.0,0514
+2026-08-11,Principal Advance,100.0,,5875
+2026-08-12,Principal Advance,500.0,,0514
+2026-08-12,Principal Advance,350.0,,5875
+2026-08-14,Principal Advance,50.0,,5875
+2026-08-14,Transfer,,1500.0,0514
+2026-08-14,Transfer,,1000.0,0514
+2026-08-17,Principal Advance,1816.02,,0514
+2026-08-17,Transfer,,1000.0,0514
+2026-08-18,Transfer,,1250.0,0514
+2026-08-19,Principal Advance,1500.0,,UNMATCHED
+2026-08-20,Principal Advance,1600.0,,0514
+2026-08-21,Principal Advance,900.0,,UNMATCHED
+2026-08-25,Principal Advance,900.0,,UNMATCHED
+2026-08-25,Transfer,,6000.0,5875
+2026-08-27,Principal Advance,1600.0,,UNMATCHED
+2026-08-27,Principal Advance,13608.0,,5875
+2026-08-27,Principal Advance,100.0,,0514
+2026-08-27,Principal Advance,100.0,,5875
+2026-08-27,Transfer,,1000.0,0514
+2026-08-31,Principal Advance,500.0,,0514
+2026-08-31,Principal Advance,130.0,,0514
+2026-08-31,Principal Advance,50.0,,5875
+2026-09-01,Principal Advance,1500.0,,0514
+2026-09-02,Transfer,,500.0,0514
+2026-09-02,Transfer,,200.0,5875
+2026-09-03,Principal Advance,1000.0,,0514
+2026-09-04,Principal Advance,9800.0,,0535
+2026-09-04,Principal Advance,125.0,,5875
+2026-09-04,Transfer,,1200.0,5875
+2026-09-08,Principal Advance,475.0,,5875
+2026-09-08,Principal Advance,150.0,,5875
+2026-09-08,Principal Advance,100.0,,5875
+2026-09-08,Principal Advance,100.0,,5875
+2026-09-08,Principal Advance,100.0,,5875
+2026-09-08,Principal Advance,100.0,,5875
+2026-09-08,Principal Advance,60.0,,5875
+2026-09-08,Principal Advance,50.0,,5875
+2026-09-08,Principal Advance,50.0,,5875
+2026-09-08,Principal Advance,25.0,,5875
+2026-09-09,Principal Advance,350.0,,0514
+2026-09-09,Transfer,,500.0,0514
+2026-09-10,Principal Advance,97.0,,5875
+2026-09-11,Principal Advance,2000.0,,0514
+2026-09-14,Principal Advance,3500.0,,0535
+2026-09-14,Principal Advance,2000.0,,0514
+2026-09-14,Principal Advance,350.0,,0514
+2026-09-14,Principal Advance,250.0,,5875
+2026-09-14,Principal Advance,100.0,,0514
+2026-09-14,Principal Advance,25.0,,5875
+2026-09-14,Transfer,,3000.0,0514
+2026-09-14,Transfer,,1850.0,5875
+2026-09-14,Transfer,,500.0,0514
+2026-09-16,Principal Advance,800.0,,0514
+2026-09-16,Transfer,,1100.0,0514
+2026-09-18,Principal Advance,707.0,,UNMATCHED
+2026-09-18,Principal Advance,9000.0,,0535
+2026-09-18,Transfer,,2000.0,0535
+2026-09-18,Transfer,,1000.0,0514
+2026-09-21,Principal Advance,3310.0,,0535
+2026-09-22,Principal Advance,1050.0,,UNMATCHED
+2026-09-22,Transfer,,500.0,0514
+2026-09-25,Transfer,,500.0,0514
+2026-09-28,Principal Advance,800.0,,0514
+2026-09-29,Principal Advance,200.0,,5875
+2026-09-29,Transfer,,1500.0,0514
+2026-10-01,Principal Advance,900.0,,0514
+2026-10-01,Principal Advance,300.0,,5875
+2026-10-01,Principal Advance,50.0,,5875
+2026-10-01,Principal Advance,40.0,,5875
+2026-10-02,Principal Advance,7200.0,,0535
+2026-10-02,Principal Advance,1300.0,,5875
+2026-10-02,Principal Advance,150.0,,5875
+2026-10-02,Transfer,,2600.0,5875
+2026-10-05,Principal Advance,1100.0,,0514
+2026-10-05,Transfer,,4800.0,0514
+2026-10-06,Principal Advance,150.0,,5875
+2026-10-06,Transfer,,500.0,0514
+2026-10-07,Transfer,,500.0,0514
+2026-10-07,Transfer,,500.0,0514
+2026-10-08,Principal Advance,800.0,,UNMATCHED
+2026-10-08,Principal Advance,150.0,,5875
+2026-10-08,Principal Advance,150.0,,5875
+2026-10-09,Transfer,,2100.0,0514
+2026-10-13,Principal Advance,350.0,,5875
+2026-10-13,Principal Advance,200.0,,0514
+2026-10-13,Principal Advance,100.0,,5875
+2026-10-13,Transfer,,3000.0,0514
+2026-10-14,Principal Advance,900.0,,0514
+2026-10-14,Transfer,,1000.0,0514
+2026-10-16,Principal Advance,1050.0,,UNMATCHED
+2026-10-16,Principal Advance,7800.0,,0535
+2026-10-16,Principal Advance,780.0,,5875
+2026-10-16,Transfer,,2250.0,0514
+2026-10-19,Principal Advance,300.0,,5875
+2026-10-19,Principal Advance,300.0,,5875
+2026-10-19,Principal Advance,155.0,,5875
+2026-10-19,Principal Advance,100.0,,5875
+2026-10-19,Transfer,,5000.0,0514
+2026-10-19,Transfer,,800.0,0514
+2026-10-20,Principal Advance,1600.0,,0514
+2026-10-20,Principal Advance,750.0,,5875
+2026-10-20,Transfer,,2000.0,0514
+2026-10-20,Transfer,,300.0,5875
+2026-11-02,Principal Advance,700.0,,0514
+2026-11-02,Principal Advance,655.0,,0535
+2026-11-02,Principal Advance,80.0,,UNMATCHED
+2026-11-02,Transfer,,1250.0,0514
+2026-11-03,Principal Advance,200.0,,5875
+2026-11-03,Principal Advance,150.0,,5875
+2026-11-03,Transfer,,2700.0,0514
+2026-11-04,Principal Advance,1500.0,,0514
+2026-11-04,Principal Advance,1400.0,,0514
+2026-11-05,Principal Advance,1100.0,,UNMATCHED
+2026-11-05,Principal Advance,300.0,,5875
+2026-11-05,Transfer,,7000.0,0514
+2026-11-06,Principal Advance,200.0,,UNMATCHED
+2026-11-06,Transfer,,1600.0,0514
+2026-11-06,Transfer,,1250.0,0514
