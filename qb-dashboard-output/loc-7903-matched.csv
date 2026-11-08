@@ -44,7 +44,7 @@ date,description,debit_draw,credit_payment,matched_account
 2026-04-06,Principal Advance,3000.0,,0514
 2026-04-06,Principal Advance,500.0,,0514
 2026-04-06,Principal Advance,450.0,,0514
-2026-04-09,Principal Advance,25000.0,,UNMATCHED
+2026-04-09,Principal Advance,25000.0,,"5875 (check deposit $22,900 same day)"
 2026-04-13,Principal Advance,1000.0,,0514
 2026-04-13,Principal Advance,750.0,,5875
 2026-04-13,Principal Advance,500.0,,0514

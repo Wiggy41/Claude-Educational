@@ -2,7 +2,7 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <title>Yarddogs Financial Dashboard — November 2026</title>
 <style>
-  :root { color-scheme: dark; --bg:#0f1419; --fg:#e6e8eb; --panel:#161c24; --line:#2a3038; --muted:#8b95a3; --pos:#4ade80; --neg:#f87171; --warn:#fbbf24; --wg:#a78bfa; }
+  :root { color-scheme: dark; --bg:#0f1419; --fg:#e6e8eb; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -223,14 +223,14 @@
         <tr><td>Feb 9 refinance of prior debt</td><td>$204,234</td><td><span style="color:#a78bfa;">WG $185,638</span> · Yarddogs $18,596</td></tr>
         <tr><td>Yarddogs operations (net of repayments)</td><td>$113,598</td><td style="color:#4ade80;">Yarddogs</td></tr>
         <tr><td>Equipment (skid steer, trailer)</td><td>$45,500</td><td style="color:#4ade80;">Yarddogs</td></tr>
-        <tr><td>WG / 5875 (net of repayments)</td><td>$31,952</td><td style="color:#a78bfa;">WG</td></tr>
-        <tr><td>Unmatched advances</td><td class="warn">$51,737</td><td class="warn">unknown</td></tr>
+        <tr><td>WG / 5875 (net of repayments, incl. Apr 9 $25,000)</td><td>$56,952</td><td style="color:#a78bfa;">WG</td></tr>
+        <tr><td>Unmatched advances</td><td class="warn">$26,737</td><td class="warn">unknown</td></tr>
         <tr><td>Scheduled principal paid</td><td class="pos">–$14,413</td><td></td></tr>
         <tr><td>Fees</td><td>$1,340</td><td style="color:#4ade80;">Yarddogs</td></tr>
         <tr class="total"><td><strong>Sum</strong></td><td><strong>$433,948</strong></td><td></td></tr>
       </tbody>
     </table>
-    <div style="font-size:10px;color:#8b95a3;margin-top:8px;line-height:1.5;">Ties to the register within $1. <strong style="color:#fbbf24;">The $51,737 unmatched</strong> is 18 advances that landed in none of the four accounts. Apr 9 $25,000 is most of it; a $22,900 mobile deposit hit 5875 the same day, which may be the same money less $2,100 cash. Jan 29 $9,400 is the other large one.</div>
+    <div style="font-size:10px;color:#8b95a3;margin-top:8px;line-height:1.5;">Ties to the register within $1. <strong style="color:#a78bfa;">Apr 9 $25,000 resolved to 5875:</strong> a $22,900 check was mobile-deposited there the same day, and on Apr 13 5875 sent $22,000 back to the LOC labeled "Wigington Group balance reduction." That WG paydown was LOC money round-tripping. <strong style="color:#fbbf24;">$26,737 still unmatched</strong> (17 advances): Jan 29 $9,400 and 16 smaller ones, Jun–Nov. None appear in 0514, 0535, 5875, or BOA. Two other accounts show up in transfer memos — <strong>2869</strong> (active Jan 2026) and <strong>4076</strong> (Nov 2) — and are the likely destinations.</div>
   </div>
 
   <div class="panel">
@@ -238,7 +238,7 @@
     <div class="panel-sub">Read across all five accounts</div>
     <div style="font-size:12px;color:#c8cdd3;line-height:1.7;">
       <div style="margin-bottom:10px;"><strong style="color:#4ade80;">1 · Yarddogs is close to self-sustaining but not there.</strong> Customers paid $324K; the business spent $411K. The $87K shortfall is mostly first-half: equipment, project materials, and a payroll that ran ahead of revenue through August. October and early November are cash-positive from the bank's view.</div>
-      <div style="margin-bottom:10px;"><strong style="color:#a78bfa;">2 · The LOC is carrying Wigington Group's old debt.</strong> $185,638 of the $204,234 Feb 9 refinance was WG's. Add 2026 net draws of $31,952 and WG owes the Yarddogs line <strong>$217,590</strong>. Every scheduled payment and every interest dollar on that portion is Yarddogs cash servicing another entity.</div>
+      <div style="margin-bottom:10px;"><strong style="color:#a78bfa;">2 · The LOC is carrying Wigington Group's old debt.</strong> $185,638 of the $204,234 Feb 9 refinance was WG's. Add 2026 net draws of $56,952 (including the Apr 9 $25,000 that funded the Apr 13 "$22,000 WG paydown") and WG owes the Yarddogs line <strong>$242,590</strong>. Every scheduled payment and every interest dollar on that portion is Yarddogs cash servicing another entity.</div>
       <div style="margin-bottom:10px;"><strong style="color:#fbbf24;">3 · Payroll is LOC-funded.</strong> 0535 received $144K from the LOC and $88K from checking in 2026. When customer cash is late, the LOC pays the crew. That is why the line grows mid-month and shrinks when checks land.</div>
       <div style="margin-bottom:10px;"><strong style="color:#f87171;">4 · QuickBooks is not describing any of this.</strong> QB shows the LOC at –$11,953 and checking at –$53,834. The bank shows the LOC at ~$442K cumulative and checking at $3,204. The $71.7K Undeposited Funds is the symptom: payments recorded, never matched to deposits.</div>
       <div><strong style="color:#8b95a3;">5 · Personal spending is not the leak.</strong> 5875 kept $32K of LOC money for taxes, tuition, insurance, and a vehicle. BOA never touched the line.</div>
@@ -312,9 +312,9 @@
       <table style="font-size:11px;">
         <tbody>
           <tr><td>Feb 9 WG share of the $204,234 refinance</td><td>$185,638</td></tr>
-          <tr><td>plus LOC → 5875 draws, 2026</td><td class="neg">+$85,232</td></tr>
-          <tr><td>less 5875 → LOC repayments, 2026</td><td class="pos">–$53,280</td></tr>
-          <tr class="total"><td><strong>WG owes Yarddogs LOC</strong></td><td class="neg"><strong>$217,590</strong></td></tr>
+          <tr><td>plus LOC → 5875 draws, 2026 (incl. Apr 9 $25,000 by check)</td><td class="neg">+$110,232</td></tr>
+          <tr><td>less 5875 → LOC repayments, 2026 ($22,000 of which was LOC-funded)</td><td class="pos">–$53,280</td></tr>
+          <tr class="total"><td><strong>WG owes Yarddogs LOC</strong></td><td class="neg"><strong>$242,590</strong></td></tr>
         </tbody>
       </table>
       <div style="font-size:10px;color:#fbbf24;margin-top:6px;line-height:1.5;">Replaces the $296,627 I reported earlier, which assumed every LOC draw not found in 0514/0535 was WG. The 5875 register shows $85K actually arrived there, and $53K of repayments the LOC register had labeled only as "Transfer."</div>
@@ -394,11 +394,11 @@
       <div style="font-size:10px;color:#a78bfa;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;font-weight:600;">Wigington Group · pulled via 5875 (full year)</div>
       <table style="font-size:11px;">
         <tbody>
-          <tr><td>LOC → 5875 draws Jan–Nov 7 (77)</td><td class="neg"><strong>$85,232</strong></td></tr>
+          <tr><td>LOC → 5875 draws Jan–Nov 7 (78, incl. Apr 9 by check)</td><td class="neg"><strong>$110,232</strong></td></tr>
           <tr><td>5875 → LOC repayments (14)</td><td class="pos">–$53,280</td></tr>
-          <tr><td>Net 2026 WG/5875 usage</td><td class="neg">$31,952</td></tr>
+          <tr><td>Net 2026 WG/5875 usage</td><td class="neg">$56,952</td></tr>
           <tr><td>Feb 9 WG share of refinance</td><td>$185,638</td></tr>
-          <tr class="total"><td><strong>WG receivable to Yarddogs</strong></td><td class="neg"><strong>$217,590</strong></td></tr>
+          <tr class="total"><td><strong>WG receivable to Yarddogs</strong></td><td class="neg"><strong>$242,590</strong></td></tr>
         </tbody>
       </table>
       <div style="font-size:10px;color:#c8cdd3;margin-top:6px;">Full ledger: <code style="font-size:9px;">wigington-group-receivable.csv</code> · rebuilt from the 5875 register.</div>
@@ -419,8 +419,8 @@
       <tbody>
         <tr><td>→ 0535 Payroll</td><td>26</td><td>$139,770</td><td>$75,765</td></tr>
         <tr><td>→ 0514 Checking</td><td>81</td><td>$119,848</td><td>$38,202</td></tr>
-        <tr style="background:#1a1a2e;"><td><strong>→ 5875 Wigington Group</strong></td><td>77</td><td class="neg"><strong>$85,232</strong></td><td class="neg">$28,388</td></tr>
-        <tr style="background:#2a1a15;"><td class="warn">→ Unmatched</td><td>18</td><td class="warn">$51,737</td><td class="warn">$13,237</td></tr>
+        <tr style="background:#1a1a2e;"><td><strong>→ 5875 Wigington Group</strong></td><td>78</td><td class="neg"><strong>$110,232</strong></td><td class="neg">$28,388</td></tr>
+        <tr style="background:#2a1a15;"><td class="warn">→ Unmatched</td><td>17</td><td class="warn">$26,737</td><td class="warn">$13,237</td></tr>
         <tr class="total"><td><strong>Total advances</strong></td><td>202</td><td><strong>$396,587</strong></td><td><strong>$155,593</strong></td></tr>
       </tbody>
     </table>
@@ -433,7 +433,7 @@
         <tr class="total"><td><strong>Total (all matched)</strong></td><td>68</td><td><strong>$199,300</strong></td><td><strong>$102,770</strong></td></tr>
       </tbody>
     </table>
-    <div style="font-size:10px;color:#fbbf24;margin-top:8px;line-height:1.5;"><strong>Unmatched $51,737:</strong> two big ones — <strong>Apr 9 $25,000</strong> and <strong>Jan 29 $9,400</strong> — plus 16 small. These landed in none of the four accounts. Tell me where and I'll tag them; until then they sit on Yarddogs' side.</div>
+    <div style="font-size:10px;color:#fbbf24;margin-top:8px;line-height:1.5;"><strong>Unmatched $26,737:</strong> <strong>Jan 29 $9,400</strong> plus 16 small draws ($80–$2,100) Jun–Nov. Not in 0514, 0535, 5875, or BOA. Transfer memos name two more accounts — <strong>2869</strong> and <strong>4076</strong> — that I don't have registers for. Until placed, these sit on Yarddogs' side.</div>
 
     <div style="height:1px;background:#2a3038;margin:14px 0;"></div>
     <div style="background:#1a1a2e;border:1px solid #4c3a7a;border-radius:6px;padding:12px;">
@@ -441,8 +441,8 @@
       <table style="font-size:11px;">
         <tbody>
           <tr><td>Register cumulative balance</td><td>$442,391</td></tr>
-          <tr><td>less Wigington Group receivable</td><td class="pos">–$217,590</td></tr>
-          <tr class="total"><td><strong>Yarddogs' own share</strong></td><td class="neg"><strong>$224,801</strong></td></tr>
+          <tr><td>less Wigington Group receivable</td><td class="pos">–$242,590</td></tr>
+          <tr class="total"><td><strong>Yarddogs' own share</strong></td><td class="neg"><strong>$199,801</strong></td></tr>
         </tbody>
       </table>
       <div style="font-size:10px;color:#c8cdd3;margin-top:6px;line-height:1.5;">Yarddogs' share = 2026 net business draws (~$114K) + $45.5K equipment + $18.6K Yarddogs portion of the Feb 9 refinance + $51.7K unmatched − $16.9K scheduled principal, plus fees and reversal-pair residue.</div>
@@ -532,12 +532,12 @@
 
     <div style="background:#2a1a15;border:1px solid #5a2d2d;border-radius:6px;padding:12px;margin-bottom:12px;">
       <div style="font-size:10px;color:#f87171;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;font-weight:600;">Feb 9 · Yarddogs assumed $204,234</div>
-      <div style="font-size:11px;color:#c8cdd3;line-height:1.5;">Memo: "$185,638 attributable to Wigington Group." The 5875 register confirms this was a refinance: $204,234 landed in 5875 as a deposit and left the same day as a check to pay off prior debt. Since then the LOC has sent <strong>$85,232</strong> to 5875 and 5875 has returned <strong>$53,280</strong>.</div>
+      <div style="font-size:11px;color:#c8cdd3;line-height:1.5;">Memo: "$185,638 attributable to Wigington Group." The 5875 register confirms this was a refinance: $204,234 landed in 5875 as a deposit and left the same day as a check to pay off prior debt. Since then the LOC has sent <strong>$110,232</strong> to 5875 (including the Apr 9 $25,000 by check) and 5875 has returned <strong>$53,280</strong> — $22,000 of which was that same LOC money coming back labeled as a WG paydown.</div>
       <table style="font-size:11px;margin-top:8px;">
         <tbody>
           <tr><td>Register cumulative balance</td><td>$442,391</td></tr>
-          <tr><td>less Wigington Group receivable</td><td class="pos">–$217,590</td></tr>
-          <tr class="total"><td><strong>Yarddogs' own share</strong></td><td><strong>$224,801</strong></td></tr>
+          <tr><td>less Wigington Group receivable</td><td class="pos">–$242,590</td></tr>
+          <tr class="total"><td><strong>Yarddogs' own share</strong></td><td><strong>$199,801</strong></td></tr>
         </tbody>
       </table>
     </div>
@@ -580,8 +580,8 @@
     <line x1="50" y1="70" x2="540" y2="70" stroke="#1d242c"/>
     <line x1="50" y1="170" x2="540" y2="170" stroke="#1d242c"/>
     <!-- WG share band ~156K → y = 220 - 62.4 = 157.6 -->
-    <rect x="104" y="133" width="436" height="87" fill="#f87171" opacity="0.08"/>
-    <text x="536" y="214" text-anchor="end" fill="#f87171" font-size="9" opacity="0.8">Wigington Group receivable ≈ $218K</text>
+    <rect x="104" y="123" width="436" height="97" fill="#f87171" opacity="0.08"/>
+    <text x="536" y="214" text-anchor="end" fill="#f87171" font-size="9" opacity="0.8">Wigington Group receivable ≈ $243K</text>
     <polyline points="60,210.6 104,126.3 148,103 192,89.4 236,71.3 280,64.1 324,60.3 368,50.5 412,41.9 456,39.1 500,43" stroke="#f87171" stroke-width="2.5" fill="none"/>
     <polygon points="60,210.6 104,126.3 148,103 192,89.4 236,71.3 280,64.1 324,60.3 368,50.5 412,41.9 456,39.1 500,43 500,220 60,220" fill="#f87171" opacity="0.08"/>
     <circle cx="60" cy="210.6" r="3" fill="#f87171"/><circle cx="104" cy="126.3" r="4" fill="#fbbf24" stroke="#fff" stroke-width="1"/><circle cx="148" cy="103" r="3" fill="#f87171"/><circle cx="192" cy="89.4" r="3" fill="#f87171"/><circle cx="236" cy="71.3" r="3" fill="#f87171"/><circle cx="280" cy="64.1" r="3" fill="#f87171"/><circle cx="324" cy="60.3" r="3" fill="#f87171"/><circle cx="368" cy="50.5" r="3" fill="#f87171"/><circle cx="412" cy="41.9" r="3" fill="#f87171"/><circle cx="456" cy="39.1" r="4" fill="#f87171" stroke="#fff" stroke-width="1"/><circle cx="500" cy="43" r="3" fill="#4ade80" stroke="#fff" stroke-width="1"/>

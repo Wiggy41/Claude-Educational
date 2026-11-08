@@ -167,6 +167,18 @@ from the bank export instead.
   `loc-7903-matched.csv` (every advance/payment with its matched account).
 - The Feb 9 $204,234 is a refinance pass-through (deposit into 5875, same-day
   check out). Not spending.
+- **Apr 9 2026 $25,000 LOC advance → 5875** as a $22,900 mobile check deposit
+  the same day; Apr 13 5875 → LOC $22,000 labeled "Wigington Group balance
+  reduction." Treat as a WG draw; the $22,000 "paydown" was LOC-funded.
+  Receivable as of Nov 7 2026: **$242,590**; Yarddogs' own share ≈ $199,801.
+- Every "Wigington"-labeled LOC payment came from 5875 the same day. When an
+  LOC advance is disbursed by check, it lands in 5875 as "Mobile Deposit" /
+  "Regular Deposit", not as "Transfer From 7903" — match on amount ±2 days,
+  not on the memo.
+- Unknown accounts seen in transfer memos: **2869** (Jan 2026, in/out of 0514
+  and 5875) and **4076** (0514 → 4076 $200, Nov 2). Ask for their registers
+  when LOC advances remain unmatched ($26,737 as of Nov 7: Jan 29 $9,400 +
+  16 small Jun–Nov).
 - Same append-only procedure as the LOC CSV when new exports arrive.
 - Known as of Nov 6 2026: 0535 is ~85% LOC-funded; ~$35K of LOC draws
   since Jul 1 did not land in 0514/0535; QB Undeposited Funds ($71.7K) is an
